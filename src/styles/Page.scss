@@ -1,0 +1,39 @@
+$lightpurple: rgba(194,191,232,100);
+$lightblue: rgba(210,227,249,100);
+$lightyellow: rgba(232,227,228,100);
+
+body {
+	background-image: linear-gradient(90deg, $lightpurple, $lightblue 50%, $lightyellow 80%);
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	padding: 2em;
+}
+
+// logo styling
+.header {
+  position: relative;
+  z-index: 2;
+	max-width: 30%;
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.logo-square {
+  width: 9vh;
+  height: 9vh;
+	background-color: $yellow;
+  box-shadow: 0px 4px 3px -3px $darkgray;
+	animation: 13s linear 65s infinite load;
+}
+.logo {
+  position: absolute;
+  z-index: 1;
+  max-width: 10vh;
+}

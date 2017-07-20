@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/logo.svg';
 
 export default class Page extends Component {
   render() {
@@ -8,10 +8,9 @@ export default class Page extends Component {
 				<div className="title">{this.props.title}</div>
 
 				<div className="header">
+          <img className="logo" alt='eden syoum' src={logo} />
 
-          <div className="logo-wrapper">
-            <div className="logo-triangle"></div>
-          </div>
+          <div className="logo-square"></div>
 				</div>
 
 				<div className="content">
