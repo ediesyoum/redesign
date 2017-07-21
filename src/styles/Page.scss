@@ -4,18 +4,15 @@ $lightyellow: rgba(232,227,228,100);
 
 body {
 	background-image: linear-gradient(90deg, $lightpurple, $lightblue 50%, $lightyellow 80%);
-	margin: 0px;
-	padding: 0px;
-}
-.container {
-	padding: 2em;
 }
 
 // logo styling
+
 .header {
   position: relative;
   z-index: 2;
-	max-width: 30%;
+	width: 85%;
+	text-align: center;
 }
 @keyframes load {
   0% {
@@ -36,4 +33,12 @@ body {
   position: absolute;
   z-index: 1;
   max-width: 10vh;
+}
+.container-fluid {
+	padding-top: 2em;
+}
+.menu {
+	width: 9vh;
+	height: 9vh;
+	background-color: $mustard;
 }
