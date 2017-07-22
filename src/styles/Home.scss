@@ -1,12 +1,12 @@
 // shape colors
 
-$teal: rgba(90, 250, 199, .70);
+$teal: rgba(90, 250, 199, .90);
 $sage: rgba(167, 172, 112, .90);
 $mustard: rgba(226, 180, 86, .90);
-$coral: rgba(255, 202, 202, .70);
+$coral: rgba(255, 202, 202, .90);
 $purple: rgba(92, 53, 109, .90);
 $burgundy: rgba(175, 67, 67, .90);
-$yellow: rgba(221,225,93,100);
+$yellow: rgba(221,225,93,.9);
 $turquoise: #008B95;
 $darkgray: rgb(121,121,121);
 
@@ -32,18 +32,18 @@ h3, p {
   position: absolute;
   background-color: $teal;
   z-index: 1;
-  left: 20%;
+  left: 26%;
   bottom: 22%;
-  width: 17%;
+  width: 15%;
   height: 46%;
   box-shadow: -5px 5px 4px -3px $darkgray;
 }
 .rectangle__pink {
   position: absolute;
   background-color: $coral;
-  width: 18%;
-  height: 400px;
-  right: 30%;
+  width: 20%;
+  height: 40%;
+  right: 24%;
   top: 24%;
   box-shadow: -5px 5px 4px -3px $darkgray;
 }
@@ -52,23 +52,31 @@ h3, p {
   border-radius: 50%;
   background-color: $burgundy;
   box-shadow: -5px 5px 4px -3px $darkgray;
-  max-width: 26%;
-  max-height: 15%;
-  height: 205px;
-  width: 147px;
-  left: 11%;
+  max-width: 31%;
+  max-height: 18%;
+  height: 274px;
+  width: 195px;
   top: 48%;
+}
+.circle-wrapper {
+  margin: -83%;
 }
 .wave {
   position: absolute;
-  top: 200px;
-  left: 34%;
-  height: 42%;
+  top: 27%;
+  left: 21%;
+  height: 46%;
+  width: 55%;
   transform: rotate(20deg);
+}
+.wave:hover {
+  color: red;
+  transform: skewX(-20px);
+  transition: all 3s 1s;
 }
 .devdesign {
   position: absolute;
   bottom: 3%;
   width: 85%;
-  left: 6%;
+  left: 7%;
 }

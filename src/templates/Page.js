@@ -23,13 +23,17 @@ export default class Page extends Component {
               </Col>
             </Row>
 
-            <Row>
-              <Col xs={12} lg={12}>
-        				<div className="content">
-        					{this.props.children}
-        				</div>
-              </Col>
-            </Row>
+            <Grid Fluid>
+              <Row>
+                <Col xs />
+                  <Col xs>
+            				<div className="content">
+            					{this.props.children}
+                    </div>
+                  </Col>
+                <Col xs />
+              </Row>
+            </Grid>
 
   			</div>
       </Grid>

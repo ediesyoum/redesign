@@ -8,25 +8,27 @@ export default class Home extends Component {
     return (
       <Page title="Home">
 
-        <Col xs={1} s={1} md={1} lg={1}>
-          <img className="wave" alt='Wave' src={Wave} />
+        <Row>
+          <Col xs>
+            <img className="wave" alt='Wave' src={Wave} />
 
-          <div className="rectangle__teal"></div>
+            <div className="rectangle__teal"></div>
 
-          <div className="rectangle__pink"></div>
+            <div className="rectangle__pink"></div>
 
-          <div className="circle"></div>
-        </Col>
+            <div className="circle-wrapper">
+              <div className="circle"></div>
+            </div>
+          </Col>
+        </Row>
 
-        <div className="devdesign">
-          <Row>
-            <Col xs={12} lg={12}>
-                <h3>web development + design</h3>
-            </Col>
-          </Row>
-
-        </div>
-
+        <Row>
+          <Col xs>
+            <div className="devdesign">
+              <h3>web development + design</h3>
+            </div>
+          </Col>
+        </Row>
       </Page>
     );
   }
