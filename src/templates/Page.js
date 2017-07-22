@@ -9,16 +9,14 @@ export default class Page extends Component {
     		<div>
   				<div className="title">{this.props.title}</div>
 
-            <Row around="xs">
-              <Col xs={1} lg={1}>
-        				<div className="header">
-                  <img className="logo" alt='eden syoum' src={logo} />
+            <Row between="xs">
+      				<div className="header">
+                <img className="logo" alt='eden syoum' src={logo} />
 
-                  <div className="logo-square"></div>
-        				</div>
-              </Col>
+                <div className="logo-square"></div>
+      				</div>
 
-              <Col xs={12} sm={3} md={2} lg={1}>
+              <Col md>
                 <Row end="xs">
                   <div className="menu"></div>
                 </Row>

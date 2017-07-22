@@ -2,17 +2,21 @@ $lightpurple: rgba(194,191,232,100);
 $lightblue: rgba(210,227,249,100);
 $lightyellow: rgba(232,227,228,100);
 
+$logotext: rgba(69,47,162,.9);
+
 body {
 	background-image: linear-gradient(90deg, $lightpurple, $lightblue 50%, $lightyellow 80%);
 }
 
 // logo styling
 
+.container {
+	padding-top: 2em;
+}
 .header {
   position: relative;
   z-index: 2;
-	width: 85%;
-	text-align: center;
+	margin-left: 1em;
 }
 @keyframes load {
   0% {
@@ -25,6 +29,8 @@ body {
 .logo-square {
   width: 9vh;
   height: 9vh;
+	padding: .5em;
+	border: 2px solid $logotext;
 	background-color: $yellow;
   box-shadow: 0px 4px 3px -3px $darkgray;
 	animation: 13s linear 65s infinite load;
@@ -32,6 +38,8 @@ body {
 .logo {
   position: absolute;
   z-index: 1;
+	top: 12%;
+	left: 8px;
   max-width: 10vh;
 }
 .container-fluid {
@@ -40,5 +48,6 @@ body {
 .menu {
 	width: 9vh;
 	height: 9vh;
+	margin-right: 2em;
 	background-color: $mustard;
 }
