@@ -216,12 +216,7 @@ module.exports = {
             },
           },
           {
-            loader: require.resolve('sass-loader'),
-            options: {
-              includePaths: [
-                require.resolve('bourbon-neat')
-              ]
-            }
+            loader: require.resolve('sass-loader')
           }
         ],
       },

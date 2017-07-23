@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../assets/img/logo.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import MotionMenu from '../../src';
+import Navigation from '../Navigation';
 
 export default class Page extends Component {
   render() {
@@ -19,9 +19,7 @@ export default class Page extends Component {
 
               <Col md>
                 <Row end="xs">
-                  <div className="menu">
-                    <p>Hi</p>
-                  </div>
+                  <Navigation />
                 </Row>
               </Col>
             </Row>
