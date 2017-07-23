@@ -19,12 +19,15 @@ export default class Home extends Component {
             <div className="circle-wrapper">
               <div className="circle"></div>
             </div>
+
+            <div className="triangle"></div>
           </Col>
         </Row>
 
         <Row>
           <Col xs>
             <div className="devdesign">
+
               <h3>web development + design</h3>
             </div>
           </Col>

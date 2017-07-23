@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from '../assets/img/logo.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import MotionMenu from '../../src';
+import FontAwesome from '~/../../react-fontawesome';
 
 export default class Page extends Component {
   render() {
@@ -18,20 +20,18 @@ export default class Page extends Component {
 
               <Col md>
                 <Row end="xs">
-                  <div className="menu"></div>
+                  <div className="menu">
+                    <p>Hi</p>
+                  </div>
                 </Row>
               </Col>
             </Row>
 
             <Grid Fluid>
               <Row>
-                <Col xs />
-                  <Col xs>
-            				<div className="content">
-            					{this.props.children}
-                    </div>
-                  </Col>
-                <Col xs />
+        				<div className="content">
+        					{this.props.children}
+                </div>
               </Row>
             </Grid>
 
