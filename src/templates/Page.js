@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from '../assets/img/logo.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import MotionMenu from '../../src';
-import FontAwesome from '~/../../react-fontawesome';
 
 export default class Page extends Component {
   render() {
