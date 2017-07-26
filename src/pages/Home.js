@@ -8,7 +8,11 @@ export default class Home extends Component {
       <Page title="Home">
 
         <Row>
-          <Col xs>
+          <Col xsOffset={1} xs={11}>
+            <div className="box1"></div>
+          </Col>
+          <Col xsOffset={11} xs={1}>
+            <div className="box2"></div>
           </Col>
         </Row>
 
