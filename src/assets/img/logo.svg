@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="106px" height="96px" viewBox="0 0 106 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="88px" height="119px" viewBox="0 0 88 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 3</title>
+    <title>Group 5</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="90" font-family="KingBasilLite-Regular, King Basil Lite" font-weight="normal">
-        <g id="Desktop-HD" transform="translate(-155.000000, -76.000000)">
-            <g id="Group-8" transform="translate(122.000000, 44.000000)">
-                <g id="Group-5" filter="url(#filter-1)" transform="translate(37.000000, 50.000000)">
-                    <g id="Group-3">
-                        <text id="S" letter-spacing="5.15" fill="#21028C">
-                            <tspan x="38.4119095" y="60">S</tspan>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="95.9502204" font-family="KingBasilLite-Regular, King Basil Lite" font-weight="normal">
+        <g id="Desktop-HD" transform="translate(-124.000000, -64.000000)" fill="#D3E0F4">
+            <g id="Group-8" transform="translate(73.000000, 58.000000)">
+                <g id="Group-3" transform="translate(88.433215, 93.013117) rotate(47.000000) translate(-88.433215, -93.013117) translate(27.933215, 28.513117)">
+                    <g id="Group-5" transform="translate(0.000000, 0.000000)">
+                        <text id="S" transform="translate(74.235661, 73.827352) rotate(-13.000000) translate(-74.235661, -73.827352) " letter-spacing="3.32155037">
+                            <tspan x="41.5829643" y="78.8273518">S</tspan>
                         </text>
-                        <text id="E" letter-spacing="5.16297102" fill="#20028C">
-                            <tspan x="0.0385144901" y="62.6100438">E</tspan>
+                        <text id="E" transform="translate(48.421485, 56.761637) rotate(-19.000000) translate(-48.421485, -56.761637) " letter-spacing="3.32991624">
+                            <tspan x="19.6985652" y="61.7616375">E</tspan>
                         </text>
                     </g>
                 </g>

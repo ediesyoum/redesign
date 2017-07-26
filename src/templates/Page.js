@@ -1,36 +1,44 @@
 import React, { Component } from 'react';
 import logo from '../assets/img/logo.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import Navigation from '../Navigation';
+// import Navigation from '../Navigation';
 
 export default class Page extends Component {
   render() {
     return (
-      <Grid Responsive>
+      <Grid>
     		<div>
   				<div className="title">{this.props.title}</div>
 
-            <Row between="xs">
-      				<div className="header">
-                <img className="logo" alt='eden syoum' src={logo} />
+          <Row start="xs">
+    				<div className="header">
+              <img className="logo" alt='eden syoum' src={logo} />
 
-                <div className="logo-square"></div>
-      				</div>
+              <div className="logo-square"></div>
+    				</div>
 
-              <Col md>
+            <Col xs>
+              <div className="navlinks a">
                 <Row end="xs">
-                  <Navigation />
+                  <Col>
+                    <a href="" target="_blank">home</a>
+                  </Col>
+                  <Col>
+                    <a href="" target="_blank">home</a>
+                  </Col>
+                  <Col>
+                    <a href="" target="_blank">home</a>
+                  </Col>
                 </Row>
-              </Col>
-            </Row>
+              </div>
+            </Col>
+          </Row>
 
-            <Grid Fluid>
-              <Row>
-        				<div className="content">
-        					{this.props.children}
-                </div>
-              </Row>
-            </Grid>
+          <Row>
+    				<div className="content">
+    					{this.props.children}
+            </div>
+          </Row>
 
   			</div>
       </Grid>

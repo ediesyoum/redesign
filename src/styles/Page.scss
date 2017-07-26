@@ -1,25 +1,14 @@
-$lightpurple: rgba(194,191,232,100);
-$lightblue: rgba(210,227,249,100);
-$lightyellow: rgba(232,227,228,100);
-
-$logotext: rgba(69,47,162,.9);
-
-body {
-	background-image: linear-gradient(90deg, $lightpurple, $lightblue 50%, $lightyellow 80%);
-}
-
 // logo styling
 
 .title {
 	display: none;
 }
 .container {
-	padding-top: 2em;
+	padding: 2em;
 }
 .header {
   position: relative;
   z-index: 2;
-	margin-left: 2em;
 }
 @keyframes load {
   0% {
@@ -30,20 +19,18 @@ body {
   }
 }
 .logo-square {
-  width: 9vh;
-  height: 9vh;
-	padding: .5em;
-	border: 2px solid $logotext;
-	background-color: $yellow;
-  box-shadow: 0px 4px 3px -3px $darkgray;
+  width: 7vh;
+  height: 7vh;
+	background-color: $logobg;
+  box-shadow: 0px 4px 3px -3px $shadow;
 	animation: 13s linear 65s infinite load;
 }
 .logo {
   position: absolute;
   z-index: 1;
-	top: 12%;
-	left: 8px;
-  max-width: 10vh;
+	left: 2px;
+	top: -10%;
+  max-width: 6vh;
 }
 .container-fluid {
 	padding-top: 2em;
@@ -54,7 +41,7 @@ body {
 	margin-right: 3em;
 	margin-top: 1em;
 	border-radius: .5em;
-	border: 2px solid $logotext;
+	border: 2px solid $logobg;
 	background-color: $yellow;
-	box-shadow: 0px 4px 3px -3px $darkgray;
+	box-shadow: 0px 4px 3px -3px $shadow;
 }
