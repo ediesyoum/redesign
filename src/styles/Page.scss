@@ -1,3 +1,35 @@
+
+body {
+	background-image: linear-gradient(-137deg, $paleblue 50%, $palepurple 80%);
+  font-family: 'Harbour', serif;
+  font-weight: lighter;
+  margin: 1em;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+h1, h3 {
+  font-size: 3vh;
+  color: $teal;
+}
+.navlinks {
+  a {
+    color: $dustyblue;
+    font-size: 3vh;
+    text-decoration: none;
+    padding: .5em;
+    margin: .25em;
+    border-radius: 1.25em;
+    &:hover, &:active {
+      background-color: lighten( $palepurple, 10 );
+      color: lighten( $teal, 10 );
+    	box-shadow: 0px 4px 3px -3px $shadow;
+      transition-duration: .5s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}
+
+
 // logo styling
 
 .title {
@@ -16,30 +48,28 @@
     transform: rotate(360deg);
   }
 }
-.logo-square {
-  width: 7vh;
-  height: 7vh;
-	background-color: $logobg;
-  box-shadow: 0px 4px 3px -3px $shadow;
-	animation: 13s linear 65s infinite load;
+.logo-bg {
+  width: 11vh;
+  height: 11vh;
+	background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+	border-radius: 4em;
+	box-shadow: 0px 4px 3px -3px $shadow;
+	animation: 6s linear 165s infinite load;
 }
 .logo {
   position: absolute;
   z-index: 1;
-	left: 2px;
-	top: -10%;
-  max-width: 6vh;
+	left: 5px;
+	top: -6%;
+  max-width: 9vh;
 }
-// .container-fluid {
-// 	padding-top: 2em;
+// .menu {
+// 	width: 5vh;
+// 	height: 5vh;
+// 	margin-right: 3em;
+// 	margin-top: 1em;
+// 	border-radius: .5em;
+// 	border: 2px solid $logobg;
+// 	background-color: $yellow;
+// 	box-shadow: 0px 4px 3px -3px $shadow;
 // }
-.menu {
-	width: 5vh;
-	height: 5vh;
-	margin-right: 3em;
-	margin-top: 1em;
-	border-radius: .5em;
-	border: 2px solid $logobg;
-	background-color: $yellow;
-	box-shadow: 0px 4px 3px -3px $shadow;
-}

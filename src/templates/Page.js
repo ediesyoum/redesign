@@ -14,7 +14,7 @@ export default class Page extends Component {
     				<div className="header">
               <img src={Logo} className="logo" alt='eden syoum' />
 
-              <div className="logo-square"></div>
+              <div className="logo-bg"></div>
     				</div>
 
             <Col xs>

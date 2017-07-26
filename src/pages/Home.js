@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
 import Page from '../templates/Page';
-import { Row, Col } from 'react-flexbox-grid';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default class Home extends Component {
   render() {
     return (
       <Page title="Home">
 
-        <Row>
-          <Col xsOffset={1} xs={11}>
-            <div className="box1"></div>
-          </Col>
-          <Col xsOffset={11} xs={1}>
-            <div className="box2"></div>
-          </Col>
-        </Row>
+        <Grid>
+          <Row>
+            <Col xs={12}>
+              <Row center="xs">
+                <Col xs className="box2" />
+                <Col xs className="devdesign">
+                    <h1>eden syoum</h1>
+                    <h3>web development + design</h3>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Grid>
 
-        <Row>
-          <Col xs>
-            <div className="devdesign">
-              <h3>web development + design</h3>
-            </div>
-          </Col>
-        </Row>
       </Page>
     );
   }

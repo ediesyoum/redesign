@@ -10,7 +10,6 @@ $shadow: rgba(0,0,0,.5);
 $trueblue: rgb(60,124,191);
 $dustyblue: rgb(205, 219, 245);
 
-
 // logo
 
 $logobg: rgb(64,30,124);
@@ -20,27 +19,3 @@ $logobg: rgb(64,30,124);
 
 $paleblue: rgb(57,64,113);
 $palepurple: rgb(66,58,114);
-
-// body styling
-
-body {
-	background-image: linear-gradient(-137deg, $paleblue 50%, $palepurple 80%);
-  font-family: 'Harbour', serif;
-  font-weight: lighter;
-  margin: 0px;
-  padding: 2em;
-}
-
-h1, h3 {
-  font-size: 3vh;
-  color: $teal;
-  text-align: center;
-}
-.navlinks {
-  a {
-    color: $dustyblue;
-    font-size: 2vh;
-    text-decoration: none;
-    padding: 1em;
-  };
-};
