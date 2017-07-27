@@ -7,8 +7,12 @@ body {
 	padding-left: 1em;
 	padding-top: 1em;
 }
-h1, h3 {
-  font-size: 3vh;
+h1 {
+	font-size: 4.5vw;
+	color: $sage;
+}
+h3 {
+  font-size: 3vw;
   color: $teal;
 }
 .navlinks {
