@@ -1,21 +1,60 @@
 import React, { Component } from 'react';
+import 'font-awesome/css/font-awesome.css';
+import './styles/App.scss';
+import Logo from './assets/img/logo.svg';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
-import 'font-awesome/css/font-awesome.css';
-import './styles/App.scss';
+// import Navigation from '../Navigation';
 
 class App extends Component {
   render() {
     return(
-      <Router>
-        <div>
-          <Route exact path="/" component={Home} />
-          <Route path="/About" component={About} />
-          <Route path="/Work" component={Work} />
-        </div>
-      </Router>
+      <div>
+        <Grid>
+  				<div className="title">{this.props.title}</div>
+
+          <Row start="xs">
+            <div className="header">
+              <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
+
+              <div className="logo-bg"></div>
+            </div>
+
+            <Col xs>
+              <div className="navlinks">
+                <Row end="xs">
+                  <Row>
+                    <div>
+                      <p><a href="/work" title="work">work</a></p>
+                    </div>
+                  </Row>
+                  <Row>
+                    <div>
+                      <p><a href="/about" title="about">about</a></p>
+                    </div>
+                  </Row>
+                  <Row>
+                    <div>
+                      <p><a href="" target="#">contact</a></p>
+                    </div>
+                  </Row>
+                </Row>
+              </div>
+            </Col>
+          </Row>
+        </Grid>
+
+        <Router>
+          <div>
+            <Route exact path="/" component={Home} />
+            <Route path="/About" component={About} />
+            <Route path="/Work" component={Work} />
+          </div>
+        </Router>
+      </div>
     );
   }
 }

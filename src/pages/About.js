@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Page from '../templates/Page';
+import Content from '../components/Content';
 
 export default class About extends Component {
   render() {
     return (
-      <Page title="About">
+      <Content title="About">
         <p>To put it plainly, Eden is a techie.</p>
 
         <div className="content">
@@ -12,7 +12,7 @@ export default class About extends Component {
 
           <p>Not only am I fascinated with web development and design, I enjoy staying current with the latest trends in the tech market, as well as exploring and trying out the newest hardware developments, fixes, updates and tweaks.</p>
         </div>
-      </Page>
+      </Content>
     );
   }
 }
