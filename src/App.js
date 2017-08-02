@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
+import Contact from './pages/Contact';
 // import Navigation from '../Navigation';
 
 class App extends Component {
@@ -38,7 +39,7 @@ class App extends Component {
                   </Row>
                   <Row>
                     <div>
-                      <p><a href="" target="#">contact</a></p>
+                      <p><a href="/contact" title="contact">contact</a></p>
                     </div>
                   </Row>
                 </Row>
@@ -52,6 +53,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/About" component={About} />
             <Route path="/Work" component={Work} />
+            <Route path="/Contact" component={Contact} />
           </div>
         </Router>
       </div>
