@@ -1,9 +1,32 @@
 
+@font-face {
+  font-family: 'Harbour';
+  font-weight: lighter;
+  font-style: normal;
+  src: local('Harbour'),  url(../assets/fonts/Harbour.woff2) format('woff2');
+  src: local('Harbour'),  url(../assets/fonts/Harbour.woff) format('woff');
+  src: url('../assets/fonts/Harbour.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'KingBasilLite-Regular';
+  font-weight: lighter;
+  font-style: normal;
+  src: local('KingBasilLite-Regular'),  url(../assets/fonts/King-Basil-Lite.woff2) format('woff2');
+}
+.name {
+  margin-bottom: -5%;
+}
 .shapes {
   position: relative;
   width: 53vh;
   max-width: 58vh;
   top: 12vw;
+}
+.shapes-sm {
+  position: absolute;
+  width: 50vh;
+  top: 16vh;
+  left: 6vw;
 }
 .premise {
   position: relative;
@@ -13,7 +36,9 @@
   top: 10vw;
 }
 .premise-sm {
-  @extend .premise;
-  position: relative;
-  font-size: 3em;
+  position: absolute;
+  width: 45vh;
+  margin: 1em;
+  left: 7vh;
+  bottom: 3%;
 }

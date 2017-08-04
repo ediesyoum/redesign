@@ -8,28 +8,40 @@ export default class Home extends Component {
   render() {
     return (
       <Content title="Home">
-        <Grid>
-          <Row>
 
-            <MediaQuery size="desktop">
+        <MediaQuery size="desktop">
+          <Grid>
+            <Row>
               <Col xs={12}>
                 <Row bottom="xs">
                   <Col xs>
                     <img src={Shapes} className="shapes" alt="design & development" />
                   </Col>
                   <Col xs className="premise">
-                      <h1>eden syoum</h1>
-                      <h3>web development + design</h3>
+                    <h1>eden syoum</h1>
+                    <h3>web development + design</h3>
                   </Col>
                 </Row>
               </Col>
-            </MediaQuery>
+            </Row>
+          </Grid>
+        </MediaQuery>
 
-            <MediaQuery size="mobile">
-            </MediaQuery>
+        <MediaQuery size="mobile">
+          <Grid>
+            <Row>
+              <img src={Shapes} className="shapes-sm" alt="design & development" />
+            </Row>
 
-          </Row>
-        </Grid>
+            <Row center="xs" className="premise-sm">
+              <h1 className="name">eden syoum</h1>
+              <h3>web development + design</h3>
+            </Row>
+
+          </Grid>
+        </MediaQuery>
+
+
       </Content>
     );
   }

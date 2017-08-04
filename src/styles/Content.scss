@@ -1,11 +1,11 @@
 body {
 	background-image: linear-gradient($paleblue -68%, $palepurple 183%);
-  font-family: 'Harbour', serif;
-  font-weight: lighter;
 	margin-left: 0px;
+	overflow-x: hidden;
+  font-family: 'Harbour';
 }
 h1 {
-	font-size: 5vh;
+	font-size: 6.25vh;
 	color: $sage;
 }
 h3 {
