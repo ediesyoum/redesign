@@ -12,3 +12,8 @@
   text-align: right;
   top: 10vw;
 }
+.premise-sm {
+  @extend .premise;
+  position: relative;
+  font-size: 3em;
+}
