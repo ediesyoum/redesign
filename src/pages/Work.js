@@ -31,7 +31,7 @@ export default class Work extends Component {
               <Grid>
                 <Row>
                   <Col start="xs" className="box2"/>
-                  <Col end="xs" className="box">
+                  <Col end="x s" className="box">
                     <div>Hi I live in here</div>
                   </Col>
                 </Row>
@@ -50,7 +50,7 @@ export default class Work extends Component {
               <Grid>
                 <Row>
                   <Col end="xs" className="box">
-                    <div>Hi I live in here</div>
+                    <div>Hi I live over there</div>
                   </Col>
                   <Col start="xs" className="box2"/>
                 </Row>

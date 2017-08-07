@@ -5,12 +5,13 @@ export default class Contact extends Component {
   render() {
     return (
       <Content title="Contact">
-        <form action="https://formspree.io/blablabla"
-              method="POST">
-            <input type="text" name="name" />
-            <input type="email" name="_replyto" />
-            <input type="submit" value="Send" />
+
+        <form method="POST" action="http://formspree.io/me@edencod.es">
+          <input type="email" name="email" placeholder="Your email"></input>
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
         </form>
+
       </Content>
     );
   }

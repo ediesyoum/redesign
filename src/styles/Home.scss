@@ -11,7 +11,8 @@
   font-family: 'KingBasilLite-Regular';
   font-weight: lighter;
   font-style: normal;
-  src: local('KingBasilLite-Regular'),  url(../assets/fonts/King-Basil-Lite.woff2) format('woff2');
+  src: url(../assets/fonts/King-Basil-Lite.woff2) format('woff2');
+  src: url('../assets/fonts/King-Basil-Lite.otf') format('opentype');
 }
 .name {
   margin-bottom: -5%;
