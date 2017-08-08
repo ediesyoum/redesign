@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/media-query.scss';
 
 const MediaQuery = (props) => {
@@ -15,7 +16,7 @@ MediaQuery.defaultProps = {
 }
 
 MediaQuery.propTypes = {
-    size: React.PropTypes.oneOf(['mobile', 'desktop'])
+    size: PropTypes.oneOf(['mobile', 'desktop'])
 }
 
 export default MediaQuery;
