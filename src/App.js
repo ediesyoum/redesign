@@ -3,7 +3,7 @@ import 'font-awesome/css/font-awesome.css';
 import './styles/App.scss';
 import Logo from './assets/img/logo.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
@@ -29,7 +29,9 @@ class App extends Component {
                 <Row end="xs">
                   <Row>
                     <div>
-                      <p><a href="/work" title="work">work</a></p>
+
+                    <p><a href="/work">work</a></p>
+
                     </div>
                   </Row>
                   <Row>
@@ -51,9 +53,9 @@ class App extends Component {
         <Router>
           <div>
             <Route exact path="/" component={Home} />
-            <Route path="/About" component={About} />
-            <Route path="/Work" component={Work} />
-            <Route path="/Contact" component={Contact} />
+            <Route path="/about" component={About} />
+            <Route path="/work" component={Work} />
+            <Route path="/contact" component={Contact} />
           </div>
         </Router>
       </div>

@@ -3,6 +3,7 @@ import Content from '../components/Content';
 import Parallax from 'react-springy-parallax';
 import Noise from '../assets/img/noise.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import ImageZoom from 'react-medium-image-zoom';
 
 export default class Work extends Component {
   render() {
@@ -25,12 +26,29 @@ export default class Work extends Component {
 
             <Parallax.Layer
               offset={.2}
-              speed={1}
+              speed={.7}
               style={{ backgroundColor: '#401E7C' }}>
               <Grid>
                 <Row>
-                  <Col start="xs" className="box2"/>
-                  <Col end="x s" className="box">
+                  <Col start="xs" className="box2">
+                    <div>
+
+                      <ImageZoom
+                        image={{
+                          src: '/projects/jot-it.svg',
+                          alt: 'Jot It App',
+                          style: { width: '50vh' }
+                        }}
+                        zoomImage={{
+                          src: '/projects/02-jot-it.png',
+                          alt: 'Jot It',
+                          style: { background: '#000000' }
+                        }}
+                      />
+
+                    </div>
+                  </Col>
+                  <Col end="xs" className="box">
                     <div>Hi I live in here</div>
                   </Col>
                 </Row>
@@ -38,8 +56,8 @@ export default class Work extends Component {
             </Parallax.Layer>
 
             <Parallax.Layer
-              offset={.8}
-              speed={.5}
+              offset={.87}
+              speed={.7}
               style={{ backgroundColor: 'blue' }}>
               <Grid>
                 <Row>
@@ -52,8 +70,8 @@ export default class Work extends Component {
             </Parallax.Layer>
 
             <Parallax.Layer
-              offset={1}
-              speed={.4}
+              offset={1.01}
+              speed={.6}
               style={{ backgroundColor: '#008B95' }}>
               <Grid>
                 <Row>
@@ -67,7 +85,7 @@ export default class Work extends Component {
 
             <Parallax.Layer
               offset={1.7}
-              speed={.4}
+              speed={.6}
               style={{ backgroundColor: '#3C7CBF' }}>
               <Grid>
                 <Row>

@@ -5150,6 +5150,10 @@ react-fontawesome:
   dependencies:
     prop-types "^15.5.6"
 
+react-medium-image-zoom:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-1.0.4.tgz#63285e6d19c7f50108101d55b136885adf46e9b2"
+
 react-motion-menu:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/react-motion-menu/-/react-motion-menu-0.4.4.tgz#b4c2d4f0c66ccf51a22dcd14aba1fb9c250ebda4"
