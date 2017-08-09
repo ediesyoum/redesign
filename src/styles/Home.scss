@@ -47,10 +47,9 @@
   background-color: $palepurple;
 }
 .portfolio-img-01 {
-  box-shadow: rgb(0, 0, 0) 0px 4px 27px -3px;
-  position: absolute;
+  box-shadow: rgb(0, 0, 0) 0px 4px 27px 3px;
   top: 12vh;
   left: 20vw;
-  border-radius: 20px;
-  width: 35vh;
+  border-radius: 1em;
+  margin: 7vh;
 }

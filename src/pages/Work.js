@@ -30,13 +30,14 @@ export default class Work extends Component {
               style={{ backgroundColor: '#401E7C' }}>
               <Grid>
                 <Row>
-                  <Col start="xs" className="box2">
-                    <div>
+                  <Col start="xs">
+
 
                       <ImageZoom
                         image={{
-                          src: '/projects/jot-it.svg',
+                          src: '/projects/02-jot-it.png',
                           alt: 'Jot It App',
+                          className: 'portfolio-img-01',
                           style: { width: '50vh' }
                         }}
                         zoomImage={{
@@ -46,7 +47,7 @@ export default class Work extends Component {
                         }}
                       />
 
-                    </div>
+
                   </Col>
                   <Col end="xs" className="box">
                     <div>Hi I live in here</div>
