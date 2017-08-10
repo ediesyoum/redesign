@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import MediaQuery from './components/MediaQuery';
 // import { RouteTransition } from 'react-router-transition';
 
 class App extends Component {
@@ -19,9 +20,23 @@ class App extends Component {
 
           <Row start="xs">
             <div className="header">
-              <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
 
-              <div className="logo-bg"></div>
+              <MediaQuery size="desktop">
+
+                <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
+
+                <div className="logo-bg"></div>
+
+              </MediaQuery>
+
+              <MediaQuery size="mobile">
+
+                <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo-sm" alt='Eden Syoum - Development & Design' /></a>
+
+                <div className="logo-bg-sm"></div>
+
+              </MediaQuery>
+
             </div>
 
             <Col xs>

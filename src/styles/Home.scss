@@ -9,9 +9,9 @@
 }
 .shapes-sm {
   position: absolute;
-  width: 50vh;
+  width: 39vh;
   top: 16vh;
-  left: 6vw;
+  left: 11vh;
 }
 .premise {
   position: relative;
@@ -21,10 +21,9 @@
 }
 .premise-sm {
   position: absolute;
-  width: 45vh;
-  margin: 1em;
-  left: 7vh;
-  bottom: 3%;
+  min-width: 45vw;
+  left: 5vw;
+  bottom: 15%;
 }
 .page-current {
   background-color: $palepurple;

@@ -1,0 +1,21 @@
+.send-btn {
+  @extend .form-email;
+  top: 42vh;
+}
+.form-email {
+  font-family: 'Eczar', serif;
+  width: 47vh;
+  font-size: 1.5em;
+  color: $dustyblue;
+
+  position: absolute;
+  border: 0px;
+  border-radius: 1em;
+  padding: 5vh;
+  background-color: lighten($linkbg, 20%);
+  box-shadow: 0px 4px 3px -1px rgba(0, 0, 0, 0.5);
+}
+.form-message {
+  @extend .form-email;
+  top: 27vh;
+}

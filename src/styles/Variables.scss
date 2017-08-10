@@ -28,9 +28,15 @@ $palepurple: rgb(66,58,114);
   src: local('Harbour'), url(../assets/fonts/Harbour.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'KingBasilLite-Regular';
+  font-family: 'King-Basil-Lite';
   font-weight: lighter;
   font-style: normal;
   src: local('KingBasilLite-Regular'), url(../assets/fonts/King-Basil-Lite.woff2) format('woff2');
   src: local('KingBasilLite-Regular'), url(../assets/fonts/King-Basil-Lite.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Eczar';
+  font-weight: lighter;
+  font-style: normal;
+  src: local('Eczar'),  url(../assets/fonts/Eczar.ttf) format('truetype');
 }

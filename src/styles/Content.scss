@@ -16,11 +16,11 @@ h3 {
 .navlinks {
 	padding: .8em;
   a {
-		margin: .5em;
+		margin: 1.4vh;
     color: $dustyblue;
 		background-color: $linkbg;
     font-size: 3vh;
-		padding: .5em;
+		padding: 1vh;
 		border-radius: 1em;
     text-decoration: none;
     &:hover {
@@ -64,12 +64,20 @@ h3 {
 	box-shadow: 0px 4px 3px -3px $shadow;
 	animation: 6s linear 165s infinite load;
 }
+.logo-bg-sm {
+	@extend .logo-bg;
+	left: 5vh;
+}
 .logo {
   position: absolute;
   z-index: 1;
 	left: 2.5vh;
 	top: 1vh;
   max-width: 9vh;
+}
+.logo-sm {
+	@extend .logo;
+	left: 5.5vh;
 }
 // .menu {
 // 	width: 5vh;

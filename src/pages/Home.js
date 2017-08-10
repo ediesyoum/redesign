@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Content from '../components/Content';
 import Shapes from '../assets/img/shapes.svg';
+import ShapesMobile from '../assets/img/shapes-mobile.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import MediaQuery from '../components/MediaQuery';
 
@@ -30,7 +31,7 @@ export default class Home extends Component {
         <MediaQuery size="mobile">
           <Grid>
             <Row>
-              <img src={Shapes} className="shapes-sm" alt="design & development" />
+              <img src={ShapesMobile} className="shapes-sm" alt="design & development" />
             </Row>
 
             <Row center="xs" className="premise-sm">
