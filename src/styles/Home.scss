@@ -1,27 +1,11 @@
-
-@font-face {
-  font-family: 'Harbour';
-  font-weight: lighter;
-  font-style: normal;
-  src: local('Harbour'),  url(../assets/fonts/Harbour.woff2) format('woff2');
-  src: local('Harbour'),  url(../assets/fonts/Harbour.woff) format('woff');
-  src: url('../assets/fonts/Harbour.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'KingBasilLite-Regular';
-  font-weight: lighter;
-  font-style: normal;
-  src: url(../assets/fonts/King-Basil-Lite.woff2) format('woff2');
-  src: url('../assets/fonts/King-Basil-Lite.otf') format('opentype');
-}
 .name {
   margin-bottom: -5%;
 }
 .shapes {
-  position: relative;
+  position: absolute;
   width: 53vh;
   max-width: 58vh;
-  top: 12vw;
+  top: 26vh;
 }
 .shapes-sm {
   position: absolute;
@@ -31,10 +15,9 @@
 }
 .premise {
   position: relative;
-  width: 40vh;
-  min-width: 44vh;
+  min-width: 50vh;
   text-align: right;
-  top: 10vw;
+  top: 54vh;
 }
 .premise-sm {
   position: absolute;
@@ -48,8 +31,7 @@
 }
 .portfolio-img-01 {
   box-shadow: rgb(0, 0, 0) 0px 4px 27px 3px;
-  top: 12vh;
-  left: 20vw;
+  max-width: 65vh;
+  margin: 4vw;
   border-radius: 1em;
-  margin: 7vh;
 }

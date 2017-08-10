@@ -38,7 +38,7 @@ export default class Work extends Component {
                           src: '/projects/02-jot-it.png',
                           alt: 'Jot It App',
                           className: 'portfolio-img-01',
-                          style: { width: '50vh' }
+                          style: { width: '65vh' }
                         }}
                         zoomImage={{
                           src: '/projects/02-jot-it.png',
