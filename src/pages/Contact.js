@@ -11,8 +11,14 @@ export default class Contact extends Component {
           <Grid>
             <Col xs={12}>
               <Row center="xs">
-                <input type="email" name="email"
+                <Col end="xs">
+                  <input type="name" name="name" placeholder="Your name"></input>
+                </Col>
+
+                <Col end="xs">
+                  <input type="email" name="email"
                 className="form-email" placeholder="Your email"></input>
+                </Col>
               </Row>
             </Col>
             <Col xs={12}>

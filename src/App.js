@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './styles/App.scss';
-import Logo from './assets/img/logo.svg';
+import Logo from './assets/img/logo-ec.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -25,21 +25,17 @@ class App extends Component {
 
                 <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
 
-                <div className="logo-bg"></div>
-
               </MediaQuery>
 
               <MediaQuery size="mobile">
 
                 <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo-sm" alt='Eden Syoum - Development & Design' /></a>
 
-                <div className="logo-bg-sm"></div>
-
               </MediaQuery>
 
             </div>
 
-            <Col xs>
+            <Col xs className="header_clear">
               <div className="navlinks">
                 <Row end="xs">
                   <Row>
