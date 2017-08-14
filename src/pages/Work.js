@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Content from '../components/Content';
+import Project from '../components/Project';
 import Parallax from 'react-springy-parallax';
 import Noise from '../assets/img/noise.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import ImageZoom from 'react-medium-image-zoom';
 
 export default class Work extends Component {
   render() {
@@ -24,51 +24,9 @@ export default class Work extends Component {
               <div className='work-header'>work.</div>
             </Parallax.Layer>
 
-            <Parallax.Layer
-              offset={.2}
-              speed={.7}
-              style={{ backgroundColor: '#401E7C' }}>
-              <Grid>
-                <Row>
-                  <Col start="xs">
-
-
-                      <ImageZoom
-                        image={{
-                          src: '/projects/02-jot-it.png',
-                          alt: 'Jot It App',
-                          className: 'portfolio-img-01',
-                          style: { width: '65vh' }
-                        }}
-                        zoomImage={{
-                          src: '/projects/02-jot-it.png',
-                          alt: 'Jot It',
-                          style: { background: '#000000' }
-                        }}
-                      />
-
-
-                  </Col>
-                  <Col end="xs" className="box">
-                    <div>Hi I live in here</div>
-                  </Col>
-                </Row>
-              </Grid>
-            </Parallax.Layer>
-
-            <Parallax.Layer
-              offset={.87}
-              speed={.7}
-              style={{ backgroundColor: 'blue' }}>
-              <Grid>
-                <Row>
-                  <Col end="xs" className="box">
-                    <div>Hi I live over there</div>
-                  </Col>
-                  <Col start="xs" className="box2"/>
-                </Row>
-              </Grid>
-            </Parallax.Layer>
+            <Project name="jot-it" >
+              Hi I live in here.
+            </Project>
 
             <Parallax.Layer
               offset={1.01}
