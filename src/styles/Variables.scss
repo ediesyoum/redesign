@@ -2,7 +2,7 @@
 
 $teal: rgba(90, 250, 199, .90);
 $sage: rgba(167, 172, 112, .90);
-$mustard: rgba(226, 180, 86, .90);
+$mustard: rgb(210, 180, 90);
 $brightpurple: rgb(194,83,206);
 $burgundy: rgba(175, 67, 67, .90);
 $yellow: rgb(221,225,93);
@@ -10,6 +10,7 @@ $shadow: rgba(0,0,0,.5);
 $trueblue: rgb(60,124,191);
 $dustyblue: rgb(205, 219, 245);
 $linkbg: rgb(43,23,99);
+$burger: rgb(101,117,255);
 
 // logo
 
@@ -35,8 +36,8 @@ $palepurple: rgb(66,58,114);
   src: local('KingBasilLite-Regular'), url(../assets/fonts/King-Basil-Lite.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Eczar';
+  font-family: 'Renasci';
   font-weight: lighter;
   font-style: normal;
-  src: local('Eczar'),  url(../assets/fonts/Eczar.ttf) format('truetype');
+  src: local('Renasci-Regular'),  url(../assets/fonts/Renasci.otf) format('opentype');
 }

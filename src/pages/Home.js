@@ -4,6 +4,7 @@ import Shapes from '../assets/img/shapes.svg';
 import ShapesMobile from '../assets/img/shapes-mobile.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import MediaQuery from '../components/MediaQuery';
+import ReactRotatingText from 'react-rotating-text';
 
 export default class Home extends Component {
   render() {
@@ -14,13 +15,28 @@ export default class Home extends Component {
           <Grid>
             <Row>
               <Col xs={12}>
+
                 <Row bottom="xs">
+
                   <Col xs>
                     <img src={Shapes} className="shapes" alt="design & development" />
                   </Col>
+
                   <Col xs className="premise">
-                    <h1>eden syoum</h1>
-                    <h3>web development + design</h3>
+                    <h1>edencod . es : </h1>
+
+                    <ReactRotatingText
+                      items={[' Front End Web Developer ',
+                        ' Web Artisan ',
+                        ' User Interface Designer ',
+                        ' Graphic Design Hobbyist ',
+                        ' Creative Web Developer '
+                      ]}
+                      typingInterval={80}
+                      color={'62F9BB'}
+                      className={'rotatewords'}
+                      />
+
                   </Col>
                 </Row>
               </Col>
@@ -35,8 +51,19 @@ export default class Home extends Component {
             </Row>
 
             <Row center="xs" className="premise-sm">
-              <h1 className="name">eden syoum</h1>
-              <h3>web development + design</h3>
+              <h1>edencod . es : </h1>
+
+              <ReactRotatingText
+                items={[' Front End Web Developer ',
+                  ' Web Artisan ',
+                  ' User Interface Designer ',
+                  ' Graphic Designer ',
+                  ' Creative Web Developer '
+                ]}
+                typingInterval={80}
+                color={'62F9BB'}
+                className={'rotatewords-sm'}
+                />
             </Row>
 
           </Grid>

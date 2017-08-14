@@ -9,57 +9,74 @@ import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
 import MediaQuery from './components/MediaQuery';
-// import { RouteTransition } from 'react-router-transition';
+import { slide as Menu } from 'react-burger-menu';
+
+const isMenuOpen = (state) => {
+  return state.isOpen;
+};
 
 class App extends Component {
   render() {
     return(
       <div>
-        <Grid>
   				<div className="title">{this.props.title}</div>
+                <div className="header">
 
-          <Row start="xs">
-            <div className="header">
+                  <MediaQuery size="desktop">
+                    <Grid>
+                      <Row start="xs">
+                        <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
 
-              <MediaQuery size="desktop">
+                        <Col xs className="header_clear">
+                          <div className="navlinks">
 
-                <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
+                            <Row end="xs">
+                              <Row>
+                                <div>
+                                <p><a href="/work">work</a></p>
+                                </div>
+                              </Row>
+                              <Row>
+                                <div>
+                                  <p><a href="/about" title="about">about</a></p>
+                                </div>
+                              </Row>
+                              <Row>
+                                <div>
+                                  <p><a href="/contact" title="contact">contact</a></p>
+                                </div>
+                              </Row>
+                            </Row>
 
-              </MediaQuery>
+                          </div>
+                        </Col>
 
-              <MediaQuery size="mobile">
+                      </Row>
+                    </Grid>
+                  </MediaQuery>
 
-                <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo-sm" alt='Eden Syoum - Development & Design' /></a>
+                  <MediaQuery size="mobile">
+                    <Grid>
+                      <Row start="xs">
+                        <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo-sm" alt='Eden Syoum - Development & Design' /></a>
+                      </Row>
 
-              </MediaQuery>
+                      <Menu
+                        right={true}
+                        width={'70%'}
+                        className="navlinks a"
+                        onStateChange={ isMenuOpen }
+                        isOpen={false}>
+                        <a href="/">Home</a>
+                        <a href="/about">About</a>
+                        <a href="/work">Work</a>
+                        <a href="/contact">Contact</a>
+                      </Menu>
 
-            </div>
+                    </Grid>
+                  </MediaQuery>
 
-            <Col xs className="header_clear">
-              <div className="navlinks">
-                <Row end="xs">
-                  <Row>
-                    <div>
-
-                    <p><a href="/work">work</a></p>
-
-                    </div>
-                  </Row>
-                  <Row>
-                    <div>
-                      <p><a href="/about" title="about">about</a></p>
-                    </div>
-                  </Row>
-                  <Row>
-                    <div>
-                      <p><a href="/contact" title="contact">contact</a></p>
-                    </div>
-                  </Row>
-                </Row>
-              </div>
-            </Col>
-          </Row>
-        </Grid>
+                </div>
 
         <Router>
           <div>

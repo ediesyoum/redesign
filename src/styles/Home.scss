@@ -10,20 +10,20 @@
 .shapes-sm {
   position: absolute;
   width: 36vh;
-  top: 21vh;
+  top: 15vh;
   left: 13.5vh;
 }
 .premise {
   position: relative;
   min-width: 50vh;
   text-align: right;
-  top: 54vh;
+  top: 38vh;
 }
 .premise-sm {
   position: absolute;
-  min-width: 45vw;
-  left: 5vw;
-  bottom: 15%;
+  max-width: 65vw;
+  left: 20%;
+  bottom: 23%;
 }
 .page-current {
   background-color: $palepurple;
@@ -33,4 +33,40 @@
   max-width: 65vh;
   margin: 4vw;
   border-radius: 1em;
+}
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  color: $mustard;
+  font-size: 6vh;
+}
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.rotatewords {
+	font-family: 'Renasci';
+	font-size: 4em;
+	font-weight: 200;
+	padding:0px;
+	margin:0px;
+	line-height: 0vh;
+  color: $mustard;
+  text-decoration: none;
+}
+.rotatewords-sm {
+	font-family: 'Renasci';
+	font-size: 2.5em;
+	font-weight: 200;
+	padding:0px;
+	margin:0px;
+	line-height: 0vh;
+  color: $mustard;
+  text-decoration: none;
 }

@@ -4,31 +4,21 @@ body {
 	background-color: darken($paleblue, 10%);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	margin-left: 0px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-  font-family: 'Harbour';
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+  font-family: 'Harbour', serif;
 }
 h1 {
-	font-size: 6.25vh;
-	color: $sage;
+	font-family: 'Renasci', sans-serif;
+	font-size: 13vh;
+	font-weight: lighter;
+	line-height: 6vh;
+	color: $teal;
 }
 h3 {
   font-size: 3vh;
-  color: $teal;
 }
 .title {
 	display: none;
 }
-
-
-// .menu {
-// 	width: 5vh;
-// 	height: 5vh;
-// 	margin-right: 3em;
-// 	margin-top: 1em;
-// 	border-radius: .5em;
-// 	border: 2px solid $logobg;
-// 	background-color: $yellow;
-// 	box-shadow: 0px 4px 3px -3px $shadow;
-// }
