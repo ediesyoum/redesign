@@ -51,7 +51,7 @@ export default class Home extends Component {
             </Row>
 
             <Row center="xs" className="premise-sm">
-              <h1>edencod . es : </h1>
+              <div className="mobile-h1">edencod . es : </div>
 
               <ReactRotatingText
                 items={[' Front End Web Developer ',
