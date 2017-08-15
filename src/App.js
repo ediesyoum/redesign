@@ -58,21 +58,20 @@ class App extends Component {
                     </Row>
                   </Col>
 
-                  <Menu
-                    right={true}
-                    width={'70%'}
-                    className={"navlinks a"}
-                    onStateChange={ isMenuOpen }
-                    isOpen={false}>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/work">Work</a>
-                    <a href="/contact">Contact</a>
-                  </Menu>
-
                   <Col xs={12}>
                     <Row end="xs">
-
+                      <Menu
+                        burgerButtonClassName={ "bm-burger-button-sm" }
+                        right={true}
+                        width={'70%'}
+                        className={"navlinks a"}
+                        onStateChange={ isMenuOpen }
+                        isOpen={false}>
+                        <a href="/">Home</a>
+                        <a href="/about">About</a>
+                        <a href="/work">Work</a>
+                        <a href="/contact">Contact</a>
+                      </Menu>
                     </Row>
                   </Col>
                 </Row>

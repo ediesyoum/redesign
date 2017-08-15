@@ -5,6 +5,10 @@
   height: 37px;
   top: 4vh;
 }
+.bm-burger-button-sm {
+  @extend .bm-burger-button;
+  right: 5%;
+}
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
