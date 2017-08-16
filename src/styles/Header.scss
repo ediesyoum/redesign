@@ -10,7 +10,7 @@
 	padding: .8em;
 	margin: 1.5vh;
   color: #f5e8cd;
-	background-color: $linkbg;
+	background-color: lighten($linkbg, 5%);
   font-size: 3vh;
 	padding: 1.2vh;
 	border-radius: .5em;

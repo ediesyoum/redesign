@@ -11,37 +11,29 @@ export default class Home extends Component {
     return (
       <Content title="Home">
 
+
         <MediaQuery size="desktop">
-          <Grid>
-            <Row>
-              <Col xs={12}>
 
-                <Row bottom="xs">
+          <div>
+            <img src={Shapes} className="shapes" alt="design & development" />
+          </div>
 
-                  <Col xs>
-                    <img src={Shapes} className="shapes" alt="design & development" />
-                  </Col>
+          <div className="premise">
+            <h1>edencod.es : </h1>
 
-                  <Col xs className="premise">
-                    <h1>edencod . es : </h1>
+            <ReactRotatingText
+              items={[' Front End Web Developer ',
+                ' Web Artisan ',
+                ' User Interface Designer ',
+                ' Graphic Design Hobbyist ',
+                ' Creative Web Developer '
+              ]}
+              typingInterval={80}
+              color={'62F9BB'}
+              className={'rotatewords'}
+              />
+          </div>
 
-                    <ReactRotatingText
-                      items={[' Front End Web Developer ',
-                        ' Web Artisan ',
-                        ' User Interface Designer ',
-                        ' Graphic Design Hobbyist ',
-                        ' Creative Web Developer '
-                      ]}
-                      typingInterval={80}
-                      color={'62F9BB'}
-                      className={'rotatewords'}
-                      />
-
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Grid>
         </MediaQuery>
 
         <MediaQuery size="mobile">
