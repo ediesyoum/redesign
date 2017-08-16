@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
-import Parallax from 'react-springy-parallax';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import ImageZoom from 'react-medium-image-zoom';
 
+
 export default class Project extends Component {
+  componentDidMount() {
+          console.log('Hi');
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+  handleScroll() {
+    console.log(document.documentElement.scrollTop + 'px');
+  }
+
   render() {
+    console.log('I was triggered during render');
     if (this.props.position === 'left') {
     } else {
       return(
-        <Parallax.Layer
-          offset={this.props.offset}
-          speed={this.props.speed}
-          style={{ backgroundColor: '#401E7C' }}>
           <Grid>
             <Row>
-
               <Col start="xs">
                 <ImageZoom
                   image={{
@@ -37,7 +44,6 @@ export default class Project extends Component {
 
             </Row>
           </Grid>
-        </Parallax.Layer>
       );
     }
   }

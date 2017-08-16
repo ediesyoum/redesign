@@ -20,8 +20,8 @@ export default class Home extends Component {
               <ReactRotatingText
                 items={[' Front End Web Developer ',
                   ' Web Artisan ',
-                  ' User Interface Designer ',
-                  ' Graphic Designer ',
+                  ' UI Enthusiast ',
+                  ' Graphic Design ',
                   ' Creative Web Developer '
                 ]}
                 typingInterval={80}
@@ -38,13 +38,13 @@ export default class Home extends Component {
               </Row>
 
               <Row center="xs" className="premise-sm">
-                <div className="mobile-h1">edencod . es : </div>
+                <div className="mobile-h1">edencod.es : </div>
 
                 <ReactRotatingText
                   items={[' Front End Web Developer ',
                     ' Web Artisan ',
-                    ' User Interface Designer ',
-                    ' Graphic Designer ',
+                    ' UI Enthusiast ',
+                    ' Graphic Design ',
                     ' Creative Web Developer '
                   ]}
                   typingInterval={80}
