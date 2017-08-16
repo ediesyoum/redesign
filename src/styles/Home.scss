@@ -6,25 +6,27 @@
   width: 53vh;
   max-width: 58vh;
   top: 26vh;
+  left: 10%;
 }
 .shapes-sm {
   position: absolute;
-  width: 36vh;
-  top: 15vh;
-  left: 13.5vh;
+  width: 72%;
+  top: 15%;
+  left: 13%;
 }
 .premise {
-  position: relative;
+  position: absolute;
   min-width: 50vh;
   text-align: right;
-  top: 38vh;
+  bottom: 14%;
+  right: 10%;
 }
 .premise-sm {
   position: absolute;
-  max-width: 60vw;
-  min-width: 63vw;
+  max-width: 60%;
+  min-width: 63%;
   left: 20%;
-  bottom: 23%;
+  top: 111vw;
 }
 .page-current {
   background-color: $palepurple;
@@ -53,7 +55,7 @@
 }
 .rotatewords {
 	font-family: 'Renasci';
-	font-size: 4em;
+	font-size: 6vw;
 	font-weight: 200;
 	padding:0px;
 	margin:0px;
@@ -63,7 +65,7 @@
 }
 .rotatewords-sm {
 	font-family: 'Renasci';
-	font-size: 2.5em;
+	font-size: 12vw;
 	font-weight: 200;
 	padding:0px;
 	margin:0px;

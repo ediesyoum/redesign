@@ -11,14 +11,14 @@ body {
 }
 h1 {
 	font-family: 'Renasci', sans-serif;
-	font-size: 7em;
+	font-size: 9.5vw;
 	font-weight: lighter;
 	line-height: 3vh;
 	color: $teal;
 }
 .mobile-h1 {
 	@extend h1;
-	font-size: 4.7em;
+	font-size: 20vw;
 	line-height: 20vh;
 }
 h3 {
