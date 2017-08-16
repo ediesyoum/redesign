@@ -20,34 +20,23 @@ class App extends Component {
     return(
           <div>
             <div className="header">
-
               <MediaQuery size="desktop">
-                <Grid>
-                  <Row>
-                    <Col xs={12}>
-                      <Row start="xs">
-                        <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
-                      </Row>
-                    </Col>
+                <div>
+                  <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className='logo' alt='Eden Syoum - Development & Design' /></a>
+                </div>
 
-                    <Col xs={12}>
-                      <Row end="xs">
-                        <Menu
-                          right={true}
-                          width={'40%'}
-                          className={"navlinks a"}
-                          onStateChange={ isMenuOpen }
-                          isOpen={false}>
-                          <a href="/">Home</a>
-                          <a href="/about">About</a>
-                          <a href="/work">Work</a>
-                          <a href="/contact">Contact</a>
-                        </Menu>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Grid>
-            </MediaQuery>
+                <Menu
+                  right={true}
+                  width={'40%'}
+                  className={"navlinks a"}
+                  onStateChange={ isMenuOpen }
+                  isOpen={false}>
+                  <a href="/">Home</a>
+                  <a href="/about">About</a>
+                  <a href="/work">Work</a>
+                  <a href="/contact">Contact</a>
+                </Menu>
+              </MediaQuery>
 
             <MediaQuery size="mobile">
               <Grid>
