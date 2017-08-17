@@ -5,14 +5,14 @@ import ImageZoom from 'react-medium-image-zoom';
 
 export default class Project extends Component {
   componentDidMount() {
-          console.log('Hi');
     window.addEventListener('scroll', this.handleScroll.bind(this));
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
   handleScroll() {
-    console.log(document.documentElement.scrollTop + 'px');
+    var scrollPos = window.scrollY || window.scollTop || document.getElementsByTagName("html")[0].scrollTop;
+    console.log(scrollPos);
   }
 
   render() {
