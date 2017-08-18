@@ -13,12 +13,15 @@ h1 {
 	font-size: 8vw;
 	font-weight: lighter;
 	line-height: 3vh;
-	color: $teal;
+	color: lighten($burger, 5%);
+	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 .mobile-h1 {
 	@extend h1;
 	font-size: 20vw;
-	line-height: 20vh;
+	line-height: 18vh;
+	color: lighten($burger, 5%);
+	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 h3 {
   font-size: 3vh;

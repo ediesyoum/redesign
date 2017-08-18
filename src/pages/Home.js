@@ -15,7 +15,7 @@ export default class Home extends Component {
               <img src={Shapes} className="shapes" alt="design & development" />
             </div>
             <div className="premise">
-              <h1>edencod.es : </h1>
+              <h1> edencod.es :</h1>
 
               <ReactRotatingText
                 items={[' Front End Web Developer ',
@@ -38,7 +38,7 @@ export default class Home extends Component {
               </Row>
 
               <Row center="xs" className="premise-sm">
-                <div className="mobile-h1">edencod.es : </div>
+                <div className="mobile-h1"> edencod.es :</div>
 
                 <ReactRotatingText
                   items={[' Front End Web Developer ',

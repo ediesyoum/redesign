@@ -41,3 +41,9 @@ $green: #47a55c;
   font-style: normal;
   src: local('Renasci-Regular'),  url(../assets/fonts/Renasci.otf) format('opentype');
 }
+@font-face {
+  font-family: 'Renasci-Outline';
+  font-weight: lighter;
+  font-style: normal;
+  src: local('Renasci-Outline'),  url(../assets/fonts/Renasci-Outline.otf) format('opentype');
+}

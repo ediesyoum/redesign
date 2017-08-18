@@ -10,9 +10,9 @@
 }
 .shapes-sm {
   position: absolute;
-  width: 72%;
-  top: 15%;
-  left: 13%;
+  width: 67%;
+  top: 12%;
+  left: 16%;
 }
 .premise {
   position: absolute;
@@ -23,10 +23,10 @@
 }
 .premise-sm {
   position: absolute;
-  max-width: 60%;
-  min-width: 63%;
-  left: 20%;
-  top: 111vw;
+  max-width: 36%;
+  min-width: 59%;
+  left: 25%;
+  top: 63vh;
 }
 .page-current {
   background-color: $palepurple;
@@ -39,8 +39,9 @@
 }
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
-  color: $mustard;
-  font-size: 6vh;
+	text-shadow: 4px 5px 3px lighten($shadow, 15%);
+  color: lighten($teal, 20%);
+  font-size: 5vh;
 }
 @keyframes blinking-cursor {
   0% {
@@ -60,16 +61,18 @@
 	padding:0px;
 	margin:0px;
 	line-height: 0vh;
-  color: $mustard;
+  color: $teal;
   text-decoration: none;
+	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 .rotatewords-sm {
 	font-family: 'Renasci';
-	font-size: 12vw;
+	font-size: 9vw;
 	font-weight: 200;
 	padding:0px;
 	margin:0px;
 	line-height: 0vh;
-  color: $mustard;
+  color: $teal;
   text-decoration: none;
+	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
