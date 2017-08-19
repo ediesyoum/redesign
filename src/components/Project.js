@@ -25,13 +25,12 @@ export default class Project extends Component {
               <Col start="xs">
                 <ImageZoom
                   image={{
-                    src: `/projects/02-${this.props.name}.png`,
+                    src: `/projects/01-${this.props.name}.svg`,
                     alt: 'Jot It App',
-                    className: 'portfolio-img-01',
                     style: { width: '65vh' }
                   }}
                   zoomImage={{
-                    src: '/projects/02-jot-it.png',
+                    src: '/projects/01-jot-it.svg',
                     alt: 'Jot It',
                     style: { background: '#000000' }
                   }}

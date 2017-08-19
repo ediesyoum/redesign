@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Content from '../components/Content';
 import Project from '../components/Project';
-import Parallax from 'react-springy-parallax';
 import Noise from '../assets/img/noise.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
