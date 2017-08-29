@@ -18,6 +18,7 @@ export default class Project extends Component {
   render() {
     console.log('I was triggered during render');
     if (this.props.position === 'left') {
+      
     } else {
       return(
           <Grid>
