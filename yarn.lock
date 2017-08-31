@@ -5273,10 +5273,6 @@ react-springy-parallax:
     animated "^0.2.0"
     prop-types "^15.5.8"
 
-react-trianglify@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-trianglify/-/react-trianglify-1.2.0.tgz#8b9ac5ea64deaf2373b0fe1c47967934983af09c"
-
 read-all-stream@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/read-all-stream/-/read-all-stream-3.1.0.tgz#35c3e177f2078ef789ee4bfafa4373074eaef4fa"
