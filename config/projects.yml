@@ -33,7 +33,7 @@ csm:
  live-link:
  gh-link:
 
-current-portfolio:
+portfolio-current:
  name: 'Edencod.es'
  summary: 'My current site is a portfolio implementation that I created during the summer of 2017 to utilize the power of React as a framework and creating React components. The goal with this redesign was to showcase all of my previous client work and personal projects, and to continue building on object oriented principles with JavaScript’s class-based ES6 syntax.'
  technical: 'This site was initially configured using Facebook’s Create React App boilerplate, just to try it out. I wanted to find a creative way to enter the wonderful world of React simply because I see reusable components as the future of web development. One of the biggest challenges I faced with this application was learning and how to interact with React’s virtual DOM, and learning how to effectively use HTML inside my JavaScript./nThe app uses Webpack for module bundling and React Router, tools that both had somewhat steep learning curves but were extremely worthwhile to learn. I am a huge fan of progressive, responsive web apps that look fantastic across all devices and that is what I aimed to create here. I am using a mixture of custom components made by me as well as a few third party components that were executed exceptionally well. Furthermore, the UI was completely designed and mocked up by me using Sketch, Illustrator and Photoshop, and I went through a few design iterations before settling on this one.'
@@ -97,11 +97,18 @@ tic-tac-toe:
  live-link:
  gh-link:
 
-eden-s:
- name:
- summary:
- technical:
+portfolio-old:
+ name: 'Edensyoum.com'
+ summary: 'This was a very simple portfolio design that I created in the summer of 2016. I wanted to feature select projects and to make the site look great and scroll nicely on mobile, so I implemented the design using the jQuery plugin Fullpage.js as a responsive mobile-first framework. /nI wanted to fully exercise my creativity with the color palette, font choices and user interactions, and most importantly, I wanted to force a logical single page flow with smooth mobile scrolling and the enabled use of arrow keys to navigate the site.'
  tags:
+  - UI Design
+  - UI Development
+  - jQuery
+  - Responsive Design
+  - Graphic Design
+  - CSS
+  - SPA
+  - User Experience Design
  live-link:
  gh-link:
 
