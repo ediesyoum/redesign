@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import ImageZoom from 'react-medium-image-zoom';
 
-
 export default class Project extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll.bind(this));
@@ -18,7 +17,7 @@ export default class Project extends Component {
   render() {
     console.log('I was triggered during render');
     if (this.props.position === 'left') {
-      
+
     } else {
       return(
           <Grid>

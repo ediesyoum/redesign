@@ -144,6 +144,7 @@ module.exports = {
           /\.gif$/,
           /\.jpe?g$/,
           /\.png$/,
+          /\.ya?ml$/,
         ],
         loader: require.resolve('file-loader'),
         options: {
@@ -175,9 +176,12 @@ module.exports = {
         },
       },
       {
-        test: /\.yaml$/,
-        include: path.resolve('data'),
-        loader: 'yaml',
+        test: /\.ya?ml$/,
+        include: paths.appSrc,
+        use: [
+          require.resolve('yaml-loader'),
+          require.resolve('json-loader')
+        ]
       },
       {
         test: /\.css$/,
