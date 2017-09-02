@@ -5,8 +5,9 @@ import Projects from '../projects.json';
 
 export default class Work extends Component {
   get projects() {
-    return Object.values(Projects).map(function(projectAttributes) {
-      return <Project {...projectAttributes} />
+    return Object.keys(Projects).map(function(id) {
+      let attributes = { id, ...Projects[id] };
+      return <Project {...attributes} />
     });
   }
 

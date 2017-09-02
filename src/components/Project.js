@@ -25,20 +25,20 @@ export default class Project extends Component {
               <Col start="xs">
                 <ImageZoom
                   image={{
-                    src: `/projects/01-${this.props.name}.svg`,
-                    alt: 'Jot It App',
+                    src: `/projects/01-${this.props.id}.svg`,
+                    alt: this.props.name,
                     style: { width: '65vh' }
                   }}
                   zoomImage={{
-                    src: '/projects/01-jot-it.svg',
-                    alt: 'Jot It',
+                    src: `/projects/01-${this.props.id}.svg`,
+                    alt: this.props.name,
                     style: { background: '#000000' }
                   }}
                 />
               </Col>
 
               <Col end="xs" className="box">
-                <div>{this.props.children}</div>
+                <div>{this.props.technical}</div>
               </Col>
 
             </Row>
