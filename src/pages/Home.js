@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import Content from '../components/Content';
 import ReactRotatingText from 'react-rotating-text';
+import Parallax from 'react-springy-parallax';
+import Featured from './Featured';
 
 export default class Home extends Component {
   render() {
     return (
-        <Content>
+      <Parallax
+        ref={ref => this.parallax = ref}
+        pages={3}>
 
             <div className="premise">
 
@@ -28,8 +32,12 @@ export default class Home extends Component {
             <div className="recent">
               <p>Test</p>
             </div>
-            
-        </Content>
+
+            <div>
+              <Featured/>
+            </div>
+
+        </Parallax>
     );
   }
 }
