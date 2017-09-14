@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Content from '../components/Content';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import Featured from './Featured';
@@ -33,9 +32,9 @@ export default class Home extends Component {
               <p>Test</p>
             </div>
 
-            <div>
-              <Featured/>
-            </div>
+
+            <Featured/>
+
 
         </Parallax>
     );
