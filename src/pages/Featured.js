@@ -6,7 +6,9 @@ export default class Featured extends Component {
   render() {
     let jotit = Projects['jot-it'];
     return (
-      <Preview {...jotit} />
+      <div className="jotitpreview">
+        <Preview {...jotit} />
+      </div>
     )
   }
 }
