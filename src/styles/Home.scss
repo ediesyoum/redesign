@@ -1,25 +1,15 @@
-.name {
-  margin-bottom: -5%;
-}
-.shapes {
-  position: absolute;
-  width: 53vh;
-  max-width: 58vh;
-  top: 26vh;
-  left: 10%;
-}
-.shapes-sm {
-  position: absolute;
-  width: 67%;
-  top: 12%;
-  left: 16%;
-}
+
 .premise {
   min-width: 50vw;
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding-right: 20%;
   position: relative;
+}
+.roles {
+  @extend .premise;
+  padding-left: 25%;
 }
 .premise-sm {
   position: absolute;
@@ -55,20 +45,15 @@
   }
 }
 .rotatewords {
-	font-family: 'Renasci';
-	font-size: 6vw;
-	font-weight: 200;
-	padding:0px;
-	margin:0px;
-	line-height: 0vh;
+	font-family: 'Supply-Light';
+	font-size: 3.5vw;
   color: $teal;
   text-decoration: none;
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 .rotatewords-sm {
-	font-family: 'Renasci';
-	font-size: 9vw;
-	font-weight: 200;
+	font-family: 'Supply-Light';
+	font-size: 3vw;
 	padding:0px;
 	margin:0px;
 	line-height: 0vh;

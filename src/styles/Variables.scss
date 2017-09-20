@@ -24,26 +24,28 @@ $green: #47a55c;
   font-family: 'Harbour';
   font-weight: lighter;
   font-style: normal;
-  src: local('Harbour'), url(../assets/fonts/Harbour.woff2) format('woff2');
-  src: local('Harbour'), url(../assets/fonts/Harbour.woff) format('woff');
-  src: local('Harbour'), url(../assets/fonts/Harbour.ttf) format('truetype');
+  src: local('Harbour'), url('../assets/fonts/Harbour.woff2') format('woff2');
+  src: local('Harbour'), url('../assets/fonts/Harbour.woff') format('woff');
+  src: local('Harbour'), url('../assets/fonts/Harbour.ttf') format('truetype');
 }
 @font-face {
   font-family: 'King-Basil-Lite';
   font-weight: lighter;
   font-style: normal;
-  src: local('KingBasilLite-Regular'), url(../assets/fonts/King-Basil-Lite.woff2) format('woff2');
-  src: local('KingBasilLite-Regular'), url(../assets/fonts/King-Basil-Lite.ttf) format('truetype');
+  src: local('KingBasilLite-Regular'), url('../assets/fonts/King-Basil-Lite.woff2') format('woff2');
+  src: local('KingBasilLite-Regular'), url('../assets/fonts/King-Basil-Lite.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Renasci';
-  font-weight: lighter;
+  font-family: 'Supply-Light';
+  src: url('../assets/fonts/supply-light.woff2') format('woff2'),
+         url('../assets/fonts/Supply-Light.otf') format('opentype');
+  font-weight: normal;
   font-style: normal;
-  src: local('Renasci-Regular'),  url(../assets/fonts/Renasci.otf) format('opentype');
 }
 @font-face {
-  font-family: 'Renasci-Outline';
-  font-weight: lighter;
+  font-family: 'Supply-Regular';
+  src: url('../assets/fonts/supply-regular.woff2') format('woff2'),
+         url('../assets/fonts/Supply-Regular.otf') format('opentype');
+  font-weight: normal;
   font-style: normal;
-  src: local('Renasci-Outline'),  url(../assets/fonts/Renasci-Outline.otf) format('opentype');
 }
