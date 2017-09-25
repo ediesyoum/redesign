@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
+import MediaQuery from '../components/MediaQuery';
 import Featured from './Featured';
 
 export default class Home extends Component {
@@ -10,6 +11,7 @@ export default class Home extends Component {
         ref={ref => this.parallax = ref}
         pages={3}>
 
+        <MediaQuery size="desktop">
           <div>
             <div className="premise">
 
@@ -38,10 +40,42 @@ export default class Home extends Component {
             </div>
 
 
-            <Featured/>
+          <Featured/>
+        </MediaQuery>
+
+        <MediaQuery size="mobile">
+          <div>
+            <div className="premise-sm">
+
+              <h1>Hello! I'm Eden, and I'm a</h1>
+
+            </div>
+
+            <div className="roles-sm">
+              <ReactRotatingText
+                items={['Front End Web Developer',
+                  'UI Designer',
+                  'UX-Focused Developer',
+                  'Graphic Designer',
+                  'Creative Web Developer'
+                ]}
+                typingInterval={150}
+                color={'62F9BB'}
+                className={'rotatewords-sm'}
+                />
+            </div>
+
+            </div>
+
+            <div className="recent">
+              <p>Test</p>
+            </div>
 
 
-        </Parallax>
+          <Featured/>
+        </MediaQuery>
+
+      </Parallax>
     );
   }
 }

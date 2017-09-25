@@ -12,11 +12,16 @@
   padding-left: 25%;
 }
 .premise-sm {
-  position: absolute;
-  max-width: 36%;
-  min-width: 59%;
-  left: 25%;
-  top: 63vh;
+  @extend .premise;
+  font-size: 2.5vw;
+  padding: 0;
+}
+.roles-sm {
+  @extend .premise-sm;
+  width: 76vw;
+  padding: 0px;
+  left: 15%;
+  position: relative;
 }
 .page-current {
   background-color: $palepurple;
@@ -53,10 +58,7 @@
 }
 .rotatewords-sm {
 	font-family: 'Supply-Light';
-	font-size: 3vw;
-	padding:0px;
-	margin:0px;
-	line-height: 0vh;
+	font-size: 5.5vw;
   color: $teal;
   text-decoration: none;
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
@@ -66,7 +68,7 @@
   background-color: rgba(255,255,255,.6);
   position: relative;
   height: 42vh;
-  top: 29vh;
+  top: 31vh;
 }
 .featured-link {
   position: relative;

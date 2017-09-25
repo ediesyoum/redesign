@@ -9,6 +9,6 @@ export default class Featured extends Component {
       <div className="jotitpreview">
         <Preview {...jotit} />
       </div>
-    )
+    );
   }
 }

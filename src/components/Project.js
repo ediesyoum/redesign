@@ -23,7 +23,17 @@ export default class Project extends Component {
             />
           </div>
 
+          <div className="box">{this.props.name}</div>
+
+          <div className="box">{this.props.summary}</div>
+
           <div className="box">{this.props.technical}</div>
+
+          <div className="box">{this.props.live}</div>
+
+          <div className="box">{this.props.gh}</div>
+
+          <div className="box">{this.props.tags}</div>
 
         </div>
       );

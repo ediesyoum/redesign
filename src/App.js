@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import JotIt from './pages/projects/JotIt';
 import MediaQuery from './components/MediaQuery';
 import { slide as Menu } from 'react-burger-menu';
 
@@ -74,6 +75,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/work" component={Work} />
             <Route path="/contact" component={Contact} />
+            <Route path="/jot-it" component={JotIt} />
           </div>
         </Router>
       </div>
