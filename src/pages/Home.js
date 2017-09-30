@@ -3,6 +3,7 @@ import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import MediaQuery from '../components/MediaQuery';
 import Featured from './Featured';
+import Blur from '../assets/img/javascript-blur.jpg';
 
 export default class Home extends Component {
   render() {
@@ -12,33 +13,40 @@ export default class Home extends Component {
         pages={3}>
 
         <MediaQuery size="desktop">
-          <div>
-            <div className="premise">
 
-              <h1>Hello! I'm Eden and I'm a</h1>
+          <Parallax.Layer
 
-            </div>
+            offset={0}
+            speed={0.5}
+            style={{
+              backgroundImage: Blur
+            }}>
+              <p>Hai</p>
+            </Parallax.Layer>
 
-            <div className="roles">
-              <ReactRotatingText
-                items={['Front End Web Developer',
-                  'UI Designer',
-                  'UX-Focused Developer',
-                  'Graphic Designer',
-                  'Creative Web Developer'
-                ]}
-                typingInterval={150}
-                color={'62F9BB'}
-                className={'rotatewords'}
-                />
-            </div>
+          <div className="premise">
 
-            </div>
+            <h1>Hello! I'm Eden and I'm a</h1>
 
-            <div className="recent">
-              <p>Test</p>
-            </div>
+          </div>
 
+          <div className="roles">
+            <ReactRotatingText
+              items={['Front End Web Developer',
+                'UI Designer',
+                'UX-Focused Developer',
+                'Graphic Designer',
+                'Creative Web Developer'
+              ]}
+              typingInterval={150}
+              color={'62F9BB'}
+              className={'rotatewords'}
+              />
+          </div>
+
+          <div className="recent">
+            <p>Test</p>
+          </div>
 
           <Featured/>
         </MediaQuery>
