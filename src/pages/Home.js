@@ -15,11 +15,11 @@ export default class Home extends Component {
         <MediaQuery size="desktop">
 
           <Parallax.Layer
-
             offset={0}
             speed={0.5}
             style={{
-              backgroundImage: Blur
+              backgroundImage: `url(${Blur})`,
+              top: 0
             }}>
               <p>Hai</p>
             </Parallax.Layer>
@@ -48,6 +48,10 @@ export default class Home extends Component {
             <p>Test</p>
           </div>
 
+          <div className="feature01">
+            <p>Test</p>
+          </div>
+
           <Featured/>
         </MediaQuery>
 
@@ -58,6 +62,16 @@ export default class Home extends Component {
               <h1>Hello! I'm Eden, and I'm a</h1>
 
             </div>
+
+            <Parallax.Layer
+              offset={0}
+              speed={0.5}
+              style={{
+                backgroundImage: `url(${Blur})`,
+                top: 0
+              }}>
+                <p>Hai</p>
+              </Parallax.Layer>
 
             <div className="roles-sm">
               <ReactRotatingText

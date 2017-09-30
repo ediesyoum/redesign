@@ -64,11 +64,18 @@
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 .recent {
-  clip-path: polygon(0 0%, 100% 46%, 100% 100%, 0 calc(100% - 0vw));
+  clip-path: polygon(0 0%, 100% 46%, 100% 100%, 0 calc(100% - 13vw));
   background-color: rgba(255,255,255,.6);
   position: relative;
-  height: 42vh;
-  top: 31vh;
+  height: 86vh;
+  top: 33vh;
+}
+.feature01 {
+  clip-path: polygon(0 0%, 100% 46%, 100% 100%, 0 calc(100% - 13vw));
+  background-color: lighten($logobg, 10%);
+  position: relative;
+  height: 72vh;
+  top: -11vh;
 }
 .featured-link {
   position: relative;
