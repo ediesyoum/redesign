@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './styles/App.scss';
-import Logo from './assets/img/logo-ec.svg';
+import Logo from './assets/img/logo.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './pages/Home';
