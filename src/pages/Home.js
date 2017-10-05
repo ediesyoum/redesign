@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import Featured from './Featured';
-import MediaQuery from '../components/MediaQuery'
+import MediaQuery from '../components/MediaQuery';
 import Blur from '../assets/img/javascript-blur.jpg';
+import JotIt from '../assets/img/jot-it.png';
 
 export default class Home extends Component {
   render() {
@@ -52,7 +53,7 @@ export default class Home extends Component {
               </div>
 
               <div className="feature01-desktop">
-                <p>Test</p>
+                <img src={JotIt} className={'featuredImg'} alt="Jot It Preview"/>
               </div>
 
               <div className="feature02-desktop">

@@ -1,12 +1,10 @@
 .header_clear {
 	padding-bottom: 1em;
 }
-
 .header {
   position: relative;
   z-index: 2;
 	width: 100%;
-
 }
 .navlinks a {
 	padding: .8em;
@@ -29,8 +27,8 @@
   position: absolute;
   z-index: 1;
 	top: 4vh;
-	left: 16vh;
-  max-width: 13vh;
+	left: 3vw;
+  max-width: 10vh;
 }
 .logo-sm {
 	@extend .logo;
