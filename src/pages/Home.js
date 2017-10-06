@@ -49,11 +49,11 @@ export default class Home extends Component {
             <section className="featured">
 
               <div className="recent-desktop">
-                <p>Test</p>
+                <p>Featured Projects</p>
               </div>
 
               <div className="feature01-desktop">
-                <img src={JotIt} className={'featuredImg'} alt="Jot It Preview"/>
+                <p>Jot It App</p>
               </div>
 
               <div className="feature02-desktop">

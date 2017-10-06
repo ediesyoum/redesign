@@ -1,12 +1,11 @@
 body {
-
   background-color: darken($linkbg, 10%);
 	margin: 0px;
 	padding: 0px;
-  font-family: 'Harbour', serif;
+  font-family: 'KayakSans-Regular', sans-serif;
 }
 h1 {
-	font-family: 'Supply-Light', sans-serif;
+	font-family: 'KayakSans-Bold', sans-serif;
 	font-weight: lighter;
 	color: lighten($burger, 5%);
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);

@@ -50,3 +50,81 @@ $green: #47a55c;
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'kayak_sansbold_italic';
+  src: local('KayakSans-BoldItalic'),     url('../assets/fonts/kayak_sans_bold_italic-webfont.woff2') format('woff2'),
+       url('../assets/fonts/kayak_sans_bold_italic-webfont.woff') format('woff'),
+       url('../assets/fonts/kayak_sans_bold_italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'kayak_sansbold';
+  src: local('KayakSans-Bold'), url('../assets/fonts/kayak_sans_bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/kayak_sans_bold-webfont.woff') format('woff'),
+       url('../assets/fonts/kayak_sans_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'kayak_sanslight_italic';
+  src: local('KayakSans-LightItalic'), url('../assets/fonts/kayak_sans_light_italic-webfont.woff2') format('woff2'),
+       url('../assets/fonts/kayak_sans_light_italic-webfont.woff') format('woff'),
+       url('../assets/fonts/kayak_sans_light_italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'kayak_sanslight';
+  src: local('KayakSans-Light'), url('../assets/fonts/kayak_sans_light-webfont.woff2') format('woff2'),
+       url('../assets/fonts/kayak_sans_light-webfont.woff') format('woff'),
+       url('../assets/fonts/kayak_sans_light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'kayak_sansregular_italic';
+    src: local('KayakSans-RegularItalic'), url('../assets/fonts/kayak_sans_regular_italic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/kayak_sans_regular_italic-webfont.woff') format('woff'),
+         url('../assets/fonts/kayak_sans_regular_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'kayak_sansregular';
+    src: local('KayakSans-Regular'), url('../assets/fonts/kayak_sans_regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/kayak_sans_regular-webfont.woff') format('woff'),
+         url('../assets/fonts/kayak_sans_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

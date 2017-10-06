@@ -52,7 +52,7 @@
   }
 }
 .rotatewords {
-	font-family: 'Supply-Light';
+	font-family: 'KayakSans-Bold';
 	font-size: 3.5vw;
   color: $teal;
   text-decoration: none;
@@ -84,7 +84,8 @@
 }
 .recent-desktop {
   clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 13vw));
-  background-color: $purple;
+  background-color: darken($purple, 10%);
+  background-image: $circuits-bg;
   height: 25vh;
   font-size: 2em;
   margin: 2vh;
@@ -93,6 +94,7 @@
   padding: 11vw;
   text-align: center;
   position: relative;
+  color: lighten($mustard, 10%);
 }
 .recent-mobile {
   @extend .mobile-slant;
@@ -112,7 +114,7 @@
 .feature02-desktop {
   @extend .desktop-slant;
   background-color: $mustard;
-  background-image: $floatingcogsbg;
+  background-image: $floatingcogs-bg;
 }
 .feature02-mobile {
   @extend .mobile-slant;
