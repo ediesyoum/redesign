@@ -31,9 +31,13 @@ export default class Home extends Component {
               style={{
                 height: 200
               }}>
-              <h1>Hello! I'm Eden and I'm a</h1>
+              <h1>Hello! I'm
+                <span className="myname">Eden</span>
+                  and I'm a</h1>
 
-            <ReactRotatingText
+
+            <span className="rotatewords">
+              <ReactRotatingText
               items={['Front End Web Developer',
                 'UI Designer',
                 'UX-Focused Developer',
@@ -42,8 +46,8 @@ export default class Home extends Component {
               ]}
               typingInterval={150}
               color={'62F9BB'}
-              className={'rotatewords'}
               />
+            </span>
             </Parallax.Layer>
 
             <section className="featured">
