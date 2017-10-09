@@ -2,13 +2,15 @@ body {
   background-color: darken($linkbg, 10%);
 	margin: 0px;
 	padding: 0px;
-  font-family: 'KayakSans-Regular', sans-serif;
+  font-family: 'kayak_sans-light', sans-serif;
 }
 h1 {
-	font-family: 'KayakSans-Bold', sans-serif;
-	font-weight: lighter;
+  font-family: 'kayak_sans-light', sans-serif;
 	color: lighten($burger, 5%);
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
+  text-decoration: none;
+  padding: 2vh;
+
 }
 .mobile-h1 {
 	@extend h1;

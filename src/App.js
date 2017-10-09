@@ -31,13 +31,11 @@ class App extends Component {
                       </Row>
                     </Col>
 
-                    <Col xs={12}>
-                      <Row end="xs">
-                        <a href="/">Home</a>
-                        <a href="/about">About</a>
-                        <a href="/work">Selected Work</a>
-                        <a href="/contact">Contact</a>
-                      </Row>
+                    <Col xs={12} className={"navigation-desktop"}>
+                      <a href="/">Home</a>
+                      <a href="/about">About</a>
+                      <a href="/work">Selected Work</a>
+                      <a href="/contact">Contact</a>
                     </Col>
                   </Row>
                 </Grid>

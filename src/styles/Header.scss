@@ -36,3 +36,22 @@
 	top: 3vh;
 	max-width: 11vh;
 }
+.navigation-desktop {
+  top: 13vh;
+  right: 1vh;
+  position: absolute;
+  z-index: 2;
+  margin-top: -7vh;
+  text-transform: uppercase;
+  a {
+    margin-right: 1vh;
+    background-color: darken($teal, 20%);
+    color: $linkbg;
+    padding: .75em;
+    border-radius: 1vw;
+    letter-spacing: .15vw;
+  }
+  a:hover {
+    background-color: $brightpurple;
+  }
+}

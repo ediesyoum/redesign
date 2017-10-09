@@ -1,9 +1,7 @@
 
 .premise {
   min-width: 50vw;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  left: 15%;
   padding-right: 20%;
   position: relative;
   top: 20vh;
@@ -52,18 +50,24 @@
   }
 }
 .rotatewords {
-	font-family: 'KayakSans-Bold';
-	font-size: 3.5vw;
+	font-family: 'kayak_sans-bold_italic', sans-serif;
+	font-size: .85em;
   color: $teal;
   text-decoration: none;
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
+  padding: 2vh;
+  text-transform: uppercase;
 }
 .rotatewords-sm {
-	font-family: 'Supply-Light';
+	font-family: 'kayak_sans-italic';
 	font-size: 5.5vw;
   color: $teal;
   text-decoration: none;
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
+}
+.rotatewords-wrapper {
+  left: 7vh;
+  position: relative;
 }
 .mobile-slant {
   clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 12vw));
@@ -137,7 +141,7 @@
   justify-content: center;
 }
 .featured {
-  top: 60vh;
+  top: 70vh;
   position: relative;
 }
 .featuredImg {
@@ -147,8 +151,9 @@
   max-height: 75%;
 }
 .myname {
-  font-family: 'KingBasilLite-Regular';
-  font-size: 3em;
+  font-family: 'kayak_sans-regular_italic', sans-serif;
+  font-size: 2em;
   color: $green;
   min-width: 50vw;
+  padding: .25em;
 }

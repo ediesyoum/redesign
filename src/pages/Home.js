@@ -13,7 +13,6 @@ export default class Home extends Component {
         ref={ref => this.parallax = ref}
         pages={3}>
 
-
           <Parallax.Layer
             offset={0}
             speed={0.5}
@@ -27,27 +26,28 @@ export default class Home extends Component {
             <Parallax.Layer
               offset={0}
               speed={0.5}
-              className={'premise'}
-              style={{
-                height: 200
-              }}>
-              <h1>Hello! I'm
+              className={'premise'}>
+
+              <h1>Hi there I'm
                 <span className="myname">Eden</span>
-                  and I'm a</h1>
+                  <div className="rotatewords-wrapper">
+                    and I'm a
 
+                  <span className="rotatewords">
+                    <ReactRotatingText
+                    items={['Front End Web Developer',
+                      'UI Designer',
+                      'UX-Focused Developer',
+                      'Graphic Designer',
+                      'Creative Web Developer'
+                    ]}
+                    typingInterval={90}
+                    color={'62F9BB'}
+                    />
+                 </span>
+               </div>
+             </h1>
 
-            <span className="rotatewords">
-              <ReactRotatingText
-              items={['Front End Web Developer',
-                'UI Designer',
-                'UX-Focused Developer',
-                'Graphic Designer',
-                'Creative Web Developer'
-              ]}
-              typingInterval={150}
-              color={'62F9BB'}
-              />
-            </span>
             </Parallax.Layer>
 
             <section className="featured">
