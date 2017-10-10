@@ -33,40 +33,43 @@ export default class Home extends Component {
                   <div className="rotatewords-wrapper">
                     and I'm a
 
-                  <span className="rotatewords">
-                    <ReactRotatingText
-                    items={['Front End Web Developer',
-                      'UI Designer',
-                      'UX-Focused Developer',
-                      'Graphic Designer',
-                      'Creative Web Developer'
-                    ]}
-                    typingInterval={90}
-                    color={'62F9BB'}
-                    />
-                 </span>
+                    <span className="rotatewords">
+                      <ReactRotatingText
+                      items={['Front End Web Developer',
+                        'UI Designer',
+                        'UX-Focused Developer',
+                        'Graphic Designer',
+                        'Creative Web Developer'
+                      ]}
+                      typingInterval={90}
+                      color={'62F9BB'}
+                      />
+                   </span>
+
+                 <div className="">creating first class web experiences</div>
+                   <div className="">with functional, aesthetic design + code.</div>
                </div>
              </h1>
 
+
             </Parallax.Layer>
+              <section className="featured">
 
-            <section className="featured">
+                <div className="recent-desktop">
+                  <p>Featured Projects</p>
+                </div>
 
-              <div className="recent-desktop">
-                <p>Featured Projects</p>
-              </div>
+                <div className="feature01-desktop">
+                  <p>Jot It App</p>
+                </div>
 
-              <div className="feature01-desktop">
-                <p>Jot It App</p>
-              </div>
+                <div className="feature02-desktop">
+                  <p>Test</p>
+                </div>
 
-              <div className="feature02-desktop">
-                <p>Test</p>
-              </div>
-
-              <div className="feature03-desktop">
-                <p>Test</p>
-              </div>
+                <div className="feature03-desktop">
+                  <p>Test</p>
+                </div>
             </section>
           </MediaQuery>
 

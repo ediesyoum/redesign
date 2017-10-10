@@ -1,4 +1,12 @@
+// Premise text
 
+.myname {
+  font-family: 'kayak_sans-regular_italic', sans-serif;
+  font-size: 2em;
+  color: $green;
+  min-width: 50vw;
+  padding: .25em;
+}
 .premise {
   min-width: 50vw;
   left: 15%;
@@ -6,6 +14,12 @@
   position: relative;
   top: 20vh;
   height: 20vh;
+}
+.premise_line03 {
+
+}
+.premise_line04 {
+
 }
 .roles {
   @extend .premise;
@@ -22,15 +36,6 @@
   padding: 0px;
   left: 15%;
   position: relative;
-}
-.page-current {
-  background-color: $palepurple;
-}
-.portfolio-img-01 {
-  box-shadow: rgb(0, 0, 0) 0px 4px 27px 3px;
-  max-width: 65vh;
-  margin: 4vw;
-  border-radius: 1em;
 }
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
@@ -69,6 +74,9 @@
   left: 7vh;
   position: relative;
 }
+
+// Slanted UI Styles
+
 .mobile-slant {
   clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 12vw));
   height: 41vh;
@@ -78,9 +86,7 @@
 .desktop-slant {
   clip-path: polygon(0 0%, 100% 13vw, 100% 100%, 0 calc(100% - 13vw));
   position: relative;
-  margin: 2vh;
   margin-bottom: -11vw;
-  margin-right: 2vh;
   padding: 11vw;
   height: 27vh;
   text-align: justify;
@@ -88,12 +94,10 @@
 }
 .recent-desktop {
   clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 13vw));
-  background-color: darken($purple, 10%);
+  background-color: rgba(89,82,126,.025);
   background-image: $circuits-bg;
   height: 25vh;
   font-size: 2em;
-  margin: 2vh;
-  margin-right: 2vh;
   margin-bottom: -11vw;
   padding: 11vw;
   text-align: center;
@@ -149,11 +153,4 @@
   position: absolute;
   max-width: 70%;
   max-height: 75%;
-}
-.myname {
-  font-family: 'kayak_sans-regular_italic', sans-serif;
-  font-size: 2em;
-  color: $green;
-  min-width: 50vw;
-  padding: .25em;
 }
