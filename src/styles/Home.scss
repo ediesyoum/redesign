@@ -118,7 +118,7 @@
   text-align: center;
   position: relative;
   color: lighten($mustard, 10%);
-  background-repeat: repeat !important; // Necessary to override parallax component
+  background-repeat: repeat !important; // Necessary to override parallax component bg
 }
 .recent-mobile {
   @extend .mobile-slant;
@@ -129,7 +129,6 @@
   @extend .desktop-slant;
   background-color: lighten($logobg, 10%);
   background-image: $camo-bg;
-  top: 33vh;
 }
 .feature01-mobile {
   @extend .mobile-slant;
