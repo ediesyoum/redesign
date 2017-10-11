@@ -26,7 +26,11 @@ export default class Home extends Component {
             <Parallax.Layer
               offset={0}
               speed={0.5}
-              className={'premise'}>
+              className={'premise'}
+              style={{
+                width: 200,
+                height: 300
+              }}>
 
               <h1>Hi there I'm
                 <span className="myname">Eden</span>
@@ -46,30 +50,14 @@ export default class Home extends Component {
                       />
                    </span>
 
-                 <div className="">creating first class web experiences</div>
-                   <div className="">with functional, aesthetic design + code.</div>
-               </div>
-             </h1>
+                   <div className="premise_line03">creating first class web experiences</div>
+                     <div className="premise_line04">with functional, aesthetic design + code.</div>
+                 </div>
+               </h1>
+              </Parallax.Layer>
 
-
-            </Parallax.Layer>
               <section className="featured">
-
-                <div className="recent-desktop">
-                  <p>Featured Projects</p>
-                </div>
-
-                <div className="feature01-desktop">
-                  <p>Jot It App</p>
-                </div>
-
-                <div className="feature02-desktop">
-                  <p>Test</p>
-                </div>
-
-                <div className="feature03-desktop">
-                  <p>Test</p>
-                </div>
+                <Featured/>
             </section>
           </MediaQuery>
 
@@ -107,9 +95,10 @@ export default class Home extends Component {
             <div className="feature03-mobile">
               <p>Test</p>
             </div>
+
+            <Featured/>
           </MediaQuery>
 
-          <Featured/>
       </Parallax>
     );
   }
