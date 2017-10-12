@@ -22,6 +22,7 @@ export default class Home extends Component {
             }}/>
 
           <MediaQuery size="desktop">
+
             <Parallax.Layer
               offset={0}
               speed={0.5}
@@ -35,7 +36,6 @@ export default class Home extends Component {
                 <span className="myname">Eden</span>
                   <div className="rotatewords-wrapper">
                     and I'm a
-
                     <span className="rotatewords">
                       <ReactRotatingText
                       items={['Front End Web Developer',
@@ -49,27 +49,36 @@ export default class Home extends Component {
                       />
                    </span>
 
-                   <div className="premise_line03">creating first class web experiences</div>
-                     <div className="premise_line04">with functional, aesthetic design + code.</div>
+                   <div className="premise_line03">
+                     creating first class web experiences
+                   </div>
+                   <div className="premise_line04">
+                     with functional, aesthetic design + code.
+                   </div>
+
                  </div>
-               </h1>
-              </Parallax.Layer>
+              </h1>
+            </Parallax.Layer>
 
-              <section className="featured">
+            <section className="featured">
+
+              <Parallax.Layer
+                offset={0}
+                speed={0.5}
+                className={'recent-desktop'}
+                style={{ height: 300 }}>
+
+                <p>Featured Projects</p>
+
                 <Parallax.Layer
-                  offset={0}
-                  speed={0.5}
-                  className={'recent-desktop'}
-                  style={{ height: 300 }}>
-                  <p>Featured Projects</p>
-
-                    <Parallax.Layer
-                      onClick={() => this.refs.parallax.scrollTo(.4)}>
-                      <FaChevronDown/>
-                    </Parallax.Layer>
+                  onClick={() => this.refs.parallax.scrollTo(.4)}>
+                  <FaChevronDown/>
                 </Parallax.Layer>
-                <Featured/>
+
+              </Parallax.Layer>
             </section>
+
+            <Featured/>
           </MediaQuery>
 
           <MediaQuery size="mobile">

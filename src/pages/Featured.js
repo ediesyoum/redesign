@@ -2,16 +2,13 @@ import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax';
 import Preview from '../components/Preview';
 import Projects from '../projects.json';
-import FaChevronDown from 'react-icons/lib/fa/chevron-down';
 
 export default class Featured extends Component {
   render() {
     let jotit = Projects['jot-it'];
     let csm = Projects['csm'];
     return (
-      <div>
-
-        <Parallax ref="parallax" pages={3}>
+        <Parallax ref="parallax" pages={2}>
 
           <Parallax.Layer
             offset={.4}
@@ -38,8 +35,6 @@ export default class Featured extends Component {
           </Parallax.Layer>
 
         </Parallax>
-
-      </div>
     );
   }
 }
