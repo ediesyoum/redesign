@@ -31,7 +31,7 @@ export default class Featured extends Component {
 
           <Parallax.Layer
             offset={1.1}
-            speed={0}
+            speed={.5}
             className={'feature01-desktop'}
             style={{ height: 300 }}>
             <Preview {...csm} />

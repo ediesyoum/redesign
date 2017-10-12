@@ -15,6 +15,7 @@ export default class ProjectPreview extends Component {
   }
 
   render() {
+    const jotit_img = './assets/img/jot-it.png';
     return (
       <div id={this.props.id} className={this.position}>
         <p>

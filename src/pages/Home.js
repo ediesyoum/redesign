@@ -14,19 +14,16 @@ export default class Home extends Component {
 
           <Parallax.Layer
             offset={0}
-            speed={0.5}
+            speed={1}
             className={'blurbg'}
             style={{
               backgroundImage: `url(${Blur})`,
               top: 0,
-              height: 800
             }}/>
-
-          <MediaQuery size="desktop">
 
             <Parallax.Layer
               offset={0}
-              speed={0.5}
+              speed={0.9}
               className={'premise'}
               style={{
                 width: 200,
@@ -60,47 +57,9 @@ export default class Home extends Component {
                  </div>
               </h1>
             </Parallax.Layer>
-          </MediaQuery>
+
 
             <Featured/>
-
-          <MediaQuery size="mobile">
-            <div className="premise-sm">
-              <h1>Hello! I'm Eden and I'm a</h1>
-            </div>
-
-            <div className="roles">
-              <ReactRotatingText
-                items={['Front End Web Developer',
-                  'UI Designer',
-                  'UX-Focused Developer',
-                  'Graphic Designer',
-                  'Creative Web Developer'
-                ]}
-                typingInterval={150}
-                color={'62F9BB'}
-                className={'rotatewords'}
-                />
-            </div>
-
-            <div className="recent-mobile">
-              <p>Test</p>
-            </div>
-
-            <div className="feature01-mobile">
-              <p>Test</p>
-            </div>
-
-            <div className="feature02-mobile">
-              <p>Test</p>
-            </div>
-
-            <div className="feature03-mobile">
-              <p>Test</p>
-            </div>
-
-            <Featured/>
-          </MediaQuery>
 
       </Parallax>
     );
