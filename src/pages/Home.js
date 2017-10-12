@@ -5,13 +5,12 @@ import Featured from './Featured';
 import MediaQuery from '../components/MediaQuery';
 import Blur from '../assets/img/javascript-blur.jpg';
 import JotIt from '../assets/img/jot-it.png';
+import FaChevronDown from 'react-icons/lib/fa/chevron-down';
 
 export default class Home extends Component {
   render() {
     return (
-      <Parallax
-        ref={ref => this.parallax = ref}
-        pages={3}>
+        <Parallax ref="parallax" pages={3}>
 
           <Parallax.Layer
             offset={0}
@@ -57,6 +56,18 @@ export default class Home extends Component {
               </Parallax.Layer>
 
               <section className="featured">
+                <Parallax.Layer
+                  offset={0}
+                  speed={0.5}
+                  className={'recent-desktop'}
+                  style={{ height: 300 }}>
+                  <p>Featured Projects</p>
+
+                    <Parallax.Layer
+                      onClick={() => this.refs.parallax.scrollTo(.4)}>
+                      <FaChevronDown/>
+                    </Parallax.Layer>
+                </Parallax.Layer>
                 <Featured/>
             </section>
           </MediaQuery>

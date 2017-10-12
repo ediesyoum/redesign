@@ -1,10 +1,6 @@
-.jotitpreview {
-  color: red;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20vw;
-  height: 20vw;
-  z-index: 2;
+.chevron-down {
+  font-size: 1.5em;
+  a {
+    color: red;
+  }
 }
