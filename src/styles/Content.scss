@@ -1,5 +1,4 @@
 body {
-  background-color: #35183F;
 	margin: 0px;
 	padding: 0px;
   font-family: 'kayak_sans-light', sans-serif;
@@ -11,6 +10,10 @@ h1 {
   text-decoration: none;
   padding: 2vh;
 
+}
+.wrapper {
+  background-image: linear-gradient(180deg, #191330 50%, #6E229F 100%);
+  background-size: auto;
 }
 .mobile-h1 {
 	@extend h1;

@@ -10,11 +10,11 @@ import JotIt from '../assets/img/jot-it.png';
 export default class Home extends Component {
   render() {
     return (
-        <Parallax ref="parallax" pages={1}>
+        <Parallax ref="parallax" pages={1} className={'wrapper'}>
 
           <Parallax.Layer
             offset={0}
-            speed={1}
+            speed={.9}
             className={'blurbg'}
             style={{
               backgroundImage: `url(${Blur})`,

@@ -20,15 +20,29 @@
   align-items: center;
   justify-content: space-around;
 }
-.box {
-  background-color: $teal;
-  max-width: 40%;
-  height: 48vh;
-  border-radius: 1em;
-  padding: 1em;
-  margin-left: 5px;
-  margin-top: 7vh;
+.right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
+.box {
+  width: 50vh;
+  max-width: 50vh;
+  height: 48vh;
+  text-align: left;
+  }
+  .box--jot-it {
+    background-image: url('../assets/img/jot-it.png');
+    background-repeat: no-repeat;
+    background-size: 50vh;
+    text-align: right;
+    font-size: 3em;
+      a {
+        color: orange;
+      }
+    }
+
+
 .box2 {
   background-color: $brightpurple;
   width: 73%;

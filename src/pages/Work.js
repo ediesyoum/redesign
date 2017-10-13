@@ -25,13 +25,18 @@ export default class Work extends Component {
 
   render() {
     return (
-      <div className="work-wrapper">
-        <div className="work-header">
-          <p>Featured Projects</p>
-        </div>
+      <Parallax ref="parallax" pages={4} className={'wrapper'}>
 
-        {this.projects}
-      </div>
+          <div className="work-wrapper">
+            <div className="work-header">
+              <p>Featured Projects</p>
+            </div>
+
+
+            {this.projects}
+
+        </div>
+      </Parallax>
     );
   }
 }
