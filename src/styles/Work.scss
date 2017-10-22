@@ -1,48 +1,73 @@
-.blurbg {
-  max-height: 80vh;
-}
 .work-header {
-  clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 13vw));
-  background-color: #55225a;
-  height: 15vh;
+  clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 8vw));
+  background-color: lighten($logobg, 10%);
   font-size: 2em;
-  margin-bottom: -11vw;
-  padding: 11vw;
+  margin-bottom: 2vh;
   top: -10vh;
-  width: 100%;
+  width: 100vw;
+  height: 20vh;
   text-align: center;
   position: relative;
   color: #ddc682;
+  padding-top: 20vh;
 }
 .work-wrapper {
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.left {
+  animation-name: fadeRight;
+  animation-delay: 2s;
 }
 .right {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
+  padding-left: 25vw;
+  font-size: 3em;
+  a {
+    color: orange;
+  }
+  animation-name: fadeRight;
+  animation-delay: 1.5s;
 }
 .box {
-  width: 50vh;
-  max-width: 50vh;
+  width: 100vh;
+  max-width: 90vh;
   height: 48vh;
-  text-align: left;
+  align-items: center;
   }
   .box--jot-it {
     background-image: url('../assets/img/jot-it.png');
     background-repeat: no-repeat;
     background-size: 50vh;
-    text-align: right;
+  }
+  .box--csm {
+    background-image: url('../assets/img/csm.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: right;
     font-size: 3em;
       a {
         color: orange;
       }
     }
-
-
 .box2 {
   background-color: $brightpurple;
   width: 73%;

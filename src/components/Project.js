@@ -20,7 +20,9 @@ export default class Project extends Component {
           />
         </div>
 
-        <div className="box">{this.props.name}</div>
+        <div className={ `${this.props.id}-header`}>Helloooo</div>
+
+        <div className="sup">{this.props.name}</div>
 
         <div className="box">{this.props.summary}</div>
 

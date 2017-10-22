@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
 import Parallax from 'react-springy-parallax';
-import CSM from '../assets/img/csm.png';
 
 export default class Work extends Component {
   get projects() {

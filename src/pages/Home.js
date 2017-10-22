@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import Featured from './Featured';
-import MediaQuery from '../components/MediaQuery';
 import Blur from '../assets/img/javascript-blur.jpg';
-import JotIt from '../assets/img/jot-it.png';
 
 
 export default class Home extends Component {
@@ -59,7 +57,7 @@ export default class Home extends Component {
             </Parallax.Layer>
 
 
-            <Featured/>
+        <Featured/>
 
       </Parallax>
     );

@@ -14,6 +14,7 @@ h1 {
 .wrapper {
   background-image: linear-gradient(180deg, #191330 50%, #6E229F 100%);
   background-size: auto;
+  background-repeat: repeat !important;
 }
 .mobile-h1 {
 	@extend h1;
