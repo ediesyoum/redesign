@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import ImageZoom from 'react-medium-image-zoom';
+import Blur from 'react-blur';
+import image from '../assets/img/jot-it.png';
 
 export default class Project extends Component {
+  get headerClassName() {
+    return `${this.props.id}-header`;
+  }
   render() {
     return(
       <div>
@@ -20,7 +25,11 @@ export default class Project extends Component {
           />
         </div>
 
-        <div className={ `${this.props.id}-header`}>Helloooo</div>
+        <Blur
+          img={image}
+          className={this.headerClassName}
+          blurRadius={10}
+          >Helloooo</Blur>
 
         <div className="sup">{this.props.name}</div>
 
