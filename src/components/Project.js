@@ -26,9 +26,9 @@ export default class Project extends Component {
         </div>
 
         <Blur
-          img={image}
+          img={`/img/${this.props.id}-desktop.jpg`}
           className={this.headerClassName}
-          blurRadius={10}
+          blurRadius={6}
           >Helloooo</Blur>
 
         <div className="sup">{this.props.name}</div>
