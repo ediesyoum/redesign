@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ImageZoom from 'react-medium-image-zoom';
 import Blur from 'react-blur';
-import image from '../assets/img/jot-it.png';
 
 export default class Project extends Component {
   get headerClassName() {
@@ -14,12 +13,10 @@ export default class Project extends Component {
           <ImageZoom
             image={{
               src: `/projects/01-${this.props.id}.svg`,
-              alt: this.props.name,
               style: { width: '65vh' }
             }}
             zoomImage={{
               src: `/projects/01-${this.props.id}.svg`,
-              alt: this.props.name,
               style: { background: '#000000' }
             }}
           />
@@ -28,7 +25,7 @@ export default class Project extends Component {
         <Blur
           img={`/img/${this.props.id}-desktop.jpg`}
           className={this.headerClassName}
-          blurRadius={6}
+          blurRadius={70}
           >Helloooo</Blur>
 
         <div className="sup">{this.props.name}</div>
