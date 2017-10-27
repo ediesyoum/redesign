@@ -1,15 +1,39 @@
 .work-header {
-  clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 8vw));
-  background-color: lighten($logobg, 10%);
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 calc(100% - 8vw));
   font-size: 2em;
   margin-bottom: 2vh;
-  top: -10vh;
-  width: 100vw;
-  height: 20vh;
-  text-align: center;
+  top: 0vh;
+  width: 100%;
+  height: 37vh;
+  text-align: right;
   position: relative;
-  color: #ddc682;
-  padding-top: 20vh;
+  color: #ffffff;
+  padding-right: 10vw;
+  padding-top: 6vh;
+}
+.work-header::before {
+  content: "";
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  height: 82%;
+  width: 100%;
+  transform: skewY(8deg);
+  background-color: #ad04fd;
+  transform-origin: bottom right;
+  z-index: -1;
+}
+.work-header::after {
+  content: "";
+  position: absolute;
+  top: -88px;
+  left: 0px;
+  height: 20vw;
+  width: 100vw;
+  transform: skewY(-4deg);
+  background-color: #ae00ff;
+  transform-origin: bottom left;
+  z-index: -1;
 }
 .work-wrapper {
   flex-direction: column;
