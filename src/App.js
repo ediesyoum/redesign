@@ -22,6 +22,7 @@ class App extends Component {
     return(
           <div>
             <div className="header">
+            <div className="home-header"/>
               <MediaQuery size="desktop">
                 <Grid>
                   <Row>

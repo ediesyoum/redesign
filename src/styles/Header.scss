@@ -35,7 +35,7 @@
 }
 .logo-sm {
 	@extend .logo;
-	left: 5vh;
+	left: 3vh;
 	top: 3vh;
 	max-width: 11vh;
 }
@@ -47,14 +47,22 @@
   margin-top: -7vh;
   text-transform: uppercase;
   a {
-    margin-right: 1vh;
-    background-color: darken($teal, 20%);
-    color: $linkbg;
+    cursor: pointer;
+    color: darken($teal, 20%);
     padding: .75em;
-    border-radius: 1vw;
     letter-spacing: .15vw;
+    display: inline-block;
   }
-  a:hover {
+  a::after {
+    content: '';
+    width: 0;
+    height: 2px;
     background-color: $brightpurple;
+    transition: width .3s;
+    display: block;
+  }
+  a:hover::after {
+    width: 100%;
+    transition: width .3s;
   }
 }
