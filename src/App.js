@@ -24,7 +24,7 @@ class App extends Component {
             <div className="header">
             <div className="home-header"/>
               <MediaQuery size="desktop">
-                <Grid>
+                <Grid fluid>
                   <Row>
                     <Col xs={12}>
                       <Row start="xs">
@@ -43,7 +43,7 @@ class App extends Component {
               </MediaQuery>
 
             <MediaQuery size="mobile">
-              <Grid>
+              <Grid fluid>
                 <Row>
                   <Col xs={12}>
                     <Row start="xs">
