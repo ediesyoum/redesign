@@ -60,6 +60,9 @@
 .left {
   animation-name: fadeRight;
   animation-delay: 2s;
+  top: 30vh;
+  left: -4vh;
+  position: relative;
 }
 .right {
   display: flex;
@@ -67,6 +70,9 @@
   justify-content: space-around;
   padding-left: 25vw;
   font-size: 3em;
+  top: 30vh;
+  left: -4vh;
+  position: relative;
   a {
     color: orange;
   }

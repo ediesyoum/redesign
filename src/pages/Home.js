@@ -24,15 +24,14 @@ export default class Home extends Component {
               speed={0.9}
               className={'premise'}
               style={{
-                width: 200,
                 height: 300
               }}>
 
-              <h1>Hi there I'm
+              <h1><p className="greet">Hey there!</p> I'm
                 <span className="myname">Eden</span>
+                  and I'm a
                   <div className="rotatewords-wrapper">
-                    and I'm a
-                    <span className="rotatewords">
+                    <div className="rotatewords">
                       <ReactRotatingText
                       items={['Front End Web Developer',
                         'UI Designer',
@@ -43,7 +42,7 @@ export default class Home extends Component {
                       typingInterval={90}
                       color={'62F9BB'}
                       />
-                   </span>
+                  </div>
 
                    <div className="premise_line03">
                      creating first class web experiences

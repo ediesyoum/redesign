@@ -7,7 +7,15 @@
   position: relative;
   top: 20vh;
   height: 20vh;
+  line-height: 4vh;
+  color: lighten($linkbg, 70%);
+  text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
+  .greet {
+    font-size: 2em;
+    margin:0;
+    padding-bottom:5vh;
+  }
   .myname {
     font-family: 'kayak_sans-regular_italic', sans-serif;
     font-size: 2em;
@@ -16,18 +24,13 @@
     padding: .25em;
   }
   .premise_line03 {
-    left: -9vw;
     padding-top: 2.5vh;
-    position: relative;
   }
   .premise_line04 {
-    left: -10vw;
-    padding: 2vw;
-    position: relative;
+    padding-top: 2.5vh;
   }
   .roles {
     @extend .premise;
-    padding-left: 20%;
   }
   .premise-sm {
     @extend .premise;
@@ -47,7 +50,8 @@
     color: $teal;
     text-decoration: none;
   	text-shadow: 4px 5px 3px lighten($shadow, 15%);
-    padding: 2vh;
+    padding-top: 2vh;
+    padding-left: 4vh;
     text-transform: uppercase;
   }
   .rotatewords-sm {
@@ -58,7 +62,6 @@
   	text-shadow: 4px 5px 3px lighten($shadow, 15%);
   }
   .rotatewords-wrapper {
-    left: 7vw;
     position: relative;
   }
   .react-rotating-text-cursor {
@@ -111,7 +114,7 @@
   background-color: lighten($linkbg, 10%);
   background-image: $circuits-bg;
   height: 25vh;
-  font-size: 2vw;
+  font-size: 2em;
   margin-bottom: -11vw;
   padding-bottom: 11vw;
   padding-top: 3vw;
