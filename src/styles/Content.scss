@@ -12,10 +12,7 @@ h1 {
 
 }
 .wrapper {
-
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-size: auto;
-  background-repeat: repeat !important;
+  background-image: radial-gradient(circle at 6.09% 22.46%, #83a4d4, transparent 100%),radial-gradient(circle at 77.66% 76%, #b6fbff, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
 }
 .mobile-h1 {
 	@extend h1;

@@ -57,7 +57,7 @@ class App extends Component {
                         burgerButtonClassName={ "bm-burger-button-sm" }
                         right={true}
                         width={'70%'}
-                        className={"navlinks a"}
+                        className={'navlinks a'}
                         onStateChange={ isMenuOpen }
                         isOpen={false}>
                         <a href="/">Home</a>

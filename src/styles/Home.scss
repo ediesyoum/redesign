@@ -111,7 +111,7 @@
   background-color: lighten($linkbg, 10%);
   background-image: $circuits-bg;
   height: 25vh;
-  font-size: 2em;
+  font-size: 2vw;
   margin-bottom: -11vw;
   padding-bottom: 11vw;
   padding-top: 3vw;
@@ -182,9 +182,9 @@
 .home-header::before {
   content: "";
   position: absolute;
-  top: 0vh;
+  top: -10vh;
   left: 0;
-  height: 19vh;
+  height: 29vh;
   width: 100%;
   transform: skewY(5deg);
   background-color: #3d228c;

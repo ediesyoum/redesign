@@ -12,18 +12,19 @@
 .navlinks a {
 	padding: .8em;
 	margin: 1.5vh;
-  color: #f5e8cd;
-	background-color: lighten($linkbg, 5%);
-  font-size: 3vh;
-	padding: 1.2vh;
-	border-radius: .5em;
-  text-decoration: none;
-  &:hover {
-		box-shadow: 0px 4px 3px -3px $shadow;
-		color: $teal;
-    transition-duration: .4s;
-    text-decoration: none;
-    transition-timing-function: ease-in-out;
+  font-size: 1em;
+  color: $teal;
+  &::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: $brightpurple;
+    transition: width .3s;
+    display: block;
+  }
+  &:hover::after {
+    width: 100%;
+    transition: width .3s;
   }
 }
 .logo {
@@ -45,6 +46,7 @@
   position: absolute;
   z-index: 2;
   margin-top: -7vh;
+  font-size: 2vh;
   text-transform: uppercase;
   a {
     cursor: pointer;
