@@ -21,7 +21,7 @@ h1 {
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 h3 {
-  font-size: 2em;
+  font-siz2: 2em;
 }
 .title {
 	display: none;
@@ -29,13 +29,4 @@ h3 {
 a {
 	cursor: pointer;
 	text-decoration: none;
-}
-
-.angle-right_bottom {
-		clip-path: polygon(
-		0 0,
-		100% 0,
-		100% 100%,
-		0 calc(100% - 6vw)
-	);
 }

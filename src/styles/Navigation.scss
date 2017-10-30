@@ -1,0 +1,106 @@
+.blurbg {
+  transform: scale(1.3) !important; //necessary for blurred image
+}
+.header_clear {
+	padding-bottom: 1em;
+}
+.header {
+  position: relative;
+  z-index: 2;
+	width: 100%;
+}
+.nav {
+  font-size: 2em;
+  margin-bottom: 2vh;
+  top: 0vh;
+  width: 100%;
+  height: 32vh;
+  text-align: right;
+  position: absolute;
+  color: rgba(255, 255, 255, 0);
+}
+.nav::before {
+  content: "";
+  position: absolute;
+  top: -10vh;
+  left: 0;
+  height: 29vh;
+  width: 100%;
+  transform: skewY(5deg);
+  background-color: #3d228c;
+  transform-origin: bottom right;
+  z-index: -1;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  height: 20vh;
+  width: 100vw;
+  transform: skewY(-8deg);
+  background-color: #3d228c;
+  transform-origin: bottom left;
+  z-index: -1;
+}
+.nav__links {
+   a {
+  	margin: 1.5vh;
+    font-size: 1em;
+    color: $teal;
+    &::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      background-color: $brightpurple;
+      transition: width .3s;
+      display: block;
+    }
+    &:hover::after {
+      width: 100%;
+      transition: width .3s;
+    }
+  }
+}
+.nav__links--desktop {
+  top: 13vh;
+  right: 1vh;
+  position: absolute;
+  z-index: 2;
+  margin-top: -7vh;
+  font-size: 2vh;
+  text-transform: uppercase;
+  a {
+    cursor: pointer;
+    color: darken($teal, 20%);
+    padding: .75em;
+    letter-spacing: .15vw;
+    display: inline-block;
+  }
+  a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: $brightpurple;
+    transition: width .3s;
+    display: block;
+  }
+  a:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+}
+
+.logo--lg {
+  position: absolute;
+  z-index: 1;
+	top: 4vh;
+	left: 3vw;
+  max-width: 11vh;
+}
+.logo {
+	@extend .logo;
+	left: 3vh;
+	top: 3vh;
+	max-width: 11vh;
+}

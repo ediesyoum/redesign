@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
-import Featured from './Featured';
+import Featured from '../components/Featured';
 import Blur from '../assets/img/javascript-blur.jpg';
 
 
