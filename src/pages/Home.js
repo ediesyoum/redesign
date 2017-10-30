@@ -16,7 +16,7 @@ export default class Home extends Component {
             className={'blurbg'}
             style={{
               backgroundImage: `url(${Blur})`,
-              top: 0,
+              top: 0
             }}/>
 
             <Parallax.Layer

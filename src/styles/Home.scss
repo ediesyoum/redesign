@@ -1,13 +1,14 @@
 // Premise text
 
 .premise {
-  min-width: 50vw;
-  left: 15%;
+  max-width: 70vw;
+  left: 15vw;
   padding-right: 20%;
   position: relative;
-  top: 20vh;
+  top: 23vh;
   height: 20vh;
   line-height: 4vh;
+	font-family: 'kayak_sans-light_italic', sans-serif;
   color: lighten($linkbg, 70%);
   text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
@@ -15,11 +16,14 @@
     font-size: 2em;
     margin:0;
     padding-bottom:5vh;
+    position: relative;
+    color: lighten($mustard, 10%);
+  	font-family: 'kayak_sans-light_italic', sans-serif;
   }
   .myname {
-    font-family: 'kayak_sans-regular_italic', sans-serif;
+  	font-family: 'kayak_sans-light_italic', sans-serif;
     font-size: 2em;
-    color: $green;
+    color: $teal;
     min-width: 50vw;
     padding: .25em;
   }
@@ -45,17 +49,16 @@
     position: relative;
   }
   .rotatewords {
-  	font-family: 'kayak_sans-bold_italic', sans-serif;
+  	font-family: 'kayak_sans-light_italic', sans-serif;
   	font-size: .85em;
-    color: $teal;
+    color: lighten($mustard, 10%);
     text-decoration: none;
   	text-shadow: 4px 5px 3px lighten($shadow, 15%);
     padding-top: 2vh;
-    padding-left: 4vh;
     text-transform: uppercase;
   }
   .rotatewords-sm {
-  	font-family: 'kayak_sans-italic';
+  	font-family: 'kayak_sans-light_italic', sans-serif;
   	font-size: 5.5vw;
     color: $teal;
     text-decoration: none;
