@@ -91,11 +91,11 @@
   position: absolute;
   z-index: 1;
 	top: 4vh;
-	left: 3vw;
+	left: 5vw;
   max-width: 11vh;
 }
 .logo {
-	@extend .logo;
+	@extend .logo--lg;
 	left: 3vh;
 	top: 3vh;
 	max-width: 11vh;

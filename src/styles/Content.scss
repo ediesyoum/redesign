@@ -9,16 +9,7 @@ h1 {
   text-decoration: none;
 }
 .wrapper {
-  // background-image: radial-gradient(circle at 6.09% 22.46%, #83a4d4, transparent 100%),radial-gradient(circle at 77.66% 76%, #b6fbff, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
-  background-image: $camo-bg;
-
-}
-.mobile-h1 {
-	@extend h1;
-	font-size: 20vw;
-	line-height: 18vh;
-	color: lighten($burger, 5%);
-	text-shadow: 4px 5px 3px lighten($shadow, 15%);
+  background-image: radial-gradient(circle at 6.09% 22.46%, #83a4d4, transparent 100%),radial-gradient(circle at 77.66% 76%, #b6fbff, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
 }
 h3 {
   font-siz2: 2em;

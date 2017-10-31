@@ -1,89 +1,94 @@
-.work-header {
-  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 calc(100% - 8vw));
-  font-size: 2em;
-  margin-bottom: 2vh;
-  top: 0vh;
-  width: 100%;
-  height: 25vh;
-  text-align: right;
-  position: relative;
-  color: #ffffff;
-  padding-top: 6vh;
-}
-.work-header::before {
-  content: "";
-  position: absolute;
-  top: 0vh;
-  left: 0;
-  height: 31vh;
-  width: 100%;
-  transform: skewY(5deg);
-  background-color: #ad04fd;
-  transform-origin: bottom right;
-  z-index: -1;
-}
-.work_header--title {
-  padding-top: 45vh;
-  padding-right: 6vh;
-}
-.work-wrapper {
+.work__wrapper {
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-@keyframes fadeRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -ms-transform: none;
-    transform: none;
-  }
-}
-
-.left {
-  animation-name: fadeRight;
-  animation-delay: 2s;
-  top: 30vh;
-  left: -4vh;
+.work__header {
+  content: "";
+  font-size: 2.7em;
+  padding: 7vw;
+  width: 100%;
+  min-height: 20vh !important;
+  height: 18vh;
+  background-color: #ad04fd;
+  transform: skewY(5deg);
+  text-align: right;
   position: relative;
+  color: #ffffff;
 }
-.right {
-  font-size: 4em;
-  top: 30vh;
-  position: relative;
-  a {
-    color: orange;
-  }
+.work__header--title {
+  padding-top: 18vh;
+  padding-right: 3vw;
+  transform: skewY(-5deg);
 }
-.box {
-  width: 100vh;
-  max-width: 90vh;
+.projectcard {
+  width: 80vw;
   height: 48vh;
   align-items: center;
+  justify-content: center;
   position: relative;
-  display: inline-flex;
+  display: flex;
+  transform: skewY(0deg);
+  margin-bottom: 10vh;
+    a {
+      color: orange;
+      font-size: 4em !important;
+      cursor: pointer;
+    }
   }
-  .box--jot-it {
+  .projectcard--jot-it {
     background-image: url('../assets/img/jot-it.png');
     background-repeat: no-repeat;
-    background-size: 30vw;
-
+    background-size: 40vh;
   }
-  .box--csm {
+  .projectcard--csm {
     background-image: url('../assets/img/csm.png');
     background-repeat: no-repeat;
     background-size: 40vh;
     background-position: right;
-    font-size: 3em;
-      a {
-        color: orange;
-      }
-    }
-.project-img {
-  max-width: 75%;
+  }
+  .projectcard--portfolio-current {
+    background-image: url('../assets/img/portfolio-old.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+  }
+  .projectcard--economy {
+    background-image: url('../assets/img/economy.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: right;
+  }
+  .projectcard--east-end {
+    background-image: url('../assets/img/east-end.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+  }
+  .projectcard--tic-tac-toe {
+    background-image: url('../assets/img/tic-tac-toe.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: right;
+  }
+  .projectcard--portfolio-old {
+    background-image: url('../assets/img/portfolio-old.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+  }
+  .projectcard--upenn {
+    background-image: url('../assets/img/upenn.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: right;
+  }
+
+.left {
+  position: relative;
+  transform: skewY(0deg);
+  text-align: left;
+  padding-left: 10vh;
+}
+.right {
+  position: relative;
+  transform: skewY(0deg);
 }

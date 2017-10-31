@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/media-query.scss';
+import '../styles/MediaQuery.scss';
 
 const MediaQuery = (props) => {
   const { size, children } = props;

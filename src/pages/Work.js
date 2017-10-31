@@ -10,7 +10,7 @@ export default class Work extends Component {
 
     return projectIDs.map(function(id) {
       let projectAttributes = Projects[id];
-      let boxClassName = `box box--${id}`;
+      let boxClassName = `projectcard projectcard--${id}`;
       let indexInArray = projectIDs.indexOf(id);
 
       projectAttributes.id = id;
@@ -18,11 +18,12 @@ export default class Work extends Component {
       return(
         <div>
           <Grid fluid>
-            <Row>
-              <Col start="xs">
+            <Row bottom="xs">
+              <Col xs={6}>
                 <div className={`${boxClassName}`}/>
               </Col>
-              <Col end="xs">
+
+              <Col xs={6}>
                 <ProjectPreview index={indexInArray} {...projectAttributes} />
               </Col>
             </Row>
@@ -36,9 +37,9 @@ export default class Work extends Component {
     return (
       <Parallax ref="parallax" pages={4} className={'wrapper'}>
 
-          <div className="work-wrapper">
-            <div className="work-header">
-              <div className="work-header--title">featured projects</div>
+          <div className="work__wrapper">
+            <div className="work__header">
+              <div className="work__header--title">Featured Projects</div>
             </div>
 
             {this.projects}
