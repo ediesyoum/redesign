@@ -22,22 +22,10 @@
   transform-origin: bottom right;
   z-index: -1;
 }
-.work-header--text {
-  padding-top: 15vh;
+.work_header--title {
+  padding-top: 45vh;
   padding-right: 6vh;
 }
-// .work-header::after {
-//   content: "";
-//   position: absolute;
-//   top: 0vh;
-//   left: 0vh;
-//   height: 30vh;
-//   width: 100vw;
-//   transform: skewY(-8deg);
-//   background-color: #ae00ff;
-//   transform-origin: bottom left;
-//   z-index: -1;
-// }
 .work-wrapper {
   flex-direction: column;
   display: flex;
@@ -65,30 +53,26 @@
   position: relative;
 }
 .right {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  padding-left: 25vw;
-  font-size: 3em;
+  font-size: 4em;
   top: 30vh;
-  left: -4vh;
   position: relative;
   a {
     color: orange;
   }
-  animation-name: fadeRight;
-  animation-delay: 1.5s;
 }
 .box {
   width: 100vh;
   max-width: 90vh;
   height: 48vh;
   align-items: center;
+  position: relative;
+  display: inline-flex;
   }
   .box--jot-it {
     background-image: url('../assets/img/jot-it.png');
     background-repeat: no-repeat;
-    background-size: 50vh;
+    background-size: 30vw;
+
   }
   .box--csm {
     background-image: url('../assets/img/csm.png');
@@ -100,27 +84,6 @@
         color: orange;
       }
     }
-.box2 {
-  background-color: $brightpurple;
-  width: 73%;
-  border-radius: 1em;
-  height: 51vh;
-  margin-top: 7vh;
-}
-.noise {
-  width: 100%;
-  height: 30vh;
-}
-.jot-it {
-  background-color: red;
-  font-size: 3em;
-  color: black;
-  width: 200px;
-  height: 400px;
-  top:0px;
-  text-align: center;
-  z-index: 2;
-}
 .project-img {
   max-width: 75%;
 }

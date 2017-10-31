@@ -34,7 +34,7 @@ export default class Featured extends Component {
             speed={.5}
             className={'feature01-desktop'}
             style={{ height: 300 }}>
-            <Preview {...csm} />
+            <Preview {...jotit} />
           </Parallax.Layer>
 
           <Parallax.Layer

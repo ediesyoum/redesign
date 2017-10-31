@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
 import Parallax from 'react-springy-parallax';
@@ -15,8 +16,17 @@ export default class Work extends Component {
       projectAttributes.id = id;
 
       return(
-        <div className={`${boxClassName}`}>
-          <ProjectPreview index={indexInArray} {...projectAttributes} />
+        <div>
+          <Grid fluid>
+            <Row>
+              <Col start="xs">
+                <div className={`${boxClassName}`}/>
+              </Col>
+              <Col end="xs">
+                <ProjectPreview index={indexInArray} {...projectAttributes} />
+              </Col>
+            </Row>
+          </Grid>
         </div>
       );
     });
@@ -28,7 +38,7 @@ export default class Work extends Component {
 
           <div className="work-wrapper">
             <div className="work-header">
-              <div className="work-header--text">featured projects</div>
+              <div className="work-header--title">featured projects</div>
             </div>
 
             {this.projects}

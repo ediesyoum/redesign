@@ -14,12 +14,12 @@ export default class Navigation extends Component {
           <MediaQuery size="desktop">
             <Grid fluid>
               <Row>
-                <Col xs={12}>
+                <Col xs>
                   <Row start="xs">
                     <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className='logo--lg' alt='Eden Syoum - Development & Design' /></a>
                   </Row>
                 </Col>
-                <Col xs={12} className={"nav__links--desktop"}>
+                <Col xs className={"nav__links--desktop"}>
                   <a href="/">Home</a>
                   <a href="/about">About</a>
                   <a href="/work">Selected Work</a>
@@ -29,34 +29,34 @@ export default class Navigation extends Component {
             </Grid>
           </MediaQuery>
 
-        <MediaQuery size="mobile">
-          <Grid fluid>
-            <Row>
-              <Col xs={12}>
-                <Row start="xs">
-                  <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
-                </Row>
-              </Col>
-              <Col xs={12}>
-                <Row end="xs">
-                  <Menu
-                    burgerButtonClassName={ "bm-burger-button-sm" }
-                    right={true}
-                    width={'70%'}
-                    className={'nav__links'}
-                    onStateChange={ isMenuOpen }
-                    isOpen={false}>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/work">Selected Work</a>
-                    <a href="/contact">Get Connected</a>
-                  </Menu>
-                </Row>
-              </Col>
-            </Row>
-          </Grid>
-        </MediaQuery>
-      </div>
+          <MediaQuery size="mobile">
+            <Grid fluid>
+              <Row>
+                <Col xs>
+                  <Row start="xs">
+                    <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className="logo" alt='Eden Syoum - Development & Design' /></a>
+                  </Row>
+                </Col>
+                <Col xs={12}>
+                  <Row end="xs">
+                    <Menu
+                      burgerButtonClassName={ "bm-burger-button-sm" }
+                      right={true}
+                      width={'70%'}
+                      className={'nav__links'}
+                      onStateChange={ isMenuOpen }
+                      isOpen={false}>
+                      <a href="/">Home</a>
+                      <a href="/about">About</a>
+                      <a href="/work">Selected Work</a>
+                      <a href="/contact">Get Connected</a>
+                    </Menu>
+                  </Row>
+                </Col>
+              </Row>
+            </Grid>
+          </MediaQuery>
+        </div>
     )
   }
 }

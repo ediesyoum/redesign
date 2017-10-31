@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ImageZoom from 'react-medium-image-zoom';
 import Blur from 'react-blur';
-import image from '../assets/img/jot-it.png';
 
 export default class Project extends Component {
   get headerClassName() {

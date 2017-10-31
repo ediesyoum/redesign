@@ -1,9 +1,6 @@
 .blurbg {
   transform: scale(1.3) !important; //necessary for blurred image
 }
-.header_clear {
-	padding-bottom: 1em;
-}
 .header {
   position: relative;
   z-index: 2;
@@ -90,7 +87,6 @@
     transition: width .3s;
   }
 }
-
 .logo--lg {
   position: absolute;
   z-index: 1;
