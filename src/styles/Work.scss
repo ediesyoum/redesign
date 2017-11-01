@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-image:
+    linear-gradient(green -4%, red 90%),
+    linear-gradient(to right, purple 0%, yellow 240%);
+  background-blend-mode: difference, darken;
+  background-size: 100vw;
 }
 .work__header {
   content: "";
@@ -12,11 +17,12 @@
   width: 100vw;
   height: 6vh;
   top: 10vh;
-  background-color: #ad04fd;
+  background-color: $logobg;
   transform: skewY(5deg);
   text-align: right;
   position: relative;
   color: #ffffff;
+  background-image: $camo-bg;
 }
 .work__header--title {
   font-family: 'kayak_sans-light_italic', sans-serif;
@@ -24,18 +30,20 @@
 }
 .projectcard {
   width: 80vw;
-  height: 48vh;
+  height: 50vh;
+  top: 15vh;
   align-items: center;
   justify-content: center;
   position: relative;
-  display: flex;
+  display: inline-flex;
   transform: skewY(0deg);
-  margin-bottom: 10vh;
   }
   .projectcard--jot-it {
     background-image: url('../assets/img/jot-it.png');
     background-repeat: no-repeat;
-    background-size: 40vh;
+    background-size: 50vh;
+    background-position: left;
+
   }
   .projectcard--csm {
     background-image: url('../assets/img/csm.png');
@@ -81,26 +89,22 @@
   position: relative;
   transform: skewY(0deg);
   text-align: left;
-  padding-left: 10vh;
   a {
     color: orange;
     font-size: 4em !important;
     cursor: pointer;
-    padding: 10vh;
-    position: relative;
-    display: block;
+
   }
 }
 .right {
   position: relative;
   transform: skewY(0deg);
   text-align: right;
+  position: relative;
   a {
-    color: orange;
+    color: red;
     font-size: 4em !important;
     cursor: pointer;
-    padding: 10vw;
-    position: relative;
-    display: block;
+
   }
 }

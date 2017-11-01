@@ -18,12 +18,10 @@ export default class Work extends Component {
       return(
         <div>
           <Grid fluid>
-            <Row bottom="xs">
-              <Col xs={6}>
+            <Row center="xs">
+              <Col bottom="xs">
                 <div className={`${boxClassName}`}/>
-              </Col>
 
-              <Col xs={6}>
                 <ProjectPreview index={indexInArray} {...projectAttributes} />
               </Col>
             </Row>
@@ -35,7 +33,7 @@ export default class Work extends Component {
 
   render() {
     return (
-      <Parallax ref="parallax" pages={4} className={'wrapper'}>
+      <Parallax ref="parallax" pages={5}>
 
           <div className="work__wrapper">
             <div className="work__header">
