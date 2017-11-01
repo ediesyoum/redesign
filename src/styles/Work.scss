@@ -7,10 +7,11 @@
 .work__header {
   content: "";
   font-size: 2.7em;
-  padding: 7vw;
-  width: 100%;
-  min-height: 20vh !important;
-  height: 18vh;
+  padding-top: 12vh;
+  padding-right: 15vw;
+  width: 100vw;
+  height: 6vh;
+  top: 10vh;
   background-color: #ad04fd;
   transform: skewY(5deg);
   text-align: right;
@@ -18,8 +19,7 @@
   color: #ffffff;
 }
 .work__header--title {
-  padding-top: 18vh;
-  padding-right: 3vw;
+  font-family: 'kayak_sans-light_italic', sans-serif;
   transform: skewY(-5deg);
 }
 .projectcard {
@@ -31,11 +31,6 @@
   display: flex;
   transform: skewY(0deg);
   margin-bottom: 10vh;
-    a {
-      color: orange;
-      font-size: 4em !important;
-      cursor: pointer;
-    }
   }
   .projectcard--jot-it {
     background-image: url('../assets/img/jot-it.png');
@@ -87,8 +82,25 @@
   transform: skewY(0deg);
   text-align: left;
   padding-left: 10vh;
+  a {
+    color: orange;
+    font-size: 4em !important;
+    cursor: pointer;
+    padding: 10vh;
+    position: relative;
+    display: block;
+  }
 }
 .right {
   position: relative;
   transform: skewY(0deg);
+  text-align: right;
+  a {
+    color: orange;
+    font-size: 4em !important;
+    cursor: pointer;
+    padding: 10vw;
+    position: relative;
+    display: block;
+  }
 }
