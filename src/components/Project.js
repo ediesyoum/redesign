@@ -1,48 +1,42 @@
 import React, { Component } from 'react';
 import ImageZoom from 'react-medium-image-zoom';
 import Blur from 'react-blur';
+import Parallax from 'react-springy-parallax';
 
 export default class Project extends Component {
   get headerClassName() {
-    return `${this.props.id}-header`;
+    return `${this.props.id}__header`;
+  }
+  get headerTitleClassName() {
+    return `${this.props.id}__header-title`;
+  }
+  get summaryClassName () {
+    return `${this.props.id}__summary`;
   }
   render() {
     return(
-      <div>
-        <div>
-          <ImageZoom
-            image={{
-              src: `/projects/01-${this.props.id}.svg`,
-              alt: this.props.name,
-              style: { width: '65vh' }
-            }}
-            zoomImage={{
-              src: `/projects/01-${this.props.id}.svg`,
-              alt: this.props.name,
-              style: { background: '#000000' }
-            }}
-          />
+      <Parallax ref="parallax" className={'wrapper'} classpages={4}>
+
+        <div className={this.headerClassName}>
+          <div className={this.headerTitleClassName}>{this.props.name}</div>
         </div>
 
-        <Blur
-          img={`/img/${this.props.id}-desktop.jpg`}
-          className={this.headerClassName}
-          blurRadius={6}
-          >Helloooo</Blur>
+        <Blur img={`/img/${this.props.id}-desktop.jpg`}
+          blurRadius={6}/>
 
-        <div className="sup">{this.props.name}</div>
+        <div className={this.summaryClassName}>
+          <p>{this.props.summary}</p>
 
-        <div className="box">{this.props.summary}</div>
+          <p>{this.props.technical}</p>
 
-        <div className="box">{this.props.technical}</div>
+          <p>{this.props.live}</p>
 
-        <div className="box">{this.props.live}</div>
+          <p>{this.props.gh}</p>
 
-        <div className="box">{this.props.gh}</div>
+          <p>{this.props.tags}</p>
+        </div>
 
-        <div className="box">{this.props.tags}</div>
-
-      </div>
+      </Parallax>
     );
   }
 }
