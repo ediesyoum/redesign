@@ -1,0 +1,53 @@
+.project__header {
+  content: "";
+  font-size: 2vw;
+  margin-top: 12vh;
+  padding-right: 15vw;
+  width: 100vw;
+  min-height: 30vh;
+  background-color: $logobg;
+  transform: skewY(4deg);
+  text-align: right;
+  position: relative;
+  color: #ffffff;
+  background-image: $camo-bg;
+}
+.project__header-title {
+  font-family: 'kayak_sans-light_italic', sans-serif;
+  color: lighten($green, 20%);
+  font-size: 3em;
+  z-index: 1;
+  position: absolute;
+  text-align: right;
+  right: 5%;
+  top: 30vh;
+}
+.project__summary {
+  font-size: 2.5em;
+  color: $teal;
+  line-height: 7.5vh;
+  text-align: justify;
+  width: 75vw;
+  display: block;
+  left: 12vw;
+  align-items: center;
+  position: relative;
+}
+.header-blur {
+  mix-blend-mode: overlay;
+  background-blend-mode: lighten;
+  position: relative;
+  height: 17vh;
+  top:0vh;
+  margin-bottom: 40vh;
+}
+.box {
+  height: 40vh;
+  p {
+    margin-bottom: 60vh;
+  }
+}
+.react-blur-canvas {
+  min-height: 30vh;
+  max-height: 30vh;
+}

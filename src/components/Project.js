@@ -10,21 +10,41 @@ export default class Project extends Component {
   get headerTitleClassName() {
     return `${this.props.id}__header-title`;
   }
-  get summaryClassName () {
+  get summaryClassName() {
     return `${this.props.id}__summary`;
+  }
+  get headerBlurImg(){
+    return `/img/${this.props.id}-desktop.jpg`;
   }
   render() {
     return(
-      <Parallax ref="parallax" className={'wrapper'} classpages={4}>
+      <Parallax ref="parallax" className={'wrapper'} pages={4}>
 
-        <div className={this.headerClassName}>
-          <div className={this.headerTitleClassName}>{this.props.name}</div>
+
+        <Parallax.Layer offset={1} speed={.1} style={{ backgroundColor: '#805E73' }} />
+        <Parallax.Layer offset={2} speed={.1} style={{ backgroundColor: '#87BCDE' }} />
+        <Parallax.Layer offset={3} speed={.1} style={{ backgroundColor: '#6b1586' }} />
+
+        <div className="project__header">
+
+          <div className="project__header-title">
+            {this.props.name}
+          </div>
+
+          <div className="header-blur">
+
+
+
+            <Blur img={`/img/${this.props.id}-desktop.jpg`} blurRadius={6}/>
+
+          </div>
+
         </div>
 
-        <Blur img={`/img/${this.props.id}-desktop.jpg`}
-          blurRadius={6}/>
 
-        <div className={this.summaryClassName}>
+
+        <div className="project__summary box">
+
           <p>{this.props.summary}</p>
 
           <p>{this.props.technical}</p>
@@ -34,6 +54,7 @@ export default class Project extends Component {
           <p>{this.props.gh}</p>
 
           <p>{this.props.tags}</p>
+
         </div>
 
       </Parallax>
