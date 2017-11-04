@@ -1,13 +1,14 @@
 .work__wrapper {
   flex-direction: column;
-  display: flex;
-  align-items: center;
+
   justify-content: space-around;
   background-image:
     linear-gradient(green -4%, red 90%),
     linear-gradient(to right, purple 0%, yellow 240%);
-  background-blend-mode: difference, darken;
+  background-blend-mode: luminosity, color;
   background-size: 100vw;
+  width: 100vw;
+  position: relative;
 }
 .work__header {
   content: "";
@@ -31,18 +32,17 @@
 .projectcard {
   width: 80vw;
   height: 50vh;
-  top: 15vh;
-  align-items: center;
-  justify-content: center;
+  top: 25vh;
+  display: block;
   position: relative;
-  display: inline-flex;
-  transform: skewY(0deg);
+
   }
   .projectcard--jot-it {
     background-image: url('../assets/img/jot-it.png');
     background-repeat: no-repeat;
     background-size: 50vh;
     background-position: left;
+    cursor: pointer;
 
   }
   .projectcard--csm {
