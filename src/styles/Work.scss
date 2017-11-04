@@ -1,11 +1,10 @@
 .work__wrapper {
   flex-direction: column;
-
   justify-content: space-around;
   background-image:
-    linear-gradient(green -4%, red 90%),
-    linear-gradient(to right, purple 0%, yellow 240%);
-  background-blend-mode: luminosity, color;
+    linear-gradient(green -70%, red 120%),
+    linear-gradient(to left, purple 210%, yellow 240%);
+  background-blend-mode: difference;
   background-size: 100vw;
   width: 100vw;
   position: relative;
@@ -30,20 +29,20 @@
   transform: skewY(-5deg);
 }
 .projectcard {
-  width: 80vw;
-  height: 50vh;
-  top: 25vh;
-  display: block;
+  min-width: 69vw;
+  max-width: 71vw;
+  min-height: 50vh;
+  max-height: 73vh;
+  cursor: pointer;
   position: relative;
-
+  display: block;
   }
   .projectcard--jot-it {
     background-image: url('../assets/img/jot-it.png');
     background-repeat: no-repeat;
-    background-size: 50vh;
-    background-position: left;
-    cursor: pointer;
-
+    background-size: 40vh;
+    top: 12vh;
+    position: relative;
   }
   .projectcard--csm {
     background-image: url('../assets/img/csm.png');

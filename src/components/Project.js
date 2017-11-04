@@ -18,7 +18,7 @@ export default class Project extends Component {
   }
   render() {
     return(
-      <Parallax ref="parallax" className={'wrapper'} pages={4}>
+      <Parallax ref="parallax" className={'wrapper'} pages={6}>
 
 
         <Parallax.Layer offset={1} speed={.1} style={{ backgroundColor: '#805E73' }} />
@@ -26,32 +26,30 @@ export default class Project extends Component {
         <Parallax.Layer offset={3} speed={.1} style={{ backgroundColor: '#6b1586' }} />
 
         <div className="project__header">
-
           <div className="project__header-title">
             {this.props.name}
           </div>
-
           <div className="header-blur">
-
-
-
             <Blur img={`/img/${this.props.id}-desktop.jpg`} blurRadius={6}/>
-
           </div>
-
         </div>
 
 
 
         <div className="project__summary box">
 
-          <p>{this.props.summary}</p>
+          <div className="title--background"><h3>Project Details</h3></div>
+            <p>{this.props.summary}</p>
 
-          <p>{this.props.technical}</p>
+          <div className="title--background"><h3>Technical Details</h3></div>
+            <p>{this.props.technical}</p>
 
-          <p>{this.props.live}</p>
+          <section className="btn-group">
+            <div className="btn"><a href={`${this.props.live}`} target="_blank">DEMO</a></div>
 
-          <p>{this.props.gh}</p>
+
+            <div className="btn"><a href={`${this.props.gh}`} target="_blank">SEE GITHUB</a></div>
+          </section>
 
           <p>{this.props.tags}</p>
 

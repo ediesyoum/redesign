@@ -48,3 +48,35 @@
   max-height: 20.7vh;
   transform: scaleY(1.9);
 }
+.btn-group {
+  position: absolute;
+  width: 30vw;
+  height: 40vh;
+  display: block;
+}
+.btn {
+  background-color: lighten($paleblue, 10%);
+  border-radius: .5em;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'kayak_sans-light_italic', sans-serif;
+  width: 20vw;
+  padding: .5vh;
+  text-align: center;
+  margin: 1vw;
+  &:hover, &:active {
+    background-color: lighten($paleblue, 15%);
+    color: yellow;
+  }
+}
+.title--background {
+  background-color: $paleblue;
+  height: 8vh;
+  padding: 1vh;
+  text-align: right;
+  border-radius: .5em;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'kayak_sans-light_italic', sans-serif;
+  line-height: .02vh;
+}
