@@ -4,7 +4,8 @@ import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
 import Parallax from 'react-springy-parallax';
 import Tilt from 'react-tilt';
-import { FadeIn, SlideUp } from "animate-components";
+import ScrollAnimation from 'react-animate-on-scroll';
+import Footer from '../components/Footer';
 
 export default class Work extends Component {
   onMouseLeave(e) {
@@ -23,36 +24,29 @@ export default class Work extends Component {
       return(
         <div>
           <Grid fluid>
-
             <Col xs={12}>
               <Row center="xs">
-                  <Row center="xs">
-                    <Tilt className="Tilt" options={{
-                        max : 15,
-                        perspective: 2000,
-                        scale: 1.1,
-                        reset: true,
-                        speed : 100
-                      }}  onMouseLeave={this.onMouseLeave}>
-                        <div className="Tilt-inner">
-                          <div className={`${boxClassName}`}/>
-                        </div>
+                <Row center="xs">
+                  <Tilt className="Tilt" options={{
+                      max : 15,
+                      perspective: 2000,
+                      scale: 1.1,
+                      reset: true,
+                      speed : 100
+                    }}  onMouseLeave={this.onMouseLeave}>
+                      <div className="Tilt-inner">
+                        <div className={`${boxClassName}`}/>
+                      </div>
                     </Tilt>
                   </Row>
 
-
                   <Row center="xs">
                     <Row bottom="xs">
-                    <ProjectPreview index={indexInArray} {...projectAttributes} />
+                      <ProjectPreview index={indexInArray} {...projectAttributes} />
                     </Row>
                   </Row>
-
-
                 </Row>
               </Col>
-
-
-
           </Grid>
         </div>
       );
@@ -61,20 +55,19 @@ export default class Work extends Component {
 
   render() {
     return (
-      <Parallax ref="parallax" pages={5.7} speed={.5}>
+      <Parallax ref="parallax" pages={5.5} speed={.5}>
 
         <div className="work__wrapper">
           <div className="work__header">
             <div className="work__header--title">Featured Projects</div>
           </div>
 
-
-
             {this.projects}
 
           </div>
-
+        <Footer/>
       </Parallax>
+
     );
   }
 }

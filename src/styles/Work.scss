@@ -29,58 +29,61 @@
   transform: skewY(-5deg);
 }
 .projectcard {
-  min-width: 69vw;
+  width: 71vw;
   max-width: 71vw;
   min-height: 50vh;
   max-height: 73vh;
+  margin-bottom: 20vh;
   cursor: pointer;
   position: relative;
   display: block;
   }
-  .projectcard--jot-it {
-    background-image: url('../assets/img/jot-it.png');
+  .projectbg__styles {
     background-repeat: no-repeat;
     background-size: 40vh;
-    top: 12vh;
+  }
+  .projectcard--jot-it {
+    background-image: url('../assets/img/jot-it.png');
+    @extend .projectbg__styles;
+    top: 20vh;
+    padding-bottom: 3vh;
+    left: 8vw;
     position: relative;
   }
   .projectcard--csm {
     background-image: url('../assets/img/csm.png');
-    background-repeat: no-repeat;
-    background-size: 40vh;
+    @extend .projectbg__styles;
     background-position: right;
   }
   .projectcard--portfolio-current {
     background-image: url('../assets/img/portfolio-old.png');
-    background-repeat: no-repeat;
-    background-size: 40vh;
+    @extend .projectbg__styles;
+    left: 18%;
   }
   .projectcard--economy {
     background-image: url('../assets/img/economy.png');
-    background-repeat: no-repeat;
-    background-size: 40vh;
+    @extend .projectbg__styles;
     background-position: right;
   }
   .projectcard--east-end {
     background-image: url('../assets/img/east-end.png');
-    background-repeat: no-repeat;
-    background-size: 40vh;
+    @extend .projectbg__styles;
+    left: 18%;
   }
   .projectcard--tic-tac-toe {
     background-image: url('../assets/img/tic-tac-toe.png');
-    background-repeat: no-repeat;
-    background-size: 40vh;
+    @extend .projectbg__styles;
     background-position: right;
   }
   .projectcard--portfolio-old {
     background-image: url('../assets/img/portfolio-old.png');
-    background-repeat: no-repeat;
-    background-size: 40vh;
+    @extend .projectbg__styles;
+    left: 18%;
+    margin-bottom: -5vh;
   }
   .projectcard--upenn {
     background-image: url('../assets/img/upenn.png');
-    background-repeat: no-repeat;
-    background-size: 40vh;
+    @extend .projectbg__styles;
     background-position: right;
   }
 
@@ -88,22 +91,23 @@
   position: relative;
   transform: skewY(0deg);
   text-align: left;
+  left: -57vw;
+  padding-bottom: 29vw;
   a {
     color: orange;
-    font-size: 4em !important;
+    font-size: 3vw;
     cursor: pointer;
-
   }
 }
 .right {
   position: relative;
   transform: skewY(0deg);
-  text-align: right;
   position: relative;
+  right: 8vw;
+  padding-bottom: 29vh;
   a {
     color: red;
-    font-size: 4em !important;
+    font-size: 3vw;
     cursor: pointer;
-
   }
 }

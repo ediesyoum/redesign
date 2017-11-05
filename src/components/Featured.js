@@ -3,6 +3,7 @@ import Parallax from 'react-springy-parallax';
 import Preview from '../components/Preview';
 import Projects from '../projects.json';
 import FaChevronDown from 'react-icons/lib/fa/chevron-down';
+import Footer from '../components/Footer';
 
 export default class Featured extends Component {
   render() {
@@ -52,7 +53,7 @@ export default class Featured extends Component {
             style={{ height: 300 }}>
             <Preview {...csm} />
           </Parallax.Layer>
-
+          <Footer/>
         </Parallax>
     );
   }

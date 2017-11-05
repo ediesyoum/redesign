@@ -4,7 +4,6 @@ import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
 import Blur from '../assets/img/javascript-blur.jpg';
 
-
 export default class Home extends Component {
   render() {
     return (
@@ -55,10 +54,10 @@ export default class Home extends Component {
               </h1>
             </Parallax.Layer>
 
-
         <Featured/>
 
       </Parallax>
+
     );
   }
 }

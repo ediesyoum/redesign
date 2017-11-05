@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ImageZoom from 'react-medium-image-zoom';
 import Blur from 'react-blur';
 import Parallax from 'react-springy-parallax';
+import Footer from '../components/Footer';
+import "animate.css/animate.min.css";
 
 export default class Project extends Component {
   get headerClassName() {
@@ -21,7 +23,7 @@ export default class Project extends Component {
       <Parallax ref="parallax" className={'wrapper'} pages={6}>
 
 
-        <Parallax.Layer offset={1} speed={.1} style={{ backgroundColor: '#805E73' }} />
+        <Parallax.Layer offset={1.5} speed={.1} style={{ backgroundColor: '#805E73' }} />
         <Parallax.Layer offset={2} speed={.1} style={{ backgroundColor: '#87BCDE' }} />
         <Parallax.Layer offset={3} speed={.1} style={{ backgroundColor: '#6b1586' }} />
 
@@ -38,11 +40,13 @@ export default class Project extends Component {
 
         <div className="project__summary box">
 
-          <div className="title--background"><h3>Project Details</h3></div>
+          <div className="animated bounceInUp">
+            <div className="title--background"><h3>Project Details</h3></div>
             <p>{this.props.summary}</p>
+          </div>
 
           <div className="title--background"><h3>Technical Details</h3></div>
-            <p>{this.props.technical}</p>
+          <p>{this.props.technical}</p>
 
           <section className="btn-group">
             <div className="btn"><a href={`${this.props.live}`} target="_blank">DEMO</a></div>
@@ -55,6 +59,7 @@ export default class Project extends Component {
 
         </div>
 
+        <Footer/>
       </Parallax>
     );
   }

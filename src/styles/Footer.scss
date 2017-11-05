@@ -1,0 +1,14 @@
+.footer {
+  width: 100vw;
+  height: 10vh;
+  padding:0px;
+  margin:0px;
+  bottom: 0px;
+  position: absolute;
+  z-index: 1;
+  font-size: 1.9em;
+  font-family: 'kayak_sans-regular', sans-serif;
+  text-align: center;
+  background-color: $logobg;
+  color: rgba(255,255,255,.7);
+}

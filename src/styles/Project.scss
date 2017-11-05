@@ -4,7 +4,7 @@
   margin-top: 11vh;
   padding-right: 15vw;
   width: 100vw;
-  min-height: 30vh;
+  min-height: 25vh;
   background-color: $logobg;
   transform: skewY(4deg);
   text-align: right;
@@ -15,12 +15,12 @@
 .project__header-title {
   font-family: 'kayak_sans-light_italic', sans-serif;
   color: lighten($green, 20%);
-  font-size: 9vh;
+  font-size: 7.5vh;
   z-index: 1;
   position: absolute;
   text-align: right;
-  right: 22%;
-  top: 11vh;
+  right: 19vw;
+  top: 10vh;
 }
 .project__summary {
   font-size: 2.5em;
@@ -44,8 +44,8 @@
   }
 }
 .react-blur-canvas {
-  min-height: 20.7vh;
-  max-height: 20.7vh;
+  min-height: 17.1vh;
+  max-height: 17.1vh;
   transform: scaleY(1.9);
 }
 .btn-group {
