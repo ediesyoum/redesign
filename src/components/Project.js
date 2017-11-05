@@ -3,7 +3,9 @@ import ImageZoom from 'react-medium-image-zoom';
 import Blur from 'react-blur';
 import Parallax from 'react-springy-parallax';
 import Footer from '../components/Footer';
+import ProjectLinks from './ProjectLinks';
 import "animate.css/animate.min.css";
+import ProjectNavigationLink from './ProjectNavigationLink';
 
 export default class Project extends Component {
   get headerClassName() {
@@ -18,6 +20,13 @@ export default class Project extends Component {
   get headerBlurImg(){
     return `/img/${this.props.id}-desktop.jpg`;
   }
+  get tags() {
+    let tags = this.props.tags || [];
+    return tags.map((tag) => {
+      return <li className="project__tag">{tag}</li>;
+    });
+  }
+
   render() {
     return(
       <Parallax ref="parallax" className={'wrapper'} pages={6}>
@@ -48,14 +57,20 @@ export default class Project extends Component {
           <div className="title--background"><h3>Technical Details</h3></div>
           <p>{this.props.technical}</p>
 
-          <section className="btn-group">
-            <div className="btn"><a href={`${this.props.live}`} target="_blank">DEMO</a></div>
 
 
-            <div className="btn"><a href={`${this.props.gh}`} target="_blank">SEE GITHUB</a></div>
-          </section>
+          <ProjectLinks links={this.props.links} />
 
           <p>{this.props.tags}</p>
+
+          <ul className="project__tags">
+            {this.tags}
+          </ul>
+
+          <nav className="project__navigation">
+            <ProjectNavigationLink id={this.props.id} rel="previous" />
+            <ProjectNavigationLink id={this.props.id} rel="next" />
+          </nav>
 
         </div>
 

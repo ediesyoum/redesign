@@ -3,8 +3,10 @@
 		"name": "Jot-it App",
 		"summary": "Jot it is a note-taking web app that I developed with inspiration from popular note-centric web services like Evernote and Simplenote. I use Evernote every day and it is one of the most useful, staple tools in my process. So I wanted to use Ruby on Rails to build similar note functionality but with more specific and customized front-end UI decisions.",
 		"technical": "Jot It App was developed using Rails 5.0 with HAML for templating, SimpleForm, PostgresQL and Devise for authentication. I also designed the UI of the app in Photoshop as well as its logo, branding and all taglines. I built this application using Rails to gain understanding of the framework.",
-		"live": "https://jot-it-app.herokuapp.com",
-		"gh": "https://github.com/ediesyoum/jot-it"
+		"links": {
+      "live": "https://jot-it-app.herokuapp.com",
+		  "github": "https://github.com/ediesyoum/jot-it"
+    }
 	},
   "csm": {
     "name": "CSM",
