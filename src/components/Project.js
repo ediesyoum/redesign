@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ImageZoom from 'react-medium-image-zoom';
 import Blur from 'react-blur';
 import Parallax from 'react-springy-parallax';
 import Footer from '../components/Footer';
 import ProjectLinks from './ProjectLinks';
 import "animate.css/animate.min.css";
 import ProjectNavigationLink from './ProjectNavigationLink';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class Project extends Component {
   get headerClassName() {
@@ -53,10 +53,11 @@ export default class Project extends Component {
             <p>{this.props.summary}</p>
           </div>
 
-          <div className="title--background"><h3>Technical Details</h3></div>
-          <p>{this.props.technical}</p>
 
-
+          <div className="animated bounceInUp">
+            <div className="title--background"><h3>Technical Details</h3></div>
+            <p>{this.props.technical}</p>
+          </div>
 
           <ProjectLinks links={this.props.links} />
 
