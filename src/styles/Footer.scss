@@ -1,14 +1,14 @@
 .footer {
   width: 100vw;
-  height: 10vh;
-  padding:0px;
+  height: 6vh;
+  padding:0vh;
   margin:0px;
   bottom: 0px;
   position: absolute;
   z-index: 1;
-  font-size: 1.9em;
+  font-size: 1.2em;
+  color: black;
   font-family: 'kayak_sans-regular', sans-serif;
   text-align: center;
-  background-color: $logobg;
-  color: rgba(255,255,255,.7);
+  background-image: linear-gradient(to right, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
 }

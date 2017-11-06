@@ -24,7 +24,7 @@
   height: 29vh;
   width: 100%;
   transform: skewY(5deg);
-  background-color: #3d228c;
+  background-color: darken(#3d228c, 15%);
   transform-origin: bottom right;
   z-index: -1;
 }
@@ -36,7 +36,7 @@
   height: 20vh;
   width: 100vw;
   transform: skewY(-8deg);
-  background-color: #3d228c;
+  background-color: darken(#3d228c, 15%);
   transform-origin: bottom left;
   z-index: -1;
 }

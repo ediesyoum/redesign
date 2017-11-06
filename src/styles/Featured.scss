@@ -1,3 +1,29 @@
+.featured {
+  top: 80vh;
+  position: relative;
+}
+.featured-bg--content {
+  background-color: darken(#3d228c, 15%);
+  height: 17vh;
+  font-size: 2em;
+  margin-bottom: -11vw;
+  padding-bottom: 11vw;
+
+  text-align: center;
+  position: relative;
+  color: lighten($mustard, 10%) !important;
+  background-repeat: repeat !important; // Necessary to override parallax component bg
+  a {
+    color: white !important;
+  }
+}
+.featured-link {
+  position: relative;
+  top: 15vh;
+  display: flex;
+  color: $mustard;
+  justify-content: center;
+}
 .chevron-down {
   font-size: 1em;
   position: relative;
@@ -9,4 +35,34 @@
   &:hover {
     color: $teal;
   }
+}
+
+.desktop-slant {
+  clip-path: polygon(0 0%, 100% 13vw, 100% 100%, 0 calc(100% - 13vw));
+  margin-bottom: -11vw;
+  padding: 11vw;
+  text-align: justify;
+  min-width: 48vw;
+  background-repeat: repeat !important; // Necessary to override parallax component
+}
+.feature01-desktop {
+  @extend .desktop-slant;
+  background-color: lighten($logobg, 10%);
+  background-image: $camo-bg;
+}
+.feature02-desktop {
+  @extend .desktop-slant;
+  background-color: $mustard;
+  background-image: $floatingcogs-bg;
+  top: 40vh;
+}
+.feature03-desktop {
+  @extend .desktop-slant;
+  background-color: darken($green, 10%);
+}
+.featuredImg {
+  top: 3vw;
+  position: absolute;
+  max-width: 70%;
+  max-height: 75%;
 }

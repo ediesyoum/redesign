@@ -1,173 +1,84 @@
-// Premise text
-
 .premise {
   max-width: 70vw;
   left: 15vw;
   padding-right: 20%;
   position: relative;
-  top: 23vh;
+  top: 25%;
   height: 20vh;
   line-height: 4vh;
 	font-family: 'kayak_sans-light_italic', sans-serif;
   color: lighten($linkbg, 70%);
   text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
-  .greet {
-    font-size: 2em;
-    margin:0;
-    padding-bottom:5vh;
-    position: relative;
-    color: lighten($mustard, 10%);
-  	font-family: 'kayak_sans-light_italic', sans-serif;
-  }
-  .myname {
-  	font-family: 'kayak_sans-light_italic', sans-serif;
-    font-size: 2em;
-    color: $teal;
-    min-width: 50vw;
-    padding: .25em;
-  }
-  .premise_line03 {
-    padding-top: 2.5vh;
-  }
-  .premise_line04 {
-    padding-top: 2.5vh;
-  }
-  .roles {
-    @extend .premise;
-  }
-  .premise-sm {
-    @extend .premise;
-    font-size: 2.5vw;
-    padding: 0;
-  }
-  .roles-sm {
-    @extend .premise-sm;
-    width: 76vw;
-    padding: 0px;
-    left: 15%;
-    position: relative;
-  }
-  .rotatewords {
-  	font-family: 'kayak_sans-light_italic', sans-serif;
-  	font-size: .85em;
-    color: lighten($mustard, 10%);
-    text-decoration: none;
-  	text-shadow: 4px 5px 3px lighten($shadow, 15%);
-    padding-top: 2vh;
-    text-transform: uppercase;
-  }
-  .rotatewords-sm {
-  	font-family: 'kayak_sans-light_italic', sans-serif;
-  	font-size: 5.5vw;
-    color: $teal;
-    text-decoration: none;
-  	text-shadow: 4px 5px 3px lighten($shadow, 15%);
-  }
-  .rotatewords-wrapper {
-    position: relative;
-  }
-  .react-rotating-text-cursor {
-    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
-  	text-shadow: 4px 5px 3px lighten($shadow, 15%);
-    color: lighten($teal, 20%);
-    font-size: 5vh;
-  }
-  @keyframes blinking-cursor {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-
-// Slanted UI Styles
-
-.featured {
-  top: 70vh;
-  position: relative;
-}
-.featured-link {
-  position: relative;
-  top: 15vh;
-  display: flex;
-  color: $mustard;
-  justify-content: center;
-}
-.mobile-slant {
-  clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 12vw));
-  height: 41vh;
-  position: relative;
-  margin: 3vh;
-}
-.desktop-slant {
-  clip-path: polygon(0 0%, 100% 13vw, 100% 100%, 0 calc(100% - 13vw));
-  margin-bottom: -11vw;
-  padding: 11vw;
-  text-align: justify;
-  min-width: 48vw;
-  background-repeat: repeat !important; // Necessary to override parallax component
-}
-.recent-desktop {
-  clip-path: polygon(0 0%, 100% 16%, 100% 100%, 0 calc(100% - 11vw));
-  background-color: lighten($linkbg, 10%);
-  background-image: $circuits-bg;
-  height: 25vh;
+.greet {
   font-size: 2em;
-  margin-bottom: -11vw;
-  padding-bottom: 11vw;
-  padding-top: 7vh;
-  text-align: center;
+  margin:0;
+  padding-bottom:5vh;
   position: relative;
-  color: lighten($mustard, 10%) !important;
-  background-repeat: repeat !important; // Necessary to override parallax component bg
-  a {
-    color: white !important;
+  color: lighten($mustard, 10%);
+	font-family: 'kayak_sans-light_italic', sans-serif;
+}
+.myname {
+	font-family: 'kayak_sans-light_italic', sans-serif;
+  font-size: 2em;
+  color: $teal;
+  min-width: 50vw;
+  padding: .25em;
+}
+.premise_line03 {
+  padding-top: 2.5vh;
+}
+.premise_line04 {
+  padding-top: 2.5vh;
+}
+.roles {
+  @extend .premise;
+}
+.premise-sm {
+  @extend .premise;
+  font-size: 2.5vw;
+  padding: 0;
+}
+.roles-sm {
+  @extend .premise-sm;
+  width: 76vw;
+  padding: 0px;
+  left: 15%;
+  position: relative;
+}
+.rotatewords {
+	font-family: 'kayak_sans-light_italic', sans-serif;
+	font-size: .85em;
+  color: lighten($mustard, 10%);
+  text-decoration: none;
+	text-shadow: 4px 5px 3px lighten($shadow, 15%);
+  padding-top: 2vh;
+  text-transform: uppercase;
+}
+.rotatewords-sm {
+	font-family: 'kayak_sans-light_italic', sans-serif;
+	font-size: 5.5vw;
+  color: $teal;
+  text-decoration: none;
+	text-shadow: 4px 5px 3px lighten($shadow, 15%);
+}
+.rotatewords-wrapper {
+  position: relative;
+}
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+	text-shadow: 4px 5px 3px lighten($shadow, 15%);
+  color: lighten($teal, 20%);
+  font-size: 5vh;
+}
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
   }
-}
-.recent-mobile {
-  @extend .mobile-slant;
-  top: 21vh;
-  background-color: rgba(255,255,255,.6);
-}
-.feature01-desktop {
-  @extend .desktop-slant;
-  background-color: lighten($logobg, 10%);
-  background-image: $camo-bg;
-}
-.feature01-mobile {
-  @extend .mobile-slant;
-  top: 13vh;
-  background-color: lighten($logobg, 10%);
-}
-.feature02-desktop {
-  @extend .desktop-slant;
-  background-color: $mustard;
-  background-image: $floatingcogs-bg;
-  top: 40vh;
-}
-.feature02-mobile {
-  @extend .mobile-slant;
-  top: 6vh;
-  background-color: $mustard;
-}
-.feature03-desktop {
-  @extend .desktop-slant;
-  background-color: darken($green, 10%);
-}
-.feature03-mobile {
-  @extend .mobile-slant;
-  top: -1vh;
-  background-color: darken($green, 10%);
-}
-.featuredImg {
-  top: 3vw;
-  position: absolute;
-  max-width: 70%;
-  max-height: 75%;
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

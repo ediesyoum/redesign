@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Link } from 'react-router-dom';
 import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
 import Parallax from 'react-springy-parallax';
 import Tilt from 'react-tilt';
+import ScrollAnimation from 'react-animate-on-scroll';
 import Footer from '../components/Footer';
 
 export default class Work extends Component {
   onMouseLeave(e) {
     console.log('clientY:', e.nativeEvent.clientY);
+  }
+  get position() {
+    if ((this.props.index % 2) === 0) {
+      return 'right';
+    } else {
+      return 'left';
+    }
   }
   get projects() {
     let projectIDs = Object.keys(Projects);
@@ -22,31 +30,29 @@ export default class Work extends Component {
 
       return(
         <div>
-          <Grid fluid>
-            <Col xs={12}>
-              <Row center="xs">
-                <Row center="xs">
-                  <Tilt className="Tilt" options={{
-                      max : 15,
-                      perspective: 2000,
-                      scale: 1.1,
-                      reset: true,
-                      speed : 100
-                    }}  onMouseLeave={this.onMouseLeave}>
-                      <div className="Tilt-inner">
-                        <div className={`${boxClassName}`}/>
-                      </div>
-                    </Tilt>
-                  </Row>
 
-                  <Row center="xs">
-                    <Row bottom="xs">
-                      <ProjectPreview index={indexInArray} {...projectAttributes} />
-                    </Row>
-                  </Row>
-                </Row>
-              </Col>
-          </Grid>
+          <Tilt className="Tilt" options={{
+              max : 30,
+              perspective: 2000,
+              scale: 1.1,
+              reset: true,
+              speed : 100
+            }}  onMouseLeave={this.onMouseLeave}>
+            <div className="Tilt-inner">
+
+              <ScrollAnimation
+                animateIn="bounceInUp"
+                offset={30000}
+                animateOut="bounceInUp"
+                duration={'7s'}>
+                <Link to={`/work/${id}`} className={`${boxClassName}`}>
+                  <ProjectPreview index={indexInArray} {...projectAttributes} />
+                  </Link>
+              </ScrollAnimation>
+
+            </div>
+          </Tilt>
+
         </div>
       );
     });

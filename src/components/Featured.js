@@ -17,7 +17,7 @@ export default class Featured extends Component {
             <Parallax.Layer
               offset={0}
               speed={0}
-              className={'recent-desktop'}
+              className={'featured-bg--content'}
               style={{ height: 300 }}>
 
               <p>Featured Projects</p>

@@ -9,14 +9,7 @@ export default class Home extends Component {
     return (
         <Parallax ref="parallax" pages={1} className={'wrapper'}>
 
-          <Parallax.Layer
-            offset={0}
-            speed={.9}
-            className={'blurbg'}
-            style={{
-              backgroundImage: `url(${Blur})`,
-              top: 0
-            }}/>
+
 
             <Parallax.Layer
               offset={0}

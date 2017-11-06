@@ -29,85 +29,86 @@
   transform: skewY(-5deg);
 }
 .projectcard {
-  width: 71vw;
-  max-width: 71vw;
-  min-height: 50vh;
-  max-height: 73vh;
-  margin-bottom: 20vh;
+  min-width: 25vh;
+  max-width: 70vh;
+  height: 46vh;
+  top: 15vh;
+  margin: 0 auto;
+  max-height: 75vh;
   cursor: pointer;
   position: relative;
   display: block;
+  background-position-x: 16vw;
+    &:hover {
+      background-color: lighten($palepurple, 10%);
+    }
   }
   .projectbg__styles {
     background-repeat: no-repeat;
     background-size: 40vh;
+    background-position: left;
+    margin-bottom: 7vh;
+    padding: 2vw;
+    background-position-x: 1.5vw;
   }
   .projectcard--jot-it {
     background-image: url('../assets/img/jot-it.png');
     @extend .projectbg__styles;
-    top: 20vh;
-    padding-bottom: 3vh;
-    left: 8vw;
     position: relative;
   }
   .projectcard--csm {
     background-image: url('../assets/img/csm.png');
     @extend .projectbg__styles;
-    background-position: right;
+    background-position-x: 17.5vw;
   }
   .projectcard--portfolio-current {
     background-image: url('../assets/img/portfolio-old.png');
     @extend .projectbg__styles;
-    left: 18%;
   }
   .projectcard--economy {
     background-image: url('../assets/img/economy.png');
     @extend .projectbg__styles;
-    background-position: right;
+    background-position-x: 17.5vw;
   }
   .projectcard--east-end {
     background-image: url('../assets/img/east-end.png');
     @extend .projectbg__styles;
-    left: 18%;
   }
   .projectcard--tic-tac-toe {
     background-image: url('../assets/img/tic-tac-toe.png');
     @extend .projectbg__styles;
-    background-position: right;
+    background-position-x: 17.5vw;
   }
   .projectcard--portfolio-old {
     background-image: url('../assets/img/portfolio-old.png');
     @extend .projectbg__styles;
-    left: 18%;
-    margin-bottom: -5vh;
+    margin-bottom: 15vh;
   }
   .projectcard--upenn {
     background-image: url('../assets/img/upenn.png');
     @extend .projectbg__styles;
-    background-position: right;
+    background-position-x: 17.5vw;
   }
 
 .left {
-  position: relative;
+  position: absolute;
   transform: skewY(0deg);
-  text-align: left;
-  left: -57vw;
-  padding-bottom: 29vw;
+  left: 5%;
+  top: 20vh;
   a {
     color: orange;
-    font-size: 3vw;
+    font-size: 3.5vh;
     cursor: pointer;
   }
 }
 .right {
-  position: relative;
+  position: absolute;
   transform: skewY(0deg);
-  position: relative;
-  right: 8vw;
-  padding-bottom: 29vh;
+  right: 8%;
+  top: 20vh;
   a {
-    color: red;
-    font-size: 3vw;
+    color: $teal;
+    font-size: 3.5vh;
     cursor: pointer;
   }
 }
