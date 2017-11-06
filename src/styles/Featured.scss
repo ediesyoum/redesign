@@ -6,7 +6,7 @@
   z-index: 1;
   top: -57vh;
   cursor: pointer !important;
-  a {
-    color: red;
+  &:hover {
+    color: $teal;
   }
 }
