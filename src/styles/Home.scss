@@ -96,6 +96,7 @@
   position: relative;
   top: 15vh;
   display: flex;
+  color: $mustard;
   justify-content: center;
 }
 .mobile-slant {
@@ -123,8 +124,11 @@
   padding-top: 3vw;
   text-align: center;
   position: relative;
-  color: lighten($mustard, 10%);
+  color: lighten($mustard, 10%) !important;
   background-repeat: repeat !important; // Necessary to override parallax component bg
+  a {
+    color: white !important;
+  }
 }
 .recent-mobile {
   @extend .mobile-slant;

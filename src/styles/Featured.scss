@@ -1,5 +1,11 @@
 .chevron-down {
-  font-size: 1.5em;
+  font-size: 1em;
+  position: relative;
+  height: 7vh;
+  width: 7vh;
+  z-index: 1;
+  top: -57vh;
+  cursor: pointer !important;
   a {
     color: red;
   }

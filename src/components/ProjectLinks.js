@@ -18,7 +18,7 @@ class ProjectLink {
 
   get icon() {
     switch(this.id) {
-      case 'github':
+      case 'gh':
         return <FaGithub />;
       case 'live':
         return <FaShareSquareO />;

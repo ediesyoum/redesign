@@ -78,4 +78,17 @@ p {
   text-transform: uppercase;
   font-family: 'kayak_sans-light_italic', sans-serif;
   line-height: .02vh;
+  z-index: 2;
+}
+.project__navigation a {
+  color: white;
+  padding: 1em;
+  margin: 3vw;
+  font-size: .5em;
+  text-align: center;
+  position: relative;
+  display: inline-flex;
+  width: 20vw;
+  background-color: lighten($paleblue, 15%);
+  border-radius: 4vw;
 }

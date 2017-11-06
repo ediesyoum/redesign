@@ -46,22 +46,32 @@ export default class Project extends Component {
 
 
 
-        <div>
+        <div className="project__summary box">
 
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={100} duration={3}>
-            <div className="title--background"><h3>Project Details</h3></div>
-            <p>{this.props.summary}</p>
+          <ScrollAnimation
+            animateIn="bounceInUp"
+            offset={300}
+            animateOut="bounceInUp"
+            duration={'3s'}>
+            <div className="title--background">
+              <h3>Project Details</h3>
+            </div>
+            <div><p>{this.props.summary}</p></div>
           </ScrollAnimation>
 
 
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={3} offset={100}>
-            <div className="title--background"><h3>Technical Details</h3></div>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            offset={10000}
+            animateOut="fadeIn"
+            duration={'6s'}>
+            <div className="title--background">
+              <h3>Technical Details</h3>
+            </div>
             <p>{this.props.technical}</p>
           </ScrollAnimation>
 
           <ProjectLinks links={this.props.links} />
-
-          <p>{this.props.tags}</p>
 
           <ul className="project__tags">
             {this.tags}

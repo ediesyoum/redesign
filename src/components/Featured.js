@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax';
 import Preview from '../components/Preview';
 import Projects from '../projects.json';
-import FaChevronDown from 'react-icons/lib/fa/chevron-down';
+import FaChevronCircleDown from 'react-icons/lib/fa/chevron-circle-down';
 import Footer from '../components/Footer';
 
 export default class Featured extends Component {
@@ -23,8 +23,8 @@ export default class Featured extends Component {
               <p>Featured Projects</p>
 
               <Parallax.Layer
-                onClick={() => this.refs.parallax.scrollTo(1)}>
-                <FaChevronDown/>
+                onClick={() => this.refs.parallax.scrollTo(1.1)}>
+                <FaChevronCircleDown className="chevron-down"/>
               </Parallax.Layer>
 
             </Parallax.Layer>
