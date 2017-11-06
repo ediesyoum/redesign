@@ -21,7 +21,7 @@
   position: absolute;
   top: -10vh;
   left: 0;
-  height: 29vh;
+  height: 25vh;
   width: 100%;
   transform: skewY(5deg);
   background-color: darken(#3d228c, 15%);
@@ -33,7 +33,7 @@
   position: absolute;
   top: 0vh;
   left: 0vh;
-  height: 20vh;
+  height: 15vh;
   width: 100vw;
   transform: skewY(-8deg);
   background-color: darken(#3d228c, 15%);
@@ -60,12 +60,11 @@
   }
 }
 .nav__links--desktop {
-  top: 12vh;
+  top: 3vh;
   right: 1vh;
   position: absolute;
   z-index: 2;
-  margin-top: -7vh;
-  font-size: 2.25vh;
+  font-size: 2vh;
   text-transform: uppercase;
   a {
     cursor: pointer;
@@ -90,13 +89,13 @@
 .logo--lg {
   position: absolute;
   z-index: 1;
-	top: 4vh;
-	left: 5vw;
-  max-width: 11vh;
+	top: 2vh;
+	left: 3.5vh;
+  max-width: 9.5vh;
 }
 .logo {
 	@extend .logo--lg;
 	left: 3vh;
 	top: 3vh;
-	max-width: 11vh;
+	max-width: 8.5vh;
 }

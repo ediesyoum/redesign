@@ -11,13 +11,6 @@ export default class Work extends Component {
   onMouseLeave(e) {
     console.log('clientY:', e.nativeEvent.clientY);
   }
-  get position() {
-    if ((this.props.index % 2) === 0) {
-      return 'right';
-    } else {
-      return 'left';
-    }
-  }
   get projects() {
     let projectIDs = Object.keys(Projects);
 
@@ -32,8 +25,8 @@ export default class Work extends Component {
         <div>
 
           <Tilt className="Tilt" options={{
-              max : 30,
-              perspective: 2000,
+              max : 6,
+              perspective: 3000,
               scale: 1.1,
               reset: true,
               speed : 100

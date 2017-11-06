@@ -2,24 +2,39 @@ import React, { Component } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
-import Blur from '../assets/img/javascript-blur.jpg';
+import ScrollAnimation from 'react-animate-on-scroll';
+import {emojify} from 'react-emojione';
+
+const emojiStyles = {
+  style: {
+        height: 40,
+        padding: 0
+    }
+}
 
 export default class Home extends Component {
   render() {
     return (
         <Parallax ref="parallax" pages={1} className={'wrapper'}>
 
-
+          <ScrollAnimation
+            animateIn="wobble"
+            offset={550}
+            animateOut="wobble"
+            duration={'1s'}>
 
             <Parallax.Layer
               offset={0}
               speed={0.9}
-              className={'premise'}
-              style={{
-                height: 300
-              }}>
+              className={'premise'}>
 
-              <h1><p className="greet">Hey there!</p> I'm
+              <h1>
+
+                <p className="greet">
+                  <span className="waving-hand">
+                    {emojify(':wave:', emojiStyles)}
+                  </span>
+                  Hi there.</p> I'm
                 <span className="myname">Eden</span>
                   and I'm a
                   <div className="rotatewords-wrapper">
@@ -46,6 +61,7 @@ export default class Home extends Component {
                  </div>
               </h1>
             </Parallax.Layer>
+          </ScrollAnimation>
 
         <Featured/>
 

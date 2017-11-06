@@ -3,12 +3,17 @@
   left: 15vw;
   padding-right: 20%;
   position: relative;
-  top: 25%;
+  top: 25vh;
   height: 20vh;
   line-height: 4vh;
 	font-family: 'kayak_sans-light_italic', sans-serif;
   color: lighten($linkbg, 70%);
   text-shadow: 4px 5px 3px lighten($shadow, 15%);
+}
+.waving-hand {
+  width: 30vh;
+  height: 50vw;
+  position: relative;
 }
 .greet {
   font-size: 2em;

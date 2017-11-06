@@ -41,6 +41,8 @@
   background-position-x: 16vw;
     &:hover {
       background-color: lighten($palepurple, 10%);
+      transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+      transition: 0.5s;
     }
   }
   .projectbg__styles {
