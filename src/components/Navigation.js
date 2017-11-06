@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Logo from '../assets/img/logo.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import MediaQuery from './MediaQuery';
+import MediaQuery from 'react-responsive';
 import { slide as Menu } from 'react-burger-menu';
 
 const isMenuOpen = (state) => {
@@ -11,7 +11,7 @@ export default class Navigation extends Component {
   render() {
     return (
         <div className="header nav">
-          <MediaQuery size="desktop">
+          <MediaQuery minDeviceWidth={568}>
             <Grid fluid>
               <Row>
                 <Col xs>
@@ -29,7 +29,7 @@ export default class Navigation extends Component {
             </Grid>
           </MediaQuery>
 
-          <MediaQuery size="mobile">
+          <MediaQuery maxDeviceWidth={568}>
             <Grid fluid>
               <Row>
                 <Col xs>
