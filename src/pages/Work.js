@@ -4,6 +4,7 @@ import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
 import Parallax from 'react-springy-parallax';
 import Tilt from 'react-tilt';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Footer from '../components/Footer';
 
@@ -37,7 +38,8 @@ export default class Work extends Component {
                 animateIn="bounceInUp"
                 offset={30000}
                 animateOut="bounceInUp"
-                duration={'7s'}>
+                duration={'7s'}
+                >
                 <Link to={`/work/${id}`} className={`${boxClassName}`}>
                   <ProjectPreview index={indexInArray} {...projectAttributes} />
                   </Link>

@@ -11,8 +11,16 @@
   text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 .waving-hand {
-  width: 30vh;
-  height: 50vw;
+  width: 30vw;
+  height: 50vh;
+  font-size: 3em;
+  position: relative;
+}
+.circuitbg__wrapper {
+  background-image: $circuits-bg;
+  background-color: darken($logobg, 20%);
+  background-size: 100vw;
+  width: 100vw;
   position: relative;
 }
 .greet {

@@ -63,6 +63,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "deploy": "node scripts/build.js && cd build && mv index.html 200.html && surge",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
