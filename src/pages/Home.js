@@ -15,7 +15,7 @@ const emojiStyles = {
 export default class Home extends Component {
   render() {
     return (
-        <Parallax ref="parallax" pages={2} className={'wrapper'}>
+        <Parallax ref="parallax" pages={5} className={'wrapper'}>
           <div className="circuitbg__wrapper"/>
             <Parallax.Layer
               offset={0}
@@ -25,11 +25,11 @@ export default class Home extends Component {
                 <p className="greet">
                   <span className="waving-hand">
                     <ScrollAnimation
-                      animateIn="wobble"
-                      offset={550}
-                      animateOut="wobble"
+                      animateIn="wobble infinite"
+                      offset={0}
+                      animateOut="wobble infinite"
                       duration={3}
-                      delay={'3s'}
+                      delay={'0s'}
                       >
                       {emojify(':wave:', emojiStyles)}
                     </ScrollAnimation>
@@ -54,7 +54,8 @@ export default class Home extends Component {
                      creating first class web experiences
                    </div>
                    <div className="premise_line04">
-                     with functional, aesthetic design + code.
+                     with functional, aesthetic
+                     <p>design + code.</p>
                    </div>
 
                  </div>

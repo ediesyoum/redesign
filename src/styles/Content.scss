@@ -5,6 +5,8 @@ body {
 	font-family: 'kayak_sans-light', sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: darken($logobg, 20%);
+  overflow:hidden !important; // needed to override parallax styles
+
 }
 h1 {
   font-family: 'kayak_sans-light', sans-serif;
@@ -19,8 +21,10 @@ a {
 }
 .wrapper {
   background-image: $circuits-bg;
-  height: 100%;
+  overflow:hidden !important; // needed to override parallax styles
+
 }
 .title {
 	display: none;
+    overflow:hidden !important; // needed to override parallax styles
 }

@@ -3,7 +3,7 @@
 }
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 	width: 100%;
 }
 .nav {
@@ -30,6 +30,7 @@
 }
 .nav::after {
   content: "";
+  overflow:hidden;
   position: absolute;
   top: 0vh;
   left: 0vh;
@@ -41,6 +42,7 @@
   z-index: -1;
 }
 .nav__links {
+
    a {
   	margin: 1.5vh;
     font-size: 1em;

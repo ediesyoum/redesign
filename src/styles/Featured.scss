@@ -8,11 +8,11 @@
   font-size: 2em;
   margin-bottom: -11vw;
   padding-bottom: 11vw;
-
   text-align: center;
   position: relative;
   color: lighten($mustard, 10%) !important;
   background-repeat: repeat !important; // Necessary to override parallax component bg
+  overflow:hidden !important; // needed to override parallax styles
   a {
     color: white !important;
   }
@@ -41,6 +41,7 @@
   padding: 5vh;
   text-align: justify;
   background-repeat: repeat !important; // Necessary to override parallax component
+    overflow:hidden !important; // needed to override parallax styles
 }
 .feature01-desktop {
   @extend .feature--bg;
