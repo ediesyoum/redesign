@@ -17,11 +17,6 @@
   text-align: center;
   position: relative;
   color: lighten($mustard, 10%) !important;
-  background-repeat: repeat !important; // Necessary to override parallax component bg
-  overflow:hidden !important; // needed to override parallax styles
-  a {
-    color: white !important;
-  }
 }
 .featured-link {
   position: relative;
@@ -39,19 +34,21 @@
   top: 0vh;
   cursor: pointer !important;
   &:hover {
-    color: $teal;
+    color: $teal !important;
   }
 }
 .featured-preview-wrapper {
-  top: 13vh;
+  top: 0vh;
+  position: relative;
+}
+.featured-preview-wrapper--sm {
+  top: 0vh;
   position: relative;
 }
 .featured--bg {
   background-repeat: no-repeat !important;
-  background-size: 30% !important;
-
+  background-size: 60vh !important;
   height: 27vh !important;
-  max-height: 20vh;
   padding: 10vh;
   position: relative !important;
   text-align: justify;
@@ -62,12 +59,15 @@
   background-color: lighten($logobg, 10%);
   background-image: url('../assets/img/jot-it.png');
   background-position-y: 45%;
+  background-position-x: 5vw;
+  top: 12vh;
+  margin-bottom: -15vh;
 }
 .feature02 {
   @extend .featured--bg;
   background-color: darken($brightpurple, 40%);
   background-image: url('../assets/img/east-end.png');
-  background-position-x: 72vw;
+  background-position-x: 72%;
   background-position-y: 45%;
 }
 .feature03 {
@@ -75,4 +75,39 @@
   background-color: darken($burgundy, 10%);
   background-image: url('../assets/img/upenn.png');
   background-position-y: -10vh;
+  background-position-x: 5vw;
+}
+.featured__bg--sm {
+  background-repeat: no-repeat !important;
+  background-size: 70vh !important;
+  height: 27vh !important;
+  padding: 10vh;
+  position: relative !important;
+  text-align: justify;
+  margin-bottom: -27vh;
+}
+.feature01--sm {
+  @extend .featured__bg--sm;
+  background-color: lighten($logobg, 10%);
+  background-image: url('../assets/img/jot-it.png');
+  background-position-y: 30%;
+  background-position-x: -19vw;
+  top: 10vh;
+  margin-bottom: -17vh;
+}
+.feature02--sm {
+  @extend .featured__bg--sm;
+  background-color: darken($brightpurple, 40%);
+  background-image: url('../assets/img/east-end.png');
+  background-position-x: 72%;
+  background-position-y: 45%;
+  top: 1.3vh;
+}
+.feature03--sm {
+  @extend .featured__bg--sm;
+  background-color: darken($burgundy, 10%);
+  background-image: url('../assets/img/upenn.png');
+  background-position-y: -10vh;
+  background-position-x: 5vw;
+  top: 1vh;
 }
