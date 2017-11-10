@@ -55,16 +55,14 @@ export default class Work extends Component {
 
   render() {
     return (
-      <Parallax ref="parallax" pages={5.5} speed={.5}>
+      <Parallax ref="parallax" className={'work__wrapper'} pages={5.5} speed={.5}>
 
-        <div className="work__wrapper">
           <div className="work__header">
             <div className="work__header--title">Featured Projects</div>
           </div>
 
             {this.projects}
 
-          </div>
         <Footer/>
       </Parallax>
 

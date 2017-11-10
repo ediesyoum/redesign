@@ -1,13 +1,22 @@
+.featured-wrapper {
+  background-image: $circuits-bg;
+  overflow-y: scroll;
+}
 .featured {
   top: 81vh;
   position: relative;
+  max-height: 100%;
+}
+.featured--bg {
+  padding: 5vh;
+  text-align: justify;
+  background-repeat: repeat !important; // Necessary to override parallax component
 }
 .featured-bg--content {
   background-color: darken(#3d228c, 15%);
   height: 18vh;
   font-size: 2em;
-  margin-bottom: -11vw;
-  padding-bottom: 11vw;
+  margin-bottom: -15vw;
   text-align: center;
   position: relative;
   color: lighten($mustard, 10%) !important;
@@ -30,32 +39,26 @@
   height: 7vh;
   width: 7vh;
   z-index: 1;
-  top: -57vh;
+  top: 0vh;
   cursor: pointer !important;
   &:hover {
     color: $teal;
   }
 }
 
-.feature--bg {
-  padding: 5vh;
-  text-align: justify;
-  background-repeat: repeat !important; // Necessary to override parallax component
-    overflow:hidden !important; // needed to override parallax styles
-}
+
 .feature01-desktop {
-  @extend .feature--bg;
+  @extend .featured--bg;
   background-color: lighten($logobg, 10%);
   background-image: $camo-bg;
 }
 .feature02-desktop {
-  @extend .feature--bg;
+  @extend .featured--bg;
   background-color: $mustard;
   background-image: $floatingcogs-bg;
-  top: 40vh;
 }
 .feature03-desktop {
-  @extend .feature--bg;
+  @extend .featured--bg;
   background-color: darken($green, 10%);
 }
 .featuredImg {

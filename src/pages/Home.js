@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import {emojify} from 'react-emojione';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
-import ScrollAnimation from 'react-animate-on-scroll';
-import {emojify} from 'react-emojione';
+
 
 const emojiStyles = {
   style: {
-        height: 40,
+        height: 70,
         padding: 0
     }
 }
@@ -15,50 +15,45 @@ const emojiStyles = {
 export default class Home extends Component {
   render() {
     return (
-        <Parallax ref="parallax" pages={5} className={'wrapper'}>
-          <div className="circuitbg__wrapper"/>
+        <Parallax ref="parallax" pages={4} className={'wrapper scrollbar'}>
+
             <Parallax.Layer
               offset={0}
               speed={0.9}
-              className={'premise'}>
-              <h1>
-                <p className="greet">
-                  <span className="waving-hand">
-                    <ScrollAnimation
-                      animateIn="wobble infinite"
-                      offset={0}
-                      animateOut="wobble infinite"
-                      duration={3}
-                      delay={'0s'}
-                      >
+              className={'premise'}
+              style={{ height: 300 }}>
+                <h1>
+                  <p className="greet">
+                    <span className="waving-hand">
                       {emojify(':wave:', emojiStyles)}
-                    </ScrollAnimation>
-                  </span>
-                    Hi there.</p> I'm
-                  <span className="myname">Eden</span>
-                    and I'm a
-                  <div className="rotatewords-wrapper">
-                    <div className="rotatewords">
-                      <ReactRotatingText
-                        items={['Front End Web Developer',
-                          'UI Designer',
-                          'UX-Focused Developer',
-                          'Graphic Designer',
-                          'Creative Web Developer'
-                        ]}
-                        typingInterval={90}
-                        color={'62F9BB'}/>
-                    </div>
+                    </span>
+                      Hi there.
+                    </p>
+                      I'm
+                    <span className="myname">Eden</span>
+                      and I'm a
+                    <div className="rotatewords-wrapper">
+                      <div className="rotatewords">
+                        <ReactRotatingText
+                          items={['Front End Web Developer',
+                            'UI Designer',
+                            'UX-Focused Developer',
+                            'Graphic Designer',
+                            'Creative Web Developer'
+                          ]}
+                          typingInterval={90}
+                          color={'62F9BB'}
+                          />
+                      </div>
 
-                   <div className="premise_line03">
-                     creating first class web experiences
+                     <div className="premise_line03">
+                       creating first class web experiences
+                     </div>
+                     <div className="premise_line04">
+                       with functional, aesthetic
+                       <p>design + code.</p>
+                     </div>
                    </div>
-                   <div className="premise_line04">
-                     with functional, aesthetic
-                     <p>design + code.</p>
-                   </div>
-
-                 </div>
               </h1>
             </Parallax.Layer>
          <Featured/>

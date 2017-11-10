@@ -29,7 +29,7 @@ export default class Project extends Component {
 
   render() {
     return(
-      <Parallax ref="parallax" className={'wrapper'} pages={6}>
+      <Parallax ref="parallax" className={'project__wrapper'} pages={6}>
 
         <Parallax.Layer offset={1.5} speed={.1} style={{ backgroundColor: '#805E73' }} />
         <Parallax.Layer offset={2} speed={.1} style={{ backgroundColor: '#87BCDE' }} />

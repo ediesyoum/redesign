@@ -1,4 +1,5 @@
 .work__wrapper {
+  @extend .scrollbar;
   background-image:
     linear-gradient(green -70%, red 120%),
     linear-gradient(to left, purple 210%, yellow 240%);

@@ -1,3 +1,6 @@
+.project__wrapper {
+  @extend .scrollbar;
+}
 .project__header {
   content: "";
   font-size: 2vw;
@@ -37,11 +40,6 @@
   mix-blend-mode: soft-light;
   margin-bottom: 36vh;
 }
-
-p {
-  margin-bottom: 59vh;
-}
-
 .react-blur-canvas {
   min-height: 17.1vh;
   max-height: 17.1vh;
