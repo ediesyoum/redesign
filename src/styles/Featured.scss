@@ -53,15 +53,19 @@
   @extend .featured--bg;
   background-color: lighten($logobg, 10%);
   background-image: $camo-bg;
+  height: 27vh !important;
 }
 .feature02-desktop {
   @extend .featured--bg;
   background-color: $mustard;
   background-image: $floatingcogs-bg;
+  height: 27vh !important;
 }
 .feature03-desktop {
   @extend .featured--bg;
   background-color: darken($green, 10%);
+  max-height: 20vh;
+  height: 20vh !important;
 }
 .featuredImg {
   top: 3vw;

@@ -4,7 +4,6 @@ import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
 import Parallax from 'react-springy-parallax';
 import Tilt from 'react-tilt';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Footer from '../components/Footer';
 
