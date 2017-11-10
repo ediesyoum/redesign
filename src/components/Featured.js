@@ -11,7 +11,7 @@ export default class Featured extends Component {
     let jotit = Projects['jot-it'];
     let csm = Projects['csm'];
     return (
-        <Parallax ref="parallax" pages={1.445} className={'featured-wrapper scrollbar'}>
+        <Parallax ref="parallax" pages={1.442} className={'featured-wrapper scrollbar'}>
 
           <section className="featured">
 
@@ -25,7 +25,7 @@ export default class Featured extends Component {
 
               <Parallax.Layer
                 style={{ height: 300 }}
-                onClick={() => this.refs.parallax.scrollTo(0)}>
+                onClick={() => this.refs.parallax.scrollTo(.199)}>
                 <FaChevronCircleDown className="chevron-down"/>
               </Parallax.Layer>
 
@@ -33,7 +33,7 @@ export default class Featured extends Component {
           </section>
 
           <Parallax.Layer
-            offset={0.25}
+            offset={0.3}
             speed={.5}
             className={'feature01-desktop'}
             style={{ height: 300 }}>

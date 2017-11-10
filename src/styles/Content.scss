@@ -1,9 +1,8 @@
-body {
+html, body {
 	margin: 0px;
 	padding: 0px;
   font-size: 1.7vh;
 	font-family: 'kayak_sans-light', sans-serif;
-  -webkit-font-smoothing: antialiased;
   background-color: darken($logobg, 20%);
 }
 h1 {
@@ -18,11 +17,7 @@ a {
 	text-decoration: none;
 }
 .wrapper {
-  min-height: 100%;
-  background-image: $circuits-bg;
-  background-repeat: repeat !important;
   overflow: hidden !important; // needed to override parallax styles
-  background-attachment: scroll !important;
   position: relative;
 }
 .scrollbar {
