@@ -24,64 +24,56 @@ export default class Work extends Component {
 
       return(
         <div>
-        <MediaQuery
-          query="(min-device-width: 768px)">
-          <div className="flex-wrapper-sm">
-
-            <Tilt className="Tilt" options={{
-                max : 35,
-                perspective: 3000,
-                scale: 1.1,
-                reset: true,
-                speed : 500
-              }}  onMouseLeave={this.onMouseLeave}>
-              <div className="Tilt-inner">
-
-              <ScrollAnimation
-                animateIn="bounceInUp"
-                offset={30000}
-                animateOut="bounceInUp"
-                duration={'7s'}
-                >
-                <Link to={`/work/${id}`} className={`${boxClassName}`}>
-                  <ProjectPreview index={indexInArray} {...projectAttributes} />
-                  </Link>
-              </ScrollAnimation>
-
+          <MediaQuery
+            query="(max-device-width: 768px)">
+              <div className="flex-wrapper-sm">
+              <Tilt className="Tilt" options={{
+                  max : 35,
+                  perspective: 3000,
+                  scale: 1.1,
+                  reset: true,
+                  speed : 500
+                }}  onMouseLeave={this.onMouseLeave}>
+                  <div className="Tilt-inner">
+                    <ScrollAnimation
+                      animateIn="bounceInUp"
+                      offset={30000}
+                      animateOut="bounceInUp"
+                      duration={'7s'}>
+                      <Link to={`/work/${id}`} className={`${boxClassName}`}>
+                        <ProjectPreview index={indexInArray} {...projectAttributes} />
+                      </Link>
+                    </ScrollAnimation>
+                  </div>
+                </Tilt>
             </div>
-          </Tilt>
-          </div>
-        </MediaQuery>
+          </MediaQuery>
 
-        <MediaQuery
-          query="(max-device-width: 768px)">
-          <div className="flex-wrapper-lg">
-
-            <Tilt className="Tilt" options={{
-                max : 35,
-                perspective: 3000,
-                scale: 1.1,
-                reset: true,
-                speed : 500
-              }}  onMouseLeave={this.onMouseLeave}>
-              <div className="Tilt-inner">
-
-              <ScrollAnimation
-                animateIn="bounceInUp"
-                offset={30000}
-                animateOut="bounceInUp"
-                duration={'7s'}
-                >
-                <Link to={`/work/${id}`} className={`${boxClassName}`}>
-                  <ProjectPreview index={indexInArray} {...projectAttributes} />
-                  </Link>
-              </ScrollAnimation>
-
+          <MediaQuery
+            query="(min-device-width: 768px)">
+            <div className="flex-wrapper-lg">
+              <Tilt className="Tilt" options={{
+                  max : 35,
+                  perspective: 3000,
+                  scale: 1.1,
+                  reset: true,
+                  speed : 500
+                }}  onMouseLeave={this.onMouseLeave}>
+                <ScrollAnimation
+                  animateIn="bounceInUp"
+                  offset={30000}
+                  animateOut="bounceInUp"
+                  duration={'7s'}>
+                  <div className="Tilt-inner">
+                    <Link to={`/work/${id}`} className={`${boxClassName}`}>
+                    <ProjectPreview index={indexInArray} {...projectAttributes} />
+                    </Link>
+                  </div>
+                </ScrollAnimation>
+              </Tilt>
             </div>
-          </Tilt>
-          </div>
-        </MediaQuery>
-      </div>
+          </MediaQuery>
+        </div>
       );
     });
   }
