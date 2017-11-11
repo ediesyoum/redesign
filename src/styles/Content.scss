@@ -6,11 +6,14 @@ html, body {
   background-color: darken($logobg, 20%);
 }
 h1 {
-  font-family: 'kayak_sans-light', sans-serif;
+	font-family: 'kayak_sans-light_italic', sans-serif;
+  font-style: italic;
+  font-weight: 400;
   text-decoration: none;
+  font-size: 2.5em;
 }
 h3 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 a {
 	cursor: pointer;

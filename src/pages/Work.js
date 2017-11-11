@@ -22,7 +22,7 @@ export default class Work extends Component {
       projectAttributes.id = id;
 
       return(
-        <div>
+        <div className="flex-wrapper">
 
           <Tilt className="Tilt" options={{
               max : 6,
@@ -57,7 +57,9 @@ export default class Work extends Component {
       <Parallax ref="parallax" className={'work__wrapper'} pages={5.14} speed={.5}>
 
           <div className="work__header">
-            <div className="work__header--title">Featured Projects</div>
+            <div className="work__header--title">
+              <h1>Featured Projects</h1>
+            </div>
           </div>
 
             {this.projects}

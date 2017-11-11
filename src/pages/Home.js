@@ -5,12 +5,7 @@ import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
 
 
-const emojiStyles = {
-  style: {
-        height: 70,
-        padding: 0
-    }
-}
+
 
 export default class Home extends Component {
   render() {
@@ -19,13 +14,13 @@ export default class Home extends Component {
 
             <Parallax.Layer
               offset={0}
-              speed={0.9}
+              speed={1}
               className={'premise'}
               style={{ height: 300 }}>
                 <h1>
                   <p className="greet">
                     <span className="waving-hand">
-                      {emojify(':wave:', emojiStyles)}
+                      {emojify(':wave:')}
                     </span>
                       Hi there.
                     </p>

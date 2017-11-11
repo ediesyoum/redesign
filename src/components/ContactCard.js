@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
-export default class ContactCard extends React {
-  render () {
+class ContactCard extends Component{
+  render() {
     return (
-      <div className="">
+      <div className="contact-card">
+        Get in Touch
       </div>
     )
   }
 }
+
+export default ContactCard;

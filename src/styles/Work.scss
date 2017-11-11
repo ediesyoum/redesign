@@ -10,22 +10,24 @@
 }
 .work__header {
   content: "";
-  font-size: 2.7em;
-  padding-top: 12vh;
+  font-size: 1.6em;
+  padding-top: 16vh;
   padding-right: 15vw;
   width: 100vw;
-  height: 6vh;
-  top: 10vh;
+  height: 10vh;
+  top: 5vh;
   background-color: $logobg;
   transform: skewY(5deg);
   text-align: right;
   position: relative;
-  color: #ffffff;
+  color: #d0fffb;
   background-image: $camo-bg;
 }
 .work__header--title {
   font-family: 'kayak_sans-light_italic', sans-serif;
-  transform: skewY(-5deg);
+  top: -8vh;
+  right: 5vw;
+  position: relative;
 }
 .projectcard {
   min-width: 25vh;
@@ -113,4 +115,9 @@
     font-size: 3.5vh;
     cursor: pointer;
   }
+}
+.flex-wrapper {
+  display: inline-flex;
+  min-width: 50%;
+  justify-content: space-around;
 }

@@ -1,3 +1,5 @@
+// PLEASE NOTE - The use of !important is to override the parallax styling being used in this application.
+
 .featured-wrapper {
   background-image: $circuits-bg;
   background-repeat: repeat !important;
@@ -9,7 +11,7 @@
   position: relative;
   max-height: 100%;
 }
-.featured-bg--content {
+.featured-projects {
   background-color: darken(#3d228c, 15%);
   height: 20vh !important;
   font-size: 2em;
@@ -17,13 +19,6 @@
   text-align: center;
   position: relative;
   color: lighten($mustard, 10%) !important;
-}
-.featured-link {
-  position: relative;
-  top: 15vh;
-  display: flex;
-  color: $mustard;
-  justify-content: center;
 }
 .chevron-down {
   font-size: 1em;
@@ -46,38 +41,7 @@
   position: relative;
 }
 .featured--bg {
-  background-repeat: no-repeat !important;
-  background-size: 60vh !important;
-  height: 27vh !important;
-  padding: 10vh;
-  position: relative !important;
-  text-align: justify;
-  margin-bottom: -27vh;
-}
-.feature01 {
-  @extend .featured--bg;
-  background-color: lighten($logobg, 10%);
-  background-image: url('../assets/img/jot-it.png');
-  background-position-y: 45%;
-  background-position-x: 5vw;
-  top: 12vh;
-  margin-bottom: -15vh;
-}
-.feature02 {
-  @extend .featured--bg;
-  background-color: darken($brightpurple, 40%);
-  background-image: url('../assets/img/east-end.png');
-  background-position-x: 72%;
-  background-position-y: 45%;
-}
-.feature03 {
-  @extend .featured--bg;
-  background-color: darken($burgundy, 10%);
-  background-image: url('../assets/img/upenn.png');
-  background-position-y: -10vh;
-  background-position-x: 5vw;
-}
-.featured__bg--sm {
+  background-blend-mode: soft-light;
   background-repeat: no-repeat !important;
   background-size: 70vh !important;
   height: 27vh !important;
@@ -86,28 +50,94 @@
   text-align: justify;
   margin-bottom: -27vh;
 }
-.feature01--sm {
+.featured01 {
+  @extend .featured--bg;
+  background-color: lighten($logobg, 5%);
+  background-image: url('../assets/img/jot-it.png');
+  background-position-y: -7vh;
+  background-position-x: 2vw;
+  top: 12vh;
+  margin-bottom: -15vh;
+}
+.featured02 {
+  @extend .featured--bg;
+  background-color: darken($brightpurple, 30%);
+  background-image: url('../assets/img/east-end.png');
+  background-position-x: 90%;
+  background-position-y: 45%;
+}
+.featured03 {
+  @extend .featured--bg;
+  background-color: darken($burgundy, 20%);
+  background-image: url('../assets/img/upenn.png');
+  background-position-y: -10vh;
+  background-position-x: 2vw;
+}
+.featured__bg--sm {
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat !important;
+  background-size: 70vh !important;
+  height: 27vh !important;
+  padding: 10vh;
+  position: relative !important;
+  text-align: justify;
+  margin-bottom: -27vh;
+}
+.featured01--sm {
   @extend .featured__bg--sm;
-  background-color: lighten($logobg, 10%);
+  background-blend-mode: inherit;
+  mix-blend-mode: multiply !important;
+  background-color: darken($logobg, 15%);
   background-image: url('../assets/img/jot-it.png');
   background-position-y: 30%;
   background-position-x: -19vw;
   top: 10vh;
   margin-bottom: -17vh;
 }
-.feature02--sm {
+.featured02--sm {
   @extend .featured__bg--sm;
-  background-color: darken($brightpurple, 40%);
+  background-color: darken($brightpurple, 30%);
   background-image: url('../assets/img/east-end.png');
   background-position-x: 72%;
   background-position-y: 45%;
   top: 1.3vh;
 }
-.feature03--sm {
+.featured03--sm {
   @extend .featured__bg--sm;
-  background-color: darken($burgundy, 10%);
+  background-color: darken($burgundy, 20%);
   background-image: url('../assets/img/upenn.png');
   background-position-y: -10vh;
   background-position-x: 5vw;
   top: 1vh;
+}
+.contact-card {
+  width: 100vw;
+  height: 27vh;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  padding-top: 2vw;
+  margin-top: -3vh;
+}
+.see-more--wrapper {
+  width: 100vw;
+  height: 12vh !important;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: .7em;
+  a {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    border-radius: 1vw;
+    border: 1.5px solid lighten($paleblue, 20%);
+    background-color: $paleblue;
+    color: white;
+    cursor: pointer;
+  }
+  a:hover {
+    background-color: lighten($paleblue, 10%);
+  }
 }
