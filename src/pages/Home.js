@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {emojify} from 'react-emojione';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
@@ -23,9 +22,9 @@ export default class Home extends Component {
               className={'premise'}
               style={{ height: 300 }}>
                 <h1>
-                  <p className="greet">
+                  <p className="yo">
                     <span className="waving-hand">
-                        {emojify(':wave:')}
+                      👋
                     </span>
                       Hi there.
                     </p>
@@ -57,7 +56,6 @@ export default class Home extends Component {
               </h1>
             </Parallax.Layer>
           </ScrollAnimation>
-
          <Featured/>
       </Parallax>
     );

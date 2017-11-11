@@ -41,8 +41,10 @@
   cursor: pointer;
   position: relative;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
+  flex: 4;
+  // display: flex;
+  // justify-content: space-around;
+  // flex-wrap: wrap;
   background-position-x: 16vw;
     &:hover {
       background-color: rgba(0,0,0,.09);
@@ -55,7 +57,6 @@
     background-size: 40vh;
     margin-bottom: 7vh;
     padding: 2vw;
-    flex-wrap: wrap;
     background-position: center !important;
   }
   .projectcard--jot-it {
@@ -93,31 +94,27 @@
   }
 
 .left {
-  position: absolute;
   transform: skewY(0deg);
   bottom: 1vh;
-  a {
+  //a {
     color: orange;
     font-size: 3.5vh;
     cursor: pointer;
     padding: 3vw;
     position: relative;
-  }
+  //}
 }
 .right {
-  position: absolute;
   transform: skewY(0deg);
   bottom: 1vh;
-  a {
+  //a {
     color: $teal;
     font-size: 3.5vh;
     cursor: pointer;
     padding: 3vw;
     position: relative;
-    display:inline-flex;
-    transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
     width: 30vw;
-  }
+  //}
 }
 .flex-wrapper-sm {
   display: inline-flex;
@@ -126,8 +123,9 @@
   align-items: center;
 }
 .flex-wrapper-lg {
-  display: inline-flex;
-  min-width: 60%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 20%;
 }

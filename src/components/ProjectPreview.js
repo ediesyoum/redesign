@@ -5,7 +5,6 @@ export default class ProjectPreview extends Component {
   get route() {
     return `/work/${this.props.id}`
   }
-
   get position() {
     if ((this.props.index % 2) === 0) {
       return 'right';
@@ -13,12 +12,15 @@ export default class ProjectPreview extends Component {
       return 'left';
     }
   }
-
   render() {
     return (
-      <div id={this.props.id} className={this.position}>
-        <Link to={this.route}>{this.props.name}</Link>
-      </div>
+        <div className={this.props.className}>
+          <Link to={this.route}>
+            <div id={this.props.id} className={this.position}>
+              {this.props.name}
+            </div>
+          </Link>
+        </div>
     );
   }
 }

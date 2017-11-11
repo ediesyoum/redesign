@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
 import Parallax from 'react-springy-parallax';
-import Tilt from 'react-tilt';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Footer from '../components/Footer';
 import MediaQuery from 'react-responsive';
+import Tilt from 'react-tilt';
 
 export default class Work extends Component {
   onMouseLeave(e) {
@@ -23,57 +23,19 @@ export default class Work extends Component {
       projectAttributes.id = id;
 
       return(
-        <div>
-          <MediaQuery
-            query="(max-device-width: 768px)">
-              <div className="flex-wrapper-sm">
-              <Tilt className="Tilt" options={{
-                  max : 35,
-                  perspective: 3000,
-                  scale: 1.1,
-                  reset: true,
-                  speed : 500
-                }}  onMouseLeave={this.onMouseLeave}>
-                  <div className="Tilt-inner">
-                    <ScrollAnimation
-                      animateIn="bounceInUp"
-                      offset={30000}
-                      animateOut="bounceInUp"
-                      duration={'7s'}>
-                      <Link to={`/work/${id}`} className={`${boxClassName}`}>
-                        <ProjectPreview index={indexInArray} {...projectAttributes} />
-                      </Link>
-                    </ScrollAnimation>
-                  </div>
-                </Tilt>
+        <Tilt
+          className="Tilt"
+          options={{
+            max : 35,
+            perspective: 3000,
+            scale: 1.1,
+            reset: true,
+            speed : 500 }}
+          onMouseLeave={this.onMouseLeave}>
+            <div className="Tilt-inner">
+              <ProjectPreview {...projectAttributes} index={indexInArray} className={boxClassName} />
             </div>
-          </MediaQuery>
-
-          <MediaQuery
-            query="(min-device-width: 768px)">
-            <div className="flex-wrapper-lg">
-              <Tilt className="Tilt" options={{
-                  max : 35,
-                  perspective: 3000,
-                  scale: 1.1,
-                  reset: true,
-                  speed : 500
-                }}  onMouseLeave={this.onMouseLeave}>
-                <ScrollAnimation
-                  animateIn="bounceInUp"
-                  offset={30000}
-                  animateOut="bounceInUp"
-                  duration={'7s'}>
-                  <div className="Tilt-inner">
-                    <Link to={`/work/${id}`} className={`${boxClassName}`}>
-                    <ProjectPreview index={indexInArray} {...projectAttributes} />
-                    </Link>
-                  </div>
-                </ScrollAnimation>
-              </Tilt>
-            </div>
-          </MediaQuery>
-        </div>
+        </Tilt>
       );
     });
   }
@@ -81,15 +43,31 @@ export default class Work extends Component {
   render() {
     return (
       <Parallax ref="parallax" className={'work__wrapper'} pages={5} speed={.5}>
-
           <div className="work__header">
             <div className="work__header--title">
               <h1>Featured Projects</h1>
             </div>
           </div>
 
-            {this.projects}
+          <MediaQuery
+            query="(max-device-width: 768px)">
+            <ScrollAnimation
+              animateIn="bounceInUp"
+              offset={30000}
+              animateOut="bounceInUp"
+              duration={'7s'}>
+              <div className="flex-wrapper-sm">
+                {this.projects}
+              </div>
+            </ScrollAnimation>
+          </MediaQuery>
 
+          <MediaQuery
+            query="(min-device-width: 768px)">
+            <div className="flex-wrapper-lg">
+              {this.projects}
+            </div>
+          </MediaQuery>
         <Footer/>
       </Parallax>
 
