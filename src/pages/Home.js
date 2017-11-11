@@ -3,7 +3,7 @@ import {emojify} from 'react-emojione';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 
@@ -12,6 +12,11 @@ export default class Home extends Component {
     return (
         <Parallax ref="parallax" pages={3} className={'wrapper scrollbar'}>
 
+          <ScrollAnimation
+            animateIn="bounceInUp"
+            offset={30000}
+            animateOut="bounceInUp"
+            duration={'7s'}>
             <Parallax.Layer
               offset={0}
               speed={1}
@@ -20,7 +25,7 @@ export default class Home extends Component {
                 <h1>
                   <p className="greet">
                     <span className="waving-hand">
-                      {emojify(':wave:')}
+                        {emojify(':wave:')}
                     </span>
                       Hi there.
                     </p>
@@ -51,6 +56,8 @@ export default class Home extends Component {
                    </div>
               </h1>
             </Parallax.Layer>
+          </ScrollAnimation>
+
          <Featured/>
       </Parallax>
     );

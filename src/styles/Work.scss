@@ -6,6 +6,7 @@
   background-blend-mode: difference;
   background-size: 100vw;
   width: 100vw;
+  height: 100vh;
   position: relative;
 }
 .work__header {
@@ -30,7 +31,7 @@
   position: relative;
 }
 .projectcard {
-  min-width: 25vh;
+  min-width: 53vh;
   max-width: 70vh;
   height: 46vh;
   top: 15vh;
@@ -38,12 +39,14 @@
   max-height: 75vh;
   cursor: pointer;
   position: relative;
-  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   background-position-x: 16vw;
     &:hover {
-      background-color: lighten($palepurple, 10%);
+      background-color: rgba(0,0,0,.09);
       transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
-      transition: 0.5s;
+      transition: 0.2s;
     }
   }
   .projectbg__styles {
@@ -52,7 +55,7 @@
     background-position: left;
     margin-bottom: 7vh;
     padding: 2vw;
-    background-position-x: 1.5vw;
+    background-position: center !important;
   }
   .projectcard--jot-it {
     background-image: url('../assets/img/jot-it.png');
@@ -62,7 +65,6 @@
   .projectcard--csm {
     background-image: url('../assets/img/csm.png');
     @extend .projectbg__styles;
-    background-position-x: 17.5vw;
   }
   .projectcard--portfolio-current {
     background-image: url('../assets/img/portfolio-old.png');
@@ -71,7 +73,6 @@
   .projectcard--economy {
     background-image: url('../assets/img/economy.png');
     @extend .projectbg__styles;
-    background-position-x: 17.5vw;
   }
   .projectcard--east-end {
     background-image: url('../assets/img/east-end.png');
@@ -80,44 +81,51 @@
   .projectcard--tic-tac-toe {
     background-image: url('../assets/img/tic-tac-toe.png');
     @extend .projectbg__styles;
-    background-position-x: 17.5vw;
   }
   .projectcard--portfolio-old {
     background-image: url('../assets/img/portfolio-old.png');
     @extend .projectbg__styles;
-    margin-bottom: 15vh;
   }
   .projectcard--upenn {
     background-image: url('../assets/img/upenn.png');
     @extend .projectbg__styles;
-    background-position-x: 17.5vw;
-    margin-bottom: 20vh;
   }
 
 .left {
   position: absolute;
   transform: skewY(0deg);
-  left: 5%;
-  top: 20vh;
+  bottom: 1vh;
   a {
     color: orange;
     font-size: 3.5vh;
     cursor: pointer;
+    padding: 3vw;
+    position: relative;
   }
 }
 .right {
   position: absolute;
   transform: skewY(0deg);
-  right: 8%;
-  top: 20vh;
+  bottom: 1vh;
   a {
     color: $teal;
     font-size: 3.5vh;
     cursor: pointer;
+    padding: 3vw;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+    width: 30vw;
   }
 }
-.flex-wrapper {
+.flex-wrapper-sm {
+  display: inline-flex;
+  max-width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.flex-wrapper-lg {
   display: inline-flex;
   min-width: 50%;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
