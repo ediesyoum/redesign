@@ -1,32 +1,22 @@
 .about__header {
-  content: "";
-  font-size: 1.6em;
-  padding-top: 16vh;
-  padding-right: 15vw;
-  width: 100vw;
-  height: 10vh;
-  top: 5vh;
-  background-color: $logobg;
-  transform: skewY(5deg);
-  text-align: right;
-  position: relative;
-  color: #d0fffb;
-  background-image: $camo-bg;
+  @extend .work__header;
 }
 .about__header--title {
-  font-family: 'kayak_sans-light_italic', sans-serif;
-  top: -8vh;
-  right: 5vw;
-  position: relative;
+  @extend .work__header--title;
 }
 .about__wrapper {
   display: flex;
-  flex-wrap: nowrap;
   position: relative;
-  flex-basis: 30%;
+  min-width: 100vw;
+}
+.about__content__wrapper {
+  position: relative;
+  flex-basis: 80%;
+  max-width: 80vw;
+  height: 400vh;
 }
 .about__content {
-  font-size: 1em;
+  font-size: 2em;
   color: $teal;
   padding: 2em;
   position: relative;

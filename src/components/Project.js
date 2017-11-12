@@ -6,6 +6,7 @@ import ProjectLinks from './ProjectLinks';
 import "animate.css/animate.min.css";
 import ProjectNavigationLink from './ProjectNavigationLink';
 import ScrollAnimation from 'react-animate-on-scroll';
+import findImage from '../utils/FindImage';
 
 export default class Project extends Component {
   get headerClassName() {
@@ -17,9 +18,11 @@ export default class Project extends Component {
   get summaryClassName() {
     return `${this.props.id}__summary`;
   }
-  get headerBlurImg(){
-    return `/img/${this.props.id}-desktop.jpg`;
+
+  projectImage(size = 'desktop') {
+    return findImage(`${this.props.id}-${size}.jpg`);
   }
+
   get tags() {
     let tags = this.props.tags || [];
     return tags.map((tag) => {
@@ -28,8 +31,10 @@ export default class Project extends Component {
   }
 
   render() {
+    console.log(this.projectImage());
     return(
       <Parallax ref="parallax" className={'project__wrapper'} pages={6}>
+
 
         <Parallax.Layer offset={1.5} speed={.1} style={{ backgroundColor: '#805E73' }} />
         <Parallax.Layer offset={2} speed={.1} style={{ backgroundColor: '#87BCDE' }} />
@@ -40,7 +45,7 @@ export default class Project extends Component {
             {this.props.name}
           </div>
           <div className="header-blur">
-            <Blur img={`/img/${this.props.id}-desktop.jpg`} blurRadius={6}/>
+            <Blur img={this.projectImage('desktop')} blurRadius={6}/>
           </div>
         </div>
 
@@ -54,10 +59,12 @@ export default class Project extends Component {
             animateOut="bounceInUp"
             duration={'3s'}>
             <div className="title--background">
-              <h3>Project Details</h3>
+              <h3>Project Summary</h3>
             </div>
             <div><p>{this.props.summary}</p></div>
           </ScrollAnimation>
+
+          <img src={this.projectImage('desktop')} />
 
 
           <ScrollAnimation
@@ -71,9 +78,13 @@ export default class Project extends Component {
             <p>{this.props.technical}</p>
           </ScrollAnimation>
 
-          <ProjectLinks links={this.props.links} />
+          <section className="project__links">
+            <ProjectLinks links={this.props.links} />
+            <div><img src={this.projectImage('tablet')} /></div>
+          </section>
 
           <ul className="project__tags">
+            <img src={this.projectImage('mobile')} />
             {this.tags}
           </ul>
 

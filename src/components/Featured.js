@@ -6,11 +6,14 @@ import FaChevronCircleDown from 'react-icons/lib/fa/chevron-circle-down';
 import ContactCard from '../components/ContactCard'
 import Footer from '../components/Footer';
 import MediaQuery from 'react-responsive';
+import { Link } from 'react-router-dom';
 
 export default class Featured extends Component {
   render() {
     let jotit = Projects['jot-it'];
-    let csm = Projects['csm'];
+    let eastend = Projects['east-end'];
+    let upenn = Projects['upenn'];
+
     return (
         <Parallax ref="parallax"
           pages={1.448}
@@ -31,26 +34,9 @@ export default class Featured extends Component {
                 </Parallax.Layer>
               </section>
 
-              <Parallax.Layer
-                offset={0.3}
-                speed={.5}
-                className={'featured01'}>
-                <Preview {...jotit} />
-              </Parallax.Layer>
-
-              <Parallax.Layer
-                offset={0.394}
-                speed={0.5}
-                className={'featured02'}>
-                <Preview {...csm} />
-              </Parallax.Layer>
-
-              <Parallax.Layer
-                offset={.488}
-                speed={0.5}
-                className={'featured03'}>
-                <Preview {...csm} />
-              </Parallax.Layer>
+              <Preview {...jotit} id="jot-it" offset={0.3} speed={.5} className="featured01" />
+              <Preview {...eastend} id="east-end" offset={0.394} speed={0.5} className="featured02" />
+              <Preview {...upenn} id="upenn" offset={.488} speed={0.5} className="featured03" />
             </MediaQuery>
 
             <MediaQuery
@@ -79,14 +65,14 @@ export default class Featured extends Component {
                 offset={0.394}
                 speed={0.5}
                 className={'featured02--sm'}>
-                <Preview {...csm} />
+                <Preview {...eastend} />
               </Parallax.Layer>
 
               <Parallax.Layer
                 offset={.488}
                 speed={0.5}
                 className={'featured03--sm'}>
-                <Preview {...csm} />
+                <Preview {...upenn} />
               </Parallax.Layer>
             </MediaQuery>
 
@@ -94,7 +80,7 @@ export default class Featured extends Component {
               offset={.59}
               speed={0.5}
               className={"see-more--wrapper"}>
-              <a href="#">more projects</a>
+              <Link to="/work">more projects</Link>
             </Parallax.Layer>
 
             <Parallax.Layer

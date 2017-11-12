@@ -14,13 +14,13 @@ export default class ProjectPreview extends Component {
   }
   render() {
     return (
+      <Link to={this.route}>
         <div className={this.props.className}>
-          <Link to={this.route}>
             <div id={this.props.id} className={this.position}>
               {this.props.name}
             </div>
-          </Link>
         </div>
+      </Link>
     );
   }
 }

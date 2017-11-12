@@ -26,11 +26,14 @@ export default class Work extends Component {
         <Tilt
           className="Tilt"
           options={{
-            max : 35,
-            perspective: 3000,
-            scale: 1.1,
-            reset: true,
-            speed : 500 }}
+            max : 25,
+            height: 300,
+            width: 300,
+            perspective: 2000,
+
+            speed : 500,
+            easing: "cubic-bezier(.03,.98,.52,.99)"
+          }}
           onMouseLeave={this.onMouseLeave}>
             <div className="Tilt-inner">
               <ProjectPreview {...projectAttributes} index={indexInArray} className={boxClassName} />

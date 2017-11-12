@@ -4,7 +4,7 @@ class Footer extends Component {
   render () {
     return (
       <section className="footer">
-        <p>&#169; Eden Syoum</p>
+        <p>Made with <span className="lol lots-of-love hashtag-blessed">❤️</span> by Eden Syoum</p>
       </section>
     )
   };
