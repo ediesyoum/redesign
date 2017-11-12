@@ -96,29 +96,23 @@
 .left {
   transform: skewY(0deg);
   bottom: 1vh;
-  //a {
-    color: orange;
-    font-size: 3.5vh;
-    cursor: pointer;
-    padding: 3vw;
-    position: relative;
-  //}
+  color: orange;
+  font-size: 3.5vh;
+  cursor: pointer;
+  padding: 3vw;
+  position: relative;
 }
 .right {
   transform: skewY(0deg);
   bottom: 1vh;
-  //a {
-    color: $teal;
-    font-size: 3.5vh;
-    cursor: pointer;
-    padding: 3vw;
-    position: relative;
-    width: 30vw;
-  //}
+  color: $teal;
+  font-size: 3.5vh;
+  cursor: pointer;
+  padding: 3vw;
+  position: relative;
+  width: 30vw;
 }
 .flex-wrapper-sm {
-  display: inline-flex;
-  max-width: 50%;
   justify-content: space-around;
   align-items: center;
 }

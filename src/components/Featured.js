@@ -105,7 +105,7 @@ export default class Featured extends Component {
             </Parallax.Layer>
 
           <Parallax.Layer
-            offset={.74}
+            offset={.699}
             speed={0.5}
             style={{ height: 6 }}>
             <Footer/>

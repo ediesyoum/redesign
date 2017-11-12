@@ -10,7 +10,6 @@ export default class Home extends Component {
   render() {
     return (
         <Parallax ref="parallax" pages={3} className={'wrapper scrollbar'}>
-
           <ScrollAnimation
             animateIn="bounceInUp"
             offset={30000}

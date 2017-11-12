@@ -1,0 +1,33 @@
+.about__header {
+  content: "";
+  font-size: 1.6em;
+  padding-top: 16vh;
+  padding-right: 15vw;
+  width: 100vw;
+  height: 10vh;
+  top: 5vh;
+  background-color: $logobg;
+  transform: skewY(5deg);
+  text-align: right;
+  position: relative;
+  color: #d0fffb;
+  background-image: $camo-bg;
+}
+.about__header--title {
+  font-family: 'kayak_sans-light_italic', sans-serif;
+  top: -8vh;
+  right: 5vw;
+  position: relative;
+}
+.about__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  flex-basis: 30%;
+}
+.about__content {
+  font-size: 1em;
+  color: $teal;
+  padding: 2em;
+  position: relative;
+}

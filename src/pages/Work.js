@@ -42,34 +42,48 @@ export default class Work extends Component {
 
   render() {
     return (
-      <Parallax ref="parallax" className={'work__wrapper'} pages={5} speed={.5}>
-          <div className="work__header">
-            <div className="work__header--title">
-              <h1>Featured Projects</h1>
-            </div>
-          </div>
-
-          <MediaQuery
-            query="(max-device-width: 768px)">
-            <ScrollAnimation
-              animateIn="bounceInUp"
-              offset={30000}
-              animateOut="bounceInUp"
-              duration={'7s'}>
-              <div className="flex-wrapper-sm">
-                {this.projects}
+        <div>
+          <MediaQuery query="(max-device-width: 768px)">
+            <Parallax ref="parallax" className={'work__wrapper'} pages={4.845} speed={.5}>
+              <div className="work__header">
+                <div className="work__header--title">
+                  <h1>Featured Projects</h1>
+                </div>
               </div>
-            </ScrollAnimation>
-          </MediaQuery>
+              <ScrollAnimation
+                animateIn="bounceInUp"
+                offset={30000}
+                animateOut="bounceInUp"
+                duration={'7s'}>
+                <div className="flex-wrapper-sm">
+                  {this.projects}
+                </div>
+              </ScrollAnimation>
+              <Footer/>
+            </Parallax>
+            </MediaQuery>
 
-          <MediaQuery
-            query="(min-device-width: 768px)">
-            <div className="flex-wrapper-lg">
-              {this.projects}
-            </div>
-          </MediaQuery>
-        <Footer/>
-      </Parallax>
+            <MediaQuery query="(min-device-width: 768px)">
+              <Parallax ref="parallax" className={'work__wrapper'} pages={2.85} speed={.5}>
+                <div className="work__header">
+                  <div className="work__header--title">
+                    <h1>Featured Projects</h1>
+                  </div>
+                </div>
+                <ScrollAnimation
+                  animateIn="bounceInUp"
+                  offset={30000}
+                  animateOut="bounceInUp"
+                  duration={'7s'}>
+                  <div className="flex-wrapper-lg">
+                    {this.projects}
+                  </div>
+                </ScrollAnimation>
+                <Footer/>
+              </Parallax>
+
+            </MediaQuery>
+      </div>
 
     );
   }
