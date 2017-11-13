@@ -82,7 +82,7 @@ export default class Work extends Component {
                     {this.projects}
                   </div>
                 </ScrollAnimation>
-                <Footer/>
+
               </Parallax>
 
             </MediaQuery>

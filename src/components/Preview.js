@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Parallax from 'react-springy-parallax';
+import { Link } from 'react-router-dom';
 
 export default class Preview extends Component {
   get route() {
@@ -8,19 +8,15 @@ export default class Preview extends Component {
 
   render() {
     return (
-      <a href={this.route}>
-        <Parallax.Layer
-          offset={this.props.offset}
-          speed={this.props.speed}
-          className={this.props.className}>
-
-          <div id={this.props.id}>
-            <p>{this.props.name}</p>
-            <p>{this.props.gh}</p>
-            <p>{this.props.live}</p>
-          </div>
-        </Parallax.Layer>
-      </a>
+      <Link to={this.route}>
+        <div className={this.route}>
+            <div id={this.props.id}>
+              <p>{this.props.name}</p>
+              <p>{this.props.gh}</p>
+              <p>{this.props.live}</p>
+            </div>
+        </div>
+      </Link>
     );
   }
 }

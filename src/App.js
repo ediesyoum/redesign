@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 import ProjectPage from './components/ProjectPage';
 import Navigation from './components/Navigation';
 
@@ -12,16 +13,25 @@ class App extends Component {
   render() {
     return(
       <div>
-        <Navigation/>
-        <Router>
-          <div>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route exact path="/work" component={Work} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/work/:id" component={ProjectPage} />
+        <div className="Site">
+
+          <div className="Site-content">
+            <header>
+              <Navigation/>
+              <Router>
+                <div>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/about" component={About} />
+                  <Route exact path="/work" component={Work} />
+                  <Route path="/contact" component={Contact} />
+                  <Route path="/work/:id" component={ProjectPage} />
+                </div>
+              </Router>
+            </header>
           </div>
-        </Router>
+
+          <Footer/>
+        </div>
       </div>
     );
   }

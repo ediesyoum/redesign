@@ -42,7 +42,7 @@ export default class Contact extends Component {
 
         </main>
 
-        <Footer/>
+
       </Parallax>
     );
   }

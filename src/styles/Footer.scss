@@ -1,13 +1,39 @@
 .footer {
-  padding-top: .2em;
-  min-width: 100vw;
-  min-height: 10vh;
-  position: relative;
-  top: 10vh;
-  z-index: 1;
+  padding: .2em;
+  height: 8vh;
+  position: relative !important;
+  bottom: 1vh;
   font-size: 1.4em;
-  color: black;
+  color: white;
   font-family: 'kayak_sans-regular', sans-serif;
   text-align: center;
-  background-image: linear-gradient(to right, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  background-image: linear-gradient(to right, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%) !important;
+}
+:root {
+    --space: 1.5em 0;
+    --space: 2em 0;
+    overflow:hidden;
+}
+.Site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    @extend .scrollbar;
+}
+
+.Site-content {
+    flex: 1 0 auto;
+    padding: var(--space) var(--space) 0;
+    width: 100%;
+    z-index: 0;
+    @extend .scrollbar;
+}
+
+.Site-content:after {
+    display: block;
+    margin-top: var(--space);
+    height: 0;
+    visibility: hidden;
+    z-index: 9999;
+    @extend .scrollbar;
 }

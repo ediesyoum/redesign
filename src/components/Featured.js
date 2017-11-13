@@ -34,9 +34,19 @@ export default class Featured extends Component {
                 </Parallax.Layer>
               </section>
 
-              <Preview {...jotit} id="jot-it" offset={0.3} speed={.5} className="featured01" />
-              <Preview {...eastend} id="east-end" offset={0.394} speed={0.5} className="featured02" />
-              <Preview {...upenn} id="upenn" offset={.488} speed={0.5} className="featured03" />
+              <div>
+                <Parallax.Layer offset={0.3} speed={.5} className="featured01">
+                  <Preview {...jotit} id="jot-it" />
+                </Parallax.Layer>
+
+                <Parallax.Layer offset={0.394} speed={0.5} className="featured02">
+                  <Preview {...eastend} id="east-end" />
+                </Parallax.Layer>
+
+                <Parallax.Layer offset={.488} speed={0.5} className="featured03">
+                  <Preview {...upenn} id="upenn"/>
+                </Parallax.Layer>
+              </div>
             </MediaQuery>
 
             <MediaQuery
@@ -90,12 +100,7 @@ export default class Featured extends Component {
               <ContactCard/>
             </Parallax.Layer>
 
-          <Parallax.Layer
-            offset={.699}
-            speed={0.5}
-            style={{ height: 6 }}>
-            <Footer/>
-          </Parallax.Layer>
+
 
         </Parallax>
     );

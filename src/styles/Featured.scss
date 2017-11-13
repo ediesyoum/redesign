@@ -13,9 +13,9 @@
 }
 .featured-projects {
   background-color: darken(#3d228c, 15%);
-  height: 20vh !important;
+  height: 23vh !important;
   font-size: 2em;
-  margin-bottom: -15vw;
+  top: -3vh;
   text-align: center;
   position: relative;
   color: lighten($mustard, 10%) !important;
@@ -24,12 +24,13 @@
   font-size: 1em;
   position: relative;
   height: 7vh;
+    color: $teal;
   width: 7vh;
   z-index: 1;
   top: 0vh;
   cursor: pointer !important;
   &:hover {
-    color: $teal !important;
+  color: lighten($mustard, 10%);
   }
 }
 .featured-preview-wrapper {

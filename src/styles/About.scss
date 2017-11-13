@@ -1,13 +1,18 @@
 .about__header {
   @extend .work__header;
+  @extend .scrollbar;
 }
 .about__header--title {
   @extend .work__header--title;
+  overflow-y: hidden !important;
+  position: relative;
 }
 .about__wrapper {
   display: flex;
   position: relative;
   min-width: 100vw;
+  top: 35vh;
+  @extend .scrollbar;
 }
 .about__content__wrapper {
   position: relative;

@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
+import MediaQuery from 'react-responsive';
 import ScrollAnimation from 'react-animate-on-scroll';
-
-
 
 export default class Home extends Component {
   render() {
@@ -15,45 +14,90 @@ export default class Home extends Component {
             offset={30000}
             animateOut="bounceInUp"
             duration={'7s'}>
-            <Parallax.Layer
-              offset={0}
-              speed={1}
-              className={'premise'}
-              style={{ height: 300 }}>
-                <h1>
-                  <p className="yo">
-                    <span className="waving-hand">
-                      👋
-                    </span>
-                      Hi there.
-                    </p>
-                      I'm
-                    <span className="myname">Eden</span>
-                      and I'm a
-                    <div className="rotatewords-wrapper">
-                      <div className="rotatewords">
-                        <ReactRotatingText
-                          items={['Front End Web Developer',
-                            'UI Designer',
-                            'UX-Focused Developer',
-                            'Graphic Designer',
-                            'Creative Web Developer'
-                          ]}
-                          typingInterval={90}
-                          color={'62F9BB'}
-                          />
-                      </div>
 
-                     <div className="premise_line03">
-                       creating first class web experiences
+            <MediaQuery query="(min-device-width: 667px)">
+              <Parallax.Layer
+                offset={0}
+                speed={1.5}
+                className={'premise'}
+                style={{ height: 300 }}>
+                  <h1>
+                    <p className="yo">
+                      <span className="waving-hand">
+                        👋
+                      </span>
+                        Hi there.
+                      </p>
+                        I'm
+                      <span className="myname">Eden</span>
+                        and I'm a
+                      <div className="rotatewords-wrapper">
+                        <div className="rotatewords">
+                          <ReactRotatingText
+                            items={['Front End Web Developer',
+                              'UI Designer',
+                              'UX-Focused Developer',
+                              'Graphic Designer',
+                              'Creative Web Developer'
+                            ]}
+                            typingInterval={90}
+                            color={'62F9BB'}
+                            />
+                        </div>
+
+                       <div className="premise_line03">
+                         creating first class web experiences
+                       </div>
+                       <div className="premise_line04">
+                         with functional, aesthetic
+                         <p>design + code.</p>
+                       </div>
                      </div>
-                     <div className="premise_line04">
-                       with functional, aesthetic
-                       <p>design + code.</p>
+                </h1>
+              </Parallax.Layer>
+            </MediaQuery>
+
+
+            <MediaQuery query="(max-device-width: 667px)">
+              <Parallax.Layer
+                offset={0}
+                speed={1.5}
+                className={'premise-sm'}>
+                  <h1>
+                    <p className="yo">
+                      <span className="waving-hand">
+                        👋
+                      </span>
+                        Hi there.
+                      </p>
+                        I'm
+                      <span className="myname">Eden</span>
+                        and I'm a
+                      <div className="rotatewords-wrapper">
+                        <div className="rotatewords-sm">
+                          <ReactRotatingText
+                            items={['Front End Web Developer',
+                              'UI Designer',
+                              'UX-Focused Developer',
+                              'Graphic Designer',
+                              'Creative Web Developer'
+                            ]}
+                            typingInterval={90}
+                            color={'62F9BB'}
+                            />
+                        </div>
+
+                       <div className="premise_line03">
+                         creating first class web experiences
+                       </div>
+                       <div className="premise_line04">
+                         with functional, aesthetic
+                         <p>design + code.</p>
+                       </div>
                      </div>
-                   </div>
-              </h1>
-            </Parallax.Layer>
+                </h1>
+              </Parallax.Layer>
+            </MediaQuery>
           </ScrollAnimation>
          <Featured/>
       </Parallax>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax';
-import Footer from '../components/Footer';
+
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 
@@ -30,7 +30,7 @@ export default class About extends Component {
                 <p>Flash forward to 2014, and major advances in JavaScript and mobile development and design have completely revamped the state of the web. For the past three years, I have worked to gain experience with a variety of <Link to="/work">projects</Link>, delving deeper into my lifelong love of code and well-implemented UI/UX design. As of recent, I have become very interested in ReactJS for its ease of usability via components, and how powerful and portable it is as an front end tool for interactive UX design. <Link to="/work/portfolio-current">See my case study on my first ReactJS project.</Link></p>
               </section>
             </main>
-          <Footer/>
+
         </Parallax>
       </MediaQuery>
 
@@ -52,6 +52,7 @@ export default class About extends Component {
               <p>Flash forward to 2014, and major advances in JavaScript and mobile development and design have completely revamped the state of the web. For the past three years, I have worked to gain experience with a variety of <Link to="/work">projects</Link>, delving deeper into my lifelong love of code and well-implemented UI/UX design. As of recent, I have become very interested in ReactJS for its ease of usability via components, and how powerful and portable it is as an front end tool for interactive UX design. <Link to="/work/portfolio-current">See my case study on my first ReactJS project.</Link></p>
             </section>
           </main>
+
         </Parallax>
       </MediaQuery>
     </div>

@@ -3,7 +3,7 @@
   left: 10vw;
   padding-right: 20%;
   position: relative;
-  top: 18vh;
+  top: 22vh;
   height: 20vh;
   line-height: 4vh;
 	font-family: 'kayak_sans-light_italic', sans-serif;
@@ -32,13 +32,19 @@
 }
 .premise_line03 {
   padding-top: 1.5vh;
+  min-width: 55vh;
+  position: relative;
 }
 .premise_line04 {
-  padding-top: 2.5vh;
+  padding-top: 3.5vh;
+  line-height: 2.5vh;
 }
 .premise-sm {
   @extend .premise;
-  font-size: 2.5vw;
+  font-size: .8em;
+  max-height: 20vh !important;
+  position: relative;
+  min-width: 50vw;
   padding: 0;
 }
 .rotatewords {
@@ -49,13 +55,17 @@
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
   padding-top: 2vh;
   text-transform: uppercase;
-
 }
 .rotatewords-sm {
-	font-family: 'kayak_sans-light_italic', sans-serif;
-	font-size: 5.5vw;
-  color: $teal;
+	font-family: 'kayak_sans-bold_italic', sans-serif;
+	font-size: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  color: lighten($mustard, 10%);
+  min-width: 50vw;
+  position: relative;
   text-decoration: none;
+  text-transform: uppercase;
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 .rotatewords-wrapper {
