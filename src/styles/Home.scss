@@ -1,32 +1,70 @@
+.triangle__bg {
+  left: 30vw;
+  top: 2vh;
+  position: relative;
+  min-width: 50vw !important;
+  opacity: .5;
+}
+.triangle__bg--sm {
+  left: 5vw;
+  top: 10vh;
+  max-width: 191vw;
+  position: relative;
+  opacity: .5;
+}
 .premise {
   max-width: 70vw;
   left: 10vw;
   padding-right: 20%;
   position: relative;
-  top: 22vh;
+  top: 15vh;
   height: 20vh;
   line-height: 4vh;
 	font-family: 'kayak_sans-light_italic', sans-serif;
-  color: lighten($linkbg, 70%);
-  text-shadow: 4px 5px 3px lighten($shadow, 15%);
+  color: darken($mustard, 55%);
+}
+.premise-sm {
+  @extend .premise;
+  top: 17vh;
+  font-size: .9em;
+  max-height: 20vh !important;
+  position: relative;
+  min-width: 50vw;
+  padding: 0;
+	font-family: 'kayak_sans-regular_italic', sans-serif;
 }
 .waving-hand {
   font-size: .8em;
   position: relative;
-  padding-right: 3vh;
+  left: -5.5vw;
+  top: 4vh;
+  padding-right: 2vw;
+  max-width: 20vw !important;
+}
+.waving-hand--sm {
+  @extend .waving-hand;
+  left: -8vw;
+  margin-right: 7vw;
+  position: relative;
 }
 .yo {
   font-size: 2em;
   margin:0;
+  left: 6vw;
   padding-bottom:5vh;
   position: relative;
-  color: lighten($mustard, 10%);
+  color: lighten($linkbg, 10%);
 	font-family: 'kayak_sans-light_italic', sans-serif;
+}
+.yo--sm {
+  @extend .yo;
+  position: relative;
+  left: 10vw;
 }
 .myname {
 	font-family: 'kayak_sans-light_italic', sans-serif;
   font-size: 2em;
-  color: $teal;
+  color: $salmon;
   min-width: 50vw;
   padding: .25em;
 }
@@ -39,21 +77,13 @@
   padding-top: 3.5vh;
   line-height: 2.5vh;
 }
-.premise-sm {
-  @extend .premise;
-  font-size: .8em;
-  max-height: 20vh !important;
-  position: relative;
-  min-width: 50vw;
-  padding: 0;
-}
 .rotatewords {
-	font-family: 'kayak_sans-light_italic', sans-serif;
+	font-family: 'kayak_sans-bold_italic', sans-serif;
 	font-size: .85em;
-  color: lighten($mustard, 10%);
+  color: lighten($linkbg, 10%);
   text-decoration: none;
-	text-shadow: 4px 5px 3px lighten($shadow, 15%);
-  padding-top: 2vh;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
   text-transform: uppercase;
 }
 .rotatewords-sm {
@@ -61,12 +91,11 @@
 	font-size: 3vh;
   padding-top: 2vh;
   padding-bottom: 1vh;
-  color: lighten($mustard, 10%);
+  color: lighten($linkbg, 10%);
   min-width: 50vw;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-	text-shadow: 4px 5px 3px lighten($shadow, 15%);
 }
 .rotatewords-wrapper {
   position: relative;
@@ -74,7 +103,7 @@
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 	text-shadow: 4px 5px 3px lighten($shadow, 15%);
-  color: lighten($teal, 20%);
+  color: $salmon;
   font-size: 5vh;
 }
 @keyframes blinking-cursor {
@@ -87,4 +116,8 @@
   100% {
     opacity: 0;
   }
+}
+.wobble {
+  max-width: 15vw !important;
+  animation-duration: 1.9s !important;
 }

@@ -3,11 +3,7 @@ html, body {
 	padding: 0px;
   font-size: 1.7vh;
 	font-family: 'kayak_sans-light', sans-serif;
-  background-color: darken($logobg, 20%);
-  min-height: 100vw;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  background-color: lighten($mustard, 35%);
 }
 h1 {
 	font-family: 'kayak_sans-light', sans-serif;

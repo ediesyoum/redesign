@@ -2,7 +2,6 @@
   padding: .2em;
   height: 8vh;
   position: relative !important;
-  bottom: 1vh;
   font-size: 1.4em;
   color: white;
   font-family: 'kayak_sans-regular', sans-serif;
@@ -24,14 +23,12 @@
 .Site-content {
     flex: 1 0 auto;
     padding: var(--space) var(--space) 0;
-    width: 100%;
     z-index: 0;
     @extend .scrollbar;
 }
 
 .Site-content:after {
     display: block;
-    margin-top: var(--space);
     height: 0;
     visibility: hidden;
     z-index: 9999;

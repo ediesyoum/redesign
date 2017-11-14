@@ -8,9 +8,11 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <header className="about__header">
-          <h1 className="about__header--title">About</h1>
-        </header>
+        <div className="Site">
+          <div className="Site-content">
+            <header className="about__header">
+              <h1 className="about__header--title">About</h1>
+            </header>
 
         <MediaQuery query="(max-device-width: 768px)">
           <Parallax ref="parallax" pages={5} className={'about__wrapper'}>
@@ -55,6 +57,8 @@ export default class About extends Component {
 
         </Parallax>
       </MediaQuery>
+      </div>
+    </div>
     </div>
     );
   }

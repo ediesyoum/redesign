@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import ProjectPage from './components/ProjectPage';
 import Navigation from './components/Navigation';
+import Sticky from 'react-sticky-el';
 
 class App extends Component {
   render() {
@@ -29,8 +30,6 @@ class App extends Component {
               </Router>
             </header>
           </div>
-
-          <Footer/>
         </div>
       </div>
     );

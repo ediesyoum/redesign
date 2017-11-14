@@ -10,7 +10,7 @@ import Tilt from 'react-tilt';
 
 export default class Work extends Component {
   onMouseLeave(e) {
-    console.log('clientY:', e.nativeEvent.clientY);
+    //console.log('clientY:', e.nativeEvent.clientY);
   }
   get projects() {
     let projectIDs = Object.keys(Projects);
@@ -82,7 +82,7 @@ export default class Work extends Component {
                     {this.projects}
                   </div>
                 </ScrollAnimation>
-
+                <Footer/>
               </Parallax>
 
             </MediaQuery>

@@ -10,8 +10,9 @@ const isMenuOpen = (state) => {
 export default class Navigation extends Component {
   render() {
     return (
-        <div className="header nav">
-          <MediaQuery minDeviceWidth={568}>
+      <div className="header">
+        <MediaQuery minDeviceWidth={667}>
+          <div className="nav">
             <Grid fluid>
               <Row>
                 <Col xs>
@@ -27,9 +28,11 @@ export default class Navigation extends Component {
                 </Col>
               </Row>
             </Grid>
+          </div>
           </MediaQuery>
 
-          <MediaQuery maxDeviceWidth={568}>
+          <MediaQuery maxDeviceWidth={667}>
+          <div className="nav--sm">
             <Grid fluid>
               <Row>
                 <Col xs>
@@ -55,6 +58,7 @@ export default class Navigation extends Component {
                 </Col>
               </Row>
             </Grid>
+          </div>
           </MediaQuery>
         </div>
     )

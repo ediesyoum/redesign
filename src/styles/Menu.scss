@@ -7,8 +7,10 @@
   right: 3%;
 }
 .bm-burger-button-sm {
-  @extend .bm-burger-button;
-  right: 5%;
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  right: 3%;
   top: 4.5vh;
 }
 

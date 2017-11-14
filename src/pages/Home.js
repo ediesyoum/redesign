@@ -4,6 +4,8 @@ import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
 import MediaQuery from 'react-responsive';
 import ScrollAnimation from 'react-animate-on-scroll';
+import BracketArt from '../assets/img/bracketart.png';
+import Animate from "animate.css/animate.min.css";
 
 export default class Home extends Component {
   render() {
@@ -18,13 +20,18 @@ export default class Home extends Component {
             <MediaQuery query="(min-device-width: 667px)">
               <Parallax.Layer
                 offset={0}
+                speed={1.5}>
+                <img className={"triangle__bg"} src={BracketArt} alt="Bracket Art"/>
+              </Parallax.Layer>
+              <Parallax.Layer
+                offset={0}
                 speed={1.5}
                 className={'premise'}
                 style={{ height: 300 }}>
                   <h1>
                     <p className="yo">
                       <span className="waving-hand">
-                        👋
+                        <div className="animated wobble infinite">👋</div>
                       </span>
                         Hi there.
                       </p>
@@ -61,12 +68,18 @@ export default class Home extends Component {
             <MediaQuery query="(max-device-width: 667px)">
               <Parallax.Layer
                 offset={0}
+                speed={1}
+                style={{ height: 300 }}>
+                <img className={"triangle__bg--sm"} src={BracketArt} alt="Bracket Art"/>
+              </Parallax.Layer>
+              <Parallax.Layer
+                offset={0}
                 speed={1.5}
                 className={'premise-sm'}>
                   <h1>
-                    <p className="yo">
-                      <span className="waving-hand">
-                        👋
+                    <p className="yo--sm">
+                      <span className="waving-hand--sm">
+                        <div className="animated wobble infinite">👋</div>
                       </span>
                         Hi there.
                       </p>
