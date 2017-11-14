@@ -4,7 +4,7 @@ import Parallax from 'react-springy-parallax';
 import Featured from '../components/Featured';
 import MediaQuery from 'react-responsive';
 import ScrollAnimation from 'react-animate-on-scroll';
-import BracketArt from '../assets/img/bracketart.png';
+import BracketGradient from '../assets/img/bracketgradient.svg';
 import Animate from "animate.css/animate.min.css";
 
 export default class Home extends Component {
@@ -21,7 +21,7 @@ export default class Home extends Component {
               <Parallax.Layer
                 offset={0}
                 speed={1.5}>
-                <img className={"triangle__bg"} src={BracketArt} alt="Bracket Art"/>
+                <img className={"triangle__bg"} src={BracketGradient} alt="Bracket Art"/>
               </Parallax.Layer>
               <Parallax.Layer
                 offset={0}
@@ -70,7 +70,7 @@ export default class Home extends Component {
                 offset={0}
                 speed={1}
                 style={{ height: 300 }}>
-                <img className={"triangle__bg--sm"} src={BracketArt} alt="Bracket Art"/>
+                <img className={"triangle__bg--sm"} src={BracketGradient} alt="Bracket Art"/>
               </Parallax.Layer>
               <Parallax.Layer
                 offset={0}

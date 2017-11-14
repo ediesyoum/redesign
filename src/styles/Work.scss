@@ -1,10 +1,5 @@
 .work__wrapper {
   @extend .scrollbar;
-  background-image:
-    linear-gradient(green -70%, red 120%),
-    linear-gradient(to left, purple 210%, yellow 240%);
-  background-blend-mode: difference;
-  background-size: 100vw;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -12,49 +7,44 @@
 .work__header {
   content: "";
   font-size: 1.6em;
-  padding-top: 16vh;
+  padding-top: 16vgradient h;
   width: 100vw;
-  height: 10vh;
-  top: 5vh;
+  height: 15vh;
+  top: 0vh;
   transform: skewY(5deg);
   text-align: right;
   position: relative;
-  color: #d0fffb;
-  background-image: $camo-bg;
+  color: $brown;
+  background-image: $circuits-bg;
 }
 .work__header--title {
   font-family: 'kayak_sans-light_italic', sans-serif;
-  top: -8vh;
+  top: 5vh;
   right: 5vw;
+  color: $brown;
   position: relative;
+  text-transform: lowercase;
 }
 .projectcard {
-  min-width: 53vh;
+  min-width: 70vh;
   max-width: 70vh;
-  width: 50%;
   height: 46vh;
-  top: 15vh;
-  margin: 0 auto;
-  max-height: 75vh;
+  top: 12vh;
+  padding: 5%;
   cursor: pointer;
   position: relative;
   text-align: center;
-  flex: 4;
-  // display: flex;
-  // justify-content: space-around;
-  // flex-wrap: wrap;
-  background-position-x: 16vw;
     &:hover {
-      background-color: rgba(0,0,0,.09);
+      background-color: rgba(0,0,0,.05);
       transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
       transition: 0.2s;
+      border-radius: 3em;
     }
   }
   .projectbg__styles {
     background-repeat: no-repeat;
     background-size: 40vh;
-    margin-bottom: 7vh;
-    padding: 2vw;
+    margin-bottom: 10vh;
     background-position: center !important;
   }
   .projectcard--jot-it {
@@ -93,22 +83,27 @@
 
 .left {
   transform: skewY(0deg);
-  bottom: 1vh;
+  bottom: -7vh;
   color: orange;
   font-size: 3.5vh;
   cursor: pointer;
+  text-align: center;
   padding: 3vw;
-  position: relative;
+  padding-top: 2vh;
+  width: 65vh;
+  position: absolute;
 }
 .right {
   transform: skewY(0deg);
-  bottom: 1vh;
+  bottom: -5vh;
   color: $teal;
   font-size: 3.5vh;
   cursor: pointer;
   padding: 3vw;
-  position: relative;
-  width: 30vw;
+  padding-top: 2vh;
+  position: absolute;
+  width: 60vh;
+  text-align: center;
 }
 .flex-wrapper-sm {
   justify-content: space-around;

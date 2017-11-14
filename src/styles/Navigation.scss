@@ -1,10 +1,20 @@
-.blurbg {
-  transform: scale(1.3) !important; //necessary for blurred image
-}
 .header {
   position: relative;
   z-index: 1;
 	width: 100%;
+}
+.logo {
+  position: absolute;
+	left: 2.5vw;
+	top: 2vh;
+	max-width: 12.5vw;
+}
+.logo--lg {
+  position: absolute;
+  z-index: 1;
+	top: 2vh;
+	left: 3.5vh;
+  max-width: 9.5vh;
 }
 .nav {
   font-size: 2em;
@@ -41,65 +51,6 @@
   transform-origin: bottom left;
   z-index: -1;
 }
-.nav__links {
-   a {
-  	margin: 1.5vh;
-    font-size: 1em;
-    color: $teal;
-    &::after {
-      content: '';
-      width: 0;
-      height: 2px;
-      background-color: $brightpurple;
-      transition: width .3s;
-      display: block;
-    }
-    &:hover::after {
-      width: 100%;
-      transition: width .3s;
-    }
-  }
-}
-.nav__links--desktop {
-  top: 3vh;
-  right: 1vh;
-  position: absolute;
-  z-index: 2;
-  font-size: 2vh;
-  text-transform: uppercase;
-  a {
-    cursor: pointer;
-    color: darken($teal, 20%);
-    padding: .75em;
-    letter-spacing: .15vw;
-    display: inline-block;
-  }
-  a::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: $brightpurple;
-    transition: width .3s;
-    display: block;
-  }
-  a:hover::after {
-    width: 100%;
-    transition: width .3s;
-  }
-}
-.logo--lg {
-  position: absolute;
-  z-index: 1;
-	top: 2vh;
-	left: 3.5vh;
-  max-width: 9.5vh;
-}
-.logo {
-	@extend .logo--lg;
-	left: 2.5vw;
-	top: 2vh;
-	max-width: 8.5vh;
-}
 .nav--sm {
   font-size: 2em;
   margin-bottom: 2vh;
@@ -131,4 +82,56 @@
   transform: skewY(-9deg);
   background-color: $brown;
   z-index: -1;
+}
+.nav__links {
+   a {
+  	margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding: 1vh;
+    font-size: .8em;
+    text-align: center;
+    color: $teal;
+    font-style: bold;
+    letter-spacing: .2vw;
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      background-color: $salmon;
+      transition: width .3s;
+      display: block;
+    }
+    &:hover::after {
+      width: 100%;
+      transition: width .3s;
+    }
+  }
+}
+.nav__links--desktop {
+  top: 3vh;
+  right: 1vh;
+  position: absolute;
+  z-index: 2;
+  font-size: 2vh;
+  text-transform: uppercase;
+  a {
+    cursor: pointer;
+    color: darken($teal, 20%);
+    padding: .75em;
+    letter-spacing: .15vw;
+    display: inline-block;
+  }
+  a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: $salmon;
+    transition: width .3s;
+    display: block;
+  }
+  a:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
 }

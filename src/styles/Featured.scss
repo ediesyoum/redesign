@@ -9,7 +9,7 @@
   max-height: 100%;
 }
 .featured-projects {
-  background-color: lighten($mustard, 10%);
+  background-color: rgba(81,241,188,.5);
   height: 23vh !important;
   font-size: 2em;
   top: -3vh;
@@ -39,7 +39,7 @@
   position: relative;
 }
 .featured--bg {
-  background-blend-mode: soft-light;
+  background-blend-mode: luminosity;
   background-repeat: no-repeat !important;
   background-size: 70vh !important;
   height: 27vh !important;
@@ -47,10 +47,11 @@
   position: relative !important;
   text-align: justify;
   margin-bottom: -27vh;
+  opacity: .9;
 }
 .featured01 {
   @extend .featured--bg;
-  background-color: lighten($logobg, 5%);
+  background-color: lighten($logobg, 35%) !important;
   background-image: url('../assets/img/jot-it.png');
   background-position-y: -7vh;
   background-position-x: 2vw;
@@ -59,20 +60,20 @@
 }
 .featured02 {
   @extend .featured--bg;
-  background-color: darken($brightpurple, 30%);
+  background-color: lighten($brightpurple, 10%);
   background-image: url('../assets/img/east-end.png');
   background-position-x: 90%;
   background-position-y: 45%;
 }
 .featured03 {
   @extend .featured--bg;
-  background-color: darken($burgundy, 20%);
+  background-color: lighten($burgundy, 10%);
   background-image: url('../assets/img/upenn.png');
   background-position-y: -10vh;
   background-position-x: 2vw;
 }
 .featured__bg--sm {
-  background-blend-mode: luminosity;
+  opacity: .85;
   background-repeat: no-repeat !important;
   background-size: 70vh !important;
   height: 27vh !important;
@@ -83,9 +84,7 @@
 }
 .featured01--sm {
   @extend .featured__bg--sm;
-  background-blend-mode: inherit;
-  mix-blend-mode: multiply !important;
-  background-color: darken($logobg, 15%);
+  background-color: lighten($logobg, 35%) !important;
   background-image: url('../assets/img/jot-it.png');
   background-position-y: 30%;
   background-position-x: -19vw;
@@ -94,7 +93,7 @@
 }
 .featured02--sm {
   @extend .featured__bg--sm;
-  background-color: darken($brightpurple, 30%);
+  background-color: lighten($brightpurple, 10%);
   background-image: url('../assets/img/east-end.png');
   background-position-x: 72%;
   background-position-y: 45%;
@@ -102,7 +101,7 @@
 }
 .featured03--sm {
   @extend .featured__bg--sm;
-  background-color: darken($burgundy, 20%);
+  background-color: lighten($burgundy, 10%);
   background-image: url('../assets/img/upenn.png');
   background-position-y: -10vh;
   background-position-x: 5vw;
@@ -112,15 +111,18 @@
   width: 100vw;
   height: 27vh;
   font-size: 3em;
-  color: white;
+  color: $brown;
   text-align: center;
   padding-top: 2vw;
   margin-top: -3vh;
 }
 .contact-card__link {
-  color: white;
+  color: $salmon;
   cursor: pointer;
-  padding: 2vw;
+  margin: 2vw;
+  &:hover {
+    color: $teal;
+  }
 }
 .see-more--wrapper {
   width: 100vw;

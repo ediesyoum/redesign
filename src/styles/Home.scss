@@ -1,14 +1,14 @@
 .triangle__bg {
-  left: 30vw;
-  top: 2vh;
+  left: -10vw;
+  top: 5vh;
   position: relative;
-  min-width: 50vw !important;
+  min-width: 130% !important;
   opacity: .5;
 }
 .triangle__bg--sm {
   left: 5vw;
   top: 10vh;
-  max-width: 191vw;
+  max-width: 191%;
   position: relative;
   opacity: .5;
 }
