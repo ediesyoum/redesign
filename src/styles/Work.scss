@@ -26,8 +26,9 @@
   text-transform: lowercase;
 }
 .projectcard {
-  min-width: 70vh;
-  max-width: 70vh;
+  min-width: 60vh;
+  max-width: 30vh;
+  justify-content: space-around;
   height: 46vh;
   top: 12vh;
   padding: 5%;

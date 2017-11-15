@@ -5,10 +5,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
-import Footer from './components/Footer';
 import ProjectPage from './components/ProjectPage';
 import Navigation from './components/Navigation';
-import Sticky from 'react-sticky-el';
 
 class App extends Component {
   render() {

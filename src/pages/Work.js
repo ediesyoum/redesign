@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
 import Parallax from 'react-springy-parallax';
@@ -30,7 +29,6 @@ export default class Work extends Component {
             height: 300,
             width: 300,
             perspective: 2000,
-
             speed : 500,
             easing: "cubic-bezier(.03,.98,.52,.99)"
           }}

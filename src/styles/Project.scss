@@ -1,18 +1,17 @@
 .project__wrapper {
   @extend .scrollbar;
+  perspective: 1000px;
 }
 .project__header {
   content: "";
   font-size: 2vw;
-  margin-top: 11vh;
+  margin-top: 5vh;
   padding-right: 15vw;
   width: 100vw;
   min-height: 25vh;
-  background-color: $logobg;
   transform: skewY(4deg);
   text-align: right;
   position: relative;
-  color: #ffffff;
   background-image: $circuits-bg;
 }
 .project__header-title {
@@ -27,26 +26,17 @@
 }
 .project__summary {
   font-size: 2.5em;
-  color: $teal;
+  color: $brown;
   line-height: 7.5vh;
   text-align: justify;
   width: 75vw;
   display: block;
   left: 12vw;
+  top: 35vh;
   align-items: center;
   position: relative;
 }
-.header-blur {
-  mix-blend-mode: soft-light;
-  margin-bottom: 36vh;
-}
-.react-blur-canvas {
-  min-height: 17.1vh;
-  max-height: 17.1vh;
-  transform: scaleY(1.9);
-}
 .btn-group {
-  position: absolute;
   width: 30vw;
   height: 40vh;
   display: block;
@@ -68,6 +58,8 @@
 }
 .title--background {
   background-color: $paleblue;
+  padding-top: 20vh;
+  position: relative;
   height: 8vh;
   padding: 1vh;
   text-align: right;
@@ -77,6 +69,7 @@
   font-family: 'kayak_sans-light_italic', sans-serif;
   line-height: .02vh;
   z-index: 2;
+  visibility: visible;
 }
 .project__navigation a {
   color: white;
@@ -89,4 +82,35 @@
   width: 20vw;
   background-color: lighten($paleblue, 15%);
   border-radius: 4vw;
+}
+.project-image--desktop {
+  max-width: 100%;
+  max-height: 60%;
+  min-height: 30%;
+  min-width: 80%;
+  box-shadow: 0px 20px 100px $brown;
+  border-radius: 1vh;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
+  position: relative;
+}
+.project-image--tablet {
+  max-width: 103%;
+  min-width: 30%;
+  min-height: 60vh;
+  max-height: 80vh;
+  box-shadow: 0px 20px 100px $brown;
+  border-radius: 1vh;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
+  position: relative;
+}
+.project-image--mobile {
+  max-width: 70%;
+  max-height: 50vh;
+  box-shadow: 0px 20px 100px $brown;
+  border-radius: 1vh;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
+  position: relative;
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Blur from 'react-blur';
 import Parallax from 'react-springy-parallax';
 import Footer from '../components/Footer';
 import ProjectLinks from './ProjectLinks';
@@ -18,6 +17,15 @@ export default class Project extends Component {
   get summaryClassName() {
     return `${this.props.id}__summary`;
   }
+  get desktopProjectImgClassName() {
+    return `project-image--desktop`;
+  }
+  get tabletProjectImgClassName() {
+    return `project-image--tablet`;
+  }
+  get mobileProjectImgClassName() {
+    return `project-image--mobile`;
+  }
 
   projectImage(size = 'desktop') {
     return findImage(`${this.props.id}-${size}.jpg`);
@@ -31,11 +39,11 @@ export default class Project extends Component {
   }
 
   render() {
-    console.log(this.projectImage());
     return(
-      <Parallax ref="parallax" className={'project__wrapper'} pages={6}>
+      <Parallax ref="parallax" className={'project__wrapper'} pages={10}>
 
-        <Parallax.Layer offset={1.5} speed={.1} style={{ backgroundColor: '#805E73' }} />
+        <Parallax.Layer offset={.5} speed={.1} style={{ backgroundColor: '#FECC52' }} />
+        <Parallax.Layer offset={1.3} speed={.1} style={{ backgroundColor: '#805E73' }} />
         <Parallax.Layer offset={2} speed={.1} style={{ backgroundColor: '#87BCDE' }} />
         <Parallax.Layer offset={3} speed={.1} style={{ backgroundColor: '#6b1586' }} />
 
@@ -43,57 +51,46 @@ export default class Project extends Component {
           <div className="project__header-title">
             {this.props.name}
           </div>
-          <div className="header-blur">
-            <Blur img={this.projectImage('desktop')} blurRadius={6}/>
-          </div>
         </div>
 
+        <ScrollAnimation
+          animateIn="bounceInUp"
+          animateOut="bounceInUp"
+          duration={'3s'}>
+          <div className="project__summary">
 
-
-        <div className="project__summary box">
-
-          <ScrollAnimation
-            animateIn="bounceInUp"
-            offset={300}
-            animateOut="bounceInUp"
-            duration={'3s'}>
             <div className="title--background">
               <h3>Project Summary</h3>
             </div>
+
             <div><p>{this.props.summary}</p></div>
-          </ScrollAnimation>
-
-          <img src={this.projectImage('desktop')} />
 
 
-          <ScrollAnimation
-            animateIn="fadeIn"
-            offset={10000}
-            animateOut="fadeIn"
-            duration={'6s'}>
+            <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} />
+
+
             <div className="title--background">
               <h3>Technical Details</h3>
             </div>
             <p>{this.props.technical}</p>
-          </ScrollAnimation>
 
-          <section className="project__links">
-            <ProjectLinks links={this.props.links} />
-            <div><img src={this.projectImage('tablet')} /></div>
-          </section>
 
-          <ul className="project__tags">
-            <img src={this.projectImage('mobile')} />
-            {this.tags}
-          </ul>
+            <section className="project__links">
+              <ProjectLinks links={this.props.links} />
+              <div><img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} /></div>
+            </section>
 
-          <nav className="project__navigation">
-            <ProjectNavigationLink id={this.props.id} rel="previous" />
-            <ProjectNavigationLink id={this.props.id} rel="next" />
-          </nav>
+            <ul className="project__tags">
+              <img className={this.mobileProjectImgClassName} src={this.projectImage('mobile')} />
+              {this.tags}
+            </ul>
 
-        </div>
-
+            <nav className="project__navigation">
+              <ProjectNavigationLink id={this.props.id} rel="previous" />
+              <ProjectNavigationLink id={this.props.id} rel="next" />
+            </nav>
+          </div>
+        </ScrollAnimation>
         <Footer/>
       </Parallax>
     );

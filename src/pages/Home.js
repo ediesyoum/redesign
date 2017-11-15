@@ -5,7 +5,6 @@ import Featured from '../components/Featured';
 import MediaQuery from 'react-responsive';
 import ScrollAnimation from 'react-animate-on-scroll';
 import BracketGradient from '../assets/img/bracketgradient.svg';
-import Animate from "animate.css/animate.min.css";
 
 export default class Home extends Component {
   render() {
