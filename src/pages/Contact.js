@@ -39,10 +39,9 @@ export default class Contact extends Component {
               </Col>
             </Grid>
           </form>
-
         </main>
 
-
+        <Footer />
       </Parallax>
     );
   }

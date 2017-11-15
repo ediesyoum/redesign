@@ -66,7 +66,7 @@ export default class Project extends Component {
             <div><p>{this.props.summary}</p></div>
 
 
-            <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} />
+            <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
 
 
             <div className="title--background">
@@ -77,11 +77,11 @@ export default class Project extends Component {
 
             <section className="project__links">
               <ProjectLinks links={this.props.links} />
-              <div><img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} /></div>
+              <div><img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} alt={`${this.props.id} Tablet Project`} title={`${this.props.id} Tablet Project`}/></div>
             </section>
 
             <ul className="project__tags">
-              <img className={this.mobileProjectImgClassName} src={this.projectImage('mobile')} />
+              <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
               {this.tags}
             </ul>
 
