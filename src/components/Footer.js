@@ -9,10 +9,10 @@ class Footer extends Component {
         <Grid fluid>
           <Row>
             <Col xs="start">
-              <p>Made with <span className="hearts">❤️</span> by Eden Syoum</p>
+              <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
             </Col>
             <Col xs="end">
-              ☝️
+              <span role="img" aria-label="Top Of Page">☝️</span>
             </Col>
           </Row>
         </Grid>

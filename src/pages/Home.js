@@ -30,7 +30,9 @@ export default class Home extends Component {
                   <h1>
                     <p className="yo">
                       <span className="waving-hand">
-                        <div className="animated wobble infinite">👋</div>
+                        <div className="animated wobble infinite">
+                          <span role="img" aria-label="Waving Hand">👋</span>
+                        </div>
                       </span>
                         Hi there.
                       </p>
@@ -78,7 +80,9 @@ export default class Home extends Component {
                   <h1>
                     <p className="yo--sm">
                       <span className="waving-hand--sm">
-                        <div className="animated wobble infinite">👋</div>
+                        <div className="animated wobble infinite">
+                          <span role="img" aria-label="Waving Hand">👋</span>
+                        </div>
                       </span>
                         Hi there.
                       </p>
