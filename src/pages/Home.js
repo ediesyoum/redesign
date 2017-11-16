@@ -66,7 +66,7 @@ export default class Home extends Component {
             </MediaQuery>
 
 
-            <MediaQuery query="(max-device-width: 667px)">
+            <MediaQuery query="(max-device-width: 666px)">
               <Parallax.Layer
                 offset={0}
                 speed={1}

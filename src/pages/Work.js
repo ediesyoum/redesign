@@ -44,7 +44,7 @@ export default class Work extends Component {
   render() {
     return (
         <div>
-          <MediaQuery query="(max-device-width: 768px)">
+          <MediaQuery query="(max-device-width: 666px)">
             <Parallax ref="parallax" className={'work__wrapper'} pages={4.845} speed={.5}>
               <div className="work__header">
                 <div className="work__header--title">
@@ -64,7 +64,7 @@ export default class Work extends Component {
             </Parallax>
             </MediaQuery>
 
-            <MediaQuery query="(min-device-width: 768px)">
+            <MediaQuery query="(min-device-width: 667px)">
               <Parallax ref="parallax" className={'work__wrapper'} pages={2.85} speed={.5}>
                 <div className="work__header">
                   <div className="work__header--title">

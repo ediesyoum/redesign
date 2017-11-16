@@ -1,28 +1,18 @@
 .project__wrapper {
   @extend .scrollbar;
+  width: 100vw;
   perspective: 1000px;
 }
 .project__header {
-  content: "";
-  font-size: 2vw;
-  margin-top: 5vh;
-  padding-right: 15vw;
-  width: 100vw;
-  min-height: 25vh;
-  transform: skewY(4deg);
-  text-align: right;
-  position: relative;
-  background-image: $circuits-bg;
+  height: 20vh !important;
+  @extend .work__header;
+
 }
 .project__header-title {
   font-family: 'kayak_sans-light_italic', sans-serif;
-  color: lighten($green, 20%);
+  @extend .work__header--title;
   font-size: 7.5vh;
   z-index: 1;
-  position: absolute;
-  text-align: right;
-  right: 19vw;
-  top: 10vh;
 }
 .project__summary {
   font-size: 2.5em;

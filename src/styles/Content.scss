@@ -4,6 +4,7 @@ html, body {
   font-size: 1.7vh;
 	font-family: 'kayak_sans-light', sans-serif;
   background-color: lighten($teal, 30%);
+  overflow: hidden !important;
 }
 h1 {
 	font-family: 'kayak_sans-light', sans-serif;
@@ -19,9 +20,10 @@ a {
 	text-decoration: none;
 }
 .wrapper {
-  overflow: hidden !important; // needed to override parallax styles
+ // needed to override parallax styles
   position: relative;
   @extend .scrollbar;
+  overflow-y: scroll !important;
 }
 .scrollbar {
   width: 100%;
