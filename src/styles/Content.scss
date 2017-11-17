@@ -20,7 +20,6 @@ a {
 	text-decoration: none;
 }
 .wrapper {
- // needed to override parallax styles
   position: relative;
   @extend .scrollbar;
   overflow-y: scroll !important;

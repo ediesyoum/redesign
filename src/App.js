@@ -13,7 +13,6 @@ class App extends Component {
     return(
       <div>
         <div className="Site">
-
           <div className="Site-content">
             <header>
               <Navigation/>

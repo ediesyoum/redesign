@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Grid, Col, Row } from 'react-flexbox-grid';
+//import $ from 'jquery';
 
 class Footer extends Component {
   render () {
@@ -12,7 +13,7 @@ class Footer extends Component {
               <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
             </Col>
             <Col xs="end">
-              <span role="img" aria-label="Top Of Page">☝️</span>
+              <span id="back-to-top" role="img" aria-label="Top Of Page">☝️</span>
             </Col>
           </Row>
         </Grid>

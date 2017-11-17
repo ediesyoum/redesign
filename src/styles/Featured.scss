@@ -10,11 +10,12 @@
 }
 .featured-projects {
   background-color: rgba(81,241,188,.5);
-  height: 23vh !important;
+  height: 25vh !important;
   font-size: 2em;
-  top: -3vh;
+  top: -8vh;
+  padding-top: 1vh;
   text-align: center;
-  position: relative;
+  position: relative !important;
   color: $brown !important;
 }
 .chevron-down {
@@ -35,7 +36,7 @@
   position: relative;
 }
 .featured-preview-wrapper--sm {
-  top: 0vh;
+  top: -10vh;
   position: relative;
 }
 .featured--bg {
@@ -88,8 +89,9 @@
   background-image: url('../assets/img/jot-it.png');
   background-position-y: 30%;
   background-position-x: -19vw;
-  top: 10vh;
-  margin-bottom: -17vh;
+  top: 0vh;
+  height: 30vh !important;
+  margin-bottom: -10vh;
 }
 .featured02--sm {
   @extend .featured__bg--sm;
@@ -97,7 +99,7 @@
   background-image: url('../assets/img/east-end.png');
   background-position-x: 72%;
   background-position-y: 45%;
-  top: 1.3vh;
+  top: -5vh;
 }
 .featured03--sm {
   @extend .featured__bg--sm;
@@ -105,7 +107,7 @@
   background-image: url('../assets/img/upenn.png');
   background-position-y: -10vh;
   background-position-x: 5vw;
-  top: 1vh;
+  top: -2vh;
 }
 .contact-card {
   width: 100vw;

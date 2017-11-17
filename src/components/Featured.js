@@ -15,12 +15,13 @@ export default class Featured extends Component {
     let upenn = Projects['upenn'];
 
     return (
-        <Parallax ref="parallax"
-          pages={1.448}
-          speed={.5}
-          className={'featured-wrapper scrollbar'}>
-            <MediaQuery
-              query="(min-device-width: 667px)" className="featured-preview-wrapper">
+        <div>
+          <MediaQuery
+            query="(min-device-width: 667px)" className="featured-preview-wrapper">
+            <Parallax ref="parallax"
+              pages={1.448}
+              speed={.5}
+              className={'featured-wrapper scrollbar'}>
               <section className="featured">
                 <Parallax.Layer
                   offset={0}
@@ -35,22 +36,43 @@ export default class Featured extends Component {
               </section>
 
               <div>
-                <Parallax.Layer offset={0.3} speed={.5} className="featured01">
+                <Parallax.Layer offset={0.21} speed={.5} className="featured01">
                   <Preview {...jotit} id="jot-it" />
                 </Parallax.Layer>
 
-                <Parallax.Layer offset={0.394} speed={0.5} className="featured02">
+                <Parallax.Layer offset={0.314} speed={0.5} className="featured02">
                   <Preview {...eastend} id="east-end" />
                 </Parallax.Layer>
 
-                <Parallax.Layer offset={.488} speed={0.5} className="featured03">
+                <Parallax.Layer offset={.408} speed={0.5} className="featured03">
                   <Preview {...upenn} id="upenn"/>
                 </Parallax.Layer>
-              </div>
-            </MediaQuery>
 
-            <MediaQuery
-              query="(max-device-width: 667px)" className="featured-preview-wrapper--sm">
+                <Parallax.Layer
+                  offset={.59}
+                  speed={0.5}
+                  className={"see-more--wrapper"}>
+                  <Link to="/work">more projects</Link>
+                </Parallax.Layer>
+
+                <Parallax.Layer
+                  offset={.63}
+                  speed={0.5}
+                  style={{ height: 30 }}
+                  onClick={() => this.refs.parallax.onScroll({ target: { scrollTop: -3000 }}) }>
+                  <ContactCard/>
+                  <Footer />
+                </Parallax.Layer>
+              </div>
+            </Parallax>
+          </MediaQuery>
+
+          <MediaQuery
+            query="(max-device-width: 667px)" className="featured-preview-wrapper--sm">
+            <Parallax ref="parallax"
+              pages={1.448}
+              speed={.5}
+              className={'featured-wrapper scrollbar'}>
               <section className="featured">
                 <Parallax.Layer
                   offset={0}
@@ -84,25 +106,26 @@ export default class Featured extends Component {
                 className={'featured03--sm'}>
                 <Preview {...upenn} />
               </Parallax.Layer>
-            </MediaQuery>
 
-            <Parallax.Layer
-              offset={.59}
-              speed={0.5}
-              className={"see-more--wrapper"}>
-              <Link to="/work">more projects</Link>
-            </Parallax.Layer>
+              <Parallax.Layer
+                offset={.59}
+                speed={0.5}
+                className={"see-more--wrapper"}>
+                <Link to="/work">more projects</Link>
+              </Parallax.Layer>
 
-            <Parallax.Layer
-              offset={.63}
-              speed={0.5}
-              style={{ height: 30 }}>
-              <ContactCard/>
-            </Parallax.Layer>
-
-
-
-        </Parallax>
+              <Parallax.Layer
+                offset={.63}
+                speed={0.5}
+                style={{ height: 30 }}
+                onClick={() => this.refs.parallax.scrollTo(0) }>
+                >
+                <ContactCard/>
+                <Footer />
+              </Parallax.Layer>
+            </Parallax>
+          </MediaQuery>
+        </div>
     );
   }
 }

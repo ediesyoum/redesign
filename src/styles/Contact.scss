@@ -1,3 +1,15 @@
+.contact__header {
+  @extend .about__header;
+}
+.contact__header--title {
+  @extend .about__header--title;
+}
+.contact__content__wrapper {
+  @extend .about__content__wrapper;
+}
+.contact__content {
+  @extend .about__content;
+}
 .form-email {
   font-family: 'Harbour', serif;
   font-size: 1em;
