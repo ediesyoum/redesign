@@ -3,6 +3,8 @@ import Parallax from 'react-springy-parallax';
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 import Eyes from '../assets/img/eyes.jpg';
+import Footer from '../components/Footer';
+import { Grid, Col, Row } from 'react-flexbox-grid';
 
 export default class About extends Component {
   render() {
@@ -29,6 +31,22 @@ export default class About extends Component {
                     <p>Flash forward to 2014, and major advances in JavaScript and mobile development and design have completely revamped the state of the web. For the past three years, I have worked to gain experience with a variety of <Link to="/work">projects</Link>, delving deeper into my lifelong love of code and well-implemented UI/UX design. As of recent, I have become very interested in ReactJS for its ease of usability via components, and how powerful and portable it is as an front end tool for interactive UX design. <Link to="/work/portfolio-current">See my case study on my first ReactJS project.</Link></p>
                   </section>
                 </main>
+                <section className="footer">
+                  <Grid fluid>
+                    <Row>
+                      <Col xs="start">
+                        <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                      </Col>
+                      <Col xs="end">
+                        <Parallax.Layer
+                          style={{ height: 30 }}
+                          onClick={() => this.refs.parallax.scrollTo(0)}>
+                          <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        </Parallax.Layer>
+                      </Col>
+                    </Row>
+                  </Grid>
+                </section>
               </Parallax>
             </MediaQuery>
 
@@ -37,7 +55,7 @@ export default class About extends Component {
                 <section className="about__header">
                   <h1 className="about__header--title">About</h1>
                 </section>
-                <img src={Eyes} alt="Eyes"/> 
+                <img src={Eyes} alt="Eyes"/>
                 <main className="about__content__wrapper">
                   <section className="about__content">
                     <h3>A User-Focused Developer</h3>
@@ -53,6 +71,22 @@ export default class About extends Component {
                     <p>Flash forward to 2014, and major advances in JavaScript and mobile development and design have completely revamped the state of the web. For the past three years, I have worked to gain experience with a variety of <Link to="/work">projects</Link>, delving deeper into my lifelong love of code and well-implemented UI/UX design. As of recent, I have become very interested in ReactJS for its ease of usability via components, and how powerful and portable it is as an front end tool for interactive UX design. <Link to="/work/portfolio-current">See my case study on my first ReactJS project.</Link></p>
                   </section>
                 </main>
+                <section className="footer">
+                  <Grid fluid>
+                    <Row>
+                      <Col xs="start">
+                        <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                      </Col>
+                      <Col xs="end">
+                        <Parallax.Layer
+                          style={{ height: 30 }}
+                          onClick={() => this.refs.parallax.scrollTo(0)}>
+                          <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        </Parallax.Layer>
+                      </Col>
+                    </Row>
+                  </Grid>
+                </section>
               </Parallax>
             </MediaQuery>
           </div>

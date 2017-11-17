@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax';
 import Footer from '../components/Footer';
 import ProjectLinks from './ProjectLinks';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import "animate.css/animate.min.css";
 import ProjectNavigationLink from './ProjectNavigationLink';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -91,7 +92,22 @@ export default class Project extends Component {
             </nav>
           </div>
         </ScrollAnimation>
-        <Footer/>
+        <section className="footer">
+          <Grid fluid>
+            <Row>
+              <Col xs="start">
+                <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+              </Col>
+              <Col xs="end">
+                <Parallax.Layer
+                  style={{ height: 30 }}
+                  onClick={() => this.refs.parallax.scrollTo(0)}>
+                  <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                </Parallax.Layer>
+              </Col>
+            </Row>
+          </Grid>
+        </section>
       </Parallax>
     );
   }

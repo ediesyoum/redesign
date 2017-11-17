@@ -26,18 +26,19 @@
 .projectcard {
   min-width: 60vh;
   max-width: 30vh;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 46vh;
   top: 12vh;
-  padding: 5%;
+  padding-left: .5vh;
+  padding-right: 2.5vh;
   cursor: pointer;
   position: relative;
   text-align: center;
     &:hover {
       background-color: rgba(0,0,0,.05);
       transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
-      transition: 0.2s;
-      border-radius: 3em;
+      transition: 0.4s;
+      border-radius: 1vh;
     }
   }
   .projectbg__styles {

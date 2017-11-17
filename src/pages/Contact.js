@@ -47,12 +47,27 @@ export default class Contact extends Component {
                 </form>
               </section>
             </main>
-          <Footer />
+            <section className="footer">
+              <Grid fluid>
+                <Row>
+                  <Col xs="start">
+                    <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                  </Col>
+                  <Col xs="end">
+                    <Parallax.Layer
+                      style={{ height: 30 }}
+                      onClick={() => this.refs.parallax.scrollTo(0)}>
+                      <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                    </Parallax.Layer>
+                  </Col>
+                </Row>
+              </Grid>
+            </section>
         </Parallax>
         </MediaQuery>
 
         <MediaQuery query="(min-device-width: 667px)">
-          <Parallax ref="parallax" pages={1} className={'wrapper'}>
+          <Parallax ref="parallax" pages={2} className={'wrapper'}>
             <section className="contact__header">
               <h1 className="contact__header--title">contact</h1>
             </section>
@@ -90,7 +105,22 @@ export default class Contact extends Component {
                 </form>
               </section>
             </main>
-          <Footer />
+            <section className="footer">
+              <Grid fluid>
+                <Row>
+                  <Col xs="start">
+                    <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                  </Col>
+                  <Col xs="end">
+                    <Parallax.Layer
+                      style={{ height: 30 }}
+                      onClick={() => this.refs.parallax.scrollTo(0)}>
+                      <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                    </Parallax.Layer>
+                  </Col>
+                </Row>
+              </Grid>
+            </section>
         </Parallax>
         </MediaQuery>
       </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProjectPreview from '../components/ProjectPreview';
 import Projects from '../projects.json';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import Parallax from 'react-springy-parallax';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Footer from '../components/Footer';
@@ -80,7 +81,22 @@ export default class Work extends Component {
                     {this.projects}
                   </div>
                 </ScrollAnimation>
-                <Footer/>
+                <section className="footer">
+                  <Grid fluid>
+                    <Row>
+                      <Col xs="start">
+                        <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                      </Col>
+                      <Col xs="end">
+                        <Parallax.Layer
+                          style={{ height: 30 }}
+                          onClick={() => this.refs.parallax.scrollTo(0)}>
+                          <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        </Parallax.Layer>
+                      </Col>
+                    </Row>
+                  </Grid>
+                </section>
               </Parallax>
 
             </MediaQuery>
