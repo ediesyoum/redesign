@@ -10,13 +10,17 @@
 }
 .featured-projects {
   background-color: rgba(81,241,188,.5);
-  height: 25vh !important;
+  height: 30vh !important;
   font-size: 2em;
   top: -8vh;
-  padding-top: 1vh;
+  padding-top: 3vh;
   text-align: center;
   position: relative !important;
   color: $brown !important;
+}
+.featured-projects--sm {
+  @extend .featured-projects;
+  margin-bottom: 8vh;
 }
 .chevron-down {
   font-size: 1em;
@@ -90,9 +94,11 @@
   background-image: url('../assets/img/jot-it.png');
   background-position-y: 30%;
   background-position-x: -19vw;
-  top: 0vh;
+  top: 4vh;
   height: 30vh !important;
-  margin-bottom: -10vh;
+
+  margin-bottom: -11vh;
+  margin-top: 3vh;
 }
 .featured02--sm {
   @extend .featured__bg--sm;
@@ -100,15 +106,16 @@
   background-image: url('../assets/img/east-end.png');
   background-position-x: 72%;
   background-position-y: 45%;
-  top: -5vh;
+  margin-bottom: 9%;
 }
+// it may be getting only these styles on safari, and not the offsets. style in safari first then override using offsets for chrome
 .featured03--sm {
   @extend .featured__bg--sm;
   background-color: lighten($burgundy, 10%);
   background-image: url('../assets/img/upenn.png');
   background-position-y: -10vh;
   background-position-x: 5vw;
-  top: -2vh;
+  margin-top: -54vh;
 }
 .contact-card {
   width: 100vw;

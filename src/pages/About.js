@@ -15,7 +15,7 @@ export default class About extends Component {
                 <section className="about__header">
                   <h1 className="about__header--title">About</h1>
                 </section>
-                  <img src={Eyes} alt="Eyes"/>
+                  <img src={Eyes} className="about__img" alt="Eden Syoum"/>
                 <main className="about__content__wrapper">
                   <section className="about__content">
                     <h3>A User-Focused Developer</h3>
@@ -55,7 +55,7 @@ export default class About extends Component {
                 <section className="about__header">
                   <h1 className="about__header--title">About</h1>
                 </section>
-                <img src={Eyes} alt="Eyes"/>
+                <img src={Eyes}  className="about__img" alt="Eden Syoum" />
                 <main className="about__content__wrapper">
                   <section className="about__content">
                     <h3>A User-Focused Developer</h3>
