@@ -8,6 +8,11 @@
   position: relative;
   max-height: 100%;
 }
+.featured--sm {
+  top: 51vh;
+  position: relative !important;
+  width: 100vw;
+}
 .featured-projects {
   background-color: rgba(81,241,188,.5);
   height: 30vh !important;
@@ -19,8 +24,15 @@
   color: $brown !important;
 }
 .featured-projects--sm {
-  @extend .featured-projects;
-  margin-bottom: 8vh;
+  background-color: rgba(81,241,188,.5);
+  height: 30vh !important;
+  font-size: 2em;
+  color: $brown !important;
+  padding-top: 3vh;
+  text-align: center;
+  margin-bottom: -10vh;
+  top: -9vh;
+  position: relative !important;
 }
 .chevron-down {
   font-size: 1em;
@@ -40,8 +52,9 @@
   position: relative;
 }
 .featured-preview-wrapper--sm {
-  top: -10vh;
-  position: relative;
+  top: 53vh;
+  max-height: 20vh !important;
+  position: relative !important;
 }
 .featured--bg {
   background-blend-mode: luminosity;
@@ -86,7 +99,6 @@
   padding: 10vh;
   position: relative !important;
   text-align: justify;
-  margin-bottom: -27vh;
 }
 .featured01--sm {
   @extend .featured__bg--sm;
@@ -94,11 +106,7 @@
   background-image: url('../assets/img/jot-it.png');
   background-position-y: 30%;
   background-position-x: -19vw;
-  top: 4vh;
-  height: 30vh !important;
-
-  margin-bottom: -11vh;
-  margin-top: 3vh;
+  margin-bottom: 1vh;
 }
 .featured02--sm {
   @extend .featured__bg--sm;
@@ -106,32 +114,36 @@
   background-image: url('../assets/img/east-end.png');
   background-position-x: 72%;
   background-position-y: 45%;
-  margin-bottom: 9%;
+  margin-bottom: 1vh;
 }
-// it may be getting only these styles on safari, and not the offsets. style in safari first then override using offsets for chrome
 .featured03--sm {
   @extend .featured__bg--sm;
   background-color: lighten($burgundy, 10%);
   background-image: url('../assets/img/upenn.png');
   background-position-y: -10vh;
   background-position-x: 5vw;
-  margin-top: -54vh;
 }
-.contact-card {
+.see-more--wrapper--sm {
   width: 100vw;
-  height: 27vh;
-  font-size: 3em;
-  color: $brown;
+  height: 12vh !important;
+  font-size: 2em;
+  text-transform: uppercase;
   text-align: center;
-  padding-top: 2vw;
-  margin-top: -3vh;
-}
-.contact-card__link {
-  color: $salmon;
-  cursor: pointer;
-  margin: 2vw;
-  &:hover {
-    color: $teal;
+  position: relative !important;
+  margin-top: 6vh;
+  a {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    border-radius: 1vw;
+    border: 1.5px solid lighten($paleblue, 20%);
+    background-color: $paleblue;
+    color: white;
+    cursor: pointer;
+  }
+  a:hover {
+    background-color: lighten($paleblue, 10%);
   }
 }
 .see-more--wrapper {
@@ -140,13 +152,14 @@
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
-  padding-top: .7em;
+  position: relative !important;
+  margin-top: 6vh;
   a {
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-top: .5vw;
-    padding-bottom: .5vw;
-    border-radius: 1vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    border-radius: 3vw;
     border: 1.5px solid lighten($paleblue, 20%);
     background-color: $paleblue;
     color: white;

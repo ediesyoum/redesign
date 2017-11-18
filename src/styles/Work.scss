@@ -26,25 +26,24 @@
 .projectcard {
   min-width: 60vh;
   max-width: 30vh;
-  justify-content: space-between;
+  padding-bottom: 10vh;
+  justify-content: space-around;
   height: 46vh;
   top: 12vh;
-  padding-left: .5vh;
-  padding-right: 2.5vh;
   cursor: pointer;
   position: relative;
   text-align: center;
-    &:hover {
-      background-color: rgba(0,0,0,.05);
-      transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
-      transition: 0.4s;
-      border-radius: 1vh;
-    }
+  &:hover {
+    background-color: rgba(0,0,0,.05);
+    transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+    transition: 0.4s;
+    border-radius: 1vh;
   }
+}
   .projectbg__styles {
     background-repeat: no-repeat;
     background-size: 40vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vw;
     background-position: center !important;
   }
   .projectcard--jot-it {
@@ -83,26 +82,31 @@
 
 .left {
   transform: skewY(0deg);
-  bottom: -7vh;
   color: orange;
   font-size: 3.5vh;
   cursor: pointer;
-  text-align: center;
   padding: 3vw;
-  padding-top: 2vh;
-  width: 65vh;
+  padding-top: 52vh;
   position: absolute;
+  max-width: 94vw;
+  display: flex;
+  justify-content: center;
+  position: relative !important;
+  text-align: center;
+  min-width: 20vw;
 }
 .right {
   transform: skewY(0deg);
-  bottom: -5vh;
-  color: $teal;
+  color: darken($teal, 40%);
   font-size: 3.5vh;
   cursor: pointer;
   padding: 3vw;
-  padding-top: 2vh;
+  padding-top: 52vh;
   position: absolute;
-  width: 60vh;
+  max-width: 94vw;
+  display: flex;
+  justify-content: center;
+  position: relative !important;
   text-align: center;
 }
 .flex-wrapper-sm {

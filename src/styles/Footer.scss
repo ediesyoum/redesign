@@ -1,43 +1,57 @@
 .footer {
-  padding: .2em;
-  height: 8vh;
+  padding: 2vw;
   position: relative !important;
   font-size: 1.4em;
   color: white;
-  margin-top: 10vh;
+  margin-top: 30vh;
   font-family: 'kayak_sans-regular', sans-serif;
   text-align: center;
+  p {
+    font-size: .8em;
+    color: black;
+    padding-top: 1.1vh;
+  }
+}
+.footer--sm {
+  padding: 2vw;
+  position: relative !important;
+  font-size: 1.4em;
+  color: white;
+  margin-top: 30vh;
+  font-family: 'kayak_sans-regular', sans-serif;
+  text-align: center;
+  p {
+    font-size: .8em;
+    color: black;
+    padding-top: 1.1vh;
+  }
+}
+.contact-card {
+  width: 100vw;
+  height: 27vh;
+  font-size: 3em;
+  color: $brown;
+  text-align: center;
+  padding-top: 2vw;
+  position: relative !important;
+  margin-bottom: 13vh;
+}
+.contact-card__link {
+  color: $salmon;
+  cursor: pointer;
+  margin: 2vw;
+  &:hover {
+    color: $teal;
+  }
 }
 .going-up {
   position: relative;
   top: 1vh;
-  right: 5vw;
+  background-color: lighten($salmon, 1%);
+  border-radius: 3em;
+  right: 20vw;
   font-size: 2em;
+  padding: .02em;
+  padding-top: .15em;
   cursor: pointer !important;
-}
-:root {
-    --space: 1.5em 0;
-    --space: 2em 0;
-    overflow:hidden;
-}
-.Site {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    @extend .scrollbar;
-}
-
-.Site-content {
-    flex: 1 0 auto;
-    padding: var(--space) var(--space) 0;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.Site-content:after {
-    display: block;
-    height: 0;
-    visibility: hidden;
-    z-index: 9999;
-    @extend .scrollbar;
 }

@@ -68,7 +68,6 @@ export default class Home extends Component {
                 </Parallax.Layer>
               </section>
 
-
               <Parallax.Layer offset={0.62} speed={.5} className="featured01">
                 <Preview {...jotit} id="jot-it">
                   <div className={"see-more--wrapper"}>
@@ -114,12 +113,12 @@ export default class Home extends Component {
         </MediaQuery>
 
         <MediaQuery query="(max-device-width: 666px)">
-          <Parallax ref="parallax" pages={2.5} className={'wrapper scrollbar'}>
+          <Parallax ref="parallax" pages={2.4} className={'wrapper scrollbar'}>
             <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
               <Parallax.Layer offset={0} speed={1} style={{ height: 300 }}>
                 <img className={"triangle__bg--sm"} src={BracketGradient} alt="Bracket Art"/>
               </Parallax.Layer>
-              <Parallax.Layer offset={0} speed={1.5}className={'premise-sm'}>
+              <Parallax.Layer speed={1.5} className={'premise-sm'}>
                 <h1>
                   <p className="yo--sm">
                     <span className="waving-hand--sm">
@@ -155,37 +154,37 @@ export default class Home extends Component {
               </h1>
             </Parallax.Layer>
 
-            <div className="featured-preview-wrapper--sm">
-              <section className="featured">
-                <Parallax.Layer offset={.019} speed={.5} className={'featured-projects--sm'}>
+              <section className="featured--sm">
+                <Parallax.Layer speed={.5} className={'featured-projects--sm'}>
                   <p>see featured projects</p>
-                  <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(0.675)}>
+                  <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(0.628)}>
                     <FaChevronCircleDown className="chevron-down"/>
                   </Parallax.Layer>
                 </Parallax.Layer>
               </section>
 
+            <div className="featured-preview-wrapper--sm">
               <Link to="/work/jot-it">
-                <Parallax.Layer offset={.73} style={{ height: 300, width: 300 }} speed={0.5} className={'featured01--sm'} />
+                <Parallax.Layer speed={0.5} className={'featured01--sm'} />
               </Link>
 
               <Link to="/work/east-end">
-                <Parallax.Layer offset={0.94} speed={0.5} className={'featured02--sm'}/>
+                <Parallax.Layer speed={0.5} className={'featured02--sm'}/>
               </Link>
 
               <Link to="/work/upenn">
-                <Parallax.Layer offset={1.00} speed={0.5} className={'featured03--sm'}/>
+                <Parallax.Layer speed={0.5} className={'featured03--sm'}/>
               </Link>
 
-              <Parallax.Layer offset={1.3} speed={0.5} className={"see-more--wrapper"}>
+              <Parallax.Layer speed={0.5} className={"see-more--wrapper--sm"}>
                 <Link to="/work">more projects</Link>
               </Parallax.Layer>
 
-              <Parallax.Layer offset={1.1} speed={0.5}>
+              <Parallax.Layer style={{ height: 200 }}speed={0.5}>
                 <ContactCard/>
               </Parallax.Layer>
 
-              <Parallax.Layer offset={1.6} speed={0.5} style={{ height: 80 }} className={"footer"}>
+              <Parallax.Layer speed={0.5} style={{ height: 80 }} className={"footer--sm"}>
                 <Grid fluid>
                   <Row>
                     <Col xs="start">

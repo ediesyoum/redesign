@@ -5,6 +5,7 @@ html, body {
 	font-family: 'kayak_sans-light', sans-serif;
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 81%);
   overflow: hidden !important;
+  background-size: 180%;
 }
 h1 {
 	font-family: 'kayak_sans-light', sans-serif;
@@ -19,14 +20,41 @@ a {
 	cursor: pointer;
 	text-decoration: none;
 }
+:root {
+  --space: 1.5em 0;
+  --space: 2em 0;
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+}
+.Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  max-height: 90vh;
+  @extend .scrollbar;
+}
+.Site-content {
+  z-index: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+.Site-content:after {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  z-index: 9999;
+  @extend .scrollbar;
+}
+
 .wrapper {
-  position: relative;
   @extend .scrollbar;
   overflow-y: scroll !important;
+
 }
 .scrollbar {
   width: 100%;
-  height: 40vh;
+  height: 100%;
   overflow-y: scroll;
 }
 .scrollbar::-webkit-scrollbar {

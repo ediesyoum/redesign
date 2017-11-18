@@ -1,13 +1,13 @@
 .about__header {
   @extend .work__header;
   top: -4vh;
-  position: relative;
+  position: relative !important;
 }
 .about__header--title {
   @extend .work__header--title;
 }
 .about__content__wrapper {
-  position: relative;
+  position: relative !important;
   max-width: 62vw;
   display: flex;
   width: 100vw;
@@ -17,7 +17,7 @@
   font-size: 2em;
   color: $brown;
   padding: 2em;
-  position: relative;
+  position: relative !important;
 }
 .about__img {
   background-image: url();
