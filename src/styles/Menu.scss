@@ -8,15 +8,19 @@
 }
 .bm-burger-button-sm {
   position: absolute;
-  width: 30px;
-  height: 15px;
+  width: 35px;
+  height: 10px;
   right: 4%;
+  padding-top: 1vh;
   top: 2.5vh;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background-color: $teal;
+}
+.bm-menu-wrap {
+  top: .25vh;
 }
 
 /* Position and sizing of clickable cross button */
@@ -34,14 +38,12 @@
 .bm-menu {
 background-image: linear-gradient(to top, #284a6c 0%, #284a6c 1%, darken(#14294c, 10%) 100%);
   background-blend-mode: darken;
+  opacity: .95;
   font-size: 1.15em;
-	overflow: hidden;
-  height: 100vh !important;
+	overflow: hidden !important;
+  z-index: 9999;
 }
 
-.bm-menu-wrap {
-  height: 100vh !important;
-}
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: rgb(40,0,91);
@@ -51,13 +53,18 @@ background-image: linear-gradient(to top, #284a6c 0%, #284a6c 1%, darken(#14294c
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
   padding-top: 25vh;
-  height: 100vh !important;
+  margin-top: -2vh;
+  position: absolute;
+  width: 70vw;
+  height: 80.5vh !important;
+  z-index: 9999;
+  text-align: center;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
   left: 0px;
+  top: .5vh;
 }

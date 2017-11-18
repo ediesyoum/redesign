@@ -20,18 +20,18 @@ a {
 	cursor: pointer;
 	text-decoration: none;
 }
-// :root {
-//   --space: 1.5em 0;
-//   --space: 2em 0;
-//   margin:0px;
-//   padding:0px;
-//   overflow:hidden;
-// }
+:root {
+  --space: 1.5em 0;
+  --space: 2em 0;
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+}
 .Site {
   display: flex;
   flex-direction: column;
   min-height: 90vh;
-  max-height: 90vh;
+  max-height: 100vh;
   @extend .scrollbar;
 }
 .Site-content {
