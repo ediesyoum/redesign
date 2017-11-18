@@ -36,8 +36,12 @@ background-image: linear-gradient(to top, #284a6c 0%, #284a6c 1%, darken(#14294c
   background-blend-mode: darken;
   font-size: 1.15em;
 	overflow: hidden;
+  height: 100vh !important;
 }
 
+.bm-menu-wrap {
+  height: 100vh !important;
+}
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: rgb(40,0,91);
@@ -48,8 +52,8 @@ background-image: linear-gradient(to top, #284a6c 0%, #284a6c 1%, darken(#14294c
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding-top: 10vh;
-  height: 90% !important;
+  padding-top: 25vh;
+  height: 100vh !important;
 }
 
 /* Styling of overlay */

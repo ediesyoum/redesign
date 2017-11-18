@@ -1,5 +1,4 @@
 .footer {
-  padding: 2vw;
   position: relative !important;
   font-size: 1.4em;
   color: white;
@@ -24,24 +23,6 @@
     font-size: .8em;
     color: black;
     padding-top: 1.1vh;
-  }
-}
-.contact-card {
-  width: 100vw;
-  height: 27vh;
-  font-size: 3em;
-  color: $brown;
-  text-align: center;
-  padding-top: 2vw;
-  position: relative !important;
-  margin-bottom: 13vh;
-}
-.contact-card__link {
-  color: $salmon;
-  cursor: pointer;
-  margin: 2vw;
-  &:hover {
-    color: $teal;
   }
 }
 .going-up {

@@ -20,7 +20,7 @@ export default class Home extends Component {
     return (
         <div>
           <MediaQuery query="(min-device-width: 667px)">
-            <Parallax ref="parallax" pages={2.361} className={'wrapper scrollbar'}>
+            <Parallax ref="parallax" className={'wrapper scrollbar'}>
               <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
                 <Parallax.Layer offset={0} speed={1.5}>
                   <img className={"triangle__bg"} src={BracketGradient} alt="Bracket Art"/>
@@ -66,9 +66,8 @@ export default class Home extends Component {
                     <FaChevronCircleDown className="chevron-down"/>
                   </Parallax.Layer>
                 </Parallax.Layer>
-              </section>
 
-              <Parallax.Layer offset={0.62} speed={.5} className="featured01">
+              <Parallax.Layer speed={.5} className="featured01">
                 <Preview {...jotit} id="jot-it">
                   <div className={"see-more--wrapper"}>
                     <Link to="/work/jot-it">View Project</Link>
@@ -76,23 +75,23 @@ export default class Home extends Component {
                 </Preview>
               </Parallax.Layer>
 
-              <Parallax.Layer offset={0.899} speed={0.5} className="featured02">
+              <Parallax.Layer speed={0.5} className="featured02">
                 <Preview {...eastend} id="east-end" />
               </Parallax.Layer>
 
-              <Parallax.Layer offset={1} speed={0.5} className="featured03">
+              <Parallax.Layer speed={0.5} className="featured03">
                 <Preview {...upenn} id="upenn"/>
               </Parallax.Layer>
 
-              <Parallax.Layer offset={1.3} speed={0.5} className={"see-more--wrapper"}>
+              <Parallax.Layer speed={0.5} className={"see-more--wrapper"}>
                 <Link to="/work">more projects</Link>
               </Parallax.Layer>
 
-              <Parallax.Layer offset={1.45} speed={0.5}>
+              <Parallax.Layer speed={0.5}>
                 <ContactCard/>
               </Parallax.Layer>
 
-              <Parallax.Layer offset={1.65} speed={0.5} style={{ height: 80 }} className={"footer"}>
+              <Parallax.Layer speed={0.5} style={{ height: 80 }} className={"footer"}>
                 <Grid fluid>
                   <Row>
                     <Col xs="start">
@@ -108,14 +107,15 @@ export default class Home extends Component {
                   </Row>
                 </Grid>
               </Parallax.Layer>
+            </section>
             </ScrollAnimation>
           </Parallax>
         </MediaQuery>
 
         <MediaQuery query="(max-device-width: 666px)">
-          <Parallax ref="parallax" pages={2.4} className={'wrapper scrollbar'}>
-            <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
-              <Parallax.Layer offset={0} speed={1} style={{ height: 300 }}>
+          <Parallax ref="parallax" className={'wrapper scrollbar'}>
+            <ScrollAnimation animateIn="bounceInUp"  animateOut="bounceInUp" duration={'7s'}>
+              <Parallax.Layer speed={1} style={{ height: 300 }}>
                 <img className={"triangle__bg--sm"} src={BracketGradient} alt="Bracket Art"/>
               </Parallax.Layer>
               <Parallax.Layer speed={1.5} className={'premise-sm'}>

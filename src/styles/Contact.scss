@@ -10,6 +10,23 @@
 .contact__content {
   @extend .about__content;
 }
+.contact-card {
+  width: 100vw;
+  height: 27vh;
+  font-size: 3em;
+  color: $brown;
+  text-align: center;
+  padding-top: -10vw;
+  position: relative !important;
+}
+.contact-card__link {
+  color: $salmon;
+  cursor: pointer;
+  margin: 2vw;
+  &:hover {
+    color: $teal;
+  }
+}
 .form-email {
   font-family: 'Harbour', serif;
   font-size: 1em;

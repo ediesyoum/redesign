@@ -2,26 +2,30 @@
 
 .featured-wrapper {
   position: relative !important;
+  min-width: 100%;
+  min-height: 100vh;
 }
 .featured {
-  top: 81vh;
-  position: relative;
-  max-height: 100%;
+  top: 44vh;
+  position: relative !important;
+  min-width: 100%;
+  min-height: 100vh;
 }
 .featured--sm {
   top: 51vh;
   position: relative !important;
   width: 100vw;
+  height: 100vh;
 }
 .featured-projects {
   background-color: rgba(81,241,188,.5);
-  height: 30vh !important;
+  height: 22vh !important;
   font-size: 2em;
-  top: -8vh;
-  padding-top: 3vh;
+  padding-top: 1.5vh;
   text-align: center;
   position: relative !important;
   color: $brown !important;
+  margin-bottom: 1vh;
 }
 .featured-projects--sm {
   background-color: rgba(81,241,188,.5);
@@ -30,13 +34,13 @@
   color: $brown !important;
   padding-top: 3vh;
   text-align: center;
-  margin-bottom: -10vh;
+  padding-bottom: -30vh;
   top: -9vh;
   position: relative !important;
 }
 .chevron-down {
   font-size: 1em;
-  position: relative;
+  position: relative !important;
   height: 7vh;
   color: $salmon;
   width: 7vh;
@@ -49,22 +53,22 @@
 }
 .featured-preview-wrapper {
   top: 0vh;
-  position: relative;
+  position: relative !important;
 }
 .featured-preview-wrapper--sm {
-  top: 53vh;
-  max-height: 20vh !important;
+  top: 1vh;
+  margin-top: -25vh;
+  min-width: 100%;
+  min-height: 100%;
   position: relative !important;
 }
 .featured--bg {
-  background-blend-mode: luminosity;
   background-repeat: no-repeat !important;
   background-size: 70vh !important;
   height: 27vh !important;
   padding: 10vh;
   position: relative !important;
   text-align: justify;
-  margin-bottom: -27vh;
   opacity: .9;
 }
 .featured01 {
@@ -73,8 +77,7 @@
   background-image: url('../assets/img/jot-it.png');
   background-position-y: -7vh;
   background-position-x: 2vw;
-  top: 12vh;
-  margin-bottom: -15vh;
+  margin-bottom: 1vh;
 }
 .featured02 {
   @extend .featured--bg;
@@ -82,7 +85,7 @@
   background-image: url('../assets/img/east-end.png');
   background-position-x: 90%;
   background-position-y: 45%;
-  margin-bottom: -59vh;
+  margin-bottom: 1vh;
 }
 .featured03 {
   @extend .featured--bg;
