@@ -20,7 +20,7 @@
   padding-right: 20%;
   position: relative !important;
   top: 12vh;
-  height: 20vh;
+  height: 28vh !important;
   line-height: 4vh;
 	font-family: 'kayak_sans-light_italic', sans-serif;
   color: darken($mustard, 55%);
@@ -40,8 +40,8 @@
   position: relative;
   left: -5.5vw;
   top: 4vh;
-  padding-right: 2vw;
-  max-width: 20vw !important;
+  padding-right: 4vw;
+  max-width: 5vw !important;
 }
 .waving-hand--sm {
   @extend .waving-hand;

@@ -24,7 +24,7 @@ export default class Home extends Component {
                 <Parallax.Layer offset={0} style={{height: 200}} speed={1.5}>
                   <img className={"triangle__bg"} src={BracketGradient} alt="Bracket Art"/>
                 </Parallax.Layer>
-                <Parallax.Layer offset={0} speed={1.5} className={'premise'} style={{ height: 300 }}>
+                <Parallax.Layer offset={0} speed={1.5} className={'premise'}>
                   <h1>
                     <p className="yo">
                       <span className="waving-hand">

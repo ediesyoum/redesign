@@ -43,7 +43,11 @@ export default class Project extends Component {
     return(
         <div>
           <MediaQuery query="(min-device-width: 667px)">
-            <Parallax ref="parallax" pages={10} className={'project__wrapper'}>
+            <Parallax ref="parallax" className={'project__wrapper'}>
+
+              <Parallax.Layer className="project__header--wrapper">
+                <img className={this.headerClassName} alt="Test"/>
+              </Parallax.Layer>
 
               <Parallax.Layer offset={.5} speed={.1} style={{ backgroundColor: '#FECC52' }} />
               <Parallax.Layer offset={1.3} speed={.1} style={{ backgroundColor: '#805E73' }} />
@@ -116,6 +120,11 @@ export default class Project extends Component {
 
           <MediaQuery query="(max-device-width: 666px)">
             <Parallax ref="parallax" className={'project__wrapper'}>
+
+            <Parallax.Layer className="project__header--wrapper" speed={.25}>
+              <img className={this.headerClassName} alt="Test"/>
+            </Parallax.Layer>
+
               <Parallax.Layer offset={.5} speed={.1} style={{ backgroundColor: '#FECC52' }} />
               <Parallax.Layer offset={1.3} speed={.1} style={{ backgroundColor: '#805E73' }} />
               <Parallax.Layer offset={2} speed={.1} style={{ backgroundColor: '#87BCDE' }} />
