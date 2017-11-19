@@ -3,7 +3,6 @@ import Parallax from 'react-springy-parallax';
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 import Eyes from '../assets/img/eyes.jpg';
-import Footer from '../components/Footer';
 import { Grid, Col, Row } from 'react-flexbox-grid';
 
 export default class About extends Component {
@@ -11,7 +10,7 @@ export default class About extends Component {
     return (
           <div>
             <MediaQuery query="(max-device-width: 666px)">
-              <Parallax ref="parallax" pages={5} className={'wrapper'}>
+              <Parallax ref="parallax" className={'wrapper'}>
                 <section className="about__header">
                   <h1 className="about__header--title">About</h1>
                 </section>
@@ -51,7 +50,7 @@ export default class About extends Component {
             </MediaQuery>
 
             <MediaQuery query="(min-device-width: 667px)">
-              <Parallax ref="parallax" className={'wrapper'} pages={2.85} speed={.5}>
+              <Parallax ref="parallax" className={'wrapper'} speed={.5}>
                 <section className="about__header">
                   <h1 className="about__header--title">About</h1>
                 </section>

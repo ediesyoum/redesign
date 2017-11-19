@@ -5,7 +5,6 @@ import Preview from '../components/Preview';
 import Projects from '../projects.json';
 import FaChevronCircleDown from 'react-icons/lib/fa/chevron-circle-down';
 import ContactCard from '../components/ContactCard'
-import Footer from '../components/Footer';
 import MediaQuery from 'react-responsive';
 import ScrollAnimation from 'react-animate-on-scroll';
 import BracketGradient from '../assets/img/bracketgradient.svg';

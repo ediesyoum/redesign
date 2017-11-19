@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Parallax from 'react-springy-parallax';
-import Footer from '../components/Footer';
 import MediaQuery from 'react-responsive';
 
 export default class Contact extends Component {
