@@ -2,7 +2,9 @@
   position: relative !important;
   font-size: 1.4em;
   color: white;
-  margin-top: 30vh;
+  max-height: 20vh;
+  padding-top: 23vh;
+  margin-bottom: 10vh;
   font-family: 'kayak_sans-regular', sans-serif;
   text-align: center;
   p {
@@ -28,7 +30,7 @@
 .going-up {
   position: relative;
   top: 1vh;
-  background-color: lighten($salmon, 1%);
+  background-color: darken($salmon, 20%);
   border-radius: 3em;
   right: 20vw;
   font-size: 2em;

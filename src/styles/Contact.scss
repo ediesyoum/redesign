@@ -10,13 +10,19 @@
 .contact__content {
   @extend .about__content;
 }
+.contact-card__wrapper {
+  padding-top: 30vh;
+  height: 20vh !important;
+  position: relative !important;
+  margin-bottom: -15vh;
+  z-index: 1;
+}
 .contact-card {
   width: 100vw;
   height: 27vh;
   font-size: 3em;
   color: $brown;
   text-align: center;
-  padding-top: -10vw;
   position: relative !important;
 }
 .contact-card__link {

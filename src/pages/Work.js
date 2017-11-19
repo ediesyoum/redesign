@@ -46,7 +46,7 @@ export default class Work extends Component {
     return (
         <div>
           <MediaQuery query="(max-device-width: 666px)">
-            <Parallax ref="parallax" className={'work__wrapper'} pages={4.845} speed={.5}>
+            <Parallax ref="parallax" className={'work__wrapper'} speed={.5}>
               <div className="work__header">
                 <div className="work__header--title">
                   <h1>Featured Projects</h1>
@@ -61,47 +61,60 @@ export default class Work extends Component {
                   {this.projects}
                 </div>
               </ScrollAnimation>
-              <Footer/>
+              <section className="footer">
+                <Grid fluid>
+                  <Row>
+                    <Col xs="start">
+                      <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                    </Col>
+                    <Col xs="end">
+                      <Parallax.Layer
+                        style={{ height: 30 }}
+                        onClick={() => this.refs.parallax.scrollTo(0)}>
+                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                      </Parallax.Layer>
+                    </Col>
+                  </Row>
+                </Grid>
+              </section>
             </Parallax>
-            </MediaQuery>
+          </MediaQuery>
 
-            <MediaQuery query="(min-device-width: 667px)">
-              <Parallax ref="parallax" className={'work__wrapper'} pages={2.85} speed={.5}>
-                <div className="work__header">
-                  <div className="work__header--title">
-                    <h1>Featured Projects</h1>
-                  </div>
+          <MediaQuery query="(min-device-width: 667px)">
+            <Parallax ref="parallax" className={'work__wrapper'} speed={.5}>
+              <div className="work__header">
+                <div className="work__header--title">
+                  <h1>Featured Projects</h1>
                 </div>
-                <ScrollAnimation
-                  animateIn="bounceInUp"
-                  offset={30000}
-                  animateOut="bounceInUp"
-                  duration={'7s'}>
-                  <div className="flex-wrapper-lg">
-                    {this.projects}
-                  </div>
-                </ScrollAnimation>
-                <section className="footer">
-                  <Grid fluid>
-                    <Row>
-                      <Col xs="start">
-                        <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
-                      </Col>
-                      <Col xs="end">
-                        <Parallax.Layer
-                          style={{ height: 30 }}
-                          onClick={() => this.refs.parallax.scrollTo(0)}>
-                          <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
-                        </Parallax.Layer>
-                      </Col>
-                    </Row>
-                  </Grid>
-                </section>
-              </Parallax>
-
-            </MediaQuery>
-      </div>
-
+              </div>
+              <ScrollAnimation
+                animateIn="bounceInUp"
+                offset={30000}
+                animateOut="bounceInUp"
+                duration={'7s'}>
+                <div className="flex-wrapper-lg">
+                  {this.projects}
+                </div>
+              </ScrollAnimation>
+              <section className="footer">
+                <Grid fluid>
+                  <Row>
+                    <Col xs="start">
+                      <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                    </Col>
+                    <Col xs="end">
+                      <Parallax.Layer
+                        style={{ height: 30 }}
+                        onClick={() => this.refs.parallax.scrollTo(0)}>
+                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                      </Parallax.Layer>
+                    </Col>
+                  </Row>
+                </Grid>
+              </section>
+            </Parallax>
+          </MediaQuery>
+        </div>
     );
   }
 }

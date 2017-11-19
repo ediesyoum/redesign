@@ -3,6 +3,7 @@
   top: 5vh;
   position: relative;
   min-width: 130% !important;
+  overflow: hidden;
   opacity: .5;
 }
 .triangle__bg--sm {
@@ -10,6 +11,7 @@
   top: 10vh;
   max-width: 191%;
   position: relative;
+  overflow: hidden;
   opacity: .5;
 }
 .premise {

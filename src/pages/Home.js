@@ -22,7 +22,7 @@ export default class Home extends Component {
           <MediaQuery query="(min-device-width: 667px)">
             <Parallax ref="parallax" className={'wrapper scrollbar'}>
               <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
-                <Parallax.Layer offset={0} speed={1.5}>
+                <Parallax.Layer offset={0} style={{height: 200}} speed={1.5}>
                   <img className={"triangle__bg"} src={BracketGradient} alt="Bracket Art"/>
                 </Parallax.Layer>
                 <Parallax.Layer offset={0} speed={1.5} className={'premise'} style={{ height: 300 }}>
@@ -60,7 +60,7 @@ export default class Home extends Component {
               </Parallax.Layer>
 
               <section className="featured">
-                <Parallax.Layer offset={0} speed={.5} className={'featured-projects'}>
+                <Parallax.Layer offset={0} style={{height: 200}} speed={.5} className={'featured-projects'}>
                   <p>Featured Projects</p>
                   <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(.64)}>
                     <FaChevronCircleDown className="chevron-down"/>
@@ -87,26 +87,27 @@ export default class Home extends Component {
                 <Link to="/work">more projects</Link>
               </Parallax.Layer>
 
-              <Parallax.Layer speed={0.5}>
+              <Parallax.Layer style={{height: 200}} className="contact-card__wrapper" speed={0.5}>
                 <ContactCard/>
               </Parallax.Layer>
 
-              <Parallax.Layer speed={0.5} style={{ height: 80 }} className={"footer"}>
-                <Grid fluid>
-                  <Row>
-                    <Col xs="start">
-                      <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
-                    </Col>
 
-                    <Col xs="end">
-                      <Parallax.Layer style={{ height: 30 }}
-                        onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
-                      </Parallax.Layer>
-                    </Col>
-                  </Row>
-                </Grid>
-              </Parallax.Layer>
+            <Parallax.Layer speed={0.5} style={{ height: 80 }} className={"footer"}>
+              <Grid fluid>
+                <Row>
+                  <Col xs="start">
+                    <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                  </Col>
+
+                  <Col xs="end">
+                    <Parallax.Layer style={{ height: 30 }}
+                      onClick={() => this.refs.parallax.scrollTo(0)}>
+                      <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                    </Parallax.Layer>
+                  </Col>
+                </Row>
+              </Grid>
+            </Parallax.Layer>
             </section>
             </ScrollAnimation>
           </Parallax>
@@ -180,7 +181,7 @@ export default class Home extends Component {
                 <Link to="/work">more projects</Link>
               </Parallax.Layer>
 
-              <Parallax.Layer style={{ height: 200 }}speed={0.5}>
+              <Parallax.Layer style={{ height: 200 }} speed={0.5}>
                 <ContactCard/>
               </Parallax.Layer>
 
