@@ -91,7 +91,6 @@ export default class Home extends Component {
                 <ContactCard/>
               </Parallax.Layer>
 
-
             <Parallax.Layer speed={0.5} style={{ height: 80 }} className={"footer"}>
               <Grid fluid>
                 <Row>
