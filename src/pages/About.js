@@ -21,7 +21,7 @@ export default class About extends Component {
 
                     <p>Throughout my technical career, I have worked hard to be a user advocate.  As an IT consultant turned web developer, I have spent several years studying user habits, seeing their pain points first hand, working tirelessly to resolve and prevent future obstacles. This is why designing with consideration and empathy for the user’s experience comes naturally to me - it empowers me to create visually engaging, functional and aesthetic products that humans will truly love to use, and use often.</p>
 
-                    <a href="#">See Background</a>
+                    <a href="/">See Background</a>
 
                     <h3>Background</h3>
 
@@ -61,7 +61,7 @@ export default class About extends Component {
 
                     <p>Throughout my technical career, I have worked hard to be a user advocate.  As an IT consultant turned web developer, I have spent several years studying user habits, seeing their pain points first hand, working tirelessly to resolve and prevent future obstacles. This is why designing with consideration and empathy for the user’s experience comes naturally to me - it empowers me to create visually engaging, functional and aesthetic products that humans will truly love to use, and use often.</p>
 
-                    <a href="#">See Background</a>
+                    <a href="/">See Background</a>
 
                     <h3>Background</h3>
 

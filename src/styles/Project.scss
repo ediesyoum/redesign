@@ -1,24 +1,36 @@
 .project__wrapper {
   @extend .scrollbar;
   width: 100vw;
-  perspective: 1000px;
+  perspective: 600px;
+  perspective-origin: 25% 75%; 
 }
 .project__header {
-  height: 20vh !important;
+  height: 57vh !important;
   top: -8vh !important;
+  margin-bottom: -20vh;
   position: relative !important;
+  transform: skewY(0deg) !important;
   @extend .work__header;
-
 }
-.project__header-title {
-  font-family: 'kayak_sans-light_italic', sans-serif;
-  top: 11vh;
-  right: 2vw;
+.project__header--title {
+  font-family: 'kayak_sans-regular_italic', sans-serif;
+  top: 44vh;
   color: #333332;
   position: relative;
-  font-size: 6.8vw;
+  font-size: 15.8vh;
   text-transform: lowercase;
-  max-width: 100vw;
+  max-width: 91vw;
+  text-align: center;
+}
+.project__header--title-sm {
+  font-family: 'kayak_sans-regular_italic', sans-serif;
+  top: 49vh;
+  color: #fed35c;
+  position: relative;
+  font-size: 8.8vh;
+  text-transform: lowercase;
+  min-width: 100%;
+  text-align: left;
 }
 .project__summary {
   font-size: 2.5em;
@@ -52,7 +64,7 @@
     color: yellow;
   }
 }
-.title--background {
+.project-section-title__background {
   background-color: $paleblue;
   padding-top: 20vh;
   position: relative;
@@ -67,8 +79,7 @@
   z-index: 2;
   visibility: visible;
 }
-.title--sm {
-  background-color: $paleblue;
+.project-section-title__background--sm {
   padding-top: 20vh;
   position: relative;
   height: 8vh;
@@ -76,7 +87,7 @@
   text-align: right;
   border-radius: .5em;
   color: white;
-  font-size: 1em;
+  font-size: .6em;
   text-transform: uppercase;
   font-family: 'kayak_sans-light_italic', sans-serif;
   line-height: .02vh;
@@ -133,13 +144,20 @@
   background-color: $teal;
 }
 .project__header--bg {
-  background-blend-mode: screen;
-  background-position-y: center;
-  filter: blur(15px);
+  background-blend-mode: difference;
+  background-position-x: 10px !important;
+  background-position-y: center !important;
+  filter: blur(9px);
   width: 100vw;
   min-width: 104vw;
   min-height: 70vh;
   max-height: 50vh;
+}
+.image--perspective {
+  // perspective-origin: 15% 55%;
+  -webkit-perspective: 600;
+  -webkit-transform: rotate3d(1, -1, 1, -5deg); /* Safari */
+  transform: rotate3d(1, -1, 1, -5deg);
 }
 .jot-it__header {
   @extend .project__header--bg;
@@ -147,6 +165,7 @@
   background-size: 200vh;
 }
 .csm__header {
+  background-blend-mode: difference;
   @extend .project__header--bg;
   background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/csm-desktop.jpg') no-repeat center;
   background-size: 200vh;

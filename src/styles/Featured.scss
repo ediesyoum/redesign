@@ -1,4 +1,4 @@
-// PLEASE NOTE - The use of !important is to override the parallax styling being used in this application.
+// PLEASE NOTE - The use of !important is to override the springy-parallax JS being used in this application.
 
 .featured-wrapper {
   position: relative !important;
@@ -75,7 +75,7 @@
 }
 .featured01 {
   @extend .featured--bg;
-  background-color: lighten($logobg, 35%) !important;
+  background-color: lighten($trueblue, 15%);
   background-image: url('../assets/img/jot-it.png');
   background-position-y: -7vh;
   background-position-x: 2vw;
@@ -85,15 +85,15 @@
   @extend .featured--bg;
   background-color: lighten($brightpurple, 10%);
   background-image: url('../assets/img/east-end.png');
-  background-position-x: 90%;
   background-position-y: 45%;
+  background-position-x: 8vw;
   margin-bottom: 1vh;
 }
 .featured03 {
   @extend .featured--bg;
   background-color: lighten($burgundy, 10%);
   background-image: url('../assets/img/upenn.png');
-  background-position-y: -10vh;
+  background-position-y: -11vh;
   background-position-x: 2vw;
 }
 .featured__bg--sm {
