@@ -7,6 +7,7 @@ html, body {
   overflow: hidden !important;
   background-size: 180%;
   max-height: 100vh;
+  -webkit-backface-visibility:hidden !important;
 }
 h1 {
 	font-family: 'kayak_sans-light', sans-serif;
