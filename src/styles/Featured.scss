@@ -73,6 +73,12 @@
   text-align: justify;
   opacity: .9;
 }
+.featured__link {
+  text-align: right;
+  padding-right: 20vh;
+  font-size: 11em;
+  color: white;
+}
 .featured01 {
   @extend .featured--bg;
   background-color: lighten($trueblue, 15%);
