@@ -10,7 +10,7 @@
   margin-bottom: -20vh;
   position: relative !important;
   transform: skewY(0deg) !important;
-  @extend .work__header;
+  // @extend .work__header;
 }
 .project__header--title {
   font-family: 'kayak_sans-regular_italic', sans-serif;
@@ -20,7 +20,7 @@
   font-size: 15.8vh;
   text-transform: lowercase;
   max-width: 91vw;
-  text-align: center;
+  right: -55vw;
 }
 .project__header--title-sm {
   font-family: 'kayak_sans-regular_italic', sans-serif;
@@ -43,12 +43,11 @@
   top: 35vh;
   align-items: center;
   position: relative;
-  margin-bottom: 15vh;
+  margin-bottom: 35vh;
 }
 .project__technical {
-  margin-bottom: 30vh;
+  margin-bottom: 60vh;
   margin-top: 1vh;
-
 }
 .project_links {
   position: relative !important;
@@ -96,20 +95,16 @@
   -ms-flex-preferred-size: 0;
 }
 .project-section-title__background {
-  background-color: $paleblue;
-  padding-top: 20vh;
   position: relative;
-  height: 8vh;
   padding: 1vh;
-  text-align: right;
   border-radius: .5em;
-  color: white;
+  color: purple;
   text-transform: uppercase;
-  font-family: 'kayak_sans-light_italic', sans-serif;
+  font-family: 'kayak_sans-bold_italic', sans-serif;
   line-height: .02vh;
   z-index: 2;
   visibility: visible;
-  font-size: 2.5vw;
+  font-size: 2em;
 }
 .project-section-title__background--sm {
   padding-top: 20vh;
@@ -126,6 +121,9 @@
   z-index: 2;
   visibility: visible;
 }
+.project_desc {
+  font-size: 0.9em;
+}
 .project-image--desktop {
   width: 61vh;
   max-width: 67vh;
@@ -135,7 +133,7 @@
   position: relative;
 }
 .project__navigation {
-  top: 4vh;
+  top: 14vh;
   position: relative;
   text-align: center;
   margin-bottom: 20vh;
@@ -165,7 +163,7 @@
   max-height: 80vh;
   position: relative;
   background-color: #401e7c;
-  z-index: -1;
+  z-index: 0;
   right: 35vh;
   transform: skewY(-2deg);
 }
@@ -182,22 +180,20 @@
   -webkit-box-shadow: 0px 20px 100px #333332;
   box-shadow: 0px 20px 100px #333332;
   border-radius: 1vh;
-  margin-top: 40vh;
-  margin-bottom: 70vh;
+  left: -7vw;
+  margin-bottom: -26vh;
   position: relative;
+}
+.project__links {
+  margin-top: -14vh;
 }
 .project__header--wrapper {
   position: relative !important;
   top: -10vh;
+  left: -1vh;
   height: 7vh !important;
-  background-color: $teal;
 }
 .project__header--bg {
-  background-blend-mode: difference;
-  background-position-x: 10px !important;
-  background-position-y: center !important;
-  filter: blur(9px);
-  width: 100vw;
   min-width: 104vw;
   min-height: 70vh;
   max-height: 50vh;
@@ -210,8 +206,16 @@
 }
 .jot-it__header {
   @extend .project__header--bg;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/jot-it-desktop.jpg') no-repeat center;
-  background-size: 200vh;
+  background-image: url('../assets/img/jot-it.png');
+  background-repeat: no-repeat;
+  position: relative;
+  background-position-x: 5vw;
+  background-blend-mode: hard-light;
+  z-index: 1;
+  filter: blur(3px) brightness(63%) opacity(65%);
+  background-size: 95vh;
+  background-color: darken($teal, 10%);
+  top: 0vh;
 }
 .csm__header {
   background-blend-mode: difference;

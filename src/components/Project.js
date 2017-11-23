@@ -27,7 +27,6 @@ export default class Project extends Component {
   get mobileProjectImgClassName() {
     return `project-image--mobile`;
   }
-
   projectImage(size = 'desktop') {
     return findImage(`${this.props.id}-${size}.jpg`);
   }
@@ -88,10 +87,8 @@ export default class Project extends Component {
                   </div>
 
 
-                  <div className="project-section-title__background">
-                    <h3>Technical Details</h3>
-                  </div>
-                  <p className="project__technical">{this.props.technical}</p>
+                  <h3 className="project-section-title__background">Technical Details</h3>
+                  <p className="project_desc project__technical">{this.props.technical}</p>
 
 
                   <Grid fluid>

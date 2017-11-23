@@ -34,7 +34,9 @@ export default class Work extends Component {
           }}
           onMouseLeave={this.onMouseLeave}>
             <div className="Tilt-inner">
-              <ProjectPreview {...projectAttributes} index={indexInArray} className={boxClassName} />
+              <div className="clip-text">
+                <ProjectPreview {...projectAttributes} index={indexInArray} className={boxClassName} />
+              </div>
             </div>
         </Tilt>
       );

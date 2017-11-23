@@ -52,6 +52,7 @@
     background-image: url('../assets/img/jot-it.png');
     @extend .projectbg__styles;
     position: relative;
+    z-index: -1;
   }
   .projectcard--csm {
     background-image: url('../assets/img/csm.png');
