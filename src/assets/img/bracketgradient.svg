@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="1278px" height="851px" viewBox="0 0 1278 851" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
-    <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#FBDA61" stop-opacity="0.52063519" offset="0%"></stop>
-            <stop stop-color="#F76B1C" stop-opacity="0.534675045" offset="100%"></stop>
+            <stop stop-color="#FBDA61" stop-opacity="0.22063519" offset="0%"></stop>
+            <stop stop-color="#F76B1C" stop-opacity="0.234675045" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
