@@ -14,7 +14,6 @@ export default class Preview extends Component {
     return (
       <Link to={this.route}>
         <div className={this.projectFeatureLinkClassName}>
-          {this.props.name}
           <FaAngleDoubleRight />
         </div>
       </Link>

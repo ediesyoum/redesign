@@ -70,40 +70,22 @@ export default class Contact extends Component {
             <section className="contact__header">
               <h1 className="contact__header--title">contact</h1>
             </section>
-            <main className="about__content__wrapper">
-              <section className="about__content">
-                <form method="POST" action="http://formspree.io/me@edencod.es">
-                  <Grid>
-                    <Col xs={12}>
-                      <Row center="xs">
-                        <Col end="xs">
-                          <input type="name" name="name" placeholder="Your name"></input>
-                        </Col>
-
-                        <Col end="xs">
-                          <input type="email" name="email"
-                        className="form-email" placeholder="Your email"></input>
-                        </Col>
-                      </Row>
-                    </Col>
-
-
-                    <Col xs={12}>
-                      <Row center="xs">
-                        <textarea name="message" className="form-message" placeholder="Your message"></textarea>
-                      </Row>
-                    </Col>
-
-
-                    <Col xs={12}>
-                      <Row center="xs">
-                        <button type="submit" className="send-btn">Send</button>
-                      </Row>
-                    </Col>
-                  </Grid>
-                </form>
-              </section>
-            </main>
+            <section className="contact__content">
+              <form method="POST" className="contact-form" action="http://formspree.io/me@edencod.es">
+                <div>
+                  <input type="name" name="name" className="contact-form__field" placeholder="Your name"></input>
+                </div>
+                <div>
+                  <input type="email" name="email" className="contact-form__field " placeholder="Your email"></input>
+                </div>
+                <div>
+                  <textarea name="message" className="contact-form__field contact-form__field--message" placeholder="Your message"></textarea>
+                </div>
+                <div>
+                  <button type="submit" className="contact-form__field contact-form__button">Send</button>
+                </div>
+              </form>
+            </section>
             <section className="footer">
               <Grid fluid>
                 <Row>
