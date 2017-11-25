@@ -45,7 +45,7 @@ export default class Work extends Component {
     return (
         <div>
           <MediaQuery query="(max-device-width: 666px)">
-            <Parallax ref="parallax" className={'work__wrapper'} speed={.5}>
+            <Parallax ref="parallax" className={'page__wrapper'} speed={.5}>
               <div className="work__header">
                 <div className="work__header--title">
                   <h1>Featured Projects</h1>
@@ -80,7 +80,7 @@ export default class Work extends Component {
           </MediaQuery>
 
           <MediaQuery query="(min-device-width: 667px)">
-            <Parallax ref="parallax" className={'work__wrapper'} speed={.5}>
+            <Parallax ref="parallax" className={'page__wrapper'} speed={.5}>
               <div className="work__header">
                 <div className="work__header--title">
                   <h1>Featured Projects</h1>

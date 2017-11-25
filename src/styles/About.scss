@@ -1,7 +1,6 @@
 .about__header {
   @extend .work__header;
   top: -4vh;
-  position: relative !important;
 }
 .about__header--title {
   @extend .work__header--title;
@@ -17,16 +16,15 @@
   font-size: 2em;
   color: $brown;
   padding: 2em;
-  position: relative !important;
 }
 .about__img {
-  background-image: url();
-  position: relative !important;
   background-color: $mustard;
   background-blend-mode: multiply;
   height: 60vh;
   left: 65vw;
   top: 11vh;
+  right: 20vh;
+  position: relative !important;
   border-radius: 1vh;
   opacity: 0.85;
   padding: 2em;
