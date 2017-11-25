@@ -26,30 +26,35 @@
 .projectcard {
   min-width: 60vh;
   max-width: 80vh;
+  margin-bottom: 20vh;
   top: 12vh;
   cursor: pointer;
   text-align: center;
+  a {
+    cursor: pointer;
+  }
   &:hover {
     background-color: rgba(255,255,255,.05);
     transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
     transition: 0.4s;
     border-radius: 1vh;
+    cursor: pointer;
   }
 }
   .projectcard--jot-it {
-    background-image: linear-gradient(to top, #65bd60 0%, #5ac1a8 25%, #3ec6ed 50%, #b7ddb7 75%, #fef381 100%);
+    background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
   }
   .projectcard--csm {
-    background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+    background-image: linear-gradient(to top, #65bd60 0%, #5ac1a8 25%, #3ec6ed 50%, #b7ddb7 75%, #fef381 100%);
   }
   .projectcard--portfolio-current {
-    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
   }
   .projectcard--economy {
     background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
   }
   .projectcard--east-end {
-    background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
   }
   .projectcard--tic-tac-toe {
     background-image: linear-gradient(to top, #b3ffab 0%, #12fff7 100%);
@@ -58,7 +63,7 @@
     background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
   }
   .projectcard--upenn {
-    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
   }
 
 .flex-wrapper-sm {
