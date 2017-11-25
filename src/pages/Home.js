@@ -82,7 +82,7 @@ export default class Home extends Component {
                   <Preview {...upenn} id="upenn"/>
                 </section>
 
-                <section className="see-more--wrapper">
+                <section className="see-more__wrapper">
                   <Link to="/work">more projects</Link>
                 </section>
 
@@ -153,37 +153,32 @@ export default class Home extends Component {
               </h1>
             </Parallax.Layer>
 
-              <section className="featured--sm">
-                <Parallax.Layer speed={.5} className={'featured-projects--sm'}>
-                  <p>see featured projects</p>
-                  <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(0.628)}>
-                    <FaChevronCircleDown className="chevron-down"/>
-                  </Parallax.Layer>
+            <section className="featured--sm">
+              <Parallax.Layer speed={.5} className={'featured-projects--sm'}>
+                <p>see featured projects</p>
+                <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(0.628)}>
+                  <FaChevronCircleDown className="chevron-down"/>
                 </Parallax.Layer>
-              </section>
+              </Parallax.Layer>
+            </section>
 
             <div className="featured-preview-wrapper--sm">
-              <Link to="/work/jot-it">
-                <Parallax.Layer speed={0.5} className={'featured01--sm'} />
-              </Link>
+              <Link to="/work/jot-it"><section className="featured01--sm"/></Link>
 
-              <Link to="/work/east-end">
-                <Parallax.Layer speed={0.5} className={'featured02--sm'}/>
-              </Link>
+              <Link to="/work/east-end"><section className="featured02--sm"/></Link>
 
-              <Link to="/work/upenn">
-                <Parallax.Layer speed={0.5} className={'featured03--sm'}/>
-              </Link>
+              <Link to="/work/upenn"><section className="featured03--sm"/></Link>
 
-              <Parallax.Layer speed={0.5} className={"see-more--wrapper--sm"}>
+              <section className="see-more__wrapper--sm">
                 <Link to="/work">more projects</Link>
-              </Parallax.Layer>
+              </section>
 
-              <Parallax.Layer style={{ height: 200 }} speed={0.5}>
+
+              <section className="contact-card__wrapper--sm">
                 <ContactCard/>
-              </Parallax.Layer>
+              </section>
 
-              <Parallax.Layer speed={0.5} style={{ height: 80 }} className={"footer--sm"}>
+              <section className="footer">
                 <Grid fluid>
                   <Row>
                     <Col xs="start">
@@ -198,7 +193,7 @@ export default class Home extends Component {
                     </Col>
                   </Row>
                 </Grid>
-              </Parallax.Layer>
+              </section>
             </div>
           </ScrollAnimation>
         </Parallax>

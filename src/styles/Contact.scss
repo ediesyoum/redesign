@@ -1,8 +1,13 @@
 .contact-card__wrapper {
   padding-top: 30vh;
-  height: 20vh !important;
-  position: relative !important;
+  height: 20vh;
   margin-bottom: -15vh;
+  z-index: 1;
+}
+.contact-card__wrapper--sm {
+  padding-top: 30vh;
+  height: 20vh;
+  margin-bottom: 15vh;
   z-index: 1;
 }
 .contact-card {
@@ -11,7 +16,6 @@
   font-size: 3em;
   color: $brown;
   text-align: center;
-  position: relative !important;
 }
 .contact-card__link {
   color: $salmon;

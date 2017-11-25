@@ -1,5 +1,3 @@
-// PLEASE NOTE - The use of !important is to override the springy-parallax JS being used in this application. This is HACKY and for experimental purposes ONLY. Thanks for cooperating.
-
 .featured-wrapper {
   position: relative;
   min-width: 100%;
@@ -14,7 +12,7 @@
 }
 .featured--sm {
   top: 51vh;
-  position: relative !important;
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -30,14 +28,13 @@
 }
 .featured-projects--sm {
   background-color: rgba(81,241,188,.5);
-  height: 30vh !important;
+  height: 30vh;
   font-size: 2em;
-  color: $brown !important;
+  color: $brown;
   padding-top: 3vh;
   text-align: center;
   padding-bottom: -30vh;
   top: -9vh;
-  position: relative !important;
 }
 .chevron-down {
   font-size: 1em;
@@ -59,10 +56,9 @@
 .featured-preview-wrapper--sm {
   top: 1vh;
   margin-top: -25vh;
+  margin-bottom: 50vh;
   min-width: 100%;
   min-height: 100%;
-  position: relative !important;
-  max-height: 140vh;
 }
 .featured--bg {
   background-repeat: no-repeat;
@@ -75,9 +71,11 @@
 }
 .featured__link {
   text-align: right;
-  padding-right: 20vh;
+  padding-right: 8vh;
   font-size: 11em;
+  a {
   color: white;
+  }
 }
 .featured01 {
   @extend .featured--bg;
@@ -104,16 +102,15 @@
 }
 .featured__bg--sm {
   opacity: .85;
-  background-repeat: no-repeat ;
-  background-size: 70vh !important;
-  height: 27vh !important;
+  background-repeat: no-repeat;
+  background-size: 70vh;
+  height: 27vh;
   padding: 10vh;
-  position: relative !important;
   text-align: justify;
 }
 .featured01--sm {
   @extend .featured__bg--sm;
-  background-color: lighten($logobg, 35%) !important;
+  background-color: lighten($logobg, 35%);
   background-image: url('../assets/img/jot-it.png');
   background-position-y: 30%;
   background-position-x: -19vw;
@@ -134,13 +131,11 @@
   background-position-y: -10vh;
   background-position-x: 5vw;
 }
-.see-more--wrapper--sm {
+.see-more__wrapper--sm {
   width: 100vw;
-  height: 120vh !important;
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
-  position: relative !important;
   margin-top: 6vh;
   a {
     padding-left: 20vw;
@@ -157,7 +152,7 @@
     background-color: lighten($paleblue, 10%);
   }
 }
-.see-more--wrapper {
+.see-more__wrapper {
   width: 100vw;
   height: 12vh;
   font-size: 2em;
