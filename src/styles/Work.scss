@@ -25,96 +25,42 @@
 }
 .projectcard {
   min-width: 60vh;
-  max-width: 30vh;
-  padding-bottom: 10vh;
-  justify-content: space-around;
-  height: 46vh;
-  margin: 0 auto;
-  justify-content: center;
+  max-width: 80vh;
   top: 12vh;
   cursor: pointer;
-  position: relative;
   text-align: center;
   &:hover {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(255,255,255,.05);
     transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
     transition: 0.4s;
     border-radius: 1vh;
   }
 }
-  .projectbg__styles {
-    background-repeat: no-repeat;
-    background-size: 40vh;
-    margin-bottom: 5vw;
-    background-position: center !important;
-  }
   .projectcard--jot-it {
-    background-image: url('../assets/img/jot-it.png');
-    @extend .projectbg__styles;
-    position: relative;
-    z-index: -1;
+    background-image: linear-gradient(to top, #65bd60 0%, #5ac1a8 25%, #3ec6ed 50%, #b7ddb7 75%, #fef381 100%);
   }
   .projectcard--csm {
-    background-image: url('../assets/img/csm.png');
-    @extend .projectbg__styles;
+    background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
   }
   .projectcard--portfolio-current {
-    background-image: url('../assets/img/portfolio-old.png');
-    @extend .projectbg__styles;
+    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
   }
   .projectcard--economy {
-    background-image: url('../assets/img/economy.png');
-    @extend .projectbg__styles;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
   }
   .projectcard--east-end {
-    background-image: url('../assets/img/east-end.png');
-    @extend .projectbg__styles;
+    background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
   }
   .projectcard--tic-tac-toe {
-    background-image: url('../assets/img/tic-tac-toe.png');
-    @extend .projectbg__styles;
+    background-image: linear-gradient(to top, #b3ffab 0%, #12fff7 100%);
   }
   .projectcard--portfolio-old {
-    background-image: url('../assets/img/portfolio-old.png');
-    @extend .projectbg__styles;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
   }
   .projectcard--upenn {
-    background-image: url('../assets/img/upenn.png');
-    @extend .projectbg__styles;
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
   }
 
-.left {
-  transform: skewY(0deg);
-  color: orange;
-  font-size: 3.5vh;
-  cursor: pointer;
-  padding: 3vw;
-  padding-top: 52vh;
-  position: absolute;
-  max-width: 94vw;
-  display: flex;
-  justify-content: center;
-  position: relative !important;
-  text-align: center;
-  min-width: 20vw;
-}
-.right {
-  transform: skewY(0deg);
-  color: darken($teal, 40%);
-  font-size: 3.5vh;
-  cursor: pointer;
-  padding: 3vw;
-  padding-top: 52vh;
-  position: absolute;
-  max-width: 94vw;
-  display: flex;
-  justify-content: center;
-  position: relative !important;
-  text-align: center;
-  a {
-    color: white;
-  }
-}
 .flex-wrapper-sm {
   justify-content: space-around;
   align-items: center;

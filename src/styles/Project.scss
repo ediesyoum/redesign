@@ -15,7 +15,7 @@
 .project__header--title {
   font-family: 'kayak_sans-regular_italic', sans-serif;
   top: 44vh;
-  color: #333332;
+  color: $brown;
   position: relative;
   font-size: 15.8vh;
   text-transform: lowercase;
@@ -98,7 +98,7 @@
   position: relative;
   padding: 1vh;
   border-radius: .5em;
-  color: purple;
+  color: #388148;
   text-transform: uppercase;
   font-family: 'kayak_sans-bold_italic', sans-serif;
   line-height: .02vh;
@@ -162,7 +162,7 @@
   min-height: 50vh;
   max-height: 80vh;
   position: relative;
-  background-color: #401e7c;
+  background-color: darken($purple, 2%);
   z-index: 0;
   right: 35vh;
   transform: skewY(-2deg);
@@ -206,15 +206,13 @@
 }
 .jot-it__header {
   @extend .project__header--bg;
-  background-image: url('../assets/img/jot-it.png');
+  background-image: url('../assets/img/bgmoreshapes.svg');
   background-repeat: no-repeat;
   position: relative;
   background-position-x: 5vw;
-  background-blend-mode: hard-light;
   z-index: 1;
-  filter: blur(3px) brightness(63%) opacity(65%);
-  background-size: 95vh;
-  background-color: darken($teal, 10%);
+  background-size: 125vh;
+  background-color: lighten($teal, 60%);
   top: 0vh;
 }
 .csm__header {

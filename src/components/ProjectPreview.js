@@ -7,18 +7,18 @@ export default class ProjectPreview extends Component {
   }
   get position() {
     if ((this.props.index % 2) === 0) {
-      return 'right';
+      return 'right clip-text';
     } else {
-      return 'left';
+      return 'left clip-text';
     }
   }
   render() {
     return (
       <Link to={this.route}>
-        <div className={this.props.className}>
-            <div id={this.props.id} className={this.position}>
+        <div className={`${this.props.className}  ${this.position}`}>
+
               {this.props.name}
-            </div>
+
         </div>
       </Link>
     );

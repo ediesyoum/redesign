@@ -8,7 +8,11 @@
   @extend .about__content__wrapper;
 }
 .contact__content {
-  @extend .about__content;
+  font-size: 1em;
+  color: $brown;
+  padding: 2em;
+  position: relative !important;
+
 }
 .contact-card__wrapper {
   padding-top: 30vh;
@@ -35,8 +39,9 @@
 }
 
 .contact-form {
-  margin-left: 25vh;
-  width: 30vh;
+  margin: 0 auto;
+  position: relative;
+  width: 55vh;
 }
 .contact-form__field {
   font-family: 'kayak_sans-light', serif;
