@@ -1,9 +1,9 @@
 .about__header {
-  @extend .work__header;
+  @extend .page__header;
   top: -4vh;
 }
 .about__header--title {
-  @extend .work__header--title;
+  @extend .page__header--title;
 }
 .about__content__wrapper {
   position: relative !important;

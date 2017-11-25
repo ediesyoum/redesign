@@ -4,10 +4,10 @@
 .contact__header--title {
   @extend .about__header--title;
 }
-.contact__content__wrapper {
+.contact__content--wrapper {
   @extend .about__content__wrapper;
 }
-.contact__content {
+.contact-form--page-content-wrapper {
   font-size: 1em;
   color: $brown;
   padding: 2em;

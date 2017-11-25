@@ -19,7 +19,7 @@ export default class Home extends Component {
     return (
         <div>
           <MediaQuery query="(min-device-width: 667px)">
-            <Parallax ref="parallax" className={'wrapper scrollbar'}>
+            <Parallax ref="parallax" className={'page__wrapper'}>
               <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
                 <Parallax.Layer offset={0} style={{height: 200}} speed={1.5}>
                   <img className={"triangle__bg"} src={BracketGradient} alt="Bracket Art"/>

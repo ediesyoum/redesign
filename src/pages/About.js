@@ -18,9 +18,9 @@ export default class About extends Component {
     return (
           <div>
             <MediaQuery query="(max-device-width: 666px)">
-              <Parallax ref="parallax" className={'wrapper'}>
-                <section className="about__header">
-                  <h1 className="about__header--title">About</h1>
+              <Parallax ref="parallax" className={'page__wrapper'}>
+                <section className="page__header">
+                  <h1 className="page__header--title">About</h1>
                 </section>
                   <img src={Eyes} className="about__img" alt="Eden Syoum"/>
                 <main className="about__content__wrapper">
@@ -60,9 +60,9 @@ export default class About extends Component {
             </MediaQuery>
 
             <MediaQuery query="(min-device-width: 667px)">
-              <Parallax ref="parallax" className={'wrapper'} speed={.5}>
-                <section className="about__header">
-                  <h1 className="about__header--title">About</h1>
+              <Parallax ref="parallax" className={'page__wrapper'} speed={.5}>
+                <section className="page__header">
+                  <h1 className="page__header--title">About</h1>
                 </section>
                 <img src={Eyes}  className="about__img" alt="Eden Syoum" />
                 <main className="about__content__wrapper">

@@ -3,7 +3,7 @@
   width: 100vw;
   position: relative;
 }
-.work__header {
+.page__header {
   content: "";
   font-size: 1.6em;
   width: 100vw;
@@ -15,7 +15,7 @@
   color: $brown;
   background-image: $circuits-bg;
 }
-.work__header--title {
+.page__header--title {
   font-family: 'kayak_sans-light_italic', sans-serif;
   top: 8vh;
   right: 5vw;

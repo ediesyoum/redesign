@@ -8,9 +8,9 @@ export default class Contact extends Component {
     return (
       <div>
         <MediaQuery query="(max-device-width: 666px)">
-          <Parallax ref="parallax" className={'wrapper'}>
+          <Parallax ref="parallax" className={'page__wrapper'}>
             <section className="contact__header">
-              <h1 className="contact__header--title">contact</h1>
+              <h1 className="page__header--title">contact</h1>
             </section>
             <main className="about__content__wrapper">
               <section className="about__content">
@@ -66,7 +66,7 @@ export default class Contact extends Component {
         </MediaQuery>
 
         <MediaQuery query="(min-device-width: 667px)">
-          <Parallax ref="parallax" className={'wrapper'}>
+          <Parallax ref="parallax" className={'page__wrapper'}>
             <section className="contact__header">
               <h1 className="contact__header--title">contact</h1>
             </section>

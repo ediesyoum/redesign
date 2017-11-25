@@ -10,7 +10,7 @@
   margin-bottom: -20vh;
   position: relative !important;
   transform: skewY(0deg) !important;
-  // @extend .work__header;
+  // @extend .page__header;
 }
 .project__header--title {
   font-family: 'kayak_sans-regular_italic', sans-serif;
@@ -238,7 +238,6 @@
 .upenn__header {
   background-image: url('../assets/img/bgshapes06.svg');
 }
-
 .project__summary--csm {
   background-image: url('../assets/img/csm.png');
 }
