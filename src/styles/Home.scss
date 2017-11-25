@@ -2,7 +2,7 @@
   left: -10vw;
   top: 5vh;
   position: relative;
-  min-width: 130% !important;
+  min-width: 130%;
   overflow: hidden;
   opacity: .5;
 }
@@ -15,25 +15,25 @@
   opacity: .5;
 }
 .premise {
-  max-width: 70vw;
-  left: 10vw;
-  padding-right: 20%;
-  position: relative !important;
+  position: relative !important; // needed to override springy-parallax positioning
+  height: 28vh !important; // needed to override springy-parallax positioning
   top: 12vh;
-  height: 28vh !important;
+  left: 10vw;
+  max-width: 70vw;
+  padding-right: 20%;
   line-height: 4vh;
 	font-family: 'kayak_sans-light_italic', sans-serif;
   color: darken($mustard, 55%);
 }
 .premise-sm {
+  position: relative !important; // needed to override springy-parallax positioning
+  height: 20vh !important; // needed to override springy-parallax positioning
   line-height: 4vh;
   top: 12vh;
   left: 7vw;
-  height: 20vh !important;
-  font-size: .9em;
-  position: relative !important;
   padding: 0;
 	font-family: 'kayak_sans-regular_italic', sans-serif;
+  font-size: .9em;
 }
 .waving-hand {
   font-size: .8em;
@@ -41,7 +41,7 @@
   left: -5.5vw;
   top: 4vh;
   padding-right: 4vw;
-  max-width: 5vw !important;
+  max-width: 5vw;
 }
 .waving-hand--sm {
   @extend .waving-hand;
@@ -120,6 +120,6 @@
   }
 }
 .wobble {
-  max-width: 15vw !important;
-  animation-duration: 1.9s !important;
+  max-width: 15vw;
+  animation-duration: 1.9s !important; //needed to override default duration
 }

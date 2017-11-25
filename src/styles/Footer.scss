@@ -1,5 +1,5 @@
 .footer {
-  position: relative !important;
+  position: relative;
   font-size: 1.4em;
   color: white;
   max-height: 20vh;
@@ -17,7 +17,7 @@
 }
 .footer--sm {
   padding: 2vw;
-  position: relative !important;
+  position: relative;
   font-size: 1.4em;
   color: white;
   margin-top: 30vh;
@@ -32,11 +32,11 @@
 .going-up {
   position: relative;
   top: 1vh;
-  background-color: darken($salmon, 20%);
+  background-color: $salmon;
   border-radius: 3em;
   right: 20vw;
   font-size: 2em;
   padding: .02em;
   padding-top: .15em;
-  cursor: pointer !important;
+  cursor: pointer;
 }
