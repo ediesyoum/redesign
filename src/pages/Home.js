@@ -59,54 +59,54 @@ export default class Home extends Component {
               </Parallax.Layer>
 
               <section className="featured">
-                <Parallax.Layer offset={0} style={{height: 200}} speed={.5} className={'featured-projects'}>
+                <div className={'featured-projects'}>
                   <p>Featured Projects</p>
-                  <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(.64)}>
+                  <Parallax.Layer style={{height: 200}} onClick={() => this.refs.parallax.scrollTo(.64)}>
                     <FaChevronCircleDown className="chevron-down"/>
                   </Parallax.Layer>
-                </Parallax.Layer>
+                </div>
 
-              <Parallax.Layer speed={.5} className="featured01">
-                <Preview {...jotit} id="jot-it">
-                  <div className={"see-more--wrapper"}>
-                    <Link to="/work/jot-it">View Project</Link>
-                  </div>
-                </Preview>
-              </Parallax.Layer>
+                <section className="featured01">
+                  <Preview {...jotit} id="jot-it">
+                    <div className={"see-more--wrapper"}>
+                      <Link to="/work/jot-it">View Project</Link>
+                    </div>
+                  </Preview>
+                </section>
 
-              <Parallax.Layer speed={0.5} className="featured02">
-                <Preview {...eastend} id="east-end" />
-              </Parallax.Layer>
+                <section className="featured02">
+                  <Preview {...eastend} id="east-end" />
+                </section>
 
-              <Parallax.Layer speed={0.5} className="featured03">
-                <Preview {...upenn} id="upenn"/>
-              </Parallax.Layer>
+                <section className="featured03">
+                  <Preview {...upenn} id="upenn"/>
+                </section>
 
-              <Parallax.Layer speed={0.5} className={"see-more--wrapper"}>
-                <Link to="/work">more projects</Link>
-              </Parallax.Layer>
+                <section className="see-more--wrapper">
+                  <Link to="/work">more projects</Link>
+                </section>
 
-              <Parallax.Layer style={{height: 200}} className="contact-card__wrapper" speed={0.5}>
-                <ContactCard/>
-              </Parallax.Layer>
+                <section className="contact-card__wrapper">
+                  <ContactCard/>
+                </section>
 
-            <Parallax.Layer speed={0.5} style={{ height: 80 }} className={"footer"}>
-              <Grid fluid>
-                <Row>
-                  <Col xs="start">
-                    <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
-                  </Col>
+                <section className="footer">
+                  <Grid fluid>
+                    <Row>
+                      <Col xs="start">
+                        <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                      </Col>
 
-                  <Col xs="end">
-                    <Parallax.Layer style={{ height: 30 }}
-                      onClick={() => this.refs.parallax.scrollTo(0)}>
-                      <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
-                    </Parallax.Layer>
-                  </Col>
-                </Row>
-              </Grid>
-            </Parallax.Layer>
-            </section>
+                      <Col xs="end">
+                        <Parallax.Layer style={{ height: 30 }}
+                          onClick={() => this.refs.parallax.scrollTo(0)}>
+                          <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        </Parallax.Layer>
+                      </Col>
+                    </Row>
+                  </Grid>
+                </section>
+              </section>
             </ScrollAnimation>
           </Parallax>
         </MediaQuery>
@@ -187,7 +187,7 @@ export default class Home extends Component {
                 <Grid fluid>
                   <Row>
                     <Col xs="start">
-                      <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                      <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
                     </Col>
 
                     <Col xs="end">

@@ -5,22 +5,18 @@
   perspective-origin: 25% 75%;
 }
 .project__header {
-  height: 57vh !important;
-  top: -8vh !important;
-  margin-bottom: -20vh;
-  position: relative !important;
-  transform: skewY(0deg) !important;
-  // @extend .page__header;
+  height: 22vh;
+  top: 8vh;
+  margin-bottom: 10vh;
 }
 .project__header--title {
   font-family: 'kayak_sans-regular_italic', sans-serif;
-  top: 44vh;
+  top: 36vh;
   color: $brown;
   position: relative;
   font-size: 15.8vh;
   text-transform: lowercase;
-  max-width: 91vw;
-  right: -55vw;
+  left: 40vw;
 }
 .project__header--title-sm {
   font-family: 'kayak_sans-regular_italic', sans-serif;
@@ -39,7 +35,7 @@
   text-align: justify;
   width: 94vw;
   display: block;
-  left: 12vw;
+  // left: 12vw;
   top: 35vh;
   align-items: center;
   position: relative;
@@ -221,7 +217,7 @@
   background-image: url('../assets/img/bgshapes00.svg');
 }
 .east-end__header {
-  background-image: url('../assets/img/bgshapes01.svg');
+  background-image: url('../assets/img/bgshapes06.svg');
 }
 .economy__header {
   background-image: url('../assets/img/bgshapes02.svg');
@@ -233,10 +229,31 @@
   background-image: url('../assets/img/bgshapes04.svg');
 }
 .portfolio-current__header {
-  background-image: url('../assets/img/bgshapes05.svg');
+  background-image: url('../assets/img/bgshapes01.svg');
 }
 .upenn__header {
-  background-image: url('../assets/img/bgshapes06.svg');
+  background-image: url('../assets/img/bgshapes05.svg');
+}
+.project__summary--jot-it {
+  background-image: url('../assets/img/jot-it.png');
+}
+.project__summary--east-end {
+  background-image: url('../assets/img/east-end.png');
+}
+.project__summary--economy {
+  background-image: url('../assets/img/economy.png');
+}
+.project__summary--portfolio-old {
+  background-image: url('../assets/img/portfolio-old.png');
+}
+.project__summary--tic-tac-toe {
+  background-image: url('../assets/img/tic-tac-toe.png');
+}
+.project__summary--portfolio-current {
+  background-image: url('../assets/img/portfolio-current.png');
+}
+.project__summary--upenn {
+  background-image: url('../assets/img/upenn.png');
 }
 .project__summary--csm {
   background-image: url('../assets/img/csm.png');

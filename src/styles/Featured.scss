@@ -1,16 +1,16 @@
-// PLEASE NOTE - The use of !important is to override the springy-parallax JS being used in this application.
+// PLEASE NOTE - The use of !important is to override the springy-parallax JS being used in this application. This is HACKY and for experimental purposes ONLY. Thanks for cooperating.
 
 .featured-wrapper {
-  position: relative !important;
+  position: relative;
   min-width: 100%;
   min-height: 100vh;
 }
 .featured {
   top: 44vh;
-  position: relative !important;
+  position: relative;
   min-width: 100%;
-  max-height: 100%;
-  margin-bottom: -24vh !important;
+  min-height: 100vh;
+  margin-bottom: 54vh;
 }
 .featured--sm {
   top: 51vh;
@@ -20,12 +20,12 @@
 }
 .featured-projects {
   background-color: rgba(81,241,188,.5);
-  height: 22vh !important;
+  height: 22vh;
   font-size: 2em;
   padding-top: 1.5vh;
   text-align: center;
-  position: relative !important;
-  color: $brown !important;
+  position: relative;
+  color: $brown;
   margin-bottom: 1vh;
 }
 .featured-projects--sm {
@@ -41,20 +41,20 @@
 }
 .chevron-down {
   font-size: 1em;
-  position: relative !important;
+  position: relative;
   height: 7vh;
   color: $salmon;
   width: 7vh;
   z-index: 1;
   top: 0vh;
-  cursor: pointer !important;
+  cursor: pointer;
   &:hover {
   color: $teal;
   }
 }
 .featured-preview-wrapper {
   top: 0vh;
-  position: relative !important;
+  position: relative;
 }
 .featured-preview-wrapper--sm {
   top: 1vh;
@@ -65,11 +65,11 @@
   max-height: 140vh;
 }
 .featured--bg {
-  background-repeat: no-repeat !important;
-  background-size: 70vh !important;
-  height: 27vh !important;
+  background-repeat: no-repeat;
+  background-size: 70vh;
+  height: 27vh;
   padding: 10vh;
-  position: relative !important;
+  position: relative;
   text-align: justify;
   opacity: .9;
 }
@@ -104,7 +104,7 @@
 }
 .featured__bg--sm {
   opacity: .85;
-  background-repeat: no-repeat !important;
+  background-repeat: no-repeat ;
   background-size: 70vh !important;
   height: 27vh !important;
   padding: 10vh;
@@ -136,7 +136,7 @@
 }
 .see-more--wrapper--sm {
   width: 100vw;
-  height: 12vh !important;
+  height: 120vh !important;
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
@@ -159,11 +159,11 @@
 }
 .see-more--wrapper {
   width: 100vw;
-  height: 12vh !important;
+  height: 12vh;
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
-  position: relative !important;
+  position: relative;
   margin-top: 6vh;
   margin-bottom: -30vh;
   z-index: 2;

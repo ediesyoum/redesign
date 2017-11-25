@@ -64,7 +64,7 @@ export default class Work extends Component {
                 <Grid fluid>
                   <Row>
                     <Col xs="start">
-                      <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                      <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
                     </Col>
                     <Col xs="end">
                       <Parallax.Layer
@@ -99,7 +99,7 @@ export default class Work extends Component {
                 <Grid fluid>
                   <Row>
                     <Col xs="start">
-                      <p>Made with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                      <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
                     </Col>
                     <Col xs="end">
                       <Parallax.Layer

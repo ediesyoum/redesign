@@ -1,10 +1,3 @@
-.about__header {
-  @extend .page__header;
-  top: -4vh;
-}
-.about__header--title {
-  @extend .page__header--title;
-}
 .about__content__wrapper {
   position: relative !important;
   max-width: 62vw;
