@@ -10,7 +10,7 @@ import MediaQuery from 'react-responsive';
 
 export default class Project extends Component {
   get headerClassName() {
-    return `${this.props.id}__header`;
+    return `project__header--bg ${this.props.id}__header`;
   }
   get headerTitleClassName() {
     return `${this.props.id}__header-title`;
@@ -29,6 +29,9 @@ export default class Project extends Component {
   }
   projectImage(size = 'desktop') {
     return findImage(`${this.props.id}-${size}.jpg`);
+  }
+  get projectGraphic() {
+    return findImage(`${this.props.id}.png`);
   }
 
   get tags() {
@@ -64,16 +67,11 @@ export default class Project extends Component {
                 duration={'3s'}>
 
                 <div className="project__summary">
-
                   <Grid fluid>
                     <Row>
-                      <Col xsOffset={0} xs={10}>
+                      <Col xsOffset={0} xs="end">
                         <h3 className="project-section-title__background">Project Description</h3>
                         <div><p className="project_desc">{this.props.summary}</p></div>
-                      </Col>
-
-                      <Col xs="end">
-                        <h3>Test</h3>
                       </Col>
                     </Row>
                   </Grid>
@@ -85,16 +83,25 @@ export default class Project extends Component {
                     <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
                   </div>
 
-
-                  <h3 className="project-section-title__background">Technical Details</h3>
-                  <p className="project_desc project__technical">{this.props.technical}</p>
-
+                  <Grid fluid>
+                    <Row>
+                      <Col xsOffset={0} xs={8}>
+                        <h3 className="project-section-title__background">Technical Details</h3>
+                        <p className="project_desc project__technical">{this.props.technical}</p>
+                      </Col>
+                      <Col xsOffset={9} xs={3}>
+                        <div className="image--perspective">
+                          <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
 
                   <Grid fluid>
                     <Row>
                       <Col xsOffset={0} xs={8}>
                         <div className="image--perspective">
-                          <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
+                          <img src={this.projectGraphic}/>
                         </div>
                       </Col>
                       <Col xsOffset={9} xs={3}>
@@ -157,7 +164,7 @@ export default class Project extends Component {
             <Parallax ref="parallax" className={'project__wrapper'}>
 
             <Parallax.Layer className="project__header--wrapper" speed={.25}>
-              <img className={this.headerClassName} alt="Test"/>
+              <img className={this.headerClassName} />
             </Parallax.Layer>
 
               <Parallax.Layer offset={.5} speed={.1} style={{ backgroundColor: '#FECC52' }} />

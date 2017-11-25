@@ -16,9 +16,7 @@ export default class ProjectPreview extends Component {
     return (
       <Link to={this.route}>
         <div className={`${this.props.className}  ${this.position}`}>
-
-              {this.props.name}
-
+          {this.props.name}
         </div>
       </Link>
     );

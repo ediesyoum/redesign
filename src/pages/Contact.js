@@ -76,7 +76,7 @@ export default class Contact extends Component {
                   <input type="name" name="name" className="contact-form__field" placeholder="Your name"></input>
                 </div>
                 <div>
-                  <input type="email" name="email" className="contact-form__field " placeholder="Your email"></input>
+                  <input type="email" name="email" className="contact-form__field" placeholder="Your email"></input>
                 </div>
                 <div>
                   <textarea name="message" className="contact-form__field contact-form__field--message" placeholder="Your message"></textarea>

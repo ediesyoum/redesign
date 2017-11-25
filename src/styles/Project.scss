@@ -37,13 +37,15 @@
   color: $brown;
   line-height: 7.5vh;
   text-align: justify;
-  width: 75vw;
+  width: 94vw;
   display: block;
   left: 12vw;
   top: 35vh;
   align-items: center;
   position: relative;
   margin-bottom: 35vh;
+  background-repeat: no-repeat;
+  background-position-x: 55vw;
 }
 .project__technical {
   margin-bottom: 60vh;
@@ -123,6 +125,7 @@
 }
 .project_desc {
   font-size: 0.9em;
+  width: 57vw;
 }
 .project-image--desktop {
   width: 61vh;
@@ -197,16 +200,6 @@
   min-width: 104vw;
   min-height: 70vh;
   max-height: 50vh;
-}
-.image--perspective {
-  transform: perspective(3000px) rotateY(12deg);
-  -webkit-transform-origin: 632px 260px;
-  text-align: center;
-  margin-top: -30vh;
-}
-.jot-it__header {
-  @extend .project__header--bg;
-  background-image: url('../assets/img/bgmoreshapes.svg');
   background-repeat: no-repeat;
   position: relative;
   background-position-x: 5vw;
@@ -215,39 +208,37 @@
   background-color: lighten($teal, 60%);
   top: 0vh;
 }
+.image--perspective {
+  transform: perspective(3000px) rotateY(12deg);
+  -webkit-transform-origin: 632px 260px;
+  text-align: center;
+  margin-top: -30vh;
+}
+.jot-it__header {
+  background-image: url('../assets/img/bgmoreshapes.svg');
+}
 .csm__header {
-  background-blend-mode: difference;
-  @extend .project__header--bg;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/csm-desktop.jpg') no-repeat center;
-  background-size: 200vh;
+  background-image: url('../assets/img/bgshapes00.svg');
 }
 .east-end__header {
-  @extend .project__header--bg;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/east-end-desktop.jpg') no-repeat center;
-  background-size: 200vh;
+  background-image: url('../assets/img/bgshapes01.svg');
 }
 .economy__header {
-  @extend .project__header--bg;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/economy-desktop.jpg') no-repeat center;
-  background-size: 200vh;
+  background-image: url('../assets/img/bgshapes02.svg');
 }
 .portfolio-old__header {
-  @extend .project__header--bg;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/portfolio-old-desktop.jpg') no-repeat center;
-  background-size: 200vh;
+  background-image: url('../assets/img/bgshapes03.svg');
 }
 .tic-tac-toe__header {
-  @extend .project__header--bg;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/tic-tac-toe-desktop.jpg') no-repeat center;
-  background-size: 200vh;
+  background-image: url('../assets/img/bgshapes04.svg');
 }
 .portfolio-current__header {
-  @extend .project__header--bg;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/portfolio-current-desktop.jpg') no-repeat center;
-  background-size: 200vh;
+  background-image: url('../assets/img/bgshapes05.svg');
 }
 .upenn__header {
-  @extend .project__header--bg;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%), url('../assets/img/upenn-desktop.jpg') no-repeat center;
-  background-size: 200vh;
+  background-image: url('../assets/img/bgshapes06.svg');
+}
+
+.project__summary--csm {
+  background-image: url('../assets/img/csm.png');
 }
