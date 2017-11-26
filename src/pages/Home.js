@@ -114,10 +114,10 @@ export default class Home extends Component {
         <MediaQuery query="(max-device-width: 666px)">
           <Parallax ref="parallax" className={'wrapper scrollbar'}>
             <ScrollAnimation animateIn="bounceInUp"  animateOut="bounceInUp" duration={'7s'}>
-              <Parallax.Layer speed={1} style={{ height: 300 }}>
+              <Parallax.Layer speed={.9} style={{ height: 300 }}>
                 <img className={"triangle__bg--sm"} src={BracketGradient} alt="Bracket Art"/>
               </Parallax.Layer>
-              <Parallax.Layer speed={1.5} className={'premise-sm'}>
+              <Parallax.Layer speed={.5} className={'premise-sm'}>
                 <h1>
                   <p className="yo--sm">
                     <span className="waving-hand--sm">
@@ -156,7 +156,7 @@ export default class Home extends Component {
             <section className="featured--sm">
               <Parallax.Layer className={'featured-projects--sm'}>
                 <p>see featured projects</p>
-                <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(0.628)}>
+                <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(0.95)}>
                   <FaChevronCircleDown className="chevron-down"/>
                 </Parallax.Layer>
               </Parallax.Layer>

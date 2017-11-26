@@ -38,8 +38,9 @@
 .projectcard {
   min-width: 60vh;
   max-width: 80vh;
-  margin-bottom: 20vh;
-  top: 12vh;
+  height: 20vh;
+  top: -1vh;
+  padding-top: 7.5vh;
   cursor: pointer;
   text-align: center;
   a {
