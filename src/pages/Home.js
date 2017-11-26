@@ -154,7 +154,7 @@ export default class Home extends Component {
             </Parallax.Layer>
 
             <section className="featured--sm">
-              <Parallax.Layer speed={.5} className={'featured-projects--sm'}>
+              <Parallax.Layer className={'featured-projects--sm'}>
                 <p>see featured projects</p>
                 <Parallax.Layer onClick={() => this.refs.parallax.scrollTo(0.628)}>
                   <FaChevronCircleDown className="chevron-down"/>
