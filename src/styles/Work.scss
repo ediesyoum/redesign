@@ -8,15 +8,15 @@
   font-size: 1.6em;
   width: 100vw;
   height: 20vh;
-  top: 0vh;
+  top: -4vh;
   transform: skewY(5deg);
   text-align: right;
   position: relative;
   color: $brown;
-  background-image: $circuits-bg;
+  background-image: linear-gradient(to bottom, rgba(66, 32, 241, 0.35), rgba(158, 239, 225, 0.15));
 }
 .page__header--title {
-  font-family: 'kayak_sans-light_italic', sans-serif;
+  font-family: 'womby', sans-serif;
   top: 8vh;
   right: 5vw;
   color: $brown;

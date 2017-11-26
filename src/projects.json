@@ -61,7 +61,7 @@
     ]
   },
   "economy": {
-    "name": "Economy Supply",
+    "name": "Economy",
     "summary": "Economy Restaurant & Bar Supply is a retailer of modern kitchen equipment located in Old City Philadelphia. I played a smaller role with this project as I was only on this assignment for a short time, making wire frames, helping to organize site  infrastructure and working on branding and marketing strategy with the rest of the team.\nIn the beginning of the project, my teammates specifically asked me to represent the user while brainstorming initial ideas because I had a experience supporting end users. So I applied my experience with them into the placement of specific items throughout the UI, and especially into the site infrastructure and making sure it would be clear to users, as well as spending some time on the hierarchy of the way that things like breadcrumbs would be displayed.",
     "technical": "This client is a well-established merchant that has thousands of products. Initially, most of their products were nowhere to be found online. They needed help to establish a web presence that would bring them more sales than the site they had prior, with the implementation of a detailed, stocked eCommerce website. As a team we decided to use Shopify for this endeavor, and decided on using Shopify’s Liquid templating language for custom theming.",
 		"links": {

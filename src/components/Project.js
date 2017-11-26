@@ -12,6 +12,9 @@ export default class Project extends Component {
   get headerClassName() {
     return `project__header--bg ${this.props.id}__header`;
   }
+  get headerClassNameSM() {
+    return `project__header--bg--sm ${this.props.id}__header`;
+  }
   get headerTitleClassName() {
     return `${this.props.id}__header-title`;
   }
@@ -48,10 +51,10 @@ export default class Project extends Component {
             <Parallax ref="parallax" className={'project__wrapper'}>
 
               <Parallax.Layer className="project__header--wrapper">
-                <img className={this.headerClassName} alt="Test"/>
+                <img className={this.headerClassName} alt=""/>
               </Parallax.Layer>
 
-              <Parallax.Layer offset={.5} speed={.1} style={{ height: 1600, backgroundColor: '#f5e0b2' }} />
+              <Parallax.Layer offset={.5} speed={.1} style={{ height: 1600, backgroundColor: '#f9ffc3' }} />
               <Parallax.Layer offset={1.8} speed={.1} style={{ height: 1600, backgroundColor: '#805E73' }} />
               <Parallax.Layer offset={2.9} speed={.1} style={{ height: 1200, backgroundColor: '#ED8712' }} />
 
@@ -69,9 +72,9 @@ export default class Project extends Component {
                 <div className="project__summary">
                   <Grid fluid>
                     <Row>
-                      <Col xsOffset={0} xs="end">
+                      <Col center="xs">
                         <h3 className="project-section-title__background">Project Description</h3>
-                        <div><p className="project_desc">{this.props.summary}</p></div>
+                        <div><p className="project__description">{this.props.summary}</p></div>
                       </Col>
                     </Row>
                   </Grid>
@@ -85,33 +88,32 @@ export default class Project extends Component {
 
                   <Grid fluid>
                     <Row>
-                      <Col xsOffset={0} xs={8}>
-                        <h3 className="project-section-title__background">Technical Details</h3>
-                        <p className="project_desc project__technical">{this.props.technical}</p>
-                      </Col>
-                      <Col xsOffset={9} xs={3}>
+                      <Col xs>
                         <div className="image--perspective">
                           <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
                         </div>
+                      </Col>
+                      <Col xs>
+                        <h3 className="project-section-title__background">Technical Details</h3>
+                        <p className="project__technical">{this.props.technical}</p>
                       </Col>
                     </Row>
                   </Grid>
 
                   <Grid fluid>
-                    <Row>
-                      <Col xsOffset={0} xs={8}>
+                      <Row center="xs">
                         <div className="image--perspective">
-                          <img src={this.projectGraphic}/>
+                          <img src={this.projectGraphic} alt=""/>
                         </div>
-                      </Col>
-                      <Col xsOffset={9} xs={3}>
+                      </Row>
+
+                      <Row center="xs">
                         <div className="project__tag--wrapper">
                           <section className="project__tags">
                             {this.tags}
                           </section>
                         </div>
-                      </Col>
-                    </Row>
+                      </Row>
                   </Grid>
                 </div>
               </ScrollAnimation>
@@ -164,7 +166,7 @@ export default class Project extends Component {
             <Parallax ref="parallax" className={'project__wrapper'}>
 
             <Parallax.Layer className="project__header--wrapper" speed={.25}>
-              <img className={this.headerClassName} />
+              <img className={this.headerClassNameSM} alt=""/>
             </Parallax.Layer>
 
               <Parallax.Layer offset={.5} speed={.1} style={{ backgroundColor: '#FECC52' }} />
@@ -183,7 +185,7 @@ export default class Project extends Component {
                 animateOut="bounceInUp"
                 duration={'3s'}>
 
-                <div className="project__summary">
+                <div className="project__summary project__summary--wrapper">
 
                   <div className="project-section-title__background--sm">
                     <h3>Project Summary</h3>
@@ -198,7 +200,8 @@ export default class Project extends Component {
                   <div className="project-section-title__background--sm">
                     <h3>Technical Details</h3>
                   </div>
-                  <p>{this.props.technical}</p>
+                  <div><p className="project__description">{this.props.technical}</p></div>
+
 
 
                   <section className="project__links">

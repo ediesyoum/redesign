@@ -26,7 +26,7 @@ ul, li {
   position: relative;
   line-height: 2vh;
   top: 0vh;
-  width: 30vw;
+  width: 60vw;
   right: 13vh;
   margin-bottom: 40vh;
 }
@@ -58,6 +58,7 @@ ul, li {
   right: 0;
   bottom: 0;
   left: 0;
+  border-radius: 6px;
   background-image: inherit;
   background-position: 50% 50%;
   background-size: 200vw;
@@ -68,6 +69,7 @@ ul, li {
   content: '';
   z-index: -1;
   top: .125em;
+  border-radius: 6px;
   right: .125em;
   bottom: .125em;
   left: .125em;
