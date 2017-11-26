@@ -79,41 +79,39 @@ export default class Project extends Component {
                     </Row>
                   </Grid>
 
-
                   <div className="slanted-bg"/>
-
-                  <div className="image--perspective">
-                    <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
-                  </div>
 
                   <Grid fluid>
                     <Row>
-                      <Col xs>
+                      <Col xsOffset={2} xs={6}>
+                        <div className="image--perspective">
+                          <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
+                        </div>
+                      </Col>
+                      <Col xsOffset={6} xs={6}>
                         <div className="image--perspective">
                           <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
                         </div>
                       </Col>
-                      <Col xs>
-                        <h3 className="project-section-title__background">Technical Details</h3>
-                        <p className="project__technical">{this.props.technical}</p>
-                      </Col>
                     </Row>
-                  </Grid>
-
-                  <Grid fluid>
-                      <Row center="xs">
-                        <div className="image--perspective">
-                          <img src={this.projectGraphic} alt=""/>
-                        </div>
-                      </Row>
-
-                      <Row center="xs">
-                        <div className="project__tag--wrapper">
-                          <section className="project__tags">
-                            {this.tags}
-                          </section>
-                        </div>
-                      </Row>
+                    <Row center="xs">
+                      <div className="project__technical">
+                        <h3 className="project-section-title__background">Technical Details</h3>
+                        {this.props.technical}
+                      </div>
+                    </Row>
+                    <Row center="xs">
+                      <div className="image--perspective">
+                        <img src={this.projectGraphic} className="project__graphic" alt=""/>
+                      </div>
+                    </Row>
+                    <Row center="xs">
+                      <div className="project__tag--wrapper">
+                        <section className="project__tags">
+                          {this.tags}
+                        </section>
+                      </div>
+                    </Row>
                   </Grid>
                 </div>
               </ScrollAnimation>
@@ -141,7 +139,6 @@ export default class Project extends Component {
                 <ProjectNavigationLink id={this.props.id} rel="previous" />
                 <ProjectNavigationLink id={this.props.id} rel="next" />
               </nav>
-
 
               <section className="footer">
                 <Grid fluid>
@@ -233,7 +230,7 @@ export default class Project extends Component {
                       <Parallax.Layer
                         style={{ height: 30 }}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        <span id="back-to-top" className="going-up--sm" role="img" aria-label="Top Of Page">☝️</span>
                       </Parallax.Layer>
                     </Col>
                   </Row>

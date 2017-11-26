@@ -61,7 +61,7 @@ export default class Home extends Component {
               <section className="featured">
                 <div className={'featured-projects'}>
                   <p>Featured Projects</p>
-                  <Parallax.Layer style={{height: 200}} onClick={() => this.refs.parallax.scrollTo(.64)}>
+                  <Parallax.Layer style={{height: 200}} onClick={() => this.refs.parallax.scrollTo(.98)}>
                     <FaChevronCircleDown className="chevron-down"/>
                   </Parallax.Layer>
                 </div>
@@ -188,7 +188,7 @@ export default class Home extends Component {
                     <Col xs="end">
                       <Parallax.Layer style={{ height: 30 }}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        <span id="back-to-top" className="going-up--sm" role="img" aria-label="Top Of Page">☝️</span>
                       </Parallax.Layer>
                     </Col>
                   </Row>

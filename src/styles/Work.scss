@@ -4,20 +4,32 @@
   position: relative;
 }
 .page__header {
-  content: "";
-  font-size: 1.6vw;
-  width: 100vw;
+  font-size: 1.5em;
+  width: 102vw;
   height: 20vh;
-  top: -4vh;
-  transform: skewY(5deg);
+  padding-bottom: 10vh;
+  top: -5vw;
+  right: 2vh;
+  transform: rotate(2deg);
   text-align: right;
   position: relative;
   color: $brown;
-  background-image: linear-gradient(to bottom, rgba(66, 32, 241, 0.35), rgba(158, 239, 225, 0.15));
+  background-image: linear-gradient(to bottom, rgba(66, 32, 241, 0.20) 40%, rgba(158, 239, 225, 0.03) 80%);
 }
 .page__header--title {
   font-family: 'womby', sans-serif;
   top: 8vh;
+  padding-top: 3vh;
+  padding-right: 5%;
+  color: lighten($logobg, 10%);
+  transform: rotate(3deg);
+  position: relative;
+  text-transform: lowercase;
+}
+.page__header--title--sm {
+  font-family: 'womby', sans-serif;
+  top: 8vh;
+  font-size: 5em;
   right: 5vw;
   color: lighten($logobg, 10%);
   position: relative;

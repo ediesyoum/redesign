@@ -3,6 +3,7 @@ import Parallax from 'react-springy-parallax';
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 import Eyes from '../assets/img/eyes.jpg';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Grid, Col, Row } from 'react-flexbox-grid';
 import 'animate.css/animate.min.css';
 
@@ -20,12 +21,13 @@ export default class About extends Component {
             <MediaQuery query="(max-device-width: 666px)">
               <Parallax ref="parallax" className={'page__wrapper'}>
                 <section className="page__header">
-                  <h1 className="page__header--title">About</h1>
+                  <h1 className="page__header--title--sm">About</h1>
                 </section>
-                  <img src={Eyes} className="about__img" alt="Eden Syoum"/>
-                <main className="about__content__wrapper">
-                  <section className="about__content">
-                    <h3>A User-Focused Developer</h3>
+                  <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
+                  <img src={Eyes} className="about__img--sm" alt="Eden Syoum"/>
+                <main className="about__content__wrapper--sm">
+                  <section className="about__content--sm">
+                    <h3 className="about__header--title">A User-Focused Developer</h3>
 
                     <p>Throughout my technical career, I have worked hard to be a user advocate.  As an IT consultant turned web developer, I have spent several years studying user habits, seeing their pain points first hand, working tirelessly to resolve and prevent future obstacles. This is why designing with consideration and empathy for the user’s experience comes naturally to me - it empowers me to create visually engaging, functional and aesthetic products that humans will truly love to use, and use often.</p>
 
@@ -50,12 +52,13 @@ export default class About extends Component {
                         <Parallax.Layer
                           style={{ height: 30 }}
                           onClick={() => this.refs.parallax.scrollTo(0)}>
-                          <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                          <span id="back-to-top" className="going-up--sm" role="img" aria-label="Top Of Page">☝️</span>
                         </Parallax.Layer>
                       </Col>
                     </Row>
                   </Grid>
                 </section>
+              </ScrollAnimation>
               </Parallax>
             </MediaQuery>
 
@@ -64,6 +67,7 @@ export default class About extends Component {
                 <section className="page__header">
                   <h1 className="page__header--title">About</h1>
                 </section>
+                <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
                 <img src={Eyes}  className="about__img" alt="Eden Syoum" />
                 <main className="about__content__wrapper">
                   <section className="about__content">
@@ -98,6 +102,7 @@ export default class About extends Component {
                     </Row>
                   </Grid>
                 </section>
+              </ScrollAnimation>
               </Parallax>
             </MediaQuery>
           </div>

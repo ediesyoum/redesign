@@ -70,7 +70,7 @@ export default class Work extends Component {
                       <Parallax.Layer
                         style={{ height: 30 }}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        <span id="back-to-top" className="going-up--sm" role="img" aria-label="Top Of Page">☝️</span>
                       </Parallax.Layer>
                     </Col>
                   </Row>

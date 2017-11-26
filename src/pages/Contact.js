@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Parallax from 'react-springy-parallax';
+import ScrollAnimation from 'react-animate-on-scroll';
 import MediaQuery from 'react-responsive';
 
 export default class Contact extends Component {
@@ -12,6 +13,7 @@ export default class Contact extends Component {
               <section className="page__header">
                 <h1 className="page__header--title">contact</h1>
               </section>
+                <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
               <section>
                 <form method="POST" className="contact-form" action="http://formspree.io/me@edencod.es">
                   <div>
@@ -38,12 +40,13 @@ export default class Contact extends Component {
                       <Parallax.Layer
                         style={{ height: 30 }}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        <span id="back-to-top" className="going-up--sm" role="img" aria-label="Top Of Page">☝️</span>
                       </Parallax.Layer>
                     </Col>
                   </Row>
                 </Grid>
               </section>
+            </ScrollAnimation>
             </Parallax>
           </MediaQuery>
 
@@ -52,6 +55,7 @@ export default class Contact extends Component {
               <section className="page__header">
                 <h1 className="page__header--title">contact</h1>
               </section>
+              <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
               <section>
                 <form method="POST" className="contact-form" action="http://formspree.io/me@edencod.es">
                   <div>
@@ -84,6 +88,7 @@ export default class Contact extends Component {
                   </Row>
                 </Grid>
               </section>
+            </ScrollAnimation>
           </Parallax>
         </MediaQuery>
       </div>

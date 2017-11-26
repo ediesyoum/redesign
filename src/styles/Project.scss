@@ -47,7 +47,13 @@
 }
 .project__technical {
   margin-bottom: 60vh;
+  max-width: 60vw;
   margin-top: 1vh;
+  text-align: justify;
+}
+.project__graphic {
+  width: 90%;
+  padding-bottom: 6vh;
 }
 
 .btn-group {
@@ -123,9 +129,10 @@
 .project-image--desktop {
   width: 61vh;
   max-width: 67vh;
-  top: -10vh;
+  left: -7vw;
+  top: -4vh;
   box-shadow: 0px 20px 100px $brown;
-  border-radius: 1vh;
+  border-radius: 2px;
   margin-bottom: 7vh;
   position: relative;
 }
@@ -168,7 +175,7 @@
   min-height: 60vh;
   max-height: 50vh;
   box-shadow: 0px 20px 100px $brown;
-  border-radius: 1vh;
+  border-radius: 2px;
   position: relative;
 }
 .project-image--mobile {
@@ -176,9 +183,9 @@
   max-height: 50vh;
   -webkit-box-shadow: 0px 20px 100px #333332;
   box-shadow: 0px 20px 100px #333332;
-  border-radius: 1vh;
-  left: -7vh;
-  top: -18vh;
+  border-radius: 2px;
+  left: 6vw;
+  top: -28vh;
   margin-bottom: -26vh;
   position: relative;
 }
@@ -221,7 +228,6 @@
   -webkit-transform-origin: 632px 260px;
   text-align: center;
   margin-top: -30vh;
-  left: -7vw;
   position: relative;
 }
 .jot-it__header {
