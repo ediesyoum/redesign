@@ -28,13 +28,13 @@
 }
 .featured-projects--sm {
   background-color: rgba(81,241,188,.5);
-  height: 30vh !important; //needed to override spring parallax styles
+  height: 28vh !important; //needed to override spring parallax styles
   font-size: 2em;
   color: $brown;
   padding-top: 3vh;
   text-align: center;
-  padding-bottom: -30vh;
-  top: -9vh;
+  padding-bottom: -31vh;
+  top: -7.25vh;
 }
 .chevron-down {
   font-size: 1em;
@@ -55,7 +55,7 @@
 }
 .featured-preview-wrapper--sm {
   top: 1vh;
-  margin-top: -25vh;
+  margin-top: -24vh;
   min-width: 100%;
   min-height: 100%;
 }
