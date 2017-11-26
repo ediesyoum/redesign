@@ -5,7 +5,7 @@
 }
 .page__header {
   content: "";
-  font-size: 1.6em;
+  font-size: 1.6vw;
   width: 100vw;
   height: 20vh;
   top: -4vh;
@@ -19,7 +19,7 @@
   font-family: 'womby', sans-serif;
   top: 8vh;
   right: 5vw;
-  color: $brown;
+  color: lighten($logobg, 10%);
   position: relative;
   text-transform: lowercase;
 }

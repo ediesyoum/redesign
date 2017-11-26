@@ -186,10 +186,10 @@
   margin-top: -14vh;
 }
 .project__header--wrapper {
-  position: relative !important;
+  position: relative !important; //needed to override springy parallax positioning
   top: -10vh;
   left: -1vh;
-  height: 7vh !important;
+  height: 7vh !important; //needed to override springy parallax height
 }
 .project__header--bg--sm {
   min-width: 104vw;
