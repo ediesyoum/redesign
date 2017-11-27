@@ -4,9 +4,10 @@
   color: white;
   max-height: 20vh;
   top: 3vh;
-  margin-top: 30vh;
+  left: 27vw;
+  padding-top: 30vh;
+  padding-bottom: 7vh;
   display: block;
-  margin-bottom: 10vh;
   font-family: 'kayak_sans-regular', sans-serif;
   text-align: center;
   p {
@@ -14,19 +15,20 @@
     color: black;
     padding-top: 1.1vh;
   }
-}
-.footer--sm {
-  padding: 2vw;
-  position: relative;
-  font-size: 1.4em;
-  color: white;
-  margin-top: 30vh;
-  font-family: 'kayak_sans-regular', sans-serif;
-  text-align: center;
-  p {
-    font-size: .8em;
-    color: black;
-    padding-top: 1.1vh;
+  @media screen and (max-device-width: 666px) { // small version
+    position: relative;
+    font-size: 1.4em;
+    color: white;
+    left: 2.5vh;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+    font-family: 'kayak_sans-regular', sans-serif;
+    text-align: center;
+    p {
+      font-size: .8em;
+      color: black;
+      padding-top: 1.1vh;
+    }
   }
 }
 .going-up {
@@ -39,15 +41,15 @@
   padding: .02em;
   padding-top: .15em;
   cursor: pointer;
-}
-.going-up--sm {
-  position: relative;
-  top: 1vh;
-  right: 9vh;
-  background-color: #FF3F47;
-  border-radius: 3em;
-  font-size: 2em;
-  padding: .02em;
-  padding-top: .15em;
-  cursor: pointer;
+  @media screen and (max-device-width: 666px) { // small version
+    position: relative;
+    top: 1vh;
+    right: 2vh;
+    background-color: #FF3F47;
+    border-radius: 3em;
+    font-size: 2em;
+    padding: .02em;
+    padding-top: .15em;
+    cursor: pointer;
+  }
 }

@@ -7,14 +7,14 @@
   top: 44vh;
   position: relative;
   min-width: 100%;
-  min-height: 100vh;
+  height: 100% !important;
   margin-bottom: 54vh;
-}
-.featured--sm {
-  top: 51vh;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  @media screen and (max-device-width: 666px) { // small version
+    // top: 51vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 .featured-projects {
   background-color: rgba(81,241,188,.5);
@@ -25,16 +25,15 @@
   position: relative;
   color: $brown;
   margin-bottom: 1vh;
-}
-.featured-projects--sm {
-  background-color: rgba(81,241,188,.5);
-  height: 28vh !important; //needed to override spring parallax styles
-  font-size: 2em;
-  color: $brown;
-  padding-top: 3vh;
-  text-align: center;
-  padding-bottom: -31vh;
-  top: -7.25vh;
+  @media screen and (max-device-width: 666px) { // small version
+    height: 28vh; //needed to override spring parallax styles
+    font-size: 2em;
+    color: $brown;
+    padding-top: 3vh;
+    text-align: center;
+    padding-bottom: -31vh;
+    top: -7.25vh;
+  }
 }
 .chevron-down {
   font-size: 1em;
@@ -52,21 +51,12 @@
 .featured-preview-wrapper {
   top: 0vh;
   position: relative;
-}
-.featured-preview-wrapper--sm {
-  top: 1vh;
-  margin-top: -24vh;
-  min-width: 100%;
-  min-height: 100%;
-}
-.featured--bg {
-  background-repeat: no-repeat;
-  background-size: 70vh;
-  height: 27vh;
-  padding: 10vh;
-  position: relative;
-  text-align: justify;
-  opacity: .9;
+  @media screen and (max-device-width: 666px) { // small version
+    top: 1vh;
+    margin-top: -24vh;
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 .featured__link {
   text-align: right;
@@ -75,80 +65,98 @@
   a {
   color: white;
   }
+  @media screen and (max-device-width: 666px) { // small version
+    text-align: center;
+    height: 37vh;
+    // top: -45vh;
+    width: 100vw;
+    left: 0vh;
+    position: relative;
+    content: '';
+    z-index: 3;
+    visibility: hidden;
+  }
 }
 .featured01 {
-  @extend .featured--bg;
+  background-repeat: no-repeat;
+  background-size: 70vh;
+  height: 27vh;
+  padding: 10vh;
+  position: relative;
+  text-align: justify;
+  opacity: .9;
   background-color: lighten($trueblue, 15%);
   background-image: url('../assets/img/jot-it.png');
   background-position-y: -7vh;
   background-position-x: 2vw;
   margin-bottom: 1vh;
+  @media screen and (max-device-width: 666px) { // small version
+    opacity: .85;
+    background-repeat: no-repeat;
+    background-size: 70vh;
+    height: 27vh;
+    top: -7vh;
+    padding: 10vh;
+    text-align: justify;
+    background-color: lighten($logobg, 35%);
+    background-image: url('../assets/img/jot-it.png');
+    background-position-y: 30%;
+    background-position-x: -19vw;
+    margin-bottom: 1vh;
+  }
 }
 .featured02 {
-  @extend .featured--bg;
+  background-repeat: no-repeat;
+  background-size: 70vh;
+  height: 27vh;
+  padding: 10vh;
+  position: relative;
+  text-align: justify;
+  opacity: .9;
   background-color: lighten($brightpurple, 10%);
   background-image: url('../assets/img/east-end.png');
   background-position-y: 45%;
   background-position-x: 8vw;
   margin-bottom: 1vh;
+  @media screen and (max-device-width: 666px) { // small version
+    opacity: .85;
+    background-repeat: no-repeat;
+    background-size: 70vh;
+    height: 27vh;
+    padding: 10vh;
+    top: -7vh;
+    text-align: justify;
+    background-color: lighten($brightpurple, 10%);
+    background-image: url('../assets/img/east-end.png');
+    background-position-x: 72%;
+    background-position-y: 45%;
+    margin-bottom: 1vh;
+  }
 }
 .featured03 {
-  @extend .featured--bg;
-  background-color: lighten($burgundy, 10%);
-  background-image: url('../assets/img/upenn.png');
-  background-position-y: -11vh;
-  background-position-x: 2vw;
-}
-.featured__bg--sm {
-  opacity: .85;
   background-repeat: no-repeat;
   background-size: 70vh;
   height: 27vh;
   padding: 10vh;
+  position: relative;
   text-align: justify;
-}
-.featured01--sm {
-  @extend .featured__bg--sm;
-  background-color: lighten($logobg, 35%);
-  background-image: url('../assets/img/jot-it.png');
-  background-position-y: 30%;
-  background-position-x: -19vw;
-  margin-bottom: 1vh;
-}
-.featured02--sm {
-  @extend .featured__bg--sm;
-  background-color: lighten($brightpurple, 10%);
-  background-image: url('../assets/img/east-end.png');
-  background-position-x: 72%;
-  background-position-y: 45%;
-  margin-bottom: 1vh;
-}
-.featured03--sm {
-  @extend .featured__bg--sm;
+  opacity: .9;
   background-color: lighten($burgundy, 10%);
   background-image: url('../assets/img/upenn.png');
-  background-position-y: -10vh;
-  background-position-x: 5vw;
-}
-.see-more__wrapper--sm {
-  width: 100vw;
-  font-size: 2em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 6vh;
-  a {
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-top: 2.5vw;
-    padding-bottom: 2.5vw;
-    border-radius: 2px;
-    border: 1.5px solid lighten($paleblue, 20%);
-    background-color: $paleblue;
-    color: white;
-    cursor: pointer;
-  }
-  a:hover {
-    background-color: lighten($paleblue, 10%);
+  background-position-y: -11vh;
+  background-position-x: 2vw;
+  @media screen and (max-device-width: 666px) { // small version
+    opacity: .85;
+    background-repeat: no-repeat;
+    background-size: 70vh;
+    height: 27vh;
+    top: -7vh;
+    padding: 10vh;
+    text-align: justify;
+    background-color: lighten($burgundy, 10%);
+    background-image: url('../assets/img/upenn.png');
+    background-position-y: -10vh;
+    background-position-x: 5vw;
   }
 }
 .see-more__wrapper {
@@ -174,5 +182,26 @@
   }
   a:hover {
     background-color: lighten($paleblue, 10%);
+  }
+  @media screen and (max-device-width: 666px) { // small version
+    width: 100vw;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6vh;
+    a {
+      padding-left: 20vw;
+      padding-right: 20vw;
+      padding-top: 2.5vw;
+      padding-bottom: 2.5vw;
+      border-radius: 2px;
+      border: 1.5px solid lighten($paleblue, 20%);
+      background-color: $paleblue;
+      color: white;
+      cursor: pointer;
+    }
+    a:hover {
+      background-color: lighten($paleblue, 10%);
+    }
   }
 }

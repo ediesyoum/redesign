@@ -12,11 +12,11 @@ export default class Preview extends Component {
 
   render() {
     return (
-        <div className={this.projectFeatureLinkClassName}>
-          <Link to={this.route}>
-            <FaAngleDoubleRight />
-          </Link>
-        </div>
+        <Link to={this.route}>
+          <div className={this.projectFeatureLinkClassName}>
+              <FaAngleDoubleRight />
+          </div>
+        </Link>
     );
   }
 }

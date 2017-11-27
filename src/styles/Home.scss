@@ -33,6 +33,10 @@
     font-size: .9em;
   }
 }
+.wobble {
+  max-width: 15vw;
+  animation-duration: 1.9s !important; //needed to override default animation duration
+}
 .waving-hand {
   font-size: .8em;
   position: relative;
@@ -83,7 +87,7 @@
   padding-top: 3vh;
   padding-bottom: 1vh;
   text-transform: uppercase;
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 666px) {
     font-size: 3vh;
     padding-top: 2vh;
     min-width: 50vw;
@@ -110,8 +114,4 @@
   100% {
     opacity: 0;
   }
-}
-.wobble {
-  max-width: 15vw;
-  animation-duration: 1.9s !important; //needed to override default animation duration
 }
