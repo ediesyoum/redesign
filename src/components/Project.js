@@ -6,7 +6,6 @@ import "animate.css/animate.min.css";
 import ProjectNavigationLink from './ProjectNavigationLink';
 import ScrollAnimation from 'react-animate-on-scroll';
 import findImage from '../utils/FindImage';
-import MediaQuery from 'react-responsive';
 
 export default class Project extends Component {
   get headerClassName() {

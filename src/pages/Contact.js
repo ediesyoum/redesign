@@ -3,7 +3,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import Parallax from 'react-springy-parallax';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ContactCard from '../components/ContactCard';
-import MediaQuery from 'react-responsive';
 
 export default class Contact extends Component {
   render() {
