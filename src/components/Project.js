@@ -166,10 +166,8 @@ export default class Project extends Component {
               <img className={this.headerClassNameSM} alt=""/>
             </Parallax.Layer>
 
-              <Parallax.Layer offset={.5} speed={.1} style={{ backgroundColor: '#FECC52' }} />
-              <Parallax.Layer offset={1.3} speed={.1} style={{ backgroundColor: '#805E73' }} />
+              <Parallax.Layer offset={.5} speed={.1} style={{ backgroundColor: '#f9ffc3', height: 2000 }} />
               <Parallax.Layer offset={2} speed={.1} style={{ backgroundColor: '#87BCDE' }} />
-              <Parallax.Layer offset={3} speed={.1} style={{ backgroundColor: '#6b1586' }} />
 
               <div className="project__header">
                 <div className="project__header--title-sm">

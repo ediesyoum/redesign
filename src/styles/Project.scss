@@ -21,7 +21,7 @@
 }
 .project__header--title-sm {
   font-family: 'kayak_sans-regular_italic', sans-serif;
-  top: 41.5vh;
+  top: 40.75vh;
   color: #333332;
   position: relative;
   font-size: 9.8vh;
@@ -129,7 +129,7 @@
 .project-image--desktop {
   width: 61vh;
   max-width: 67vh;
-  left: -7vw;
+  left: -3vw;
   top: -4vh;
   box-shadow: 0px 20px 100px $brown;
   border-radius: 2px;
@@ -184,7 +184,6 @@
   -webkit-box-shadow: 0px 20px 100px #333332;
   box-shadow: 0px 20px 100px #333332;
   border-radius: 2px;
-  left: 6vw;
   top: -28vh;
   margin-bottom: -26vh;
   position: relative;
@@ -199,12 +198,11 @@
   height: 7vh !important; //needed to override springy parallax height
 }
 .project__header--bg--sm {
-  min-width: 104vw;
-  min-height: 70vh;
-  max-height: 50vh;
+  min-width: 124vh;
+  min-height: 90vh;
   background-repeat: no-repeat;
   position: relative;
-  background-position-x: -20vw;
+  background-position-x: -8vw;
   background-position-y: 20vh;
   z-index: 1;
   background-size: 85vh;
@@ -232,36 +230,37 @@
 }
 .jot-it__header {
   background-image: url('../assets/img/bgmoreshapes.svg');
-  background-size: 76vw;
+  background-size: 77vh;
 }
 .csm__header {
   background-image: url('../assets/img/bgshapes00.svg');
-  background-size: 76vw;
+  background-size: 77vh;
 }
 .east-end__header {
   background-image: url('../assets/img/bgshapes06.svg');
-  background-size: 76vw;
+  background-size: 77vh;
 }
 .economy__header {
   background-image: url('../assets/img/bgshapes02.svg');
-  background-size: 76vw;
+  background-size: 77vh;
 }
 .portfolio-old__header {
   background-image: url('../assets/img/bgshapes05.svg');
-  background-size: 66vw;
+  background-size: 85vh;
 }
 .tic-tac-toe__header {
   background-image: url('../assets/img/bgshapes04.svg');
-  background-size: 76vw;
+  background-size: 77vh;
 }
 .portfolio-current__header {
   background-image: url('../assets/img/bgshapes01.svg');
-  background-size: 76vw;
+  background-size: 77vh;
 }
 .upenn__header {
   background-image: url('../assets/img/bgshapes03.svg');
-  background-size: 55vh;
-  top: 18vh;
+  background-size: 77vh;
+  padding-bottom: 10vh;
+  top: -10vh;
 }
 .project__summary--jot-it {
   background-image: url('../assets/img/jot-it.png');
