@@ -3,11 +3,11 @@
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: .4em;
+  font-size: 1em;
   max-width: 25vh;
   letter-spacing: .15vh;
   padding-right: 2vh;
-  top: -10vh;
+  //top: -10vh;
   padding-left: 2vh;
   border-radius: 2vh;
   position: relative;
@@ -22,12 +22,10 @@ ul, li {
   list-style-type: none;
   position: relative;
 }
-.project__tag--wrapper {
+.project__tags ul {
   position: relative;
-  line-height: 2vh;
-  top: 0vh;
-  width: 60vw;
-  margin-bottom: 40vh;
+  line-height: 4vh;
+  width: 80vw;
 }
 .clip-text {
   font-size: 5vh;

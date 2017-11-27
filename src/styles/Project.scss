@@ -29,27 +29,48 @@
   min-width: 100%;
 }
 .project__summary {
-  font-size: 2.5em;
   color: #333332;
-  line-height: 7.5vh;
   text-align: justify;
-  width: 100vw;
+  //width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  //justify-content: center;
   top: 35vh;
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  margin-bottom: 35vh;
+  margin-bottom: 40vh;
   background-repeat: no-repeat;
   background-position-x: 55vw;
+
+  h3 {
+    left: 3vh;
+  }
+
+  p {
+    line-height: 4vh;
+    font-size: 2em;
+    padding-left: 1vw;
+  }
+
+  @media screen and (max-device-width: 666px) {
+    max-width: 60vh;
+    position: relative;
+  }
 }
 .project__technical {
-  margin-bottom: 60vh;
-  max-width: 60vw;
-  margin-top: 1vh;
-  text-align: justify;
+  @media screen and (min-device-width: 667px) {
+    margin-bottom: 60vh;
+    max-width: 60vw;
+    margin-top: 1vh;
+    text-align: justify;
+  }
+
+  p {
+    line-height: 4vh;
+    font-size: 2em;
+    padding-left: 1vw;
+  }
 }
 .project__graphic {
   width: 90%;
@@ -107,34 +128,24 @@
   visibility: visible;
   font-size: 1.5em;
 }
-.project-section-title__background--sm {
+.project__subtitle {
   padding-top: 20vh;
   position: relative;
-  height: 8vh;
   padding: 1vh;
   text-align: right;
   border-radius: .5em;
-  color: white;
-  font-size: .6em;
+  font-size: 3em;
   text-transform: uppercase;
   font-family: 'kayak_sans-light_italic', sans-serif;
   line-height: .02vh;
   z-index: 2;
   visibility: visible;
+  width: 100%;
 }
 .project__description {
-  font-size: 0.9em;
-  width: 57vw;
-}
-.project-image--desktop {
-  width: 61vh;
-  max-width: 67vh;
-  left: -3vw;
-  top: -4vh;
-  box-shadow: 0px 20px 100px $brown;
-  border-radius: 2px;
-  margin-bottom: 7vh;
-  position: relative;
+  font-size: 2em;
+  text-align: justify;
+  padding: 1vh;
 }
 .project__navigation {
   top: 14vh;
@@ -188,8 +199,18 @@
   margin-bottom: -26vh;
   position: relative;
 }
+.project-image--desktop {
+  width: 61vh;
+  max-width: 67vh;
+  left: -3vw;
+  top: -4vh;
+  box-shadow: 0px 20px 100px $brown;
+  border-radius: 2px;
+  margin-bottom: 7vh;
+  position: relative;
+}
 .project__links {
-  margin-top: -14vh;
+  //margin-top: -14vh;
 }
 .project__header--wrapper {
   position: relative !important; //needed to override springy parallax positioning
@@ -285,8 +306,4 @@
 }
 .project__summary--csm {
   background-image: url('../assets/img/csm.png');
-}
-.project__summary--wrapper {
-  max-width: 60vh;
-  position: relative;
 }
