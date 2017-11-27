@@ -4,7 +4,7 @@ import Parallax from 'react-springy-parallax';
 import Preview from '../components/Preview';
 import Projects from '../projects.json';
 import FaChevronCircleDown from 'react-icons/lib/fa/chevron-circle-down';
-import ContactCard from '../components/ContactCard'
+import ContactCard from '../components/ContactCard';
 import MediaQuery from 'react-responsive';
 import ScrollAnimation from 'react-animate-on-scroll';
 import BracketGradient from '../assets/img/bracketgradient.svg';
@@ -60,7 +60,7 @@ export default class Home extends Component {
 
               <section className="featured">
                 <div className={'featured-projects'}>
-                  <p>Featured Projects</p>
+                  <p>see featured projects</p>
                   <Parallax.Layer style={{height: 200}} onClick={() => this.refs.parallax.scrollTo(.98)}>
                     <FaChevronCircleDown className="chevron-down"/>
                   </Parallax.Layer>

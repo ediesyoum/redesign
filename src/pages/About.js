@@ -21,7 +21,7 @@ export default class About extends Component {
             <MediaQuery query="(max-device-width: 666px)">
               <Parallax ref="parallax" className={'page__wrapper'}>
                 <section className="page__header">
-                  <h1 className="page__header--title--sm">About</h1>
+                  <h1 className="page__header--title">About</h1>
                 </section>
                   <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
                   <img src={Eyes} className="about__img--sm" alt="Eden Syoum"/>

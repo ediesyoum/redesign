@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Parallax from 'react-springy-parallax';
 import ScrollAnimation from 'react-animate-on-scroll';
+import ContactCard from '../components/ContactCard';
 import MediaQuery from 'react-responsive';
 
 export default class Contact extends Component {
@@ -15,6 +16,9 @@ export default class Contact extends Component {
               </section>
                 <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
               <section>
+                <section className="contact-card__wrapper--sm">
+                  <ContactCard/>
+                </section>
                 <form method="POST" className="contact-form" action="http://formspree.io/me@edencod.es">
                   <div>
                     <input type="name" name="name" className="contact-form__field" placeholder="Your name"></input>
@@ -56,6 +60,9 @@ export default class Contact extends Component {
                 <h1 className="page__header--title">contact</h1>
               </section>
               <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
+                <section className="contact-wrapper">
+                  <ContactCard/>
+                </section>
               <section>
                 <form method="POST" className="contact-form" action="http://formspree.io/me@edencod.es">
                   <div>

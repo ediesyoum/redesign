@@ -48,7 +48,7 @@ export default class Work extends Component {
             <Parallax ref="parallax" className={'page__wrapper'} speed={.5}>
               <div className="page__header">
                 <h1 className="page__header--title">
-                  Featured Projects
+                  Projects
                 </h1>
               </div>
               <ScrollAnimation

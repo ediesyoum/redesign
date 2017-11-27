@@ -25,10 +25,15 @@
     color: $teal;
   }
 }
+.contact-wrapper {
+  top: -10vh;
+  position: relative;
+  margin-bottom: -13vh;
+}
 .contact-form {
   margin: 0 auto;
   position: relative;
-  width: 55vh;
+  width: 50vh;
 }
 .contact-form__field {
   font-family: 'kayak_sans-light', serif;
