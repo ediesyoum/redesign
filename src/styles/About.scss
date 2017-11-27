@@ -3,7 +3,7 @@
   max-width: 62vw;
   display: flex;
   width: 100vw;
-  top: -35vh;
+  top: 30vh;
 }
 .about__content__wrapper--sm {
   position: relative;
@@ -15,8 +15,10 @@
   top: -14vh;
 }
 .about__content {
+  position: relative;
   font-size: 2em;
   color: $brown;
+  max-width: 50vw;
   padding: 2em;
   text-align: justify;
 }
@@ -34,14 +36,15 @@
 }
 .about__img {
   border: #d8d7bf 12px solid;
-  height: 60vh;
-  left: 65vw;
-  top: 11vh;
-  right: 20vh;
+  // height: 60vh;
+  width: 23vw;
+  top: -1vh;
   position: relative;
   border-radius: 2px;
   opacity: 0.85;
-  padding: 2em;
+  padding: 2vh;
+  max-height: 50vh;
+  left: 20%;
 }
 .about__img--sm {
   height: 45vh;
