@@ -4,7 +4,7 @@ import Projects from '../projects.json';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Parallax from 'react-springy-parallax';
 import ScrollAnimation from 'react-animate-on-scroll';
-import MediaQuery from 'react-responsive';
+
 import Tilt from 'react-tilt';
 
 export default class Work extends Component {
@@ -44,75 +44,38 @@ export default class Work extends Component {
   render() {
     return (
         <div>
-          <MediaQuery query="(max-device-width: 666px)">
-            <Parallax ref="parallax" className={'page__wrapper'} speed={.5}>
-              <div className="page__header">
-                <h1 className="page__header--title">
-                  Projects
-                </h1>
+          <Parallax ref="parallax" pages={-1} className={'page__wrapper'} speed={.5}>
+            <div className="page__header">
+              <h1 className="page__header--title">
+                Featured Projects
+              </h1>
+            </div>
+            <ScrollAnimation
+              animateIn="bounceInUp"
+              offset={30000}
+              animateOut="bounceInUp"
+              duration={1.1}>
+              <div className="flex-wrapper-lg">
+                {this.projects}
               </div>
-              <ScrollAnimation
-                animateIn="bounceInUp"
-                offset={30000}
-                animateOut="bounceInUp"
-                duration={'7s'}>
-                <div className="flex-wrapper-sm">
-                  {this.projects}
-                </div>
-              </ScrollAnimation>
-              <section className="footer">
-                <Grid fluid>
-                  <Row>
-                    <Col xs="start">
-                      <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
-                    </Col>
-                    <Col xs="end">
-                      <Parallax.Layer
-                        style={{ height: 30 }}
-                        onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up--sm" role="img" aria-label="Top Of Page">☝️</span>
-                      </Parallax.Layer>
-                    </Col>
-                  </Row>
-                </Grid>
-              </section>
-            </Parallax>
-          </MediaQuery>
-
-          <MediaQuery query="(min-device-width: 667px)">
-            <Parallax ref="parallax" className={'page__wrapper'} speed={.5}>
-              <div className="page__header">
-                <h1 className="page__header--title">
-                  Featured Projects
-                </h1>
-              </div>
-              <ScrollAnimation
-                animateIn="bounceInUp"
-                offset={30000}
-                animateOut="bounceInUp"
-                duration={'7s'}>
-                <div className="flex-wrapper-lg">
-                  {this.projects}
-                </div>
-              </ScrollAnimation>
-              <section className="footer">
-                <Grid fluid>
-                  <Row>
-                    <Col xs="start">
-                      <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
-                    </Col>
-                    <Col xs="end">
-                      <Parallax.Layer
-                        style={{ height: 30 }}
-                        onClick={() => this.refs.parallax.scrollTo(0)}>
+            </ScrollAnimation>
+            <footer className="footer">
+              <Grid fluid>
+                <Row>
+                  <Col start="xs">
+                    <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                  </Col>
+                  <Col end="xs">
+                    <Parallax.Layer
+                      style={{ height: 30 }}
+                      onClick={() => this.refs.parallax.scrollTo(0)}>
                         <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
-                      </Parallax.Layer>
-                    </Col>
-                  </Row>
-                </Grid>
-              </section>
-            </Parallax>
-          </MediaQuery>
+                    </Parallax.Layer>
+                  </Col>
+                </Row>
+              </Grid>
+            </footer>
+          </Parallax>
         </div>
     );
   }

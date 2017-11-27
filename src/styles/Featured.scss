@@ -9,7 +9,7 @@
   min-width: 100%;
   height: 100% !important;
   margin-bottom: 54vh;
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 768px) { // small version
     // top: 51vh;
     position: relative;
     width: 100vw;
@@ -25,7 +25,7 @@
   position: relative;
   color: $brown;
   margin-bottom: 1vh;
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 768px) { // small version
     height: 28vh; //needed to override spring parallax styles
     font-size: 2em;
     color: $brown;
@@ -51,7 +51,7 @@
 .featured-preview-wrapper {
   top: 0vh;
   position: relative;
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 768px) { // small version
     top: 1vh;
     margin-top: -24vh;
     min-width: 100%;
@@ -62,10 +62,8 @@
   text-align: right;
   padding-right: 8vh;
   font-size: 11em;
-  a {
   color: white;
-  }
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 768px) { // small version
     text-align: center;
     height: 37vh;
     // top: -45vh;
@@ -90,7 +88,7 @@
   background-position-y: -7vh;
   background-position-x: 2vw;
   margin-bottom: 1vh;
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 768px) { // small version
     opacity: .85;
     background-repeat: no-repeat;
     background-size: 70vh;
@@ -118,7 +116,7 @@
   background-position-y: 45%;
   background-position-x: 8vw;
   margin-bottom: 1vh;
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 768px) { // small version
     opacity: .85;
     background-repeat: no-repeat;
     background-size: 70vh;
@@ -145,7 +143,7 @@
   background-image: url('../assets/img/upenn.png');
   background-position-y: -11vh;
   background-position-x: 2vw;
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 768px) { // small version
     opacity: .85;
     background-repeat: no-repeat;
     background-size: 70vh;
@@ -183,7 +181,7 @@
   a:hover {
     background-color: lighten($paleblue, 10%);
   }
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 768px) { // small version
     width: 100vw;
     font-size: 2em;
     text-transform: uppercase;

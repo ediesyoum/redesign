@@ -72,7 +72,7 @@ export default class Project extends Component {
                 <div className="project__summary">
                   <Grid fluid>
                     <Row>
-                      <Col center="xs">
+                      <Col xs="center">
                         <h3 className="project-section-title__background">Project Description</h3>
                         <div><p className="project__description">{this.props.summary}</p></div>
                       </Col>
@@ -143,10 +143,10 @@ export default class Project extends Component {
               <section className="footer">
                 <Grid fluid>
                   <Row>
-                    <Col xs="start">
+                    <Col start="xs">
                       <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
                     </Col>
-                    <Col xs="end">
+                    <Col end="xs">
                       <Parallax.Layer
                         style={{ height: 30 }}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
