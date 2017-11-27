@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
 import Parallax from 'react-springy-parallax';
 import ProjectLinks from './ProjectLinks';
 import { Grid, Row, Col } from 'react-flexbox-grid';
@@ -43,15 +44,15 @@ export default class Project extends Component {
   render() {
     return(
         <div className="project">
-          <Parallax ref="parallax" className={'project__wrapper'}>
+          <Parallax ref="parallax" pages={-1} className={'project__wrapper'}>
 
             <Parallax.Layer className="project__header--wrapper">
               <img className={this.headerClassName} alt=""/>
             </Parallax.Layer>
 
             <Parallax.Layer offset={.5} speed={.1} style={{ height: 1600, backgroundColor: '#f9ffc3' }} />
-            <Parallax.Layer offset={1.8} speed={.1} style={{ height: 1600, backgroundColor: '#805E73' }} />
-            <Parallax.Layer offset={2.9} speed={.1} style={{ height: 1200, backgroundColor: '#ED8712' }} />
+            <Parallax.Layer offset={2.5} speed={.1} style={{ height: 1200, backgroundColor: '#D7FFF6' }} />
+            <Parallax.Layer offset={3.8} speed={.1} style={{ height: 2000, backgroundColor: '#FFF2CD' }} />
 
             <div className="project__header">
               <div className="project__header--title">
@@ -67,7 +68,7 @@ export default class Project extends Component {
               <div className="project__summary">
                 <Grid fluid>
                   <Row>
-                    <Col xs="center">
+                    <Col xs>
                       <h3 className="project-section-title__background">Project Description</h3>
                       <div><p className="project__description">{this.props.summary}</p></div>
                     </Col>
@@ -77,18 +78,27 @@ export default class Project extends Component {
                 <div className="slanted-bg"/>
 
                 <Grid fluid>
-                  <Row>
-                    <Col xsOffset={2} xs={6}>
+                  <MediaQuery query="(min-device-width: 667px)">
+                    <Row>
+                      <Col xsOffset={2} xs={6}>
+                        <div className="image--perspective">
+                          <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
+                        </div>
+                      </Col>
+                      <Col xsOffset={6} xs={6}>
+                        <div className="image--perspective">
+                          <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
+                        </div>
+                      </Col>
+                    </Row>
+                  </MediaQuery>
+                  <MediaQuery query="(max-device-width: 666px)">
+                    <Row>
                       <div className="image--perspective">
                         <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
                       </div>
-                    </Col>
-                    <Col xsOffset={6} xs={6}>
-                      <div className="image--perspective">
-                        <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
-                      </div>
-                    </Col>
-                  </Row>
+                    </Row>
+                  </MediaQuery>
                   <Row>
                     <h3 className="project-section-title__background">Technical Details</h3>
                     <div className="project__technical">
@@ -100,7 +110,7 @@ export default class Project extends Component {
                       <img src={this.projectGraphic} className="project__graphic" alt=""/>
                     </div>
                   </Row>
-                  <Row center="xs">
+                  <Row>
                     <div className="project__tag--wrapper">
                       <section className="project__tags">
                         {this.tags}
@@ -113,13 +123,14 @@ export default class Project extends Component {
 
             <div className="slanted-bg"/>
 
+          <MediaQuery query="(min-device-width: 667px)">
             <section className="project__links">
               <Grid fluid>
                 <Row>
-                  <Col xsOffSet={0} xs={3}>
+                  <Col start="xs" xs={3}>
                     <ProjectLinks links={this.props.links} />
                   </Col>
-                  <Col end="end">
+                  <Col end="xs">
                     <div className="image--perspective">
                       <img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} alt={`${this.props.id} Tablet Project`} title={`${this.props.id} Tablet Project`}/>
                     </div>
@@ -127,6 +138,20 @@ export default class Project extends Component {
                 </Row>
               </Grid>
             </section>
+          </MediaQuery>
+
+          <MediaQuery query="(max-device-width: 666px)">
+            <Grid fluid>
+              <div className="image--perspective">
+                <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
+              </div>
+              <Row center="xs">
+                <ProjectLinks links={this.props.links} />
+              </Row>
+            </Grid>
+
+
+          </MediaQuery>
 
             <nav className="project__navigation">
               <ProjectNavigationLink id={this.props.id} rel="previous" />

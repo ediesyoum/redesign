@@ -4,6 +4,10 @@
   text-align: center;
   perspective: 600px;
   perspective-origin: 25% 75%;
+  @media screen and (max-device-width: 666px) {
+    max-width: 80vh;
+
+  }
 }
 .project__header {
   height: 22vh;
@@ -30,7 +34,7 @@
 .project__summary {
   color: #333332;
   text-align: justify;
-  //width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-wrap: wrap;
   //justify-content: center;
@@ -41,9 +45,6 @@
   margin-bottom: 40vh;
   background-repeat: no-repeat;
   background-position-x: 55vw;
-  h3 {
-    left: 3vh;
-  }
   p {
     line-height: 4vh;
     font-size: 2em;
@@ -51,6 +52,10 @@
   }
   @media screen and (max-device-width: 666px) {
     max-width: 60vh;
+    position: relative;
+  }
+  p {
+    max-width: 57vh;
     position: relative;
   }
 }
@@ -67,6 +72,16 @@
     text-align: justify;
     font-size: 2em;
     padding-left: 1vw;
+  }
+  @media screen and (max-device-width: 666px) {
+    margin-bottom: 50vh;
+    max-width: 85vw;
+    font-size: 2em;
+    top: 2vh;
+    left: 2vh;
+    position: relative;
+    margin-top: 1vh;
+    text-align: justify;
   }
 }
 .project__graphic {
@@ -114,6 +129,9 @@
   z-index: 2;
   visibility: visible;
   font-size: 1.5em;
+  @media screen and (max-device-width: 666px) {
+    font-size: 2.5em;
+  }
 }
 .project__subtitle {
   padding-top: 20vh;
@@ -158,13 +176,19 @@
     }
   }
 }
+.project__tag--wrapper {
+  @media screen and (max-device-width: 666px) {
+    max-width: 80%;
+    position: relative;
+  }
+}
 .slanted-bg {
   min-width: 500vh;
   top: 10vh;
   min-height: 50vh;
   max-height: 80vh;
   position: relative;
-  background-color: darken($purple, 2%);
+  background-color: #FCBD82;
   z-index: 0;
   right: 35vh;
   transform: skewY(-2deg);
@@ -195,9 +219,15 @@
   border-radius: 2px;
   margin-bottom: 7vh;
   position: relative;
+  @media screen and (max-device-width: 666px) {
+    left: 2vh;
+    top: 6vh;
+    max-width: 57vh;
+    margin-bottom: 20vh;
+  }
 }
 .project__links {
-  //margin-top: -14vh;
+  margin-top: -14vh;
 }
 .project__header--wrapper {
   position: relative !important; //needed to override springy parallax positioning
