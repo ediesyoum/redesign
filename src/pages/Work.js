@@ -55,7 +55,7 @@ export default class Work extends Component {
               offset={30000}
               animateOut="bounceInUp"
               duration={1.1}>
-              <div className="flex-wrapper-lg">
+              <div className="flex-wrapper">
                 {this.projects}
               </div>
             </ScrollAnimation>
@@ -63,7 +63,7 @@ export default class Work extends Component {
               <Grid fluid>
                 <Row>
                   <Col start="xs">
-                    <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                    <p>Built with <span className="hearts" role="img" aria-label="Love">❤️</span> by Eden Syoum</p>
                   </Col>
                   <Col end="xs">
                     <Parallax.Layer

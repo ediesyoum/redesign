@@ -25,9 +25,8 @@
   position: relative;
   text-transform: lowercase;
   @media screen and (max-device-width: 666px) {
-    font-family: 'womby', sans-serif;
     top: 8vh;
-    font-size: 5em;
+    font-size: 2em;
     right: 5vw;
     color: lighten($logobg, 10%);
     position: relative;
@@ -83,7 +82,7 @@
   align-items: center;
   flex-wrap: wrap;
   flex-basis: 20%;
-  @media screen and (max-device-width: 666px) { 
+  @media screen and (max-device-width: 666px) {
     justify-content: space-around;
     align-items: center;
   }

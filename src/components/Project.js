@@ -47,7 +47,7 @@ export default class Project extends Component {
   render() {
     return(
         <div className="project">
-          <MediaQuery query="(min-device-width: 667px)">
+
             <Parallax ref="parallax" className={'project__wrapper'}>
 
               <Parallax.Layer className="project__header--wrapper">
@@ -67,7 +67,7 @@ export default class Project extends Component {
               <ScrollAnimation
                 animateIn="bounceInUp"
                 animateOut="bounceInUp"
-                duration={3}>
+                duration={1.1}>
 
                 <div className="project__summary">
                   <Grid fluid>
@@ -95,10 +95,10 @@ export default class Project extends Component {
                       </Col>
                     </Row>
                     <Row>
-                        <h3 className="project-section-title__background">Technical Details</h3>
-          <div className="project__technical">{this.props.technical}                        </div>
-
-
+                      <h3 className="project-section-title__background">Technical Details</h3>
+                      <div className="project__technical">
+                        {this.props.technical}
+                      </div>
                     </Row>
                     <Row center="xs">
                       <div className="image--perspective">
@@ -157,83 +157,7 @@ export default class Project extends Component {
                 </Grid>
               </section>
             </Parallax>
-          </MediaQuery>
-          <MediaQuery query="(max-device-width: 666px)">
-            <Parallax ref="parallax" className={'project__wrapper'}>
-              <Parallax.Layer className="project__header--wrapper" speed={.25}>
-              <img className={this.headerClassNameSM} alt=""/>
-            </Parallax.Layer>
-              <Parallax.Layer offset={.5} speed={.1} style={{ backgroundColor: '#f9ffc3', height: 2000 }} />
-              <Parallax.Layer offset={2} speed={.1} style={{ backgroundColor: '#87BCDE' }} />
 
-              <div className="project__header">
-              <div className="project__header--title-sm">
-                {this.props.name}
-              </div>
-            </div>
-
-              <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInUp">
-                <section className="project__summary">
-                  <h3 className="project__subtitle">
-                    Project Summary
-                  </h3>
-                  <p>
-                    {this.props.summary}
-                  </p>
-                </section>
-                <section className="project__desktop-screenshot">
-                  <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
-                </section>
-                <section className="project__technical">
-                  <h3 className="project__subtitle">
-                    Technical Details
-                  </h3>
-                  <p>
-                    {this.props.technical}
-                  </p>
-                </section>
-                <section className="project__links">
-                  <ProjectLinks links={this.props.links} />
-                </section>
-                <section className="project__screenshots">
-                  <div>
-                    <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
-                  </div>
-                  <div>
-                    <img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} alt={`${this.props.id} Tablet Project`} title={`${this.props.id} Tablet Project`}/>
-                  </div>
-                </section>
-                <section className="project__tags">
-                  <ul>
-                    {this.tags}
-                  </ul>
-                </section>
-                <section className="project__navigation">
-                  <nav>
-                    <ProjectNavigationLink id={this.props.id} rel="previous" />
-                    <ProjectNavigationLink id={this.props.id} rel="next" />
-                  </nav>
-                </section>
-              </ScrollAnimation>
-
-              <section className="footer">
-                <Grid fluid>
-                  <Row>
-                    <Col xs="start">
-                      <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
-                    </Col>
-                    <Col xs="end">
-                      <Parallax.Layer
-                        style={{ height: 30 }}
-                        onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up--sm" role="img" aria-label="Top Of Page">☝️</span>
-                      </Parallax.Layer>
-                    </Col>
-                  </Row>
-                </Grid>
-              </section>
-            </Parallax>
-          </MediaQuery>
       </div>
     );
   }

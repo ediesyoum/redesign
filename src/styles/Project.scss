@@ -18,15 +18,15 @@
   font-size: 15.8vh;
   text-transform: lowercase;
   left: 0vw;
-}
-.project__header--title-sm {
-  font-family: 'kayak_sans-regular_italic', sans-serif;
-  top: 40.75vh;
-  color: #333332;
-  position: relative;
-  font-size: 9.8vh;
-  text-transform: lowercase;
-  min-width: 100%;
+  @media screen and (max-device-width: 666px) {
+    font-family: 'kayak_sans-regular_italic', sans-serif;
+    top: 40.75vh;
+    color: #333332;
+    position: relative;
+    font-size: 9.8vh;
+    text-transform: lowercase;
+    min-width: 100%;
+  }
 }
 .project__summary {
   color: #333332;
@@ -42,17 +42,14 @@
   margin-bottom: 40vh;
   background-repeat: no-repeat;
   background-position-x: 55vw;
-
   h3 {
     left: 3vh;
   }
-
   p {
     line-height: 4vh;
     font-size: 2em;
     padding-left: 1vw;
   }
-
   @media screen and (max-device-width: 666px) {
     max-width: 60vh;
     position: relative;
@@ -68,7 +65,6 @@
     margin-top: 1vh;
     text-align: justify;
   }
-
   p {
     line-height: 4vh;
     text-align: justify;
@@ -110,16 +106,16 @@
     }
   }
 }
-.project-desc {
-  display: flex;
-  max-width: 70%;
-  position: relative;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-preferred-size: 0;
-}
+// .project-desc {
+//   display: flex;
+//   max-width: 70%;
+//   position: relative;
+//   flex-basis: 0;
+//   -webkit-box-flex: 1;
+//   -ms-flex-positive: 1;
+//   flex-grow: 1;
+//   -ms-flex-preferred-size: 0;
+// }
 .project-section-title__background {
   position: relative;
   padding: 1vh;
@@ -222,18 +218,6 @@
   left: -1vh;
   height: 7vh !important; //needed to override springy parallax height
 }
-.project__header--bg--sm {
-  min-width: 124vh;
-  min-height: 90vh;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position-x: -8vw;
-  background-position-y: 20vh;
-  z-index: 1;
-  background-size: 85vh;
-  background-color: rgba(255, 255, 255, 0.9);
-  top: 0vh;
-}
 .project__header--bg {
   min-width: 104vw;
   min-height: 70vh;
@@ -245,6 +229,18 @@
   background-size: 125vh;
   background-color: lighten($teal, 60%);
   top: 0vh;
+  @media screen and (max-device-width: 666px) {
+    min-width: 124vh;
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x: -8vw;
+    background-position-y: 20vh;
+    z-index: 1;
+    background-size: 85vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0vh;
+  }
 }
 .image--perspective {
   transform: perspective(3000px) rotateY(12deg);
