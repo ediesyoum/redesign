@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax';
-import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 import Eyes from '../assets/img/eyes.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Grid, Col, Row } from 'react-flexbox-grid';
 import 'animate.css/animate.min.css';
+import MediaQuery from 'react-responsive';
 
 export default class About extends Component {
   seeBackground(event) {
@@ -17,9 +17,6 @@ export default class About extends Component {
   render() {
     return (
           <div>
-
-
-
               <Parallax ref="parallax" pages={-1} className={'page__wrapper'} speed={.5}>
                 <header className="page__header">
                   <h1 className="page__header--title">About</h1>
