@@ -114,6 +114,7 @@
   "portfolio-old": {
     "name": "Edensyoum.com",
     "summary": "This was a very simple portfolio design that I created in the summer of 2016. I wanted to feature select projects and to make the site look great and scroll nicely on mobile, so I implemented the design using the jQuery plugin Fullpage.js as a responsive mobile-first framework. \nI wanted to fully exercise my creativity with the color palette, font choices and user interactions, and most importantly, I wanted to force a logical single page flow with smooth mobile scrolling and the enabled use of arrow keys to navigate the site.",
+    "technical": "I designed and coded the front end of this site using HTML, CSS and FullPage.js for site interactions. I also created all graphics and branding using Adobe Photoshop and Illustrator. It is important to note that I have switched entirely to Sketch App for my mockup and simple graphic design needs, and have never looked back.",
 		"links": {
       "live": "http://www.edensyoum.com/",
       "gh": "https://github.com/ediesyoum/ediesyoum.github.io"
@@ -126,12 +127,14 @@
       "Graphic Design",
       "CSS",
       "SPA",
+      "Branding",
       "User Experience Design"
     ]
   },
   "upenn": {
     "name": "UPenn Labs",
-    "summary": "In the Fall of 2014 I was commissioned to work on five UPenn laboratory sites in the School of Arts and Sciences (SAS) while I also provided user support to the labs themselves, to their grad student and post-doc assistants and their Principal Investigators (PIs), or lead Professors.\nDuring my time there I got to know each of these labs very well – to the point of making friends in each lab and sitting with them to look at cool things they were working on, like examining female Drosophila eggs through their microscopes. I spent my days designing and coding the look and feel of their lab websites, and I would also walk around and set up things like FTP for them, or onboard new users and create their user and computer accounts on the server, or troubleshoot lab computers. I considered myself lucky to have the opportunity to walk down the halls and discover more about what these extremely intelligent people were doing for the greater good through their research.\nThis became one of the most rewarding projects that I completed during my time doing IT at UPenn - I deeply enjoyed consulting and learning more about each lab and their contributions to society, while using empathy to brainstorm ways to elegantly display their research data and make it more easily accessible for researchers at other universities and for the greater good via the Internet.",
+    "summary": "In the Fall of 2014 I was commissioned to work on five UPenn laboratory sites in the School of Arts and Sciences (SAS) while I also provided user support to the labs themselves, to their grad student and post-doc assistants and their Principal Investigators (PIs), or lead Professors.\nDuring my time there I got to know each of these labs very well – to the point of making friends in each lab and sitting with them to look at cool things they were working on, like examining female Drosophila eggs through their microscopes.",
+    "technical": "I was responsible for designing and coding the look and feel of their lab websites, and I would also walk around and set up things like FTP for them, or onboard new users and create their user and computer accounts on the server, or troubleshoot lab computers. I considered myself lucky to have the opportunity to walk down the halls and discover more about what these extremely intelligent people were doing for the greater good through their research.\nThis became one of the most rewarding projects that I completed during my time doing IT at UPenn - I deeply enjoyed consulting and learning more about each lab and their contributions to society, while using empathy to brainstorm ways to elegantly display their research data and make it more easily accessible for researchers at other universities and for the greater good via the Internet.",
     "tags": [
       "User Support",
       "User Research",

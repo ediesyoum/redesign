@@ -1,18 +1,17 @@
 .project__tag {
-  background-image: linear-gradient(to bottom, #734b6d, #42275a);
-  color: white;
+  background-color: #f7fcc0;
+  color: #d60000;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1em;
   max-width: 25vh;
   letter-spacing: .15vh;
   padding-right: 2vh;
-  //top: -10vh;
   padding-left: 2vh;
-  border-radius: 2vh;
+  border-radius: 2px;
   position: relative;
   margin-right: 1vh;
-  border: .5px solid $linkbg;
+  border: 1px solid #2b1763;
   justify-content: center;
   height: 2.7vh;
   display: inline-flex;
@@ -26,6 +25,7 @@ ul, li {
   position: relative;
   line-height: 4vh;
   width: 80vw;
+  text-align: justify;
 }
 .clip-text {
   font-size: 5vh;

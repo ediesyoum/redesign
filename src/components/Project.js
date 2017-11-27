@@ -67,7 +67,7 @@ export default class Project extends Component {
               <ScrollAnimation
                 animateIn="bounceInUp"
                 animateOut="bounceInUp"
-                duration={'3s'}>
+                duration={3}>
 
                 <div className="project__summary">
                   <Grid fluid>
@@ -94,13 +94,11 @@ export default class Project extends Component {
                         </div>
                       </Col>
                     </Row>
-                    <Row center="xs">
-                      <div className="project__technical">
+                    <Row>
                         <h3 className="project-section-title__background">Technical Details</h3>
-                        <p>
-                          {this.props.technical}
-                        </p>
-                      </div>
+          <div className="project__technical">{this.props.technical}                        </div>
+
+
                     </Row>
                     <Row center="xs">
                       <div className="image--perspective">
@@ -123,11 +121,11 @@ export default class Project extends Component {
               <section className="project__links">
                 <Grid fluid>
                   <Row>
-                    <Col xsoffSet={0} xs={3}>
+                    <Col xsOffSet={0} xs={3}>
                       <ProjectLinks links={this.props.links} />
                     </Col>
 
-                    <Col xs="end">
+                    <Col end="end">
                       <div className="image--perspective">
                         <img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} alt={`${this.props.id} Tablet Project`} title={`${this.props.id} Tablet Project`}/>
                       </div>
@@ -174,7 +172,7 @@ export default class Project extends Component {
               </div>
             </div>
 
-              <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInUp" duration={'3s'}>
+              <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInUp">
                 <section className="project__summary">
                   <h3 className="project__subtitle">
                     Project Summary
