@@ -19,7 +19,6 @@
   text-transform: lowercase;
   left: 0vw;
   @media screen and (max-device-width: 666px) {
-    font-family: 'kayak_sans-regular_italic', sans-serif;
     top: 40.75vh;
     color: #333332;
     position: relative;
@@ -56,15 +55,13 @@
   }
 }
 .project__technical {
-  @media screen and (min-device-width: 667px) {
-    margin-bottom: 90vh;
-    max-width: 60vw;
-    font-size: 1.5em;
-    top: 8vh;
-    position: relative;
-    margin-top: 1vh;
-    text-align: justify;
-  }
+  margin-bottom: 90vh;
+  max-width: 60vw;
+  font-size: 1.5em;
+  top: 8vh;
+  position: relative;
+  margin-top: 1vh;
+  text-align: justify;
   p {
     line-height: 4vh;
     text-align: justify;

@@ -9,61 +9,15 @@ export default class Contact extends Component {
   render() {
     return (
         <div>
-          <MediaQuery query="(max-device-width: 666px)">
-            <Parallax ref="parallax" className={'page__wrapper'}>
+            <Parallax ref="parallax" pages={-1} className={'page__wrapper'}>
               <section className="page__header">
                 <h1 className="page__header--title">contact</h1>
               </section>
-                <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
+                <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={1.1}>
               <section>
-                <section className="contact-card__wrapper--sm">
-                  <ContactCard/>
-                </section>
-                <form method="POST" className="contact-form" action="http://formspree.io/me@edencod.es">
-                  <div>
-                    <input type="name" name="name" className="contact-form__field" placeholder="Your name"></input>
-                  </div>
-                  <div>
-                    <input type="email" name="email" className="contact-form__field" placeholder="Your email"></input>
-                  </div>
-                  <div>
-                    <textarea name="message" className="contact-form__field contact-form__field--message" placeholder="Your message"></textarea>
-                  </div>
-                  <div>
-                    <button type="submit" className="contact-form__field contact-form__button">Send</button>
-                  </div>
-                </form>
-              </section>
-              <section className="footer">
-                <Grid fluid>
-                  <Row>
-                    <Col xs="start">
-                      <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
-                    </Col>
-                    <Col xs="end">
-                      <Parallax.Layer
-                        style={{ height: 30 }}
-                        onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up--sm" role="img" aria-label="Top Of Page">☝️</span>
-                      </Parallax.Layer>
-                    </Col>
-                  </Row>
-                </Grid>
-              </section>
-            </ScrollAnimation>
-            </Parallax>
-          </MediaQuery>
-
-          <MediaQuery query="(min-device-width: 667px)">
-            <Parallax ref="parallax" className={'page__wrapper'}>
-              <section className="page__header">
-                <h1 className="page__header--title">contact</h1>
-              </section>
-              <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={'7s'}>
                 <section className="contact-wrapper">
                   <ContactCard/>
                 </section>
-              <section>
                 <form method="POST" className="contact-form" action="http://formspree.io/me@edencod.es">
                   <div>
                     <input type="name" name="name" className="contact-form__field" placeholder="Your name"></input>
@@ -82,10 +36,10 @@ export default class Contact extends Component {
               <section className="footer">
                 <Grid fluid>
                   <Row>
-                    <Col xs="start">
+                    <Col start="xs">
                       <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
                     </Col>
-                    <Col xs="end">
+                    <Col end="xs">
                       <Parallax.Layer
                         style={{ height: 30 }}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
@@ -97,7 +51,6 @@ export default class Contact extends Component {
               </section>
             </ScrollAnimation>
           </Parallax>
-        </MediaQuery>
       </div>
     );
   }

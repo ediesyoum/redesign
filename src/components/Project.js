@@ -12,9 +12,6 @@ export default class Project extends Component {
   get headerClassName() {
     return `project__header--bg ${this.props.id}__header`;
   }
-  get headerClassNameSM() {
-    return `project__header--bg--sm ${this.props.id}__header`;
-  }
   get headerTitleClassName() {
     return `${this.props.id}__header-title`;
   }
