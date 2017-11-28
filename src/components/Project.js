@@ -50,9 +50,8 @@ export default class Project extends Component {
               <img className={this.headerClassName} alt=""/>
             </Parallax.Layer>
 
-            <Parallax.Layer offset={.5} speed={.1} style={{ height: 1600, backgroundColor: '#f9ffc3' }} />
-            <Parallax.Layer offset={2.5} speed={.1} style={{ height: 1200, backgroundColor: '#D7FFF6' }} />
-            <Parallax.Layer offset={3.8} speed={.1} style={{ height: 2000, backgroundColor: '#FFF2CD' }} />
+            <Parallax.Layer offset={.5} speed={.1} style={{ height: 1300, backgroundColor: '#f9ffc3' }} />
+            <Parallax.Layer offset={2} speed={.1} style={{ height: 1600, backgroundColor: '#F0FFFC' }} />
 
             <div className="project__header">
               <div className="project__header--title">
@@ -67,7 +66,7 @@ export default class Project extends Component {
 
               <div className="project__summary">
                 <Grid fluid>
-                  <Row>
+                  <Row center="xs">
                     <Col xs>
                       <h3 className="project-section-title__background">Project Description</h3>
                       <div><p className="project__description">{this.props.summary}</p></div>
@@ -123,42 +122,40 @@ export default class Project extends Component {
 
             <div className="slanted-bg"/>
 
-          <MediaQuery query="(min-device-width: 667px)">
-            <section className="project__links">
+            <MediaQuery query="(min-device-width: 667px)">
+              <section className="project__links">
+                <Grid fluid>
+                  <Row>
+                    <Col start="xs" xs={3}>
+                      <ProjectLinks links={this.props.links} />
+                    </Col>
+                    <Col end="xs">
+                      <div className="image--perspective">
+                        <img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} alt={`${this.props.id} Tablet Project`} title={`${this.props.id} Tablet Project`}/>
+                      </div>
+                    </Col>
+                  </Row>
+                </Grid>
+              </section>
+            </MediaQuery>
+
+            <MediaQuery query="(max-device-width: 666px)">
               <Grid fluid>
-                <Row>
-                  <Col start="xs" xs={3}>
-                    <ProjectLinks links={this.props.links} />
-                  </Col>
-                  <Col end="xs">
-                    <div className="image--perspective">
-                      <img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} alt={`${this.props.id} Tablet Project`} title={`${this.props.id} Tablet Project`}/>
-                    </div>
-                  </Col>
+                <div className="image--perspective">
+                  <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
+                </div>
+                <Row center="xs">
+                  <ProjectLinks links={this.props.links} />
                 </Row>
               </Grid>
-            </section>
-          </MediaQuery>
-
-          <MediaQuery query="(max-device-width: 666px)">
-            <Grid fluid>
-              <div className="image--perspective">
-                <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />
-              </div>
-              <Row center="xs">
-                <ProjectLinks links={this.props.links} />
-              </Row>
-            </Grid>
-
-
-          </MediaQuery>
+            </MediaQuery>
 
             <nav className="project__navigation">
               <ProjectNavigationLink id={this.props.id} rel="previous" />
               <ProjectNavigationLink id={this.props.id} rel="next" />
             </nav>
 
-            <section className="footer">
+            <footer className="footer">
               <Grid fluid>
                 <Row>
                   <Col start="xs">
@@ -173,7 +170,7 @@ export default class Project extends Component {
                   </Col>
                 </Row>
               </Grid>
-            </section>
+            </footer>
           </Parallax>
         </div>
     );
