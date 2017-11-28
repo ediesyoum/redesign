@@ -46,32 +46,36 @@
   background-position-x: 55vw;
   p {
     min-width: 51vh;
-    max-width: 100vh;
+    max-width: 105vh;
     font-size: 2em;
     margin-top: 3vh;
     padding-left: 1vw;
   }
   @media screen and (max-device-width: 666px) {
     max-width: 60vh;
+    left: 5%;
     position: relative;
     p {
-      min-width: 51vh;
+      min-width: 54vh;
+      max-width: 35vh;
+      padding: 0vh;
       position: relative;
     }
   }
 }
 .project__technical {
   margin-bottom: 50vh;
-  max-width: 100vh;
+  min-width: 100vh;
+  width: 109vh;
   font-size: 2em;
-  top: -6vh;
+  top: -2vh;
   position: relative;
   margin-top: 1vh;
   line-height: 7vh;
   text-align: justify;
   p {
-    min-width: 81vh;
-    left: 3vh;
+    min-width: 51vh;
+    left: 1vh;
     position: relative;
   }
   @media screen and (max-device-width: 666px) {
@@ -79,7 +83,7 @@
     max-width: 85vw;
     font-size: 2em;
     top: 2vh;
-    left: 2vh;
+    left: 5%;
     position: relative;
     margin-top: 1vh;
     line-height: 7vh;
@@ -95,12 +99,13 @@
   padding-bottom: 6vh;
   @media screen and (max-device-width: 666px) {
     max-width: 96%;
-    left: 3.5vh;
+    left: 3vh;
     position: relative;
   }
 }
 
 .btn-group {
+  top: -10%;
   width: 30vw;
   height: 40vh;
   display: block;
@@ -142,8 +147,11 @@
   text-align: left;
   visibility: visible;
   font-size: 3em;
+  width: 56vw;
   @media screen and (max-device-width: 666px) {
     font-size: 2.5em;
+    padding-left: 5vh;
+    width: 58vh;
   }
 }
 .project__subtitle {
@@ -166,14 +174,13 @@
   padding: 1vh;
   line-height: 7vh;
   @media screen and (max-device-width: 666px) {
-    left: 2vh;
+    left: 4vh;
   }
 }
 .project__navigation {
   top: 14vh;
   position: relative;
   text-align: center;
-  margin-bottom: 10vh;
   z-index: 2;
   a {
     color: white;
@@ -205,7 +212,7 @@
   max-width: 70vw;
   text-align: center;
   @media screen and (max-device-width: 666px) {
-    max-width: 100%;
+    max-width: 90%;
     position: relative;
     margin-bottom: 20vh;
     text-align: center;
@@ -221,41 +228,43 @@
   z-index: 0;
   right: 35vh;
   transform: skewY(-2deg);
+  @media screen and (max-device-width: 666px) {
+
+  }
 }
 .project-image--tablet {
   min-height: 60vh;
   max-height: 50vh;
-  box-shadow: 0px 20px 100px $brown;
+  box-shadow: 0px 20px 100px rgba(51,51,50,.2);
   border-radius: 2px;
   position: relative;
 }
 .project-image--mobile {
   max-width: 70%;
   max-height: 50vh;
-  -webkit-box-shadow: 0px 20px 100px #333332;
-  box-shadow: 0px 20px 100px #333332;
+  box-shadow: 0px 20px 100px rgba(51,51,50,.2);
   border-radius: 2px;
-  top: -22vh;
+  top: -26vh;
   margin-bottom: -16vh;
   position: relative;
   @media screen and (max-device-width: 666px) {
     margin-bottom: -26vh;
-    top: -3vh;
+    top: 0vh;
     left: -10vh;
   }
 }
 .project-image--desktop {
   width: 61vh;
   max-width: 67vh;
-  left: -3vw;
-  top: 2vh;
-  box-shadow: 0px 20px 100px $brown;
+  left: -6vw;
+  top: -4vh;
+  box-shadow: 0px 20px 100px rgba(51,51,50,.2);
   border-radius: 2px;
   margin-bottom: 7vh;
   position: relative;
   @media screen and (max-device-width: 666px) {
-    left: 4vh;
-    top: -3vh;
+    left: 5.5vh;
+    top: 0vh;
     max-width: 53vh;
     border-radius: 4px;
     margin-bottom: 20vh;
@@ -298,7 +307,7 @@
   transform: perspective(3000px) rotateY(12deg);
   -webkit-transform-origin: 632px 260px;
   text-align: center;
-  margin-top: -30vh;
+  margin-top: -33vh;
   position: relative;
 }
 .jot-it__header {

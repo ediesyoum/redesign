@@ -39,9 +39,9 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background-image: linear-gradient(to top, #284a6c 0%, #284a6c 1%, darken(#14294c, 10%) 100%);
-  background-blend-mode: darken;
-  opacity: .95;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+   background-blend-mode: multiply;
+  opacity: .98;
   font-size: 1.15em;
   z-index: 9999;
   padding-bottom: 10vh;

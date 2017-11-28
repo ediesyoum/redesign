@@ -73,7 +73,6 @@ export default class Project extends Component {
                     </Col>
                   </Row>
                 </Grid>
-              </div>
 
                 <div className="slanted-bg"/>
 
@@ -101,17 +100,29 @@ export default class Project extends Component {
                   </MediaQuery>
 
 
-                  <Row center="xs">
-                    <Col xsOffset={.5} xs={6}>
+
+
+
+
+
+
+                  <Row>
+                    <Col>
                       <h3 className="project-section-title__background">Project Details</h3>
+                      <div><p className="project__technical">{this.props.technical}</p></div>
                     </Col>
                   </Row>
 
-                   <Row center="xs">
-                    <div className="project__technical">
-                      <p>{this.props.technical}</p>
-                    </div>
-                  </Row>
+
+
+
+
+
+
+
+
+
+
                   <Row center="xs">
                     <div className="image--perspective">
                       <img src={this.projectGraphic} className="project__graphic" alt=""/>
@@ -125,7 +136,9 @@ export default class Project extends Component {
                     </div>
                   </Row>
                 </Grid>
+              </div>
             </ScrollAnimation>
+
 
             <div className="slanted-bg"/>
 
