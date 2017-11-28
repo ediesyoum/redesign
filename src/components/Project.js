@@ -50,8 +50,8 @@ export default class Project extends Component {
               <img className={this.headerClassName} alt=""/>
             </Parallax.Layer>
 
-            <Parallax.Layer offset={.5} speed={.1} style={{ height: 1300, backgroundColor: '#f9ffc3' }} />
-            <Parallax.Layer offset={2} speed={.1} style={{ height: 1600, backgroundColor: '#F0FFFC' }} />
+            <Parallax.Layer offset={.5} speed={.1} style={{ height: 2000, backgroundColor: '#f9ffc3' }} />
+            <Parallax.Layer offset={2.7} speed={.1} style={{ height: 1600, backgroundColor: '#F0FFFC' }} />
 
             <div className="project__header">
               <div className="project__header--title">
@@ -125,11 +125,11 @@ export default class Project extends Component {
             <MediaQuery query="(min-device-width: 667px)">
               <section className="project__links">
                 <Grid fluid>
-                  <Row>
-                    <Col xs="start">
+                  <Row center="xs">
+                    <Col start="xs">
                       <ProjectLinks links={this.props.links} />
                     </Col>
-                    <Col xs="end">
+                    <Col end="xs">
                       <div className="image--perspective">
                         <img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} alt={`${this.props.id} Tablet Project`} title={`${this.props.id} Tablet Project`}/>
                       </div>
