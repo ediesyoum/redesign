@@ -108,11 +108,12 @@
   }
   @media screen and (max-device-width: 666px) {
     a {
-     margin-top: 1.5vh;
+     margin-top: 3.5vh;
      margin-bottom: 1.5vh;
      padding: 1vh;
-     font-size: .8em;
-     text-align: center;
+     font-size: 1.6em;
+     text-align: left;
+     padding-left: 5vh;
      color: $teal;
      font-style: bold;
      letter-spacing: .2vw;

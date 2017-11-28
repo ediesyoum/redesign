@@ -24,14 +24,14 @@ export default class Home extends Component {
               </Parallax.Layer>
               <Parallax.Layer offset={0} speed={1.5} className={'premise'}>
                 <h1>
-                  <p className="yo">
+                  <div className="yo">
                     <span className="waving-hand">
                       <div className="animated wobble infinite">
                         <span role="img" aria-label="Waving Hand">👋</span>
                       </div>
                     </span>
                     Hi there.
-                  </p>
+                  </div>
                     I'm
                   <span className="myname">Eden</span>
                     and I'm a
@@ -91,14 +91,14 @@ export default class Home extends Component {
             <footer className="footer">
               <Grid fluid>
                 <Row>
-                  <Col start="xs">
-                    <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                  <Col xs="start">
+                    <p>Built with <span className="hearts" role="img" aria-label="Love">❤️</span> by Eden Syoum</p>
                   </Col>
-
-                  <Col end="xs">
-                    <Parallax.Layer style={{ height: 30 }}
+                  <Col xs="end">
+                    <Parallax.Layer
+                      style={{ height: 30 }}
                       onClick={() => this.refs.parallax.scrollTo(0)}>
-                      <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
                     </Parallax.Layer>
                   </Col>
                 </Row>

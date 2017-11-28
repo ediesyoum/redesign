@@ -32,22 +32,22 @@ export default class Contact extends Component {
                   </div>
                 </form>
               </section>
-              <section className="footer">
+              <footer className="footer">
                 <Grid fluid>
                   <Row>
-                    <Col start="xs">
-                      <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                    <Col xs="start">
+                      <p>Built with <span className="hearts" role="img" aria-label="Love">❤️</span> by Eden Syoum</p>
                     </Col>
-                    <Col end="xs">
+                    <Col xs="end">
                       <Parallax.Layer
                         style={{ height: 30 }}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                          <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
                       </Parallax.Layer>
                     </Col>
                   </Row>
                 </Grid>
-              </section>
+              </footer>
             </ScrollAnimation>
           </Parallax>
       </div>

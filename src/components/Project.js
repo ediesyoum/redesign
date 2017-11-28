@@ -67,12 +67,13 @@ export default class Project extends Component {
               <div className="project__summary">
                 <Grid fluid>
                   <Row>
-                    <Col xs>
+                    <Col>
                       <h3 className="project-section-title__background">Project Description</h3>
                       <div><p className="project__description">{this.props.summary}</p></div>
                     </Col>
                   </Row>
                 </Grid>
+              </div>
 
                 <div className="slanted-bg"/>
 
@@ -98,18 +99,25 @@ export default class Project extends Component {
                       </div>
                     </Row>
                   </MediaQuery>
-                  <h3 className="project-section-title__background">Technical Details</h3>
-                  <Row>
-                    <p className="project__technical">
-                      {this.props.technical}
-                    </p>
+
+
+                  <Row center="xs">
+                    <Col xsOffset={.5} xs={6}>
+                      <h3 className="project-section-title__background">Project Details</h3>
+                    </Col>
+                  </Row>
+
+                   <Row center="xs">
+                    <div className="project__technical">
+                      <p>{this.props.technical}</p>
+                    </div>
                   </Row>
                   <Row center="xs">
                     <div className="image--perspective">
                       <img src={this.projectGraphic} className="project__graphic" alt=""/>
                     </div>
                   </Row>
-                  <Row>
+                  <Row center="xs">
                     <div className="project__tag--wrapper">
                       <section className="project__tags">
                         {this.tags}
@@ -117,7 +125,6 @@ export default class Project extends Component {
                     </div>
                   </Row>
                 </Grid>
-              </div>
             </ScrollAnimation>
 
             <div className="slanted-bg"/>
@@ -158,14 +165,14 @@ export default class Project extends Component {
             <footer className="footer">
               <Grid fluid>
                 <Row>
-                  <Col start="xs">
-                    <p>Built with <span className="hearts" role="img"  aria-label="Love">❤️</span> by Eden Syoum</p>
+                  <Col xs="start">
+                    <p>Built with <span className="hearts" role="img" aria-label="Love">❤️</span> by Eden Syoum</p>
                   </Col>
-                  <Col end="xs">
+                  <Col xs="end">
                     <Parallax.Layer
                       style={{ height: 30 }}
                       onClick={() => this.refs.parallax.scrollTo(0)}>
-                      <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
+                        <span id="back-to-top" className="going-up" role="img" aria-label="Top Of Page">☝️</span>
                     </Parallax.Layer>
                   </Col>
                 </Row>

@@ -8,9 +8,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Tilt from 'react-tilt';
 
 export default class Work extends Component {
-  onMouseLeave(e) {
-    //console.log('clientY:', e.nativeEvent.clientY);
-  }
   get projects() {
     let projectIDs = Object.keys(Projects);
 
@@ -34,7 +31,7 @@ export default class Work extends Component {
           }}
           onMouseLeave={this.onMouseLeave}>
             <div className="Tilt-inner">
-              <ProjectPreview {...projectAttributes} index={indexInArray} className={boxClassName} />
+              <ProjectPreview key={id} {...projectAttributes} index={indexInArray} className={boxClassName} />
             </div>
         </Tilt>
       );
@@ -47,7 +44,7 @@ export default class Work extends Component {
           <Parallax ref="parallax" pages={-1} className={'page__wrapper'} speed={.5}>
             <div className="page__header">
               <h1 className="page__header--title">
-                Featured Projects
+                Projects
               </h1>
             </div>
             <ScrollAnimation
@@ -62,10 +59,10 @@ export default class Work extends Component {
             <footer className="footer">
               <Grid fluid>
                 <Row>
-                  <Col start="xs">
+                  <Col xs="start">
                     <p>Built with <span className="hearts" role="img" aria-label="Love">❤️</span> by Eden Syoum</p>
                   </Col>
-                  <Col end="xs">
+                  <Col xs="end">
                     <Parallax.Layer
                       style={{ height: 30 }}
                       onClick={() => this.refs.parallax.scrollTo(0)}>

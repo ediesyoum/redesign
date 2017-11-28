@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Logo from '../assets/img/logo.png';
+import Logo from '../assets/img/logo.svg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import MediaQuery from 'react-responsive';
 import { slide as Menu } from 'react-burger-menu';
