@@ -66,7 +66,7 @@ export default class Project extends Component {
 
               <div className="project__summary">
                 <Grid fluid>
-                  <Row center="xs">
+                  <Row>
                     <Col xs>
                       <h3 className="project-section-title__background">Project Description</h3>
                       <div><p className="project__description">{this.props.summary}</p></div>
@@ -98,11 +98,11 @@ export default class Project extends Component {
                       </div>
                     </Row>
                   </MediaQuery>
+                  <h3 className="project-section-title__background">Technical Details</h3>
                   <Row>
-                    <h3 className="project-section-title__background">Technical Details</h3>
-                    <div className="project__technical">
+                    <p className="project__technical">
                       {this.props.technical}
-                    </div>
+                    </p>
                   </Row>
                   <Row center="xs">
                     <div className="image--perspective">
@@ -126,10 +126,10 @@ export default class Project extends Component {
               <section className="project__links">
                 <Grid fluid>
                   <Row>
-                    <Col start="xs" xs={3}>
+                    <Col xs="start">
                       <ProjectLinks links={this.props.links} />
                     </Col>
-                    <Col end="xs">
+                    <Col xs="end">
                       <div className="image--perspective">
                         <img className={this.tabletProjectImgClassName} src={this.projectImage('tablet')} alt={`${this.props.id} Tablet Project`} title={`${this.props.id} Tablet Project`}/>
                       </div>
