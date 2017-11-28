@@ -135,6 +135,9 @@
     "name": "UPenn Labs",
     "summary": "In the Fall of 2014 I was commissioned to work on five UPenn laboratory sites in the School of Arts and Sciences (SAS) while I also provided user support to the labs themselves, to their grad student and post-doc assistants and their Principal Investigators (PIs), or lead Professors.\nDuring my time there I got to know each of these labs very well – to the point of making friends in each lab and sitting with them to look at cool things they were working on, like examining female Drosophila eggs through their microscopes.",
     "technical": "I was responsible for designing and coding the look and feel of their lab websites, and I would also walk around and set up things like FTP for them, or onboard new users and create their user and computer accounts on the server, or troubleshoot lab computers. I considered myself lucky to have the opportunity to walk down the halls and discover more about what these extremely intelligent people were doing for the greater good through their research.\nThis became one of the most rewarding projects that I completed during my time doing IT at UPenn - I deeply enjoyed consulting and learning more about each lab and their contributions to society, while using empathy to brainstorm ways to elegantly display their research data and make it more easily accessible for researchers at other universities and for the greater good via the Internet.",
+    "links": {
+      "live": "https://www.sas.upenn.edu/computing/"
+    },
     "tags": [
       "User Support",
       "User Research",

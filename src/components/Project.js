@@ -50,8 +50,15 @@ export default class Project extends Component {
               <img className={this.headerClassName} alt=""/>
             </Parallax.Layer>
 
-            <Parallax.Layer offset={.5} speed={.1} style={{ height: 2000, backgroundColor: '#f9ffc3' }} />
-            <Parallax.Layer offset={2.7} speed={.1} style={{ height: 1600, backgroundColor: '#F0FFFC' }} />
+            <MediaQuery query="(min-device-width: 667px)">
+              <Parallax.Layer offset={.5} speed={.1} style={{ height: 1500, backgroundColor: '#f9ffc3' }} />
+              <Parallax.Layer offset={3.05} speed={.1} style={{ height: 1600, backgroundColor: '#F0FFFC' }} />
+            </MediaQuery>
+
+            <MediaQuery query="(max-device-width: 666px)">
+              <Parallax.Layer offset={.5} speed={.1} style={{ height: 1000, backgroundColor: '#f9ffc3' }} />
+              <Parallax.Layer offset={3.05} speed={.1} style={{ height: 1600, backgroundColor: '#F0FFFC' }} />
+            </MediaQuery>
 
             <div className="project__header">
               <div className="project__header--title">
@@ -99,29 +106,12 @@ export default class Project extends Component {
                     </Row>
                   </MediaQuery>
 
-
-
-
-
-
-
-
                   <Row>
                     <Col>
                       <h3 className="project-section-title__background">Project Details</h3>
                       <div><p className="project__technical">{this.props.technical}</p></div>
                     </Col>
                   </Row>
-
-
-
-
-
-
-
-
-
-
 
                   <Row center="xs">
                     <div className="image--perspective">
@@ -130,9 +120,7 @@ export default class Project extends Component {
                   </Row>
                   <Row center="xs">
                     <div className="project__tag--wrapper">
-                      <section className="project__tags">
-                        {this.tags}
-                      </section>
+                      <section className="project__tags">{this.tags}</section>
                     </div>
                   </Row>
                 </Grid>
