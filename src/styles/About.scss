@@ -2,6 +2,7 @@
   position: relative;
   max-width: 62vw;
   display: flex;
+  margin-bottom: 21vh;
   width: 100vw;
   top: 30vh;
   @media screen and (max-device-width: 666px) {
@@ -10,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0vh;
     max-width: 100vw;
     width: 100vw;
     top: -14vh;
@@ -23,16 +25,16 @@
   padding: 2em;
   text-align: justify;
   @media screen and (max-device-width: 666px) {
-    top: 8vh;
+    top: 5vh;
     position: relative;
     font-size: 2em;
+    left: -15vw;
     color: $brown;
     text-align: justify;
-    padding: 2em;
+    padding: 0em;
     line-height: 4.75vh;
     p, h3 {
       width: 80vw;
-      left: -15vw;
       position: relative;
     }
   }
@@ -40,8 +42,9 @@
 .about__header--title {
   font-size: 1.2em;
   @media screen and (max-device-width: 666px) {
-    left: -10vw;
     position: relative;
+    text-align: left;
+    font-size: 1.06em;
   }
 }
 .about__img {
@@ -57,7 +60,7 @@
   @media screen and (max-device-width: 666px) {
     height: 45vh;
     left: 15vw;
-    top: 2vh;
+    top: -8vh;
     min-width: 60vw;
     border: #d8d7bf 7px solid;
     position: relative;

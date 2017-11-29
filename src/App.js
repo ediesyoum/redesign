@@ -12,21 +12,22 @@ class App extends Component {
   render() {
     return(
       <div>
-        <div className="Site">
-          <div className="Site-content">
+        <div className="Site-content scrollbar">
+
             <header>
               <Navigation/>
-              <Router>
-                <div>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/about" component={About} />
-                  <Route exact path="/work" component={Work} />
-                  <Route path="/contact" component={Contact} />
-                  <Route path="/work/:id" component={ProjectPage} />
-                </div>
-              </Router>
             </header>
-          </div>
+
+            <Router>
+              <div>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route exact path="/work" component={Work} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/work/:id" component={ProjectPage} />
+              </div>
+            </Router>
+
         </div>
       </div>
     );

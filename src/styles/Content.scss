@@ -6,6 +6,7 @@ html, body {
   background-color: #F0FFFC;
   overflow: hidden;
   background-size: 180%;
+  height: 100%;
 }
 h1 {
 	font-family: 'kayak_sans-light', sans-serif;
@@ -25,23 +26,17 @@ a {
   --space: 0em 0;
   margin:0px;
   padding:0px;
-  max-height: 98%;
-  height: 96%;
   overflow:hidden;
 }
-.Site {
-  display: flex;
-  flex-direction: column;
-  max-height: 98%;
-  @extend .scrollbar;
-}
 .Site-content {
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
-  height: 100vh;
+  max-height: 96vh;
 }
 .scrollbar {
-  max-height: 98%;
+  min-height: 100vh;
+  max-height: 90vh;
+  position: relative;
   overflow-y: scroll;
 }
 .scrollbar::-webkit-scrollbar {
