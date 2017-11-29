@@ -28,7 +28,7 @@ $tangerine: #ED8012;
   font-style: normal;
   src: local('kayak_sans-bold_italic'), url('../assets/fonts/kayak_sans_bold_italic-webfont.woff2') format('woff2'),
   local('kayak_sans-bold_italic'), url('../assets/fonts/kayak_sans_bold_italic-webfont.woff') format('woff'),
-  local('kayak_sans-bold_italic'), url('../assets/fonts/kayak_sans_bold_italic-webfont.ttf') format('truetype');
+  // local('kayak_sans-bold_italic'), url('../assets/fonts/kayak_sans_bold_italic-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'kayak_sans-bold';
@@ -36,7 +36,7 @@ $tangerine: #ED8012;
   font-style: normal;
   src: url('../assets/fonts/kayak_sans_bold-webfont.woff2') format('woff2'),
   url('../assets/fonts/kayak_sans_bold-webfont.woff') format('woff'),
-  url('../assets/fonts/kayak_sans_bold-webfont.ttf') format('truetype');
+  // url('../assets/fonts/kayak_sans_bold-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'kayak_sans-light_italic';
@@ -44,7 +44,7 @@ $tangerine: #ED8012;
   font-style: normal;
   src: url('../assets/fonts/kayak_sans_light_italic-webfont.woff2') format('woff2'),
   url('../assets/fonts/kayak_sans_light_italic-webfont.woff') format('woff'),
-  url('../assets/fonts/kayak_sans_light_italic-webfont.ttf') format('truetype');
+  // url('../assets/fonts/kayak_sans_light_italic-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'kayak_sans-light';
@@ -52,7 +52,7 @@ $tangerine: #ED8012;
   font-style: normal;
   src: url('../assets/fonts/kayak_sans_light-webfont.woff2') format('woff2'),
   url('../assets/fonts/kayak_sans_light-webfont.woff') format('woff'),
-  url('../assets/fonts/kayak_sans_light-webfont.ttf') format('truetype');
+  // url('../assets/fonts/kayak_sans_light-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'kayak_sans-regular_italic';
@@ -60,7 +60,7 @@ $tangerine: #ED8012;
   font-style: normal;
   src: url('../assets/fonts/kayak_sans_regular_italic-webfont.woff2') format('woff2'),
   url('../assets/fonts/kayak_sans_regular_italic-webfont.woff') format('woff'),
-  url('../assets/fonts/kayak_sans_regular_italic-webfont.ttf') format('truetype');
+  // url('../assets/fonts/kayak_sans_regular_italic-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'kayak_sans-regular';
@@ -68,7 +68,7 @@ $tangerine: #ED8012;
   font-style: normal;
   src: url('../assets/fonts/kayak_sans_regular-webfont.woff2') format('woff2'),
   url('../assets/fonts/kayak_sans_regular-webfont.woff') format('woff'),
-  url('../assets/fonts/kayak_sans_regular-webfont.ttf') format('truetype');
+  // url('../assets/fonts/kayak_sans_regular-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'womby';
@@ -76,5 +76,5 @@ $tangerine: #ED8012;
   font-style: normal;
   src: local('womby'), url('../assets/fonts/womby.woff2') format('woff2'),
   local('womby'), url('../assets/fonts/womby.woff') format('woff'),
-  local('womby'), url('../assets/fonts/womby.ttf') format('truetype');
+  // local('womby'), url('../assets/fonts/womby.ttf') format('truetype');
 }

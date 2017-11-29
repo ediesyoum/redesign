@@ -53,12 +53,13 @@
   }
   @media screen and (max-device-width: 666px) {
     max-width: 60vh;
-    left: 5%;
+    left: 3.5%;
     position: relative;
     p {
       min-width: 54vh;
       max-width: 35vh;
       padding: 0vh;
+      left: 5%;
       position: relative;
     }
   }
@@ -207,7 +208,7 @@
   }
   @media screen and (max-device-width: 666px) {
     top: 0vh;
-    margin-bottom: -20vh;
+    margin-bottom: 0vh;
   }
 }
 .project__tag--wrapper {

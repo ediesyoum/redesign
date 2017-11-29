@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: white;
   max-height: 20vh;
   top: 3vh;
@@ -14,20 +14,16 @@
       color: black;
       padding-top: 1.1vh;
     }
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 666px) {
     position: relative;
     font-size: 1.4em;
     color: white;
-    left: -1.5vh;
-    padding-top: 30vh;
-    padding-bottom: 19vh;
+    left: -.75vh;
+    padding-top: 20vh;
+    top: 0vh;
+    padding-bottom: 16vh;
     font-family: 'kayak_sans-regular', sans-serif;
     text-align: center;
-    p {
-      font-size: .8em;
-      color: black;
-      padding-top: 1.1vh;
-    }
   }
 }
 .going-up {
@@ -40,7 +36,7 @@
   padding: .02em;
   padding-top: .15em;
   cursor: pointer;
-  @media screen and (max-device-width: 666px) { // small version
+  @media screen and (max-device-width: 666px) {
     position: relative;
     top: 1vh;
     right: 6vh;
