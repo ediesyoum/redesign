@@ -5,7 +5,7 @@
   margin-bottom: 21vh;
   width: 100vw;
   top: 30vh;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,10 @@
   max-width: 50vw;
   padding: 2em;
   text-align: justify;
-  @media screen and (max-device-width: 666px) {
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+    left: 10vh;
+  }
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     top: 5vh;
     position: relative;
     font-size: 2em;
@@ -41,7 +44,7 @@
 }
 .about__header--title {
   font-size: 1.2em;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     position: relative;
     text-align: left;
     font-size: 1.06em;
@@ -57,7 +60,7 @@
   padding: 2vh;
   max-height: 50vh;
   left: 20%;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     height: 45vh;
     left: 15vw;
     top: -8vh;
@@ -67,6 +70,10 @@
     border-radius: 2px;
     opacity: 0.85;
     padding: 1em;
+  }
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+    position: absolute;
+    left: 65%;
   }
 }
 .about__background {

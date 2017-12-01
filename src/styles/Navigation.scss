@@ -9,7 +9,14 @@
 	top: 2vh;
 	left: 3.5vh;
   max-width: 9.5vh;
-  @media screen and (max-device-width: 666px) {
+  @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) { // for landscape only (desktop version of site)
+    max-width: 9.5vh;
+  }
+   @media screen and (max-device-width: 667px) and (orientation: portrait) and (orientation: portrait) {
     position: absolute;
   	left: 3.5vw;
   	top: 0vh;
@@ -24,7 +31,7 @@
   text-align: right;
   position: relative;
   color: rgba(255, 255, 255, 0);
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     font-size: 2em;
     margin-bottom: 2vh;
     width: 100%;
@@ -43,7 +50,7 @@
   background-color: $brown;
   transform-origin: bottom right;
   z-index: -1;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     content: "";
     position: absolute;
     padding-top: 10vh;
@@ -68,7 +75,7 @@
   background-color: $brown;
   transform-origin: bottom left;
   z-index: -1;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     content: "";
     position: absolute;
     top: -8vh;
@@ -106,7 +113,7 @@
     width: 100%;
     transition: width .3s;
   }
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     a {
      margin-top: 3.5vh;
      margin-bottom: 1.5vh;
@@ -133,4 +140,13 @@
      }
    }
  }
-}
+  // landscape mode: hide nav__links when width of viewport is LESS THAN 667
+   @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+
+
+  }
+ }

@@ -22,7 +22,7 @@ export default class About extends Component {
                   <h1 className="page__header--title">About</h1>
                 </header>
                 <ScrollAnimation animateIn="bounceInUp" offset={30000} animateOut="bounceInUp" duration={1.1}>
-                <MediaQuery query="(min-device-width: 667px)">
+                <MediaQuery minDeviceWidth={667}>
                   <Grid fluid>
                     <Row center="xs">
                       <Row start="xs">
@@ -54,8 +54,8 @@ export default class About extends Component {
                     </Row>
                   </Grid>
                 </MediaQuery>
-                <MediaQuery query="(max-device-width: 666px)">
-                    <img src={Eyes} className="about__img" alt="Eden Syoum"/>
+                <MediaQuery query="(max-device-width: 667px)">
+                  <img src={Eyes} className="about__img" alt="Eden Syoum"/>
                     <main className="about__content__wrapper">
                       <section className="about__content">
                         <h3 className="about__header--title">A User-Focused Developer</h3>

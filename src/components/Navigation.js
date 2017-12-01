@@ -16,10 +16,12 @@ export default class Navigation extends Component {
               <Row>
                 <Col xs>
                   <Row start="xs">
-                    <a href="/" title="Eden Syoum - Development & Design"><img src={Logo} className='logo' alt='Eden Syoum - Development & Design' /></a>
+                    <a href="/" title="Eden Syoum - Development & Design">
+                      <img src={Logo} className='logo' alt='Eden Syoum - Development & Design' />
+                    </a>
                   </Row>
                 </Col>
-                <MediaQuery query="(min-device-width: 667px)">
+                <MediaQuery minDeviceWidth={667}>
                   <Col xs className={"nav__links"}>
                     <a href="/">Home</a>
                     <a href="/about">About</a>
@@ -27,7 +29,7 @@ export default class Navigation extends Component {
                     <a href="/contact">Contact</a>
                   </Col>
                 </MediaQuery>
-                <MediaQuery maxDeviceWidth={667}>
+                <MediaQuery maxDeviceWidth={666}>
                   <Col xs={12}>
                     <Row end="xs">
                       <Menu

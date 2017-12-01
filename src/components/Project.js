@@ -50,12 +50,12 @@ export default class Project extends Component {
               <img className={this.headerClassName} alt=""/>
             </Parallax.Layer>
 
-            <MediaQuery query="(min-device-width: 667px)">
+            <MediaQuery minDeviceWidth={667}>
               <Parallax.Layer offset={.5} speed={.1} style={{ height: 1500, backgroundColor: '#f9ffc3' }} />
               <Parallax.Layer offset={3.05} speed={.1} style={{ height: 1600, backgroundColor: '#F0FFFC' }} />
             </MediaQuery>
 
-            <MediaQuery query="(max-device-width: 666px)">
+            <MediaQuery query="(max-device-width: 667px)">
               <Parallax.Layer offset={.5} speed={.1} style={{ height: 1000, backgroundColor: '#f9ffc3' }} />
               <Parallax.Layer offset={3.05} speed={.1} style={{ height: 1600, backgroundColor: '#F0FFFC' }} />
             </MediaQuery>
@@ -84,7 +84,7 @@ export default class Project extends Component {
                 <div className="slanted-bg"/>
 
                 <Grid fluid>
-                  <MediaQuery query="(min-device-width: 667px)">
+                  <MediaQuery minDeviceWidth={667}>
                     <Row>
                       <Col xsOffset={2} xs={6}>
                         <div className="image--perspective">
@@ -98,7 +98,7 @@ export default class Project extends Component {
                       </Col>
                     </Row>
                   </MediaQuery>
-                  <MediaQuery query="(max-device-width: 666px)">
+                  <MediaQuery query="(max-device-width: 667px)">
                     <Row>
                       <div className="image--perspective">
                         <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
@@ -130,7 +130,7 @@ export default class Project extends Component {
 
             <div className="slanted-bg"/>
 
-            <MediaQuery query="(min-device-width: 667px)">
+            <MediaQuery minDeviceWidth={667}>
               <section className="project__links">
                 <Grid fluid>
                   <Row center="xs">
@@ -147,7 +147,7 @@ export default class Project extends Component {
               </section>
             </MediaQuery>
 
-            <MediaQuery query="(max-device-width: 666px)">
+            <MediaQuery query="(max-device-width: 667px)">
               <Grid fluid>
                 <div className="image--perspective">
                   <img className={this.mobileProjectImgClassName} alt={`${this.props.id} Mobile Project`} title={`${this.props.id} Mobile Project`} src={this.projectImage('mobile')} />

@@ -24,7 +24,7 @@
   transform: rotate(3deg);
   position: relative;
   text-transform: lowercase;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     top: 5vh;
     font-size: 2em;
     right: 2%;
@@ -82,7 +82,7 @@
   align-items: center;
   flex-wrap: wrap;
   flex-basis: 20%;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     justify-content: space-around;
     align-items: center;
   }

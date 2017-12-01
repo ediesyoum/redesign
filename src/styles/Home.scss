@@ -5,7 +5,13 @@
   min-width: 130%;
   overflow: hidden;
   opacity: .5;
-  @media screen and (max-device-width: 666px) {
+  @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) { // for landscape only (desktop version of site)
+  }
+   @media screen and (max-device-width: 667px) and (orientation: portrait) { // for portrait mode only
     left: 5vw;
     top: 10vh;
     max-width: 191%;
@@ -24,7 +30,7 @@
   line-height: 4vh;
 	font-family: 'kayak_sans-light_italic', sans-serif;
   color: darken($mustard, 55%);
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     line-height: 4vh;
     top: 9vh;
     left: 7vw;
@@ -44,7 +50,7 @@
   top: 4vh;
   padding-right: 4vw;
   max-width: 5vw;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     left: -8vw;
     margin-right: 7vw;
     position: relative;
@@ -58,7 +64,7 @@
   position: relative;
   color: lighten($linkbg, 10%);
 	font-family: 'kayak_sans-light_italic', sans-serif;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     position: relative;
     left: 10vw;
   }
@@ -87,7 +93,7 @@
   padding-top: 3vh;
   padding-bottom: 1vh;
   text-transform: uppercase;
-  @media screen and (max-device-width: 666px) {
+   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     font-size: 3vh;
     padding-top: 2vh;
     min-width: 50vw;
