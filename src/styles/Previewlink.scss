@@ -16,6 +16,10 @@
   min-height: 2.7vh;
   display: inline-flex;
   flex-direction:column;
+   @media screen and (max-device-width: 667px) and (orientation: landscape) {
+   font-size: 1.9em;
+     max-width: 35vw;
+ }
 }
 ul, li {
   list-style-type: none;
@@ -26,6 +30,9 @@ ul, li {
   line-height: 4vh;
   width: 80vw;
   text-align: justify;
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+    margin-bottom: 20vh;
+  }
 }
 .clip-text {
   font-size: 5vh;

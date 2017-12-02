@@ -97,21 +97,39 @@ export default class Project extends Component {
                         </div>
                       </Col>
                     </Row>
+                    <Row>
+                      <Col>
+                        <h3 className="project-section-title__background">Project Details</h3>
+                        <div><p className="project__technical">{this.props.technical}</p></div>
+                      </Col>
+                    </Row>
                   </MediaQuery>
-                  <MediaQuery query="(max-device-width: 667px)">
+                  <MediaQuery  maxDeviceWidth={667} orientation="portrait">
                     <Row>
                       <div className="image--perspective">
                         <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
                       </div>
                     </Row>
+                    <Row>
+                      <Col>
+                        <h3 className="project-section-title__background">Project Details</h3>
+                        <div><p className="project__technical">{this.props.technical}</p></div>
+                      </Col>
+                    </Row>
                   </MediaQuery>
-
-                  <Row>
-                    <Col>
-                      <h3 className="project-section-title__background">Project Details</h3>
-                      <div><p className="project__technical">{this.props.technical}</p></div>
-                    </Col>
-                  </Row>
+                  <MediaQuery maxDeviceWidth={667} orientation="landscape">
+                    <Row>
+                      <div className="image--perspective">
+                        <img className={this.desktopProjectImgClassName} src={this.projectImage('desktop')} alt={`${this.props.id} Desktop Project`} title={`${this.props.id} Desktop Project`} />
+                      </div>
+                    </Row>
+                    <Row>
+                      <Col>
+                        <h3 className="project-section-title__background--left">Project Details</h3>
+                        <div><p className="project__technical">{this.props.technical}</p></div>
+                      </Col>
+                    </Row>
+                  </MediaQuery>
 
                   <Row center="xs">
                     <div className="image--perspective">

@@ -21,13 +21,19 @@
   font-size: 15.8vh;
   text-transform: lowercase;
   left: 0vw;
-   @media screen and (max-device-width: 667px) and (orientation: portrait) {
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
     top: 41.75vh;
     color: #333332;
     position: relative;
     font-size: 14.8vw;
     text-transform: lowercase;
     min-width: 100%;
+  }
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      font-size:15.8vw;
   }
 }
 .project__summary {
@@ -50,6 +56,12 @@
     font-size: 2em;
     margin-top: 3vh;
     padding-left: 1vw;
+    @media only screen
+      and (min-device-width: 768px)
+      and (max-device-width: 1024px)
+      and (-webkit-min-device-pixel-ratio: 1) {
+      max-width: 65vh;
+    }
   }
    @media screen and (max-device-width: 667px) and (orientation: portrait) {
     max-width: 60vh;
@@ -63,6 +75,14 @@
       position: relative;
     }
   }
+ @media screen and (max-device-width: 667px) and (orientation: landscape) {
+   p {
+     min-width: 120vh;
+     font-size: 3.5em;
+     line-height: 10vh;
+     margin-bottom: 20vh;
+   }
+ }
 }
 .project__technical {
   margin-bottom: 50vh;
@@ -95,6 +115,15 @@
       position: relative;
     }
   }
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+
+
+
+        left: 20vw;
+        padding-bottom: 40vh;
+
+
+  }
 }
 .project__graphic {
   width: 80%;
@@ -104,6 +133,11 @@
     left: 3vh;
     position: relative;
   }
+   @media screen and (max-device-width: 667px) and (orientation: landscape) {
+     width: 60%;
+     left: 5%;
+     position: relative;
+ }
 }
 
 .btn-group {
@@ -117,7 +151,15 @@
    @media screen and (max-device-width: 667px) and (orientation: portrait) {
     left: 27vw;
     top: -14vh;
+    display: block;
+    visibility: visible;
+    position: relative;
   }
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
+   left: 27vw;
+   top: -14vh;
+   visibility: visible;
+ }
 }
 .btn {
   text-transform: uppercase;
@@ -152,9 +194,22 @@
   width: 56vw;
    @media screen and (max-device-width: 667px) and (orientation: portrait) {
     font-size: 2.5em;
-    padding-left: 5vh;
     width: 58vh;
   }
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+   font-size: 3.5em;
+ }
+}
+.project-section-title__background--left {
+  padding-bottom: 3vw;
+  color: #388148;
+  text-transform: uppercase;
+  font-family: 'kayak_sans-bold_italic', sans-serif;
+  z-index: 2;
+  font-size: 3.5em;
+  width: 56vw;
+  left: 50vh;
+  position: relative;
 }
 .project__subtitle {
   padding-top: 20vh;
@@ -232,6 +287,11 @@
   z-index: 0;
   right: 35vh;
   transform: skewY(-2deg);
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+    margin-top: 20vh;
+    position: static; // excellent fix!
+    z-index: 1;
+  }
 }
 .project-image--tablet {
   min-height: 60vh;
@@ -259,6 +319,17 @@
     top: 0vh;
     left: -10vh;
   }
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+    max-width: 80vh;
+    position: relative;
+    left: -50vh;
+  }
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+    visibility: hidden;
+  }
 }
 .project-image--desktop {
   width: 61vh;
@@ -276,6 +347,14 @@
     border-radius: 4px;
     margin-bottom: 20vh;
   }
+   @media screen and (max-device-width: 667px) and (orientation: landscape) {
+   left: 19vw;
+   width: 60vw;
+   max-width: 80vw;
+   z-index: 3;
+   position: relative;
+   top: -29vh;
+ }
 }
 .project__links {
   margin-top: -14vh;
