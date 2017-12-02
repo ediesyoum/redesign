@@ -33,6 +33,11 @@
     padding-bottom: -31vh;
     top: -13.25vh;
   }
+  @media screen and (max-device-width: 768px) and (orientation: landscape) {
+    top: -7vh;
+    height: 27vh;
+    font-size: 3em;
+  }
 }
 .chevron-down {
   font-size: 1em;

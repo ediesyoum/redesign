@@ -113,7 +113,7 @@
     width: 100%;
     transition: width .3s;
   }
-   @media screen and (max-device-width: 667px) and (orientation: portrait) {
+   @media screen and (max-device-width: 667px) {
     a {
      margin-top: 3.5vh;
      margin-bottom: 1.5vh;
@@ -140,13 +140,4 @@
      }
    }
  }
-  // landscape mode: hide nav__links when width of viewport is LESS THAN 667
-   @media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 667px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-
-
-  }
- }
+}

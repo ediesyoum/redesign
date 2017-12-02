@@ -116,27 +116,22 @@
     }
   }
   @media screen and (max-device-width: 667px) and (orientation: landscape) {
-
-
-
-        left: 20vw;
-        padding-bottom: 40vh;
-
-
+    // left: 20vw;
+    padding-bottom: 40vh;
   }
 }
 .project__graphic {
   width: 80%;
   padding-bottom: 6vh;
-   @media screen and (max-device-width: 667px) and (orientation: portrait) {
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
     max-width: 96%;
     left: 3vh;
     position: relative;
   }
-   @media screen and (max-device-width: 667px) and (orientation: landscape) {
-     width: 60%;
-     left: 5%;
-     position: relative;
+ @media screen and (max-device-width: 667px) and (orientation: landscape) {
+   width: 60%;
+   left: 5%;
+   position: relative;
  }
 }
 
@@ -148,17 +143,19 @@
   margin-bottom: 10vh;
   position: relative;
   z-index: 2;
-   @media screen and (max-device-width: 667px) and (orientation: portrait) {
+ @media screen and (max-device-width: 667px) and (orientation: portrait) {
     left: 27vw;
     top: -14vh;
     display: block;
     visibility: visible;
     position: relative;
   }
-  @media screen and (max-device-width: 667px) and (orientation: portrait) {
-   left: 27vw;
-   top: -14vh;
-   visibility: visible;
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+   left: 47vw;
+   top: -40vh;
+   padding: 3vh;
+   display: block;
+   position: sticky;
  }
 }
 .btn {
@@ -175,6 +172,7 @@
     margin: 1vw;
     width: 20vw;
     border-radius: 2px;
+    z-index: 4;
     &:hover, &:active {
       background-color: lighten($paleblue, 15%);
       color: white;
@@ -208,7 +206,7 @@
   z-index: 2;
   font-size: 3.5em;
   width: 56vw;
-  left: 50vh;
+  left: 10vh;
   position: relative;
 }
 .project__subtitle {
@@ -289,7 +287,7 @@
   transform: skewY(-2deg);
   @media screen and (max-device-width: 667px) and (orientation: landscape) {
     margin-top: 20vh;
-    position: static; // excellent fix!
+    position: static;
     z-index: 1;
   }
 }
@@ -320,9 +318,11 @@
     left: -10vh;
   }
   @media screen and (max-device-width: 667px) and (orientation: landscape) {
-    max-width: 80vh;
+    min-width: 20vw;
+    min-height: 65vh;
     position: relative;
-    left: -50vh;
+    left: -20vw;
+    top: -16vh;
   }
   @media only screen
     and (min-device-width: 768px)
@@ -348,7 +348,7 @@
     margin-bottom: 20vh;
   }
    @media screen and (max-device-width: 667px) and (orientation: landscape) {
-   left: 19vw;
+   left: 0vw;
    width: 60vw;
    max-width: 80vw;
    z-index: 3;
