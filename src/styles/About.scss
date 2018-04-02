@@ -36,9 +36,22 @@
     text-align: justify;
     padding: 0em;
     line-height: 4.75vh;
-    p, h3 {
-      width: 80vw;
+    p {
+      width: 82vw;
+      font-size: .8em;
       position: relative;
+    }
+    h3 {
+      color: teal;
+      width: 82vw;
+      padding-top: 2vh;
+    }
+    a {
+      color: $burgundy;
+    }
+    a:hover, a:visited, a:active {
+      text-decoration: none;
+      color: $burgundy;
     }
   }
 }

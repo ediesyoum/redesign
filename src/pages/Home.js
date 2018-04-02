@@ -32,9 +32,9 @@ export default class Home extends Component {
                     </span>
                     Hi there.
                   </div>
-                    I'm
+                  <div className="whois">I'm
                   <span className="myname">Eden</span>
-                    and I'm a
+                    and I'm a</div>
                   <div className="rotatewords-wrapper">
                     <div className="rotatewords">
                       <ReactRotatingText

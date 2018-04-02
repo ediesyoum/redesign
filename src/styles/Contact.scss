@@ -22,10 +22,11 @@
   margin: 0 auto;
   position: relative;
   width: 50vh;
+  font-size: 1.1em;
 }
 .contact-form__field {
   font-family: 'kayak_sans-light', serif;
-  font-size: 1em;
+  font-size: 1.3em;
   color: #000;
   border: 1px solid $paleblue;
   border-radius: .5em;
@@ -36,17 +37,28 @@
   min-width: 40vh;
   background-color: rgba(255, 237, 219, 0.2);
   box-shadow: 0px 4px 3px -1px rgba(0, 0, 0, 0.5);
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
+    min-width: 36vh;
+  }
 }
 .contact-form__field--message {
   width: 40vh;
   height: 20vh;
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
+    width: 36vh;
+  }
 }
 .contact-form__button {
   bottom: 14vh;
   width: 46vh;
   top: 0;
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
+    width: 50vw;
+    left: 8vw;
+  }
   &:hover {
-    background-color: lighten($linkbg, 25%);
+    background-color: lighten($teal, 5%);
+    font-weight: bold;
     cursor: pointer;
     transition-duration: .25s;
   }

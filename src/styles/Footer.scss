@@ -9,23 +9,27 @@
   display: block;
   font-family: 'kayak_sans-regular', sans-serif;
   text-align: center;
-    p {
-      font-size: .8em;
-      color: black;
-      padding-top: 1.1vh;
+  p {
+    font-size: .8em;
+    color: black;
+    padding-top: 1.1vh;
+    @media screen and (max-device-width: 667px) and (orientation: portrait) {
+      font-size: .65em;
     }
-   @media screen and (max-device-width: 667px) and (orientation: portrait) {
+  }
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
     position: relative;
     font-size: 1.4em;
     color: white;
     left: -.75vh;
-    padding-top: 20vh;
     top: 0vh;
-    padding-bottom: 16vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     font-family: 'kayak_sans-regular', sans-serif;
     text-align: center;
   }
 }
+
 .going-up {
   position: relative;
   top: 1vh;
