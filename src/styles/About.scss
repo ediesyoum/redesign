@@ -24,6 +24,17 @@
   max-width: 50vw;
   padding: 2em;
   text-align: justify;
+  line-height: 1.4em;
+  p {
+    font-size: .95em;
+  }
+  h3 {
+    color: teal;
+  }
+  a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: $burgundy;
+  }
   @media screen and (max-device-width: 667px) and (orientation: landscape) {
     left: 10vh;
   }
@@ -43,15 +54,9 @@
     }
     h3 {
       color: teal;
-      width: 82vw;
+      min-width: 82vw;
+      font-size: .99em;
       padding-top: 2vh;
-    }
-    a {
-      color: $burgundy;
-    }
-    a:hover, a:visited, a:active {
-      text-decoration: none;
-      color: $burgundy;
     }
   }
 }

@@ -18,7 +18,7 @@ export default class Work extends Component {
 
       projectAttributes.id = id;
 
-      return(
+      return (
         <Tilt
           className="Tilt"
           options={{

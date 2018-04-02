@@ -15,17 +15,17 @@
 }
 .project__header--title {
   font-family: 'kayak_sans-regular_italic', sans-serif;
-  top: 36vh;
+  top: 39vh;
   color: $brown;
   position: relative;
-  font-size: 15.8vh;
+  font-size: 9vw;
   text-transform: lowercase;
   left: 0vw;
   @media screen and (max-device-width: 667px) and (orientation: portrait) {
     top: 41.75vh;
     color: #333332;
     position: relative;
-    font-size: 14.8vw;
+    font-size: 6em;
     text-transform: lowercase;
     min-width: 100%;
   }
@@ -50,11 +50,14 @@
   margin-bottom: 40vh;
   background-repeat: no-repeat;
   background-position-x: 55vw;
+
   p {
     min-width: 51vh;
     max-width: 105vh;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: 3vh;
+    margin-right: 5vw;
+    line-height: 2em;
     padding-left: 1vw;
     @media only screen
       and (min-device-width: 768px)
@@ -63,40 +66,45 @@
       max-width: 65vh;
     }
   }
-   @media screen and (max-device-width: 667px) and (orientation: portrait) {
+
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
     max-width: 60vh;
-    left: 3.5%;
     position: relative;
+    justify-content: flex-start;
+    margin-bottom: 14vh;
+
     p {
-      min-width: 54vh;
+      min-width: 43vh;
       max-width: 35vh;
       padding: 0vh;
       left: 5%;
+      font-size: 1.6em;
+      font-weight: 400;
       position: relative;
     }
   }
- @media screen and (max-device-width: 667px) and (orientation: landscape) {
-   p {
+
+  @media screen and (max-device-width: 667px) and (orientation: landscape) {
+    p {
      min-width: 120vh;
      font-size: 3.5em;
      line-height: 10vh;
      margin-bottom: 20vh;
-   }
- }
+    }
+  }
 }
 .project__technical {
   margin-bottom: 50vh;
   min-width: 100vh;
-  width: 109vh;
-  font-size: 2em;
+  // width: 109vh;
+  // font-size: 2em;
   top: -2vh;
-  left: 4%;
+  left: 2%;
   position: relative;
   margin-top: 1vh;
   line-height: 7vh;
   text-align: justify;
   p {
-    min-width: 51vh;
     left: 1vh;
     position: relative;
   }
@@ -119,6 +127,9 @@
     // left: 20vw;
     padding-bottom: 40vh;
   }
+}
+.project__graphic--wrapper {
+  min-width: 100vw;
 }
 .project__graphic {
   width: 80%;
@@ -143,12 +154,11 @@
   margin-bottom: 10vh;
   position: relative;
   z-index: 2;
- @media screen and (max-device-width: 667px) and (orientation: portrait) {
-    left: 27vw;
-    top: -14vh;
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
+    min-width: 100%;
     display: block;
-    visibility: visible;
     position: relative;
+    top: 31vh;
   }
   @media screen and (max-device-width: 667px) and (orientation: landscape) {
    left: 47vw;
@@ -173,6 +183,18 @@
     width: 20vw;
     border-radius: 2px;
     z-index: 4;
+    @media screen and (max-device-width: 667px) and (orientation: portrait) {
+      color: white;
+      background-color: #636ebc;
+      padding: 3vh;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 70vw;
+      border-radius: 2px;
+      z-index: 4;
+    }
     &:hover, &:active {
       background-color: lighten($paleblue, 15%);
       color: white;
@@ -187,16 +209,16 @@
   font-family: 'kayak_sans-bold_italic', sans-serif;
   z-index: 2;
   text-align: left;
-  visibility: visible;
   font-size: 3em;
   width: 56vw;
-   @media screen and (max-device-width: 667px) and (orientation: portrait) {
+  @media screen and (max-device-width: 667px) and (orientation: portrait) {
     font-size: 2.5em;
     width: 58vh;
+    padding-left: 3vh;
   }
   @media screen and (max-device-width: 667px) and (orientation: landscape) {
-   font-size: 3.5em;
- }
+    font-size: 3.5em;
+  }
 }
 .project-section-title__background--left {
   padding-bottom: 3vw;
@@ -230,9 +252,6 @@
   left: 2%;
   position: relative;
   line-height: 7vh;
-   @media screen and (max-device-width: 667px) and (orientation: portrait) {
-    left: 4vh;
-  }
 }
 .project__navigation {
   top: 14vh;
@@ -266,14 +285,18 @@
 }
 .project__tag--wrapper {
   margin-bottom: 20vh;
-  max-width: 70vw;
   text-align: center;
    @media screen and (max-device-width: 667px) and (orientation: portrait) {
     max-width: 90%;
     position: relative;
     margin-bottom: 20vh;
+    left: -10px;
     text-align: center;
   }
+}
+.project__tags {
+  min-width: 100vw;
+  position: relative;
 }
 .slanted-bg {
   min-width: 500vh;
@@ -315,7 +338,6 @@
    @media screen and (max-device-width: 667px) and (orientation: portrait) {
     margin-bottom: -26vh;
     top: 0vh;
-    left: -10vh;
   }
   @media screen and (max-device-width: 667px) and (orientation: landscape) {
     min-width: 20vw;
@@ -342,10 +364,10 @@
   position: relative;
    @media screen and (max-device-width: 667px) and (orientation: portrait) {
     left: 5.5vh;
-    top: 0vh;
-    max-width: 53vh;
+    top: 10vh;
+    max-width: 40vh;
     border-radius: 4px;
-    margin-bottom: 20vh;
+    margin-bottom: 25vh;
   }
    @media screen and (max-device-width: 667px) and (orientation: landscape) {
    left: 0vw;
